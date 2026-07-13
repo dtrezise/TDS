@@ -1,0 +1,1029 @@
+{
+  "generated": "2026-07-13",
+  "scope_note": "A sharply critical, evidence-led research set about Donald Trump's conduct, policies, and political-religious alliances. It does not diagnose mental illness, claim that all Christians interpret scripture alike, or treat Christian identity itself as a grievance. 'Christian nationalism' is used for a political ideology that merges Christian and American identity or seeks state privilege for Christianity, not as a label for every conservative or Trump-supporting Christian.",
+  "framework_note": "Each item separates the documented event from the editorial Christian critique. Scripture links use the USCCB Bible; institutional teaching links include Catholic, evangelical, Episcopal, Baptist, and ecumenical sources. Legal labels distinguish allegations, jury findings, convictions, appellate status, official investigations, and enacted policy. A nation may enforce law, protect public safety, and favor its citizens in some policy choices; the critique concerns cruelty, falsehood, collective suspicion, self-exaltation, selective mercy, and the use of Christian symbols or institutions to legitimate power.",
+  "items": [
+    {
+      "id": "faith-repentance-2015",
+      "title": "Trump publicly treated repentance as largely unnecessary for himself",
+      "date_start": "2015-07-18",
+      "date_end": "2015-09-21",
+      "people": ["Donald Trump", "Frank Luntz", "David Brody"],
+      "category": "personal-conduct",
+      "status_label": "documented statement",
+      "summary": "At the Family Leadership Summit on July 18, 2015, Trump said he was not sure he had ever asked God for forgiveness and described Communion as his way of feeling cleansed. In a July 22 CNN interview he explained that he tried to live so that he did not need to ask forgiveness. In September he told CBN that asking forgiveness was important, but continued to describe Communion as asking in his own way.",
+      "why_it_matters": "Repentance is not an optional ornament in historic Christianity; it is the starting summons of Jesus' public ministry and a continuing practice for believers. A leader who markets himself to Christians while presenting himself as unusually exempt from confession reverses the faith's moral grammar: humility is replaced by self-certification.",
+      "christian_teaching": [
+        {
+          "citation": "Mark 1:14-15",
+          "principle": "Jesus begins his proclamation with a call to repent and believe; repentance is central, not exceptional.",
+          "url": "https://bible.usccb.org/bible/mark/1"
+        },
+        {
+          "citation": "1 John 1:8-10",
+          "principle": "Claiming to be without sin is self-deception; confession is a mark of truthfulness before God.",
+          "url": "https://bible.usccb.org/bible/1john/1"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Full transcript of the July 18, 2015 Family Leadership Summit exchange",
+          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-ames-ia-july-18-2015/",
+          "publisher": "Roll Call Factba.se",
+          "source_type": "event transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "July 22 follow-up interview on forgiveness and repentance",
+          "url": "https://transcripts.cnn.com/show/acd/date/2015-07-22/segment/01",
+          "publisher": "CNN",
+          "source_type": "interview transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "September 2015 interview in which Trump revised and qualified his answer",
+          "url": "https://www1.cbn.com/thebrodyfile/archive/2015/09/21/video-exclusive-donald-trump-tells-brody-file-its-important-to",
+          "publisher": "CBN News",
+          "source_type": "evangelical interview and video",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["repentance", "humility", "communion", "evangelical-outreach", "personal-conduct"],
+      "confidence": "high",
+      "editorial_note": "Include the September clarification so the entry does not freeze Trump at his first answer. The criticism is that even the clarification retained a strikingly self-exempting account of repentance, not that an editor can judge his soul."
+    },
+    {
+      "id": "faith-access-hollywood-2005-2016",
+      "title": "The Access Hollywood recording normalized sexual entitlement as celebrity privilege",
+      "date_start": "2005-09-16",
+      "date_end": "2016-10-07",
+      "people": ["Donald Trump", "Billy Bush", "Arianne Zucker"],
+      "category": "sexual-conduct",
+      "status_label": "authenticated recording",
+      "summary": "In a 2005 hot-mic recording published on October 7, 2016, Trump boasted in graphic terms about pursuing a married woman, kissing women without waiting, and grabbing women because celebrity let him do it. Trump apologized for the words as locker-room talk. The tape is direct evidence of his speech and claimed attitude; it is not, by itself, proof that every act described occurred.",
+      "why_it_matters": "The Christian problem is not merely vulgar vocabulary. The recorded posture treats women as objects and fame as permission, contradicting Jesus' teaching on lust, fidelity, and the equal dignity of neighbors. Evangelical political support that minimized the tape converted moral witness into a transactional exception for a powerful ally.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 5:27-30, 37",
+          "principle": "Jesus intensifies the command against adultery to include lustful objectification and demands truthful speech.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        },
+        {
+          "citation": "1 Thessalonians 4:3-8",
+          "principle": "Christian holiness requires control of one's body and rejection of exploitative lust.",
+          "url": "https://bible.usccb.org/bible/1thessalonians/4"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Contemporaneous report with the recording and its provenance",
+          "url": "https://www.washingtonpost.com/lifestyle/style/the-caller-had-a-lewd-tape-of-donald-trump-then-the-race-was-on/2016/10/07/31d74714-8ce5-11e6-875e-2c1bfe943b66_story.html",
+          "publisher": "The Washington Post",
+          "source_type": "recording and contemporaneous reporting",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Report linking to NBC's unedited video and reproducing the core statements",
+          "url": "https://www.npr.org/2016/10/07/497087141/donald-trump-caught-on-tape-making-vulgar-remarks-about-women",
+          "publisher": "NPR",
+          "source_type": "reputable reporting and primary audio bridge",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump's recorded apology and response on the day of publication",
+          "url": "https://transcripts.cnn.com/show/cnnt/date/2016-10-07/segment/03",
+          "publisher": "CNN",
+          "source_type": "statement transcript",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["sexual-conduct", "women", "adultery", "power", "celebrity", "2016-election"],
+      "confidence": "high",
+      "editorial_note": "Quote only what is necessary on the public site and warn users before displaying explicit language. Distinguish Trump's boasts from independently proven conduct."
+    },
+    {
+      "id": "faith-carroll-liability-2023-2026",
+      "title": "A civil jury found Trump liable for sexually abusing and then defaming E. Jean Carroll",
+      "date_start": "2023-05-09",
+      "date_end": "2026-06-29",
+      "people": ["Donald Trump", "E. Jean Carroll", "Lewis A. Kaplan"],
+      "category": "legal-accountability",
+      "status_label": "civil liability affirmed; Supreme Court review denied",
+      "summary": "On May 9, 2023, a federal jury found Trump liable under the civil preponderance standard for sexually abusing E. Jean Carroll and defaming her, awarding $5 million. The Second Circuit affirmed the judgment on December 30, 2024. On June 29, 2026, the Supreme Court denied Trump's petition for review without noted dissent, leaving the judgment intact; Trump continues to deny the assault and has pursued post-judgment litigation.",
+      "why_it_matters": "This is not a partisan rumor or merely an accusation: it is an adjudicated civil finding that survived appellate review. Treating such a finding as morally irrelevant because the defendant advances favored policies turns proclaimed concern for sexual morality and victims into selective ethics governed by political usefulness.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 7:12",
+          "principle": "The Golden Rule rejects treating another person's body as an instrument of one's will.",
+          "url": "https://bible.usccb.org/bible/matthew/7"
+        },
+        {
+          "citation": "Proverbs 31:8-9",
+          "principle": "Faithful public judgment requires speaking for those harmed and defending their rights.",
+          "url": "https://bible.usccb.org/bible/proverbs/31"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Second Circuit opinion affirming the $5 million sexual-abuse and defamation judgment",
+        "url": "https://www.govinfo.gov/app/details/USCOURTS-ca2-23-00793",
+          "publisher": "U.S. Court of Appeals for the Second Circuit",
+          "source_type": "appellate court opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Supreme Court docket No. 25-573 showing denial of certiorari",
+          "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-573.html",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "official case docket",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Current account of the Supreme Court's June 29, 2026 denial and the underlying verdict",
+          "url": "https://apnews.com/article/1a50d1e9e1d12898e78e0803c4627771",
+          "publisher": "Associated Press",
+          "source_type": "reputable current legal reporting",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["sexual-abuse", "defamation", "civil-liability", "women", "accountability"],
+      "confidence": "high",
+      "editorial_note": "Use 'liable for sexual abuse,' the jury's legal finding, rather than 'criminally convicted' or an imprecise criminal label. Explain the civil burden of proof and Trump's denial."
+    },
+    {
+      "id": "faith-hush-money-records-2016-2026",
+      "title": "Trump was convicted of falsifying records in the election-related hush-money scheme",
+      "date_start": "2016-08-01",
+      "date_end": "2026-07-13",
+      "people": ["Donald Trump", "Michael Cohen", "Stormy Daniels", "Juan Merchan"],
+      "category": "legal-accountability",
+      "status_label": "felony conviction; appeal pending",
+      "summary": "On May 30, 2024, a New York jury convicted Trump on 34 felony counts of falsifying business records. The records disguised reimbursements to Michael Cohen, who paid Stormy Daniels before the 2016 election to suppress her account of a 2006 sexual encounter; Trump denies that encounter. Trump received an unconditional discharge on January 10, 2025, and the conviction remained in place while appellate proceedings continued as of July 13, 2026.",
+      "why_it_matters": "The Christian critique does not depend on proving the alleged affair, which the criminal trial did not adjudicate. It rests on a unanimous criminal verdict that business records were falsified as part of a concealment scheme, colliding with teachings against false witness, crooked dealing, and the use of wealth to hide accountability.",
+      "christian_teaching": [
+        {
+          "citation": "Proverbs 6:16-19",
+          "principle": "Lying, false witness, pride, and schemes that harm community are named together as moral evils.",
+          "url": "https://bible.usccb.org/bible/proverbs/6"
+        },
+        {
+          "citation": "Matthew 5:37",
+          "principle": "Jesus calls for plain, dependable truth rather than manipulative layers of representation.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "New York court decision recording the jury's guilty verdict on all 34 counts",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2024/2024_24328.htm",
+          "publisher": "New York State Unified Court System",
+          "source_type": "trial court decision",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "January 3, 2025 sentencing decision and post-trial procedural history",
+          "url": "https://www.nycourts.gov/reporter/pdfs/2025/2025_30014.pdf",
+          "publisher": "New York State Unified Court System",
+          "source_type": "sentencing decision",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Current New York appellate docket order in People v. Trump",
+          "url": "https://www.nycourts.gov/reporter/current/motions/2026/2026_68421.pdf",
+          "publisher": "New York State Unified Court System",
+          "source_type": "appellate order",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["felony-conviction", "falsified-records", "hush-money", "sexual-conduct", "election-2016", "appeal-pending"],
+      "confidence": "high",
+      "editorial_note": "State prominently that Trump denies the encounter, the conviction concerned falsified records rather than adultery, and appellate review is ongoing. Unconditional discharge means no jail, fine, or probation; it did not erase the verdict."
+    },
+    {
+      "id": "faith-foundation-charity-misuse-2019",
+      "title": "Trump admitted misuse of charitable assets and paid $2 million under court order",
+      "date_start": "2016-01-28",
+      "date_end": "2019-12-10",
+      "people": ["Donald Trump", "Donald Trump Jr.", "Ivanka Trump", "Eric Trump", "Letitia James"],
+      "category": "wealth-and-charity",
+      "status_label": "settled with admissions and court-ordered payment",
+      "summary": "A New York court approved the Trump Foundation's dissolution and ordered Donald Trump to pay $2 million to charities after charitable funds were used in ways tied to his political interests. The resolution included 19 admissions and restrictions on future charitable service if he creates another charity. The remaining foundation assets were distributed under judicial supervision.",
+      "why_it_matters": "Using a charity as an extension of personal or political power profanes the very act of giving. It is an especially direct contradiction of Christian teaching that almsgiving serves the needy without self-promotion and that stewards must not divert entrusted resources for themselves.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 6:1-4",
+          "principle": "Almsgiving is not a stage for self-glorification; its purpose is faithfulness before God, not public advantage.",
+          "url": "https://bible.usccb.org/bible/matthew/6"
+        },
+        {
+          "citation": "Luke 16:10-13",
+          "principle": "Faithfulness with entrusted wealth is incompatible with serving money as master.",
+          "url": "https://bible.usccb.org/bible/luke/16"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Court opinion approving dissolution and supervised distribution of foundation assets",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2019/2019_29336.htm",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Attorney General account of the paid $2 million order and Trump admissions",
+          "url": "https://ag.ny.gov/index.php/press-release/2019/donald-j-trump-pays-court-ordered-2-million-illegally-using-trump-foundation",
+          "publisher": "Office of the New York Attorney General",
+          "source_type": "government enforcement record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Earlier court ruling allowing the charity enforcement action to proceed",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2018/2018_28364.htm",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court opinion",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["charity", "self-dealing", "wealth", "stewardship", "Trump-family", "settlement"],
+      "confidence": "high",
+      "editorial_note": "The $2 million was paid to charities rather than retained by the state. Describe the resolution and admissions precisely; do not convert the civil settlement into a criminal conviction."
+    },
+    {
+      "id": "faith-election-falsehoods-2020-2022",
+      "title": "Trump sustained false election claims after his own advisers and institutions rejected them",
+      "date_start": "2020-11-03",
+      "date_end": "2022-12-22",
+      "people": ["Donald Trump", "William Barr", "Mike Pence", "Georgia election officials"],
+      "category": "truth-and-democracy",
+      "status_label": "officially documented falsehood campaign",
+      "summary": "The certified 2020 Electoral College result was 306 votes for Joseph Biden and 232 for Trump. The House January 6 Select Committee found that Trump's campaign officials, Justice Department leaders, advisers, and courts repeatedly told him his outcome-changing fraud claims were false or unsupported, yet he continued using them to pressure officials and the public. A later federal indictment alleged knowing deceit, but that prosecution did not produce a verdict and should not be used as proof of guilt.",
+      "why_it_matters": "Truth is not a dispensable tactic in Christian ethics. Repeating claims after authoritative correction, especially to retain power and mobilize followers against a lawful transfer, makes false witness a governing method. The resulting injury to neighbors, election workers, and peaceful civic order also violates the command to make peace rather than sow discord.",
+      "christian_teaching": [
+        {
+          "citation": "Ephesians 4:25-32",
+          "principle": "Christians are to put away falsehood, speak truth to neighbors, reject destructive speech, and practice kindness.",
+          "url": "https://bible.usccb.org/bible/ephesians/4"
+        },
+        {
+          "citation": "Proverbs 6:16-19",
+          "principle": "A lying tongue, false witness, and one who sows discord are grouped among what God rejects.",
+          "url": "https://bible.usccb.org/bible/proverbs/6"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Official 2020 Electoral College results and certification record",
+          "url": "https://www.archives.gov/electoral-college/2020",
+          "publisher": "National Archives and Records Administration",
+          "source_type": "official election record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Final report of the Select Committee to Investigate the January 6th Attack",
+          "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/pdf/GPO-J6-REPORT.pdf",
+          "publisher": "U.S. Government Publishing Office / House Select Committee",
+          "source_type": "congressional investigative report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "GovInfo collection of report chapters, videos, transcripts, and supporting material",
+          "url": "https://www.govinfo.gov/collection/january-6th-committee-final-report",
+          "publisher": "U.S. Government Publishing Office",
+          "source_type": "official evidence archive",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Federal indictment spelling out allegations and repeated corrections Trump received",
+          "url": "https://www.justice.gov/storage/US_v_Trump_23_cr_257.pdf",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "charging document, not adjudicated fact",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["election-2020", "falsehood", "January-6", "peaceful-transfer", "democracy", "MAGA"],
+      "confidence": "high",
+      "editorial_note": "Base the factual finding on certified results and the congressional record, not on the untried indictment. Avoid mental-state claims beyond what the official record supports and never diagnose delusion."
+    },
+    {
+      "id": "faith-family-separation-2017-2021",
+      "title": "Zero tolerance separated thousands of children without adequate reunification planning",
+      "date_start": "2017-07-01",
+      "date_end": "2021-01-14",
+      "people": ["Donald Trump", "Jeff Sessions", "Kirstjen Nielsen", "separated migrant families"],
+      "category": "immigration-and-family",
+      "status_label": "official inspector-general findings",
+      "summary": "The Trump administration's zero-tolerance approach prosecuted adults who crossed the southwest border with children, producing family separations. DOJ's inspector general found that leadership understood separation would result, underestimated legal and operational complexity, and pursued prosecutions at the expense of considering harm to children and the ability to reunite families. DOJ OIG reported more than 3,000 children separated before the practice was largely curtailed by Trump's June 20, 2018 executive order; HHS identified tracking failures and additional separated children.",
+      "why_it_matters": "Even when a government lawfully enforces a border, deliberately choosing a process that predictably tears children from parents without a workable reunification system is a severe moral failure. The contrast with Christian defense of family unity, care for children, mercy, and welcome of strangers is direct rather than metaphorical.",
+      "christian_teaching": [
+        {
+          "citation": "U.S. bishops' migration chairman statement, June 1, 2018",
+          "principle": "The bishops called forced separation contrary to Catholic values and family unity foundational to Catholic teaching.",
+          "url": "https://www.usccb.org/news/2018/us-bishops-migration-chairman-urges-administration-keep-families-together"
+        },
+        {
+          "citation": "Matthew 19:13-15 and Matthew 25:35-40",
+          "principle": "Jesus receives children and identifies himself with the vulnerable stranger.",
+          "url": "https://bible.usccb.org/bible/matthew/19"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "DOJ OIG review of planning, implementation, child impact, and reunification failures",
+          "url": "https://oig.justice.gov/news/doj-oig-releases-report-department-justices-planning-and-implementation-its-zero-tolerance",
+          "publisher": "U.S. Department of Justice Office of Inspector General",
+          "source_type": "official inspector-general findings",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Full DOJ OIG report",
+          "url": "https://oig.justice.gov/sites/default/files/reports/21-028_0.pdf",
+          "publisher": "U.S. Department of Justice Office of Inspector General",
+          "source_type": "official investigative report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "HHS OIG report on separated children in refugee-resettlement care",
+          "url": "https://oig.hhs.gov/reports/all/2019/separated-children-placed-in-office-of-refugee-resettlement-care/",
+          "publisher": "U.S. Department of Health and Human Services Office of Inspector General",
+          "source_type": "official evaluation",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["family-separation", "children", "immigration", "stranger", "cruelty", "policy-failure"],
+      "confidence": "high",
+      "editorial_note": "Acknowledge the government's stated goals of deterring unlawful entry and restoring legal enforcement. The moral case turns on chosen means, foreseeable child harm, and deficient reunification planning."
+    },
+    {
+      "id": "faith-refugee-ceiling-2017-2021",
+      "title": "Trump reduced refugee protection to the lowest admissions ceiling in the program's history",
+      "date_start": "2017-01-27",
+      "date_end": "2020-10-28",
+      "people": ["Donald Trump", "refugees", "U.S. Conference of Catholic Bishops"],
+      "category": "refugees-and-strangers",
+      "status_label": "enacted presidential policy",
+      "summary": "Trump's January 27, 2017 order suspended the refugee program for 120 days, suspended Syrian refugee entry, and capped fiscal-year 2017 admissions at 50,000. His fiscal-year 2021 determination set a ceiling of 15,000, which the USCCB identified as the lowest since Congress created the modern refugee program in 1980 and far below the previous historical average cited by the bishops.",
+      "why_it_matters": "Security screening and admission limits are legitimate policy questions. The Christian grievance is the administration's sustained contraction of refuge amid global need, especially when paired with rhetoric treating displaced populations principally as threats. The result clashes with a faith whose central judgment scene includes whether the stranger was welcomed.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 25:31-46",
+          "principle": "Welcoming the stranger and serving the vulnerable are presented as service to Christ himself.",
+          "url": "https://bible.usccb.org/bible/matthew/25"
+        },
+        {
+          "citation": "USCCB response to the fiscal-year 2021 refugee ceiling, October 2, 2020",
+          "principle": "The bishops described refugee welcome as an act of Christian love and hope and called the 15,000 proposal heartbreaking.",
+          "url": "https://www.usccb.org/news/2020/usccb-president-and-migration-chairman-respond-announcement-lowest-refugee-designation"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "January 27, 2017 refugee suspension and entry order",
+          "url": "https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-protecting-nation-foreign-terrorist-entry-united-states/",
+          "publisher": "Trump White House Archives",
+          "source_type": "executive order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Presidential determination setting the fiscal-year 2021 ceiling at 15,000",
+          "url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-determination-refugee-admissions-fiscal-year-2021/",
+          "publisher": "Trump White House Archives",
+          "source_type": "presidential determination",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "USCCB historical comparison and Christian critique",
+          "url": "https://www.usccb.org/news/2020/usccb-president-and-migration-chairman-respond-announcement-lowest-refugee-designation",
+          "publisher": "U.S. Conference of Catholic Bishops",
+          "source_type": "denominational statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["refugees", "Syrian-refugees", "travel-ban", "stranger", "hospitality", "America-First"],
+      "confidence": "high",
+      "editorial_note": "Do not imply that Christian teaching supplies a precise annual admissions number. Present the scale, historical departure, humanitarian need, and stated security rationale so readers can evaluate proportionality."
+    },
+    {
+      "id": "faith-lafayette-bible-2020",
+      "title": "Trump used St. John's Church and a Bible as presidential imagery after a forceful park clearing",
+      "date_start": "2020-06-01",
+      "date_end": "2021-06-08",
+      "people": ["Donald Trump", "Mariann Edgar Budde", "U.S. Park Police", "William Barr"],
+      "category": "religious-symbolism",
+      "status_label": "documented event with material investigative nuance",
+      "summary": "On June 1, 2020, law enforcement cleared protesters from Lafayette Park; Trump then walked to St. John's Episcopal Church and posed holding a Bible without consulting the diocese. Bishop Mariann Budde said he used the church and Bible to claim spiritual authority for a message she considered contrary to Jesus. A 2021 Interior Department inspector-general review found Park Police planned the clearing for fence installation, not for Trump's visit, while also finding ineffective warnings and serious multi-agency communication failures; it did not review every use of force.",
+      "why_it_matters": "The most defensible criticism is not the disproven shorthand that Park Police conceived the clearing solely for a photo opportunity. It is that Trump chose to convert a church and scripture into a display of dominance at a moment demanding grief, racial justice, restraint, and pastoral presence. The church's own bishop regarded that symbolism as a misuse of Christian authority.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 6:1-6",
+          "principle": "Jesus warns against public religious performance used to be seen and honored by others.",
+          "url": "https://bible.usccb.org/bible/matthew/6"
+        },
+        {
+          "citation": "Bishop Mariann Budde testimony to Congress, June 29, 2020",
+          "principle": "The Episcopal bishop responsible for St. John's said a Bible was used to claim spiritual authority over state violence and called for healing and justice.",
+          "url": "https://edow.org/2020/06/29/testimony-of-bishop-mariann-budde-before-the-committee-on-national-resources-u-s-house-of-representatives/"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Interior OIG operational review and findings",
+          "url": "https://www.doioig.gov/reports/review/review-us-park-police-actions-lafayette-park",
+          "publisher": "U.S. Department of the Interior Office of Inspector General",
+          "source_type": "official investigative review",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Bishop Budde's sworn congressional testimony",
+          "url": "https://www.congress.gov/116/meeting/house/110833/witnesses/HHRG-116-II00-Wstate-BuddeM-20200629.pdf",
+          "publisher": "U.S. House of Representatives",
+          "source_type": "congressional witness statement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "White House explanation of why Trump stood at St. John's",
+          "url": "https://trumpwhitehouse.archives.gov/briefings-statements/press-briefing-press-secretary-kayleigh-mcenany-060320/",
+          "publisher": "Trump White House Archives",
+          "source_type": "official administration statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["St-Johns", "Bible", "photo-op", "Lafayette-Park", "racial-justice", "religious-symbolism"],
+      "confidence": "high",
+      "editorial_note": "Always include the OIG finding that Park Police's plan predated knowledge of the presidential movement. Do not claim the OIG exonerated all agencies or reviewed all force; its scope and criticisms were limited but significant."
+    },
+    {
+      "id": "faith-retribution-enemy-within-2023-2024",
+      "title": "Trump made retribution and domestic-enemy rhetoric a campaign promise",
+      "date_start": "2023-03-04",
+      "date_end": "2024-10-13",
+      "people": ["Donald Trump", "Adam Schiff", "Nancy Pelosi", "political opponents"],
+      "category": "rhetoric-and-peacemaking",
+      "status_label": "documented campaign rhetoric",
+      "summary": "At CPAC on March 4, 2023, Trump told supporters he would be their retribution. In an October 13, 2024 Fox Business interview he called domestic opponents the enemy from within, named Adam Schiff, and said radical-left unrest could be handled by the National Guard or, if necessary, the military. Trump and allies framed the remarks as protection against disorder and politicized government, but the language personalized state power around vengeance and political enemies.",
+      "why_it_matters": "Jesus blesses peacemakers, commands love of enemies, and rejects retaliation as the disciple's governing posture. A movement that presents a leader as an instrument of believers' retribution baptizes resentment and makes cruelty to opponents feel like faithfulness.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 5:9, 38-48",
+          "principle": "Jesus blesses peacemakers, rejects retaliation, and commands love and prayer for enemies.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        },
+        {
+          "citation": "National Association of Evangelicals, Peace, Freedom and Security Studies",
+          "principle": "The NAE affirms a biblical responsibility for Christians to be peacemakers while recognizing legitimate public security duties.",
+          "url": "https://www.nae.org/530/"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Full CPAC speech containing the retribution pledge",
+          "url": "https://www.c-span.org/program/campaign-2024/former-president-trump-speaks-at-cpac/624800",
+          "publisher": "C-SPAN",
+          "source_type": "primary event video",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Transcript of the October 13, 2024 Fox Business interview",
+          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-maria-bartiromo-fox-business-october-13-2024/",
+          "publisher": "Roll Call Factba.se",
+          "source_type": "interview transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Fox Business video of the enemy-from-within interview",
+          "url": "https://www.foxbusiness.com/video/6363231994112",
+          "publisher": "Fox Business",
+          "source_type": "primary interview video",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["retribution", "enemy-within", "political-opponents", "military", "peacemaking", "MAGA"],
+      "confidence": "high",
+      "editorial_note": "Include the surrounding discussion of feared Election Day disorder; the sharp criticism should focus on labeling political opponents internal enemies and invoking military handling, not pretend he ordered a specific operation in this interview."
+    },
+    {
+      "id": "faith-mass-deportation-2025",
+      "title": "The second-term mass-deportation program subordinated migrant dignity to an invasion frame",
+      "date_start": "2025-01-20",
+      "date_end": "2025-07-04",
+      "people": ["Donald Trump", "migrants in the United States", "Pope Francis", "Kristi Noem"],
+      "category": "immigration-and-dignity",
+      "status_label": "enacted executive policy and funded program",
+      "summary": "On January 20, 2025, Trump ordered broad enforcement against inadmissible and removable noncitizens, expanded detention and expedited removal, enlisted state and local agencies, and revoked the family-reunification task force order. The White House called the border situation an invasion and later promoted funding for at least one million removals annually. Pope Francis answered that nations may secure borders and remove serious offenders but that identifying irregular status with criminality and indiscriminate mass deportation damages human dignity and families.",
+      "why_it_matters": "The Vatican response supplies a rigorous Christian standard rather than an open-borders caricature: lawful order and public safety are legitimate, but every migrant retains dignity, and force cannot become the controlling truth about a person. Trump's categorical invasion language and scale-first deportation design invite collective suspicion in place of individualized justice and mercy.",
+      "christian_teaching": [
+        {
+          "citation": "Pope Francis, Letter to the Bishops of the United States, February 10, 2025",
+          "principle": "The letter affirms border regulation and removal of serious offenders while rejecting treatment that equates irregular status with criminality or sacrifices human dignity.",
+          "url": "https://www.vatican.va/content/francesco/en/letters/2025/documents/20250210-lettera-vescovi-usa.html"
+        },
+        {
+          "citation": "Luke 10:25-37",
+          "principle": "The Good Samaritan makes neighbor-love cross national, ethnic, and religious boundaries.",
+          "url": "https://bible.usccb.org/bible/luke/10"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Executive order on detention, removal, enforcement priorities, and state partnerships",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-american-people-against-invasion/",
+          "publisher": "The White House",
+          "source_type": "executive order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "White House America First priorities describing the deportation operation and refugee suspension",
+          "url": "https://www.whitehouse.gov/briefings-statements/2025/01/president-trumps-america-first-priorities/",
+          "publisher": "The White House",
+          "source_type": "official policy statement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "White House summary of legislation funding at least one million annual removals",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/PERMANENTLY-SECURES-THE-BORDER.pdf",
+          "publisher": "The White House",
+          "source_type": "official policy fact sheet",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Pope Francis' direct response to the mass-deportation program",
+          "url": "https://www.vatican.va/content/francesco/en/letters/2025/documents/20250210-lettera-vescovi-usa.html",
+          "publisher": "The Holy See",
+          "source_type": "papal teaching letter",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["mass-deportation", "immigration", "human-dignity", "invasion-rhetoric", "Pope-Francis", "America-First"],
+      "confidence": "high",
+      "editorial_note": "Do not describe all removals as morally identical or deny a state's authority to enforce immigration law. Critique categorical criminalization, scale-driven enforcement, family vulnerability, and proportionality."
+    },
+    {
+      "id": "faith-obbba-poor-2025",
+      "title": "Trump's signature 2025 law shifted resources upward while cutting health and food support",
+      "date_start": "2025-05-22",
+      "date_end": "2025-08-11",
+      "people": ["Donald Trump", "Russell Vought", "low-income households", "Medicaid and SNAP recipients"],
+      "category": "economic-justice",
+      "status_label": "enacted law with nonpartisan distributional estimate",
+      "summary": "Congress enacted and Trump signed Public Law 119-21, promoted as the One Big Beautiful Bill. CBO's final distributional analysis found that resources generally decrease for households near the bottom of the income distribution, mainly because of reductions tied to Medicaid and SNAP, while increasing for middle- and top-income households, with the largest dollar gains at the top. The USCCB president said the law failed the poor and vulnerable despite provisions the bishops supported.",
+      "why_it_matters": "Budgets are moral documents because they expose who bears sacrifice and who receives advantage. Extending tax benefits while reducing food and health supports for households with the least resources reverses the Christian preferential concern for the poor; attaching religious branding to the same coalition deepens the hypocrisy rather than curing it.",
+      "christian_teaching": [
+        {
+          "citation": "USCCB president response to passage of the One Big Beautiful Bill Act, July 3, 2025",
+          "principle": "The bishops judged that the law's cuts would cause grave harm to vulnerable people and said reconciliation should help families in need.",
+          "url": "https://www.usccb.org/news/2025/us-bishops-president-reacts-passage-one-big-beautiful-bill-act"
+        },
+        {
+          "citation": "Matthew 25:35-45",
+          "principle": "Christian judgment is tied to feeding the hungry, caring for the sick, and serving the least.",
+          "url": "https://bible.usccb.org/bible/matthew/25"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "CBO final interactive distributional analysis of Public Law 119-21",
+          "url": "https://www.cbo.gov/interactive/2025-reconciliation-act",
+          "publisher": "Congressional Budget Office",
+          "source_type": "nonpartisan official distributional analysis",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "CBO report on distributional effects of the House-passed H.R. 1",
+          "url": "https://www.cbo.gov/publication/61387",
+          "publisher": "Congressional Budget Office",
+          "source_type": "nonpartisan official analysis",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "USCCB moral assessment after passage",
+          "url": "https://www.usccb.org/news/2025/us-bishops-president-reacts-passage-one-big-beautiful-bill-act",
+          "publisher": "U.S. Conference of Catholic Bishops",
+          "source_type": "denominational policy statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["poor", "Medicaid", "SNAP", "taxes", "budget", "wealth", "policy-consequences"],
+      "confidence": "high",
+      "editorial_note": "Use CBO's final Public Law analysis for the live site, not only estimates of earlier drafts. Note provisions bishops supported and separate moral judgment from disputes about economic-growth assumptions."
+    },
+    {
+      "id": "faith-death-penalty-2025",
+      "title": "Trump ordered aggressive expansion of capital punishment and framed death as the only proper justice",
+      "date_start": "2025-01-20",
+      "date_end": "2025-01-20",
+      "people": ["Donald Trump", "Pam Bondi", "federal death-row prisoners", "state prosecutors"],
+      "category": "life-and-dignity",
+      "status_label": "executive order in force",
+      "summary": "Trump's January 20, 2025 executive order declared capital punishment an essential deterrent and the only proper punishment for the vilest crimes. It directed the attorney general to pursue death sentences broadly, encourage state use, secure lethal-injection drugs, and seek reversal of Supreme Court precedents limiting capital punishment. The order also singled out capital crimes committed by people unlawfully present in the country.",
+      "why_it_matters": "Christian traditions differ on capital punishment, so the critique should not pretend unanimity. The contradiction is categorical for contemporary Catholic teaching, which calls the death penalty inadmissible because human dignity persists even after grave crime and redemption must remain possible. The order's language of monstrosity and ultimate retribution also leaves little room for mercy.",
+      "christian_teaching": [
+        {
+          "citation": "Catechism of the Catholic Church, revised paragraph 2267",
+          "principle": "The Catholic Church teaches that the death penalty is inadmissible because it attacks inviolable human dignity and forecloses redemption.",
+          "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20180801_catechismo-penadimorte_en.html"
+        },
+        {
+          "citation": "Matthew 5:38-48",
+          "principle": "Jesus redirects retaliation toward mercy, nonvengeance, and love of enemies.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Executive order restoring and expanding federal capital-punishment policy",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty-and-protecting-public-safety/",
+          "publisher": "The White House",
+          "source_type": "executive order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Official Vatican text of revised Catechism paragraph 2267",
+          "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20180801_catechismo-penadimorte_en.html",
+          "publisher": "The Holy See",
+          "source_type": "official doctrinal text",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["death-penalty", "retribution", "mercy", "human-dignity", "Catholic-teaching", "immigration-status"],
+      "confidence": "high",
+      "editorial_note": "Say explicitly that some Christian traditions still permit capital punishment in limited circumstances. This entry presents a direct conflict with Catholic teaching and a broader Gospel critique of vengeance, not a claim of total Christian consensus."
+    },
+    {
+      "id": "faith-america-first-2017-2025",
+      "title": "America First made national advantage the administration's controlling moral horizon",
+      "date_start": "2017-01-20",
+      "date_end": "2025-01-20",
+      "people": ["Donald Trump", "MAGA movement", "America First movement"],
+      "category": "movement-ideology",
+      "status_label": "declared governing doctrine",
+      "summary": "Trump's 2017 inaugural address declared that decisions on trade, taxes, immigration, and foreign affairs would be made under an America First vision. His 2025 inaugural and day-one priorities renewed the doctrine across border policy, refugee suspension, energy, and foreign affairs. The position is a national-interest doctrine, not automatically a theological claim, but Trump repeatedly embedded it in religious language about divine favor and national restoration.",
+      "why_it_matters": "Christian teaching permits patriotism and recognizes governments' duties to their people. It does not permit national self-interest to become the final measure of moral action: neighbor-love crosses borders, every person bears dignity, and no nation owns the Gospel. America First becomes spiritually deranged when national victory displaces solidarity, truth, mercy, or obligations to outsiders.",
+      "christian_teaching": [
+        {
+          "citation": "Philippians 2:3-8",
+          "principle": "Christian action rejects selfish ambition and looks to the interests of others, patterned on Christ's self-emptying service.",
+          "url": "https://bible.usccb.org/bible/philippians/2"
+        },
+        {
+          "citation": "Lausanne Cape Town Commitment",
+          "principle": "The global evangelical statement rejects coercive witness and says no nation or ethnic group has exclusive privilege in Christian mission.",
+          "url": "https://lausanne.org/statement/ctcommitment"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "2017 inaugural address defining America First across major policy domains",
+          "url": "https://trumpwhitehouse.archives.gov/briefings-statements/the-inaugural-address/",
+          "publisher": "Trump White House Archives",
+          "source_type": "presidential address",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "2025 inaugural address renewing America First and mass-removal commitments",
+          "url": "https://www.whitehouse.gov/remarks/2025/01/the-inaugural-address/",
+          "publisher": "The White House",
+          "source_type": "presidential address",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Second-term America First priorities",
+          "url": "https://www.whitehouse.gov/briefings-statements/2025/01/president-trumps-america-first-priorities/",
+          "publisher": "The White House",
+          "source_type": "official policy platform",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["America-First", "MAGA", "nationalism", "foreign-policy", "immigration", "Christian-universalism"],
+      "confidence": "high",
+      "editorial_note": "Do not equate patriotism with sin or assert that governments may never prioritize citizens. Evaluate concrete tradeoffs and show when the slogan is used to excuse violations of universal dignity or neighbor-love."
+    },
+    {
+      "id": "faith-paula-white-prosperity-2016-2025",
+      "title": "Trump elevated a prosperity-associated spiritual adviser despite major evangelical theological objections",
+      "date_start": "2016-06-21",
+      "date_end": "2025-02-07",
+      "people": ["Donald Trump", "Paula White-Cain", "White House Faith Office"],
+      "category": "religious-alliance",
+      "status_label": "documented advisory and government appointments",
+      "summary": "Paula White-Cain joined Trump's 2016 evangelical advisory circle, became a White House faith adviser in his first term, and on February 7, 2025 was appointed senior adviser to the new White House Faith Office. Christianity Today describes her as Trump's longtime prayer partner and a preacher commonly associated with prosperity teaching. Trump is free to seek counsel across traditions, but his repeated elevation of White placed a disputed wealth-and-blessing theology near federal religious outreach.",
+      "why_it_matters": "The alliance links Trump's brand of wealth, victory, and personal destiny to a religious current many evangelicals themselves reject as spiritually harmful. The global evangelical Lausanne Movement warns that prosperity teaching can measure blessing by wealth, replace repentance with giving to a preacher, and turn faith toward self-interest rather than sacrifice.",
+      "christian_teaching": [
+        {
+          "citation": "Lausanne Cape Town Commitment, section on simplicity and prosperity teaching",
+          "principle": "This global evangelical covenant rejects excesses of prosperity teaching as incompatible with balanced biblical Christianity and calls for humility, integrity, simplicity, and care for the poor.",
+          "url": "https://lausanne.org/statement/ctcommitment"
+        },
+        {
+          "citation": "Matthew 6:19-24",
+          "principle": "Jesus warns against storing treasure as the measure of life and says one cannot serve both God and wealth.",
+          "url": "https://bible.usccb.org/bible/matthew/6"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "White House announcement appointing White-Cain senior adviser to the Faith Office",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/02/president-trump-announces-appointments-to-the-white-house-faith-office/",
+          "publisher": "The White House",
+          "source_type": "official appointment announcement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Christianity Today account of both first- and second-term appointments and evangelical controversy",
+          "url": "https://www.christianitytoday.com/2019/11/white-house-appoints-paula-white-to-oversee-faith-outreach/",
+          "publisher": "Christianity Today",
+          "source_type": "evangelical reporting",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Executive order establishing the 2025 White House Faith Office",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/02/establishment-of-the-white-house-faith-office/",
+          "publisher": "The White House",
+          "source_type": "executive order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Global evangelical critique of prosperity teaching",
+          "url": "https://lausanne.org/statement/ctcommitment",
+          "publisher": "Lausanne Movement",
+          "source_type": "evangelical theological covenant",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["Paula-White", "prosperity-gospel", "Faith-Office", "evangelical-advisers", "wealth", "religious-outreach"],
+      "confidence": "high",
+      "editorial_note": "Say 'associated with prosperity teaching' and source the classification; Pentecostal and charismatic Christianity are broader than prosperity theology. Critique doctrine and public role, not her protected religious identity or sex."
+    },
+    {
+      "id": "faith-nationalist-campaign-fusion-2024",
+      "title": "Trump fused scripture, patriotic texts, commerce, and Christian voter mobilization",
+      "date_start": "2024-03-26",
+      "date_end": "2024-07-26",
+      "people": ["Donald Trump", "Lee Greenwood", "Turning Point Action", "Christian voters"],
+      "category": "christian-nationalism",
+      "status_label": "documented commercial endorsement and campaign speech",
+      "summary": "During Holy Week 2024, Trump promoted a $59.99 God Bless the USA Bible containing the King James Bible alongside the Declaration of Independence, Constitution, Bill of Rights, Pledge of Allegiance, and Lee Greenwood lyrics; the seller said Trump's name and image were licensed and that campaign funds did not receive proceeds. At Turning Point's Believers' Summit on July 26, Trump explicitly mobilized Christians as a voting bloc and told them that after this election they would not have to vote again because things would be fixed.",
+      "why_it_matters": "This is Christian-nationalist fusion in unusually concrete form: sacred text, founding documents, patriotic song, a candidate's endorsement, and electoral mobilization packaged together. The theological objection is not to Christians voting or owning patriotic Bibles; it is to collapsing the Gospel into national identity and merchandising religious authority around a political leader.",
+      "christian_teaching": [
+        {
+          "citation": "Christians Against Christian Nationalism statement",
+          "principle": "The Baptist-led ecumenical statement rejects merging Christian and American identities, state privilege for Christianity, and political power as a test of faithfulness.",
+          "url": "https://bjconline.org/christians-against-christian-nationalism/statement/"
+        },
+        {
+          "citation": "Matthew 21:12-13 and Matthew 6:24",
+          "principle": "Jesus confronts commercial exploitation around worship and warns that wealth cannot share mastery with God.",
+          "url": "https://bible.usccb.org/bible/matthew/21"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Official product site explaining Trump's endorsement and the Bible's contents",
+          "url": "https://godblesstheusa.com/pages/contact",
+          "publisher": "God Bless The USA Bible",
+          "source_type": "commercial primary source",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Contemporaneous report reproducing Trump's Holy Week promotion and licensing disclosures",
+          "url": "https://apnews.com/article/2713fda3efdfa297d0f024efb1ca3003",
+          "publisher": "Associated Press",
+          "source_type": "reputable reporting",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Full transcript of Trump's Believers' Summit speech",
+          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-turning-point-summit-west-palm-beach-florida-july-27-2024/",
+          "publisher": "Roll Call Factba.se",
+          "source_type": "campaign speech transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Baptist-led Christian statement defining and rejecting Christian nationalism",
+          "url": "https://bjconline.org/christians-against-christian-nationalism/statement/",
+          "publisher": "Baptist Joint Committee for Religious Liberty",
+          "source_type": "ecumenical Christian statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["Christian-nationalism", "God-Bless-USA-Bible", "commerce", "Holy-Week", "Turning-Point", "Christian-voters"],
+      "confidence": "high",
+      "editorial_note": "The seller states the product was not part of the campaign and no campaign proceeds were received; include that disclosure. The voting remark is ambiguous enough that the site should play or link the full context rather than claim it alone proves a plan to abolish elections."
+    },
+    {
+      "id": "faith-anti-christian-bias-taskforce-2025",
+      "title": "A federal task force singled out Christianity for government protection",
+      "date_start": "2025-02-06",
+      "date_end": "2025-02-06",
+      "people": ["Donald Trump", "Pam Bondi", "Task Force to Eradicate Anti-Christian Bias"],
+      "category": "christian-nationalism",
+      "status_label": "executive order in force",
+      "summary": "Trump's February 6, 2025 executive order created a cabinet-level Task Force to Eradicate Anti-Christian Bias. It directed agencies to identify and remedy alleged anti-Christian policies from the prior administration and recommend further presidential or legislative action. The order invokes real religious-liberty laws, but it establishes a faith-specific government mechanism rather than an all-faith civil-rights review.",
+      "why_it_matters": "Religious liberty protects Christians and must be enforced. The Christian-nationalist danger lies in treating the dominant faith as specially entitled to the machinery of state protection, allowing a favored political coalition to define which Christianity counts and recasting equal treatment as Christian privilege. Baptist religious-liberty advocates warn that privilege is not freedom.",
+      "christian_teaching": [
+        {
+          "citation": "Christians Against Christian Nationalism statement",
+          "principle": "Christian nationalism demands state privilege for Christianity and implies that good American identity requires Christianity; the signers reject that distortion.",
+          "url": "https://bjconline.org/christians-against-christian-nationalism/statement/"
+        },
+        {
+          "citation": "Baptist World Alliance resolution on religious nationalism, July 11, 2024",
+          "principle": "The global Baptist resolution warns that religious nationalism reduces the Gospel to earthly political power and divides the church.",
+          "url": "https://baptistworld.org/bwa-resolutions/religious-nationalism/"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Executive order creating and empowering the Task Force",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/02/eradicating-anti-christian-bias/",
+          "publisher": "The White House",
+          "source_type": "executive order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Federal Register publication of Executive Order 14202",
+          "url": "https://www.federalregister.gov/documents/full_text/html/2025/02/12/2025-02611.html",
+          "publisher": "Office of the Federal Register",
+          "source_type": "official legal publication",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "BJC analysis of the task force as a religious-privilege concern",
+          "url": "https://bjconline.org/christiannationalism/",
+          "publisher": "Baptist Joint Committee for Religious Liberty",
+          "source_type": "Baptist religious-liberty analysis",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["anti-Christian-bias", "religious-liberty", "Christian-privilege", "Christian-nationalism", "DOJ", "church-state"],
+      "confidence": "high",
+      "editorial_note": "Do not deny that anti-Christian discrimination can occur. Compare the task force's structure and outputs with neutral all-faith enforcement, and add documented cases individually rather than dismissing every complaint wholesale."
+    },
+    {
+      "id": "faith-fuentes-dinner-2022",
+      "title": "Trump gave a white nationalist and Holocaust denier a seat at Mar-a-Lago",
+      "date_start": "2022-11-22",
+      "date_end": "2022-11-29",
+      "people": ["Donald Trump", "Nick Fuentes", "Ye", "Mike Pence"],
+      "category": "white-nationalism",
+      "status_label": "meeting acknowledged; prior knowledge disputed",
+      "summary": "Trump dined at Mar-a-Lago with Ye and Nick Fuentes on November 22, 2022. Fuentes is publicly identified as a white nationalist, antisemite, and Holocaust denier. Trump said Ye unexpectedly brought guests, that he had never met Fuentes and knew nothing about him, and that the dinner was quick and uneventful; prominent Republicans including Mike Pence condemned giving Fuentes access.",
+      "why_it_matters": "Even accepting Trump's account that he did not know Fuentes beforehand, a former president and newly declared candidate bears responsibility for whom he hosts and for his response once extremist identity becomes clear. Christian teaching rejects racial supremacy and antisemitism; minimizing rather than unequivocally repudiating such an encounter weakens the moral boundary around both.",
+      "christian_teaching": [
+        {
+          "citation": "National Association of Evangelicals, For the Health of the Nation",
+          "principle": "The evangelical public-policy guide calls Christians to sustained opposition to racism and racial injustice and to reject white supremacy.",
+          "url": "https://www.nae.org/wp-content/uploads/2018/09/For-the-Health-of-the-Nation_spreads.pdf"
+        },
+        {
+          "citation": "Galatians 3:26-29",
+          "principle": "Christian identity in Christ rejects ethnic hierarchy as a basis of spiritual status.",
+          "url": "https://bible.usccb.org/bible/galatians/3"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Careful fact-check reconstructing Trump's public statements after the dinner",
+          "url": "https://www.factcheck.org/2022/11/mccarthy-mischaracterizes-trumps-response-to-fuentes-meeting/",
+          "publisher": "FactCheck.org",
+          "source_type": "nonpartisan fact-check and primary-statement bridge",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump statement acknowledging the dinner and denying knowledge of Fuentes",
+          "url": "https://www.semafor.com/article/11/25/2022/trump-dined-with-kanye-west-and-nick-fuentes-at-mar-a-lago",
+          "publisher": "Semafor",
+          "source_type": "reputable reporting with direct statement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Report on Republican condemnations and Trump's acknowledgment",
+          "url": "https://www.gpb.org/news/2022/11/29/republican-leaders-denounce-trumps-dinner-white-nationalist-nick-fuentes",
+          "publisher": "Georgia Public Broadcasting / NPR",
+          "source_type": "public-media reporting",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["Nick-Fuentes", "white-nationalism", "antisemitism", "Holocaust-denial", "Mar-a-Lago", "MAGA"],
+      "confidence": "high",
+      "editorial_note": "Do not state that Trump invited Fuentes by name or knew his identity in advance; that is disputed. The documented grievance is access, failed vetting, and the adequacy of Trump's response after the fact."
+    },
+    {
+      "id": "faith-heritage-first-term-2017-2018",
+      "title": "Heritage publicly credited Trump with adopting nearly two-thirds of its first-year agenda",
+      "date_start": "2017-01-20",
+      "date_end": "2018-02-28",
+      "people": ["Donald Trump", "The Heritage Foundation", "Thomas Binion", "Kay Coles James"],
+      "category": "movement-network",
+      "status_label": "documented policy influence claimed by Heritage and celebrated by Trump",
+      "summary": "On January 23, 2018, Heritage reported that the Trump administration had embraced 64 percent of 334 recommendations in its Mandate for Leadership through budgets, regulation, implementation, or active consideration. Heritage said its staff briefed administration officials and advocated the reforms. Trump then publicly celebrated Heritage's 64 percent figure, while Heritage leaders praised the administration's adoption of their agenda.",
+      "why_it_matters": "This is the clearest baseline against which later denials of Heritage influence should be judged. The relationship does not make every Heritage proposal immoral, but it demonstrates a tested pipeline from think-tank blueprint to Trump governance; the site's policy entries should therefore examine Heritage proposals as probable inputs, not remote commentary.",
+      "christian_teaching": [
+        {
+          "citation": "Mark 10:42-45",
+          "principle": "Jesus defines authority as service rather than domination; policy influence should be judged by whom power serves and harms.",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        },
+        {
+          "citation": "Micah 6:8",
+          "principle": "Public action should be tested by justice, mercy, and humility rather than ideological victory alone.",
+          "url": "https://bible.usccb.org/bible/micah/6"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Heritage's one-year accounting of 334 recommendations and 64 percent adoption",
+          "url": "https://www.heritage.org/impact/trump-administration-embraces-heritage-foundation-policy-recommendations",
+          "publisher": "The Heritage Foundation",
+          "source_type": "organization's own impact report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Heritage record of Trump and Heritage leaders celebrating the 64 percent figure",
+          "url": "https://www.heritage.org/impact/heritage-analysis-trump-administrations-first-year-draws-high-profile-attention",
+          "publisher": "The Heritage Foundation",
+          "source_type": "organization's own account and archived statements",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Heritage 2017 annual report repeating its influence claim",
+          "url": "https://www.heritage.org/sites/default/files/2018-05/2017_AnnualReport_WEB.pdf",
+          "publisher": "The Heritage Foundation",
+          "source_type": "organizational annual report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["Heritage-Foundation", "Mandate-for-Leadership", "policy-pipeline", "first-term", "America-First", "MAGA"],
+      "confidence": "high",
+      "editorial_note": "The 64 percent metric is Heritage's own methodology and includes proposals under consideration, not only completed enactments. Present it as Heritage's influence claim, strengthened by Trump's celebration, and audit individual policies separately."
+    },
+    {
+      "id": "faith-project2025-schedule-policy-career-2022-2025",
+      "title": "Project 2025's Trump-era network moved from blueprint to personnel and civil-service restructuring",
+      "date_start": "2022-04-21",
+      "date_end": "2025-02-06",
+      "people": ["Donald Trump", "Russell Vought", "Paul Dans", "Rick Dearborn", "The Heritage Foundation", "Project 2025"],
+      "category": "movement-network-and-power",
+      "status_label": "documented network continuity and policy implementation",
+      "summary": "At Heritage's April 21, 2022 leadership conference, Trump praised the organization for laying groundwork and detailing what the movement would do after receiving a new mandate. Project 2025's Mandate for Leadership was built by a large network that included numerous former Trump officials; Rick Dearborn, a former Trump deputy chief of staff, joined its steering committee, and Russell Vought authored its Executive Office chapter. Trump reinstated his 2020 Schedule F concept as Schedule Policy/Career on January 20, 2025, and Vought was confirmed as OMB director on February 6.",
+      "why_it_matters": "The evidentiary case does not require claiming Trump personally wrote or adopted every Project 2025 page. It shows personnel, ideas, and governing mechanisms traveling through a shared movement network into the second administration. Schedule Policy/Career increases presidential leverage over policy-influencing civil servants, making the Christian test of power urgent: whether authority is accountable service under law or personal loyalty enforced from above.",
+      "christian_teaching": [
+        {
+          "citation": "Mark 10:42-45",
+          "principle": "Jesus explicitly contrasts rulers who lord power over others with leadership expressed through service.",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        },
+        {
+          "citation": "Proverbs 11:14 and 15:22",
+          "principle": "Sound governance depends on distributed counsel rather than concentrated, loyalty-driven decision making.",
+          "url": "https://bible.usccb.org/bible/proverbs/11"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Video record and Heritage framing of Trump's April 2022 keynote",
+          "url": "https://www.heritage.org/press/heritage-foundation-blasts-youtubes-censorship-of-president-trump-speech",
+          "publisher": "The Heritage Foundation",
+          "source_type": "organization statement documenting event",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Transcript of Trump's April 21, 2022 Heritage keynote",
+          "url": "https://webflow.rev.com/transcripts/donald-trump-delivers-keynote-speech-in-florida-4-21-22-transcript",
+          "publisher": "Rev",
+          "source_type": "speech transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Full Project 2025 Mandate listing authors' prior Trump-administration roles",
+          "url": "https://static.heritage.org/project2025/2025_MandateForLeadership_FULL.pdf",
+          "publisher": "The Heritage Foundation / Project 2025",
+          "source_type": "primary policy blueprint",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Heritage announcement placing former Trump deputy chief Rick Dearborn on Project 2025's steering committee",
+          "url": "https://www.heritage.org/press/rick-dearborn-returns-heritage-visiting-fellow-project-2025",
+          "publisher": "The Heritage Foundation",
+          "source_type": "organization appointment announcement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump order reinstating Schedule F as Schedule Policy/Career",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/",
+          "publisher": "The White House",
+          "source_type": "executive order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate roll call confirming Project 2025 author Russell Vought as OMB director",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00037.htm",
+          "publisher": "United States Senate",
+          "source_type": "official confirmation vote",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["Project-2025", "Heritage-Foundation", "Russell-Vought", "Schedule-F", "civil-service", "executive-power", "personnel-pipeline"],
+      "confidence": "high",
+      "editorial_note": "Separate overlap from total adoption. Trump distanced himself from Project 2025 during the 2024 campaign; include that in any expanded article. The reliable claim is a dense personnel-and-policy bridge plus specific implemented overlaps, not that every proposal was his secret platform."
+    }
+  ]
+}

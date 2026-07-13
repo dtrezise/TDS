@@ -1,0 +1,749 @@
+{
+  "generated": "2026-07-13",
+  "scope_note": "A legal-records and misuse-of-power research set covering selected high-salience matters from Trump's business career through his second administration. Entries distinguish adjudicated findings from allegations, investigative conclusions, impeachment judgments, dismissed charges, lawful but controversial exercises of power, and pending appeals. Summaries use primary legal and government records wherever practicable and do not treat an indictment, congressional referral, pardon, or investigative report as a criminal conviction.",
+  "items": [
+    {
+      "id": "trump-university-settlement",
+      "title": "Trump University fraud litigation ended in a $25 million settlement without an admission of wrongdoing",
+      "date_start": "2016-12-19",
+      "date_end": "2018-02-06",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "business-practices",
+      "status_label": "Settlement affirmed; no admission of wrongdoing",
+      "summary": "After years of consumer-fraud litigation over Trump University, the parties reached a $25 million settlement: $21 million for the federal class actions and $4 million for the New York attorney general's case. The Ninth Circuit affirmed final approval in 2018. The agreement expressly did not require Trump or the other defendants to admit wrongdoing.",
+      "why_it_matters": "The settlement returned an estimated 80 to 90 percent of eligible students' payments and resolved a major case alleging that Trump's branded educational venture used deceptive sales practices. It is strong evidence of the scale and cost of the dispute, but not an adjudication that Trump personally committed fraud.",
+      "evidence": [
+        {
+          "label": "Simpson v. Trump, Ninth Circuit opinion affirming settlement approval",
+          "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2018/02/06/17-55635.pdf",
+          "publisher": "U.S. Court of Appeals for the Ninth Circuit",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "Trump University",
+        "consumer fraud",
+        "settlement",
+        "business conduct"
+      ],
+      "confidence": "high",
+      "editorial_note": "Describe the underlying claims as allegations resolved by settlement. Do not say this settlement was a fraud verdict or an admission by Trump."
+    },
+    {
+      "id": "trump-foundation-fiduciary-breach",
+      "title": "A New York court found that Trump breached fiduciary duties in his charitable foundation",
+      "date_start": "2018-12-19",
+      "date_end": "2019-11-07",
+      "people": [
+        "Donald Trump",
+        "Donald Trump Jr.",
+        "Ivanka Trump",
+        "Eric Trump"
+      ],
+      "category": "business-practices",
+      "status_label": "Adjudicated civil fiduciary breach; foundation dissolved",
+      "summary": "The Donald J. Trump Foundation dissolved under court supervision in December 2018. In November 2019, a New York judge found that Donald Trump had breached fiduciary duties and ordered him to pay $2 million in damages, directing that the money go to charities. The foundation's remaining assets had already been distributed to approved charities.",
+      "why_it_matters": "This is an adjudicated example of Trump using a charitable entity without the basic separation and governance required of a fiduciary. The court record is more probative than generalized criticism because it identifies a legal duty, a breach, and a monetary remedy.",
+      "evidence": [
+        {
+          "label": "Matter of People v. Trump, decision and order",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2019/2019_29336.htm",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Attorney General summary of court order, dissolution, and governance remedies",
+          "url": "https://ag.ny.gov/press-release/2019/ag-james-secures-court-order-against-donald-j-trump-trump-children-and-trump",
+          "publisher": "Office of the New York Attorney General",
+          "source_type": "government-release",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "Trump Foundation",
+        "charity",
+        "fiduciary duty",
+        "self-dealing"
+      ],
+      "confidence": "high",
+      "editorial_note": "The $2 million was court-ordered damages, not a criminal fine. Keep the finding focused on Donald Trump's fiduciary breach; describe remedies involving his children only as the record supports."
+    },
+    {
+      "id": "carroll-sexual-abuse-defamation-judgments",
+      "title": "Civil judgments hold Trump liable for sexually abusing and repeatedly defaming E. Jean Carroll",
+      "date_start": "2023-05-09",
+      "date_end": null,
+      "people": [
+        "Donald Trump",
+        "E. Jean Carroll"
+      ],
+      "category": "civil-liability",
+      "status_label": "$5 million judgment affirmed, with certiorari denied and a rehearing petition pending; $83.3 million judgment affirmed with Supreme Court review not exhausted as of access",
+      "summary": "A federal jury found Trump civilly liable for sexually abusing E. Jean Carroll and defaming her, awarding $5 million. The Second Circuit affirmed. The Supreme Court denied certiorari on June 29, 2026, and Trump filed a petition for rehearing on July 8 that remained pending as of July 13. A second jury awarded $83.3 million for separate defamatory statements; the Second Circuit affirmed that judgment in September 2025 and denied rehearing in April 2026. As of July 13, 2026, Trump had announced but had not yet exhausted Supreme Court review of the second judgment.",
+      "why_it_matters": "The judgments provide adjudicated civil findings concerning sexual misconduct and a sustained campaign of public defamation. They directly test attempts to dismiss the conduct as merely offensive rhetoric: juries found legally compensable injury, and appellate courts upheld the verdicts reviewed so far.",
+      "evidence": [
+        {
+          "label": "Second Circuit opinion affirming the $5 million verdict",
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca2-23-00793/pdf/USCOURTS-ca2-23-00793-0.pdf",
+          "publisher": "U.S. Court of Appeals for the Second Circuit via GovInfo",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Supreme Court docket, Trump v. Carroll, No. 25-573",
+          "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-573.html",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-docket",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Second Circuit opinion affirming the $83.3 million defamation judgment",
+          "url": "https://cases.justia.com/federal/appellate-courts/ca2/24-644/24-644-2025-09-08.pdf?ts=1757341810",
+          "publisher": "U.S. Court of Appeals for the Second Circuit via Justia",
+          "source_type": "court-opinion-mirror",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "E. Jean Carroll",
+        "sexual abuse",
+        "defamation",
+        "civil jury"
+      ],
+      "confidence": "high",
+      "editorial_note": "This was civil, not criminal, liability. The first jury found sexual abuse but did not find rape under the specific New York statutory definition presented on the verdict form. Preserve that distinction even when describing the court's later explanation of the term in ordinary usage."
+    },
+    {
+      "id": "new-york-civil-business-fraud",
+      "title": "New York appellate judges left Trump's civil-fraud liability intact but vacated the massive disgorgement award",
+      "date_start": "2023-09-26",
+      "date_end": null,
+      "people": [
+        "Donald Trump",
+        "Donald Trump Jr.",
+        "Eric Trump"
+      ],
+      "category": "business-practices",
+      "status_label": "Liability and nonmonetary relief affirmed; disgorgement vacated; further review unresolved in sources reviewed",
+      "summary": "A New York trial court found persistent fraud in financial statements used in business transactions and entered broad relief, including hundreds of millions of dollars in disgorgement. On August 21, 2025, the Appellate Division affirmed the liability findings and nonmonetary relief but unanimously vacated the disgorgement awards as excessive under the Eighth Amendment. The sources reviewed do not establish a final resolution of further appellate proceedings.",
+      "why_it_matters": "The surviving liability findings document a repeated pattern of materially false asset valuations rather than a single verbal exaggeration. At the same time, the appellate reversal of the monetary award is essential context and prevents the site from presenting the original dollar judgment as still operative.",
+      "evidence": [
+        {
+          "label": "Trial court decision and judgment in People v. Trump",
+          "url": "https://www.nycourts.gov/reporter/pdfs/2024/2024_30493.pdf",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Appellate Division decision modifying the judgment",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2025/2025_04756.htm",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "financial statements",
+        "asset valuation",
+        "civil fraud",
+        "appellate reversal"
+      ],
+      "confidence": "high",
+      "editorial_note": "Never quote the vacated disgorgement award as money Trump currently owes. The accurate present formulation is that liability survived while the monetary disgorgement remedy did not."
+    },
+    {
+      "id": "new-york-falsifying-business-records-conviction",
+      "title": "A New York jury convicted Trump on 34 felony counts of falsifying business records",
+      "date_start": "2024-05-30",
+      "date_end": null,
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "criminal-case",
+      "status_label": "Convicted and sentenced to unconditional discharge; direct appeal perfected and pending",
+      "summary": "On May 30, 2024, a Manhattan jury found Trump guilty on 34 counts of falsifying business records in the first degree. The court entered judgment and imposed an unconditional discharge on January 10, 2025, meaning no incarceration, fine, or probation. Court records show that Trump perfected his direct appeal in 2026; the conviction therefore remains under appellate review.",
+      "why_it_matters": "This is the only entry in this set based on a criminal jury conviction of Trump himself. The unusual sentence did not erase the guilty verdict, but the pending appeal means the site should not call the conviction final and unreviewable.",
+      "evidence": [
+        {
+          "label": "New York courts public case page for People v. Donald J. Trump",
+          "url": "https://www.nycourts.gov/public-information/people-v-donald-j-trump-criminal",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court-docket",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "January 3, 2025 sentencing decision describing the 34-count verdict",
+          "url": "https://www.nycourts.gov/reporter/pdfs/2025/2025_30014.pdf",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Appellate Division order identifying the perfected appeal",
+          "url": "https://www.nycourts.gov/reporter/current/motions/2026/2026_68421.pdf",
+          "publisher": "New York State Unified Court System",
+          "source_type": "court-order",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "criminal conviction",
+        "business records",
+        "New York",
+        "pending appeal"
+      ],
+      "confidence": "high",
+      "editorial_note": "State plainly that the appeal is pending. An unconditional discharge is a sentence without custody, fine, or supervision; it is not an acquittal or dismissal."
+    },
+    {
+      "id": "mueller-obstruction-evidence",
+      "title": "The Mueller report documented obstruction evidence but made no prosecutorial judgment against a sitting president",
+      "date_start": "2017-05-17",
+      "date_end": "2019-05-29",
+      "people": [
+        "Donald Trump",
+        "Robert Mueller"
+      ],
+      "category": "investigative-finding",
+      "status_label": "Investigative report; no obstruction charge and no adjudication",
+      "summary": "Special Counsel Robert Mueller's second report volume analyzed multiple episodes in which Trump sought to influence or constrain the Russia investigation. Mueller explained that the Justice Department's policy against indicting a sitting president shaped the office's approach: it did not make a traditional charging decision. Mueller also said that if investigators had confidence Trump clearly did not commit a crime, the report would have said so, and emphasized that the report did not exonerate him.",
+      "why_it_matters": "The record supplies detailed, evidence-based examples of presidential pressure on investigators and witnesses. Its force comes from the documented conduct, not from pretending Mueller issued a criminal verdict that he explicitly declined to make.",
+      "evidence": [
+        {
+          "label": "Report on the Investigation into Russian Interference, Volume II",
+          "url": "https://www.justice.gov/storage/report_volume2.pdf",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "special-counsel-report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Special Counsel Mueller's May 29, 2019 statement",
+          "url": "https://www.justice.gov/archives/opa/speech/special-counsel-robert-s-mueller-iii-makes-statement-investigation-russian-interference",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "official-statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "Mueller report",
+        "obstruction",
+        "Russia investigation",
+        "presidential accountability"
+      ],
+      "confidence": "high",
+      "editorial_note": "Do not write that Mueller found Trump guilty of obstruction. The defensible claim is that the report documented substantial evidence, declined a traditional charging judgment under sitting-president policy, and explicitly did not exonerate him."
+    },
+    {
+      "id": "ukraine-aid-impoundment-violation",
+      "title": "The Government Accountability Office found that the Trump administration illegally withheld Ukraine security assistance",
+      "date_start": "2019-07-25",
+      "date_end": "2020-01-16",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "misuse-of-office",
+      "status_label": "Official GAO finding of an Impoundment Control Act violation",
+      "summary": "The Office of Management and Budget withheld approximately $214 million in congressionally appropriated Defense Department security assistance for Ukraine while the administration pursued a policy objective. On January 16, 2020, the nonpartisan Government Accountability Office concluded that OMB had violated the Impoundment Control Act because the executive branch cannot substitute its policy priorities for Congress's enacted funding decisions.",
+      "why_it_matters": "The finding provides a narrow, formal legal judgment about executive misuse of spending authority at the center of the Ukraine pressure campaign. It is independent of the political judgments reached in impeachment proceedings.",
+      "evidence": [
+        {
+          "label": "GAO Decision B-331564, Office of Management and Budget—Withholding of Ukraine Security Assistance",
+          "url": "https://www.gao.gov/products/b-331564",
+          "publisher": "U.S. Government Accountability Office",
+          "source_type": "government-legal-decision",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "Ukraine",
+        "Impoundment Control Act",
+        "OMB",
+        "congressional power of the purse"
+      ],
+      "confidence": "high",
+      "editorial_note": "Attribute the legal violation to OMB/the administration as GAO did. The GAO decision was not a criminal conviction of Trump."
+    },
+    {
+      "id": "first-impeachment-ukraine",
+      "title": "The House impeached Trump for abuse of power and obstruction of Congress; the Senate acquitted him",
+      "date_start": "2019-12-18",
+      "date_end": "2020-02-05",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "impeachment",
+      "status_label": "Impeached on two articles; acquitted by the Senate on both",
+      "summary": "The House of Representatives impeached Trump for abuse of power and obstruction of Congress after finding that he used presidential authority to pressure Ukraine for investigations that would benefit him politically and then directed defiance of the House inquiry. On February 5, 2020, the Senate voted 48 guilty to 52 not guilty on abuse of power and 47 guilty to 53 not guilty on obstruction, resulting in acquittal on both articles.",
+      "why_it_matters": "The episode joins the Ukraine pressure campaign to a constitutional accountability process. The House judgment was grave and specific, but a complete account must include that the Senate did not reach the two-thirds threshold needed to convict and remove.",
+      "evidence": [
+        {
+          "label": "H. Res. 755, Articles of Impeachment Against President Donald J. Trump",
+          "url": "https://www.congress.gov/bill/116th-congress/house-resolution/755",
+          "publisher": "Congress.gov",
+          "source_type": "congressional-record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate roll call on Article I, abuse of power",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00033.htm",
+          "publisher": "U.S. Senate",
+          "source_type": "congressional-vote",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate roll call on Article II, obstruction of Congress",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00034.htm",
+          "publisher": "U.S. Senate",
+          "source_type": "congressional-vote",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "first impeachment",
+        "Ukraine pressure",
+        "abuse of power",
+        "obstruction of Congress"
+      ],
+      "confidence": "high",
+      "editorial_note": "Impeachment is a constitutional accusation by the House, not a criminal conviction. Always pair it with the Senate acquittal and exact vote totals."
+    },
+    {
+      "id": "election-subversion-january-6-report",
+      "title": "The January 6 committee documented a multi-part effort to overturn the 2020 election",
+      "date_start": "2020-11-03",
+      "date_end": "2022-12-22",
+      "people": [
+        "Donald Trump",
+        "John Eastman",
+        "Jeffrey Clark",
+        "Rudolph Giuliani"
+      ],
+      "category": "election-subversion",
+      "status_label": "Congressional factual findings and criminal referrals; not a court judgment",
+      "summary": "The House Select Committee's final report assembled testimony, documents, and public evidence describing a sustained effort led by Trump to reverse his election defeat. The report covered false fraud claims, pressure on state officials, a false-elector plan, efforts to enlist the Justice Department, pressure on Vice President Pence, the Ellipse speech, and Trump's failure for hours to stop the Capitol attack. The committee also issued nonbinding criminal referrals.",
+      "why_it_matters": "The report connects episodes that can look isolated into a coherent attempt to remain in power despite the certified result. It is a congressional investigation, however, and its referrals were not convictions or binding prosecutorial findings.",
+      "evidence": [
+        {
+          "label": "Final Report of the Select Committee to Investigate the January 6th Attack",
+          "url": "https://www.govinfo.gov/app/details/GPO-J6-REPORT/context",
+          "publisher": "U.S. Government Publishing Office",
+          "source_type": "congressional-report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Select Committee criminal referrals and supporting material",
+          "url": "https://www.congress.gov/committee-print/117th-congress/house-committee-print/50119",
+          "publisher": "Congress.gov",
+          "source_type": "congressional-record",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "2020 election",
+        "January 6",
+        "false electors",
+        "peaceful transfer of power"
+      ],
+      "confidence": "high",
+      "editorial_note": "Use the committee's findings as attributed findings. Do not convert a congressional referral into a conviction or imply that every named participant was adjudicated as part of one conspiracy."
+    },
+    {
+      "id": "federal-election-case-dismissed",
+      "title": "The federal election-subversion prosecution ended without trial after Trump's reelection",
+      "date_start": "2023-08-01",
+      "date_end": "2024-11-25",
+      "people": [
+        "Donald Trump",
+        "Jack Smith"
+      ],
+      "category": "criminal-case",
+      "status_label": "Charges dismissed without prejudice; no trial or merits verdict",
+      "summary": "A federal grand jury indicted Trump over alleged conspiracies and obstruction aimed at overturning the 2020 election. After Trump won the 2024 election, Special Counsel Jack Smith moved to dismiss the case under the Justice Department's longstanding position that a sitting president cannot be federally prosecuted. The court dismissed without prejudice on November 25, 2024. Smith's later report said his office believed the admissible evidence would have been sufficient to convict, but that prosecutorial assessment was never tested at trial.",
+      "why_it_matters": "The case placed detailed election-subversion allegations in a criminal pleading, but reelection—not a jury verdict—terminated the prosecution. Its procedural ending is central to the accountability story and must not be misdescribed as either exoneration or conviction.",
+      "evidence": [
+        {
+          "label": "Federal court record for United States v. Trump, No. 1:23-cr-257",
+          "url": "https://www.govinfo.gov/app/details/USCOURTS-dcd-1_23-cr-00257/context",
+          "publisher": "U.S. Government Publishing Office",
+          "source_type": "court-record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Special Counsel Smith report, Volume One",
+          "url": "https://www.justice.gov/storage/Report-of-Special-Counsel-Smith-Volume-1-January-2025.pdf",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "special-counsel-report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "federal indictment",
+        "2020 election",
+        "dismissal",
+        "sitting-president policy"
+      ],
+      "confidence": "high",
+      "editorial_note": "An indictment alleges; it does not prove. Smith's sufficiency assessment is a prosecutor's conclusion, not a verdict. A dismissal without prejudice is not an acquittal, but no current criminal liability was adjudicated in this case."
+    },
+    {
+      "id": "georgia-election-case-dismissed",
+      "title": "Georgia's election-interference prosecution was dismissed in full without a trial",
+      "date_start": "2023-08-14",
+      "date_end": "2025-11-26",
+      "people": [
+        "Donald Trump",
+        "Rudolph Giuliani",
+        "Mark Meadows",
+        "Fani Willis"
+      ],
+      "category": "criminal-case",
+      "status_label": "All remaining charges dismissed on the prosecutor's motion; no merits verdict",
+      "summary": "A Fulton County grand jury indicted Trump and 18 co-defendants in August 2023 on racketeering and related charges arising from efforts to change Georgia's 2020 election result. After District Attorney Fani Willis was disqualified and a replacement prosecutor reviewed the case, the state filed a nolle prosequi. On November 26, 2025, Judge Scott McAfee granted the motion and dismissed the case in its entirety. Trump was never tried on the allegations.",
+      "why_it_matters": "The indictment captured conduct including the call asking Georgia's secretary of state to find 11,780 votes, but institutional and procedural breakdowns prevented a merits trial. The dismissal is a major accountability failure or safeguard depending on perspective; either way, it cannot be presented as proof of guilt.",
+      "evidence": [
+        {
+          "label": "State's motion to enter nolle prosequi and prosecutorial review",
+          "url": "https://pacga.org/wp-content/uploads/2025/11/State-v.-Trump-et-al.-Nolle-Pros-and-Exhibit-A_filed.pdf",
+          "publisher": "Prosecuting Attorneys' Council of Georgia",
+          "source_type": "court-filing",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Order granting dismissal of the Georgia election case",
+          "url": "https://www.democracydocket.com/wp-content/uploads/2023/08/2025-11-26-Order-granting-states-motion-for-dismissal.pdf",
+          "publisher": "Fulton County Superior Court via Democracy Docket",
+          "source_type": "court-order-mirror",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "Georgia",
+        "RICO",
+        "2020 election",
+        "dismissal"
+      ],
+      "confidence": "high",
+      "editorial_note": "Say the charges were dismissed, not that Trump was acquitted. Guilty pleas by several former co-defendants do not establish Trump's guilt and should not be transferred to him."
+    },
+    {
+      "id": "second-impeachment-january-6",
+      "title": "The House impeached Trump for incitement of insurrection; the Senate acquitted him despite a 57-vote guilty majority",
+      "date_start": "2021-01-13",
+      "date_end": "2021-02-13",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "impeachment",
+      "status_label": "Impeached; acquitted because the Senate fell short of a two-thirds vote",
+      "summary": "One week after the Capitol attack, the House impeached Trump for incitement of insurrection, citing his months of false election claims, pressure on Georgia officials, and January 6 speech. On February 13, 2021, 57 senators voted guilty and 43 voted not guilty. That bipartisan majority fell short of the Constitution's two-thirds threshold, so the Senate acquitted him.",
+      "why_it_matters": "The second impeachment was the constitutional branch's most direct response to Trump's role in the attack on the transfer of power. Both facts matter: a majority of senators voted to convict, and the constitutionally required supermajority did not.",
+      "evidence": [
+        {
+          "label": "H. Res. 24, article of impeachment for incitement of insurrection",
+          "url": "https://www.congress.gov/bill/117th-congress/house-resolution/24",
+          "publisher": "Congress.gov",
+          "source_type": "congressional-record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate roll call on the second impeachment article",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00059.htm?congress=117&vote=00059",
+          "publisher": "U.S. Senate",
+          "source_type": "congressional-vote",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "second impeachment",
+        "January 6",
+        "incitement of insurrection",
+        "Senate acquittal"
+      ],
+      "confidence": "high",
+      "editorial_note": "Impeachment is not a criminal prosecution. State both the 57-43 vote and the failure to reach the required two-thirds threshold."
+    },
+    {
+      "id": "january-6-blanket-clemency",
+      "title": "Trump granted sweeping clemency to January 6 defendants on returning to office",
+      "date_start": "2025-01-20",
+      "date_end": "2025-01-20",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "clemency",
+      "status_label": "Completed lawful exercise of presidential clemency",
+      "summary": "On his first day back in office, Trump commuted the sentences of 14 named January 6 defendants to time served, granted full and unconditional pardons to all other people convicted of January 6-related offenses, and directed the Justice Department to seek dismissal with prejudice of pending indictments. The proclamation was categorical rather than individualized by offense or conduct.",
+      "why_it_matters": "The proclamation used a broad constitutional power to erase or halt federal consequences for the attack that disrupted certification of Trump's election defeat. It sharply reversed the Justice Department's years-long accountability effort and included people convicted of serious violence as well as lower-level offenses.",
+      "evidence": [
+        {
+          "label": "Presidential proclamation granting January 6 pardons and commutations",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
+          "publisher": "The White House",
+          "source_type": "presidential-proclamation",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Justice Department record of the proclamation",
+          "url": "https://www.justice.gov/pardon/president-trumps-proclamation-granting-pardons-and-commutations-sentences-certain-offenses",
+          "publisher": "U.S. Department of Justice, Office of the Pardon Attorney",
+          "source_type": "government-record",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "January 6",
+        "pardons",
+        "commutations",
+        "clemency power"
+      ],
+      "confidence": "high",
+      "editorial_note": "The clemency was lawful under the President's constitutional pardon power. Criticism should focus on its breadth, beneficiaries, and accountability consequences, not claim the pardons were themselves criminal."
+    },
+    {
+      "id": "classified-documents-case-dismissed",
+      "title": "The classified-documents indictment was dismissed on appointment grounds and never reached trial",
+      "date_start": "2023-06-08",
+      "date_end": "2024-11-26",
+      "people": [
+        "Donald Trump",
+        "Walt Nauta",
+        "Carlos De Oliveira",
+        "Jack Smith"
+      ],
+      "category": "criminal-case",
+      "status_label": "Indictment dismissed; appeal ended as to Trump after reelection; no merits verdict",
+      "summary": "Federal prosecutors charged Trump with willful retention of national-defense information, obstruction, concealment, and false-statement offenses related to documents kept after his presidency. On July 15, 2024, Judge Aileen Cannon dismissed the indictment after concluding that Special Counsel Jack Smith had been appointed in violation of the Appointments Clause. Following Trump's reelection, the Justice Department ended its appeal as to him under sitting-president policy. No jury decided the factual allegations.",
+      "why_it_matters": "The indictment described unusually sensitive records and alleged attempts to obstruct their recovery, but the prosecution failed on a threshold structural issue before trial. The distinction between disturbing allegations and an unadjudicated, dismissed case is indispensable to a credible evidence site.",
+      "evidence": [
+        {
+          "label": "Superseding indictment in United States v. Trump, Nauta, and De Oliveira",
+          "url": "https://www.justice.gov/storage/US-v-Trump-Nauta-De-Oliveira-23-80101.pdf",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "indictment",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Justice Department summary of dismissal and subsequent termination of federal charges",
+          "url": "https://www.justice.gov/oip/leopold-v-fbi-no-22-1921-2025-wl-445183-ddc-feb-10-2025-howell-j",
+          "publisher": "U.S. Department of Justice, Office of Information Policy",
+          "source_type": "government-case-summary",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "classified documents",
+        "Espionage Act",
+        "obstruction",
+        "Appointments Clause",
+        "dismissal"
+      ],
+      "confidence": "high",
+      "editorial_note": "An indictment is not evidence of guilt by itself. Make clear that the court dismissed on the special counsel's appointment, not after a factual acquittal, and that Trump never faced a merits trial."
+    },
+    {
+      "id": "foreign-government-payments-emoluments",
+      "title": "Congressional investigators documented millions in foreign-government payments to Trump businesses while he was president",
+      "date_start": "2017-01-20",
+      "date_end": "2024-01-04",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "conflicts-of-interest",
+      "status_label": "Payments documented; Emoluments Clause claims not finally adjudicated on the merits",
+      "summary": "A 2024 report from Democratic staff of the House Oversight Committee, based on accounting records produced by Trump's former firm Mazars, identified at least $7.8 million paid by at least 20 foreign governments or state-controlled entities to four Trump businesses during two years of his first term. Earlier constitutional lawsuits over alleged emoluments ended as moot after he left office, with judgments vacated rather than a final Supreme Court merits ruling.",
+      "why_it_matters": "Trump retained ownership of a global business while exercising presidential power, creating recurring channels through which foreign states could spend money at properties benefiting him. The documented receipts establish the conflict mechanism even though courts did not finally decide whether particular transactions violated the Constitution.",
+      "evidence": [
+        {
+          "label": "House Oversight Democratic staff report, White House for Sale",
+          "url": "https://oversightdemocrats.house.gov/imo/media/doc/2024-01-04.COA%20DEMS%20-%20Mazars%20Report.pdf",
+          "publisher": "U.S. House Committee on Oversight and Accountability, Democratic staff",
+          "source_type": "congressional-staff-report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Supreme Court docket showing vacatur and mootness disposition in Trump v. District of Columbia",
+          "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/20-331.html",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-docket",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "GSA Inspector General evaluation of the Old Post Office lease",
+          "url": "https://www.gsaig.gov/content/evaluation-gsas-management-and-administration-old-post-office-building-lease",
+          "publisher": "General Services Administration Office of Inspector General",
+          "source_type": "inspector-general-report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "emoluments",
+        "foreign governments",
+        "Trump Organization",
+        "conflicts of interest"
+      ],
+      "confidence": "medium-high",
+      "editorial_note": "Attribute the $7.8 million figure to the committee's Democratic staff and note that it covered only records obtained from a small portion of Trump's businesses. Do not state that the Supreme Court found an Emoluments Clause violation; it did not reach the merits."
+    },
+    {
+      "id": "family-separation-zero-tolerance",
+      "title": "The administration implemented family separation without adequate planning for children or reunification",
+      "date_start": "2018-04-06",
+      "date_end": "2023-12-11",
+      "people": [
+        "Donald Trump",
+        "Jeff Sessions"
+      ],
+      "category": "immigration-policy",
+      "status_label": "Inspector General failures documented; class-action settlement approved",
+      "summary": "The Trump administration's zero-tolerance prosecution policy led to the separation of more than 3,000 children from parents at the southwest border. A Justice Department Inspector General review found that senior leaders understood prosecutions would cause separations but failed to prepare for the consequences, coordinate with partner agencies, or plan reunification. The government later settled the Ms. L. class action, providing reunification and support measures and limiting future separations; the settlement did not award damages.",
+      "why_it_matters": "The record shows that harm to children was a foreseeable consequence of a deterrence-focused policy, not an unforeseeable administrative accident. The failures were documented by the administration's own watchdog and produced continuing court-supervised remedies.",
+      "evidence": [
+        {
+          "label": "DOJ Inspector General report on planning and implementation of zero tolerance",
+          "url": "https://oig.justice.gov/news/doj-oig-releases-report-department-justices-planning-and-implementation-its-zero-tolerance",
+          "publisher": "U.S. Department of Justice Office of the Inspector General",
+          "source_type": "inspector-general-report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Justice Department announcement of the Ms. L. family-separation settlement",
+          "url": "https://www.justice.gov/archives/opa/pr/us-government-reaches-settlement-class-action-family-separation-case-seeking-injunctive",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "government-release",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Ms. L. settlement agreement",
+          "url": "https://www.justice.gov/archives/opa/file/1319516/dl?inline=",
+          "publisher": "U.S. Department of Justice",
+          "source_type": "settlement-agreement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "family separation",
+        "zero tolerance",
+        "immigration",
+        "children",
+        "reunification"
+      ],
+      "confidence": "high",
+      "editorial_note": "The Inspector General criticized the Justice Department's planning and implementation; it did not enter a criminal judgment. The settlement supplied injunctive relief and services, not class-wide damages."
+    },
+    {
+      "id": "mass-inspector-general-firings-2025",
+      "title": "A federal judge found Trump's mass inspector-general removals violated statutory notice requirements",
+      "date_start": "2025-01-24",
+      "date_end": null,
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "retaliation-and-oversight",
+      "status_label": "Statutory violation found; reinstatement denied and case stayed pending higher-court guidance",
+      "summary": "On January 24, 2025, Trump removed more than a dozen inspectors general without giving Congress the advance notice and substantive, case-specific reasons required by the Inspector General Act. In September 2025, a federal district judge concluded that the removals violated the statute. The court nevertheless denied reinstatement and other permanent injunctive relief and stayed proceedings while related Supreme Court separation-of-powers litigation remained pending.",
+      "why_it_matters": "Inspectors general are an internal check on waste, fraud, abuse, and political retaliation across the executive branch. Removing a large group without legally required notice weakened that check and tested whether statutory accountability safeguards can produce an effective remedy.",
+      "evidence": [
+        {
+          "label": "District court memorandum opinion in Storch v. Trump",
+          "url": "https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1%3A2025cv00415/277385/54/0.pdf",
+          "publisher": "U.S. District Court for the District of Columbia via Justia",
+          "source_type": "court-opinion-mirror",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Congressional Research Service overview of inspector general removal requirements and recent removals",
+          "url": "https://www.congress.gov/crs-product/IF11546",
+          "publisher": "Congressional Research Service via Congress.gov",
+          "source_type": "government-research-report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "inspectors general",
+        "oversight",
+        "removals",
+        "Inspector General Act"
+      ],
+      "confidence": "high",
+      "editorial_note": "The court found a notice violation but did not reinstate the officials. Track later appellate or Supreme Court developments before describing the case as finally resolved."
+    },
+    {
+      "id": "birthright-citizenship-order-unconstitutional",
+      "title": "The Supreme Court held Trump's birthright-citizenship order unconstitutional",
+      "date_start": "2025-01-20",
+      "date_end": "2026-06-30",
+      "people": [
+        "Donald Trump"
+      ],
+      "category": "constitutional-rights",
+      "status_label": "Final Supreme Court merits decision affirming that the executive order is unconstitutional",
+      "summary": "Executive Order 14160 directed federal agencies to deny recognition of citizenship to certain children born in the United States based on their parents' immigration status. On June 30, 2026, the Supreme Court held that children born in the United States to parents who are unlawfully present or temporarily present are citizens at birth under the Fourteenth Amendment and federal law, and affirmed judgment against the order.",
+      "why_it_matters": "The order attempted by unilateral executive action to narrow a constitutional citizenship guarantee affecting children born on U.S. soil. The Supreme Court's merits ruling supplies a definitive example of presidential action exceeding constitutional limits.",
+      "evidence": [
+        {
+          "label": "Executive Order 14160, Protecting the Meaning and Value of American Citizenship",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-meaning-and-value-of-american-citizenship/",
+          "publisher": "The White House",
+          "source_type": "executive-order",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump v. Barbara, Supreme Court opinion",
+          "url": "https://www.supremecourt.gov/opinions/25pdf/25-365_4hdj.pdf",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "birthright citizenship",
+        "Fourteenth Amendment",
+        "executive order",
+        "Supreme Court"
+      ],
+      "confidence": "high",
+      "editorial_note": "This entry reflects a June 30, 2026 merits ruling and should not be confused with the Court's earlier procedural ruling about nationwide injunctions."
+    },
+    {
+      "id": "pardons-investigation-allies-2020",
+      "title": "Trump pardoned political allies and associates convicted in cases connected to investigations of his circle",
+      "date_start": "2020-11-25",
+      "date_end": "2020-12-23",
+      "people": [
+        "Donald Trump",
+        "Michael Flynn",
+        "Roger Stone",
+        "Paul Manafort",
+        "Charles Kushner"
+      ],
+      "category": "clemency",
+      "status_label": "Completed lawful exercise of presidential clemency",
+      "summary": "In the closing weeks of his first term, Trump pardoned former national security adviser Michael Flynn, longtime adviser Roger Stone, former campaign chairman Paul Manafort, and Charles Kushner, the father of Trump's son-in-law. The recipients' cases included false statements, obstruction, witness tampering, tax and bank fraud, conspiracy, and campaign-connected conduct. The pardons were constitutionally valid and ended or relieved federal punishment.",
+      "why_it_matters": "The pattern raises a conflict-of-interest question: a president used personal clemency power to benefit allies, a campaign chairman, an adviser who resisted an investigation, and a close relative of his family. That is a legitimate abuse-of-power critique even without claiming the pardons were illegal.",
+      "evidence": [
+        {
+          "label": "Pardons granted by President Donald J. Trump, 2017-2021",
+          "url": "https://www.justice.gov/pardon/pardons-granted-president-donald-j-trump-2017-2021?os=w",
+          "publisher": "U.S. Department of Justice, Office of the Pardon Attorney",
+          "source_type": "government-clemency-record",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": [
+        "pardons",
+        "Michael Flynn",
+        "Roger Stone",
+        "Paul Manafort",
+        "Charles Kushner",
+        "conflicts of interest"
+      ],
+      "confidence": "high",
+      "editorial_note": "A pardon is lawful and does not by itself prove a corrupt bargain. Ground criticism in the recipients' relationships to Trump, their adjudicated offenses, and the accountability consequences."
+    }
+  ]
+}

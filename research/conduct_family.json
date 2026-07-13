@@ -1,0 +1,697 @@
+{
+  "generated": "2026-07-13T00:00:00-04:00",
+  "scope_note": "A source-led research set covering Donald Trump's documented falsehoods and public conduct, Trump-family and Trump-business abuses or conflicts, and consequential Republican enabling from the 1970s through July 13, 2026. Court rulings, settlements, congressional findings, official votes, documented statements, and unresolved ethics allegations are deliberately labeled as different evidentiary tiers. Inclusion is not a claim that every item is criminal, and allegations are not presented as adjudicated facts.",
+  "items": [
+    {
+      "id": "trump-housing-discrimination-case",
+      "title": "The federal government accused Trump Management of systemic housing discrimination",
+      "date_start": "1973-10-15",
+      "date_end": "1975-06-10",
+      "people": ["Donald Trump", "Fred Trump", "Trump Management"],
+      "category": "racial discrimination",
+      "status_label": "Consent decree; no admission of liability",
+      "summary": "The Justice Department sued Trump Management, Donald Trump, and Fred Trump under the Fair Housing Act, alleging that Black applicants were denied apartments or steered away while white applicants received offers. The case ended in a consent decree requiring nondiscrimination measures, fair-housing advertising, vacancy reporting, and other compliance steps. The decree expressly said it was not an admission by the defendants.",
+      "why_it_matters": "This early federal case is a documented starting point for evaluating the Trump business record on race. Its force comes from the filed allegations and binding remedial decree, while its no-admission clause must remain visible.",
+      "evidence": [
+        {
+          "label": "United States v. Fred C. Trump, Donald Trump, and Trump Management complaint",
+          "url": "https://www.pbs.org/wgbh/frontline/interactive/clinton-trump-keys-to-their-characters/pdf/trump-fha-complaint.pdf",
+          "publisher": "U.S. Department of Justice complaint, hosted by PBS Frontline",
+          "source_type": "court_filing",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Case record and consent-decree summary",
+          "url": "https://clearinghouse.net/case/15342/",
+          "publisher": "Civil Rights Litigation Clearinghouse, University of Michigan",
+          "source_type": "legal_archive",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump Management Company FBI files",
+          "url": "https://vault.fbi.gov/trump-management-company/",
+          "publisher": "Federal Bureau of Investigation",
+          "source_type": "government_archive",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["housing", "fair-housing-act", "race", "fred-trump", "business"],
+      "confidence": "high",
+      "editorial_note": "Do not describe the defendants as convicted or found liable. The decree imposed remedies but expressly disclaimed an admission."
+    },
+    {
+      "id": "central-park-five-death-penalty-campaign",
+      "title": "Trump demanded harsher punishment during the Central Park Five case and maintained his position after exoneration",
+      "date_start": "1989-05-01",
+      "date_end": "2019-06-18",
+      "people": ["Donald Trump", "Antron McCray", "Kevin Richardson", "Yusef Salaam", "Raymond Santana", "Korey Wise"],
+      "category": "racialized public conduct",
+      "status_label": "Documented public campaign; convictions vacated",
+      "summary": "During the 1989 Central Park attack case, Trump bought full-page ads calling to reinstate the death penalty and demanding fear-inducing punishment of violent offenders. The five teenagers later had their convictions vacated after another man's confession was corroborated by DNA evidence, and New York City settled their civil case. Asked in 2019 whether he would apologize, Trump declined and said, misleadingly, that they had admitted guilt.",
+      "why_it_matters": "The episode shows the human cost of using celebrity and money to intensify a racially charged prosecution, followed by an unwillingness to reconsider after the legal record changed dramatically.",
+      "evidence": [
+        {
+          "label": "Trump's May 1989 death-penalty advertisement",
+          "url": "https://www.documentcloud.org/documents/6131533-trumpdeathpenaltyad05011989/",
+          "publisher": "DocumentCloud",
+          "source_type": "primary_document",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "New York City comptroller statement approving the settlement",
+          "url": "https://comptroller.nyc.gov/newsroom/statement-of-comptroller-scott-m-stringer-on-approving-the-proposed-settlement-between-new-york-city-and-the-central-park-five-plaintiffs/",
+          "publisher": "New York City Comptroller",
+          "source_type": "government_record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump's 2019 response declining to apologize",
+          "url": "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-marine-one-departure-48/",
+          "publisher": "Trump White House Archives",
+          "source_type": "official_transcript",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["central-park-five", "death-penalty", "race", "wrongful-conviction", "public-conduct"],
+      "confidence": "high",
+      "editorial_note": "The advertisement did not name the five teenagers. Quote its language directly and connect it to the case through the timing and surrounding record, not by claiming the ad expressly named them."
+    },
+    {
+      "id": "obama-birther-falsehood",
+      "title": "Trump mainstreamed the false claim that Barack Obama was not born in the United States",
+      "date_start": "2011-04-27",
+      "date_end": "2016-09-16",
+      "people": ["Donald Trump", "Barack Obama"],
+      "category": "documented falsehood",
+      "status_label": "False claim contradicted by official records; later retracted",
+      "summary": "Trump spent years promoting doubt about President Barack Obama's U.S. birth even after Hawaii officials and the White House released the long-form birth certificate. In September 2016 he finally stated that Obama was born in the United States, while adding the unsupported falsehood that Hillary Clinton had started the controversy.",
+      "why_it_matters": "The campaign exploited a racist conspiracy theory to delegitimize the first Black president and demonstrated how repetition could move an evidence-free claim into mainstream political debate.",
+      "evidence": [
+        {
+          "label": "Hawaii Department of Health release and certified birth record",
+          "url": "https://health.hawaii.gov/vitalrecords/files/2013/05/News_Release_Birth_Certificate_042711.pdf",
+          "publisher": "Hawaii Department of Health",
+          "source_type": "government_record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "White House release of President Obama's long-form birth certificate",
+          "url": "https://obamawhitehouse.archives.gov/blog/2011/04/27/president-obamas-long-form-birth-certificate",
+          "publisher": "Obama White House Archives",
+          "source_type": "government_record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Transcript of Trump's 2016 birther statement",
+          "url": "https://time.com/4497626/donald-trump-birther-address-transcript/",
+          "publisher": "TIME",
+          "source_type": "transcript",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["birtherism", "obama", "race", "conspiracy", "falsehood"],
+      "confidence": "high",
+      "editorial_note": "The start date marks release of the long-form certificate, not the beginning of Trump's campaign, which was already underway. The Clinton-origin claim was not supported by the record."
+    },
+    {
+      "id": "access-hollywood-recording",
+      "title": "The Access Hollywood recording captured Trump boasting about sexually aggressive conduct",
+      "date_start": "2005-09",
+      "date_end": "2016-10-07",
+      "people": ["Donald Trump", "Billy Bush"],
+      "category": "sexualized public conduct",
+      "status_label": "Authenticated recorded statement",
+      "summary": "A 2005 recording published in 2016 captured Trump using degrading language about women and describing kissing and grabbing women, framed as conduct celebrity allowed him to initiate. Trump apologized for the words while dismissing them as locker-room talk. The recording was later admitted as evidence in E. Jean Carroll's civil trial, and the Second Circuit upheld that evidentiary ruling.",
+      "why_it_matters": "The words are direct evidence of Trump's own attitude toward consent, entitlement, and women, rather than a secondhand characterization by an opponent.",
+      "evidence": [
+        {
+          "label": "Original publication of the 2005 recording and transcript",
+          "url": "https://www.washingtonpost.com/politics/trump-recorded-having-extremely-lewd-conversation-about-women-in-2005/2016/10/07/3b9ce776-8cb4-11e6-bf8a-3d26847eeed4_story.html",
+          "publisher": "The Washington Post",
+          "source_type": "primary_recording_report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Second Circuit opinion affirming admission of the recording in Carroll v. Trump",
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca2-23-00793/pdf/USCOURTS-ca2-23-00793-0.pdf",
+          "publisher": "U.S. Court of Appeals for the Second Circuit via GovInfo",
+          "source_type": "court_opinion",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["access-hollywood", "women", "consent", "sexual-misconduct", "recording"],
+      "confidence": "high",
+      "editorial_note": "The recording documents Trump's statements; it is not by itself a criminal adjudication that every act described occurred."
+    },
+    {
+      "id": "e-jean-carroll-liability",
+      "title": "Civil juries found Trump liable for sexually abusing and repeatedly defaming E. Jean Carroll",
+      "date_start": "1996",
+      "date_end": "2026-06-29",
+      "people": ["Donald Trump", "E. Jean Carroll"],
+      "category": "sexual abuse and defamation",
+      "status_label": "Civil liability affirmed; Supreme Court denied review of the $5 million judgment",
+      "summary": "A federal jury found that Trump sexually abused E. Jean Carroll and defamed her, awarding $5 million. A second jury awarded $83.3 million for additional defamation. The Second Circuit affirmed both judgments. On June 29, 2026, the Supreme Court denied Trump's petition seeking review of the $5 million case; a rehearing request was subsequently filed.",
+      "why_it_matters": "This is not merely an allegation or political attack: two juries imposed civil liability, and appellate courts upheld the judgments. It bears directly on Trump's treatment of women, truthfulness, and attacks on an accuser.",
+      "evidence": [
+        {
+          "label": "Second Circuit opinion affirming the $5 million sexual-abuse and defamation judgment",
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca2-23-00793/pdf/USCOURTS-ca2-23-00793-0.pdf",
+          "publisher": "U.S. Court of Appeals for the Second Circuit via GovInfo",
+          "source_type": "court_opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Second Circuit opinion affirming the $83.3 million defamation judgment",
+          "url": "https://law.justia.com/cases/federal/appellate-courts/ca2/24-644/24-644-2025-09-08.html",
+          "publisher": "U.S. Court of Appeals for the Second Circuit, hosted by Justia",
+          "source_type": "court_opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Supreme Court docket 25-573",
+          "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/25-573.html",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court_docket",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["e-jean-carroll", "sexual-abuse", "defamation", "civil-liability", "women"],
+      "confidence": "high",
+      "editorial_note": "Use the verdict's legal term, sexual abuse. Do not call this a criminal conviction. The jury did not mark the verdict-form definition labeled rape, although the trial judge later explained that the conduct fit the term's ordinary modern meaning."
+    },
+    {
+      "id": "john-mccain-pow-insult",
+      "title": "Trump disparaged John McCain's military service because he was captured",
+      "date_start": "2015-07-18",
+      "date_end": "2015-07-18",
+      "people": ["Donald Trump", "John McCain"],
+      "category": "public conduct",
+      "status_label": "Documented recorded statement",
+      "summary": "At the 2015 Family Leadership Summit, Trump said of Navy veteran and former prisoner of war John McCain, 'He's not a war hero' and 'I like people that weren't captured,' before partially retreating under questioning. McCain endured more than five years of captivity and torture in North Vietnam.",
+      "why_it_matters": "The remark exemplifies contempt for sacrifice when the person involved is a political adversary, contradicting Trump's cultivated image of exceptional respect for service members and veterans.",
+      "evidence": [
+        {
+          "label": "Full transcript of Trump's Family Leadership Summit interview",
+          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-ames-ia-july-18-2015/",
+          "publisher": "Roll Call Factba.se",
+          "source_type": "transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Video and contemporaneous report of the McCain remarks",
+          "url": "https://www.cbsnews.com/news/donald-trump-john-mccain-war-hero-captured/",
+          "publisher": "CBS News",
+          "source_type": "video_news_report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["mccain", "veterans", "pow", "insult", "public-conduct"],
+      "confidence": "high",
+      "editorial_note": "Preserve the full exchange: Trump initially rejected the war-hero label, then said McCain was a hero because he was captured after the moderator challenged him."
+    },
+    {
+      "id": "serge-kovaleski-pantomime",
+      "title": "Trump used a jerking pantomime while attacking disabled reporter Serge Kovaleski",
+      "date_start": "2015-11-24",
+      "date_end": "2015-11-28",
+      "people": ["Donald Trump", "Serge Kovaleski"],
+      "category": "public conduct",
+      "status_label": "Recorded conduct; intent disputed by Trump",
+      "summary": "While defending his unsupported claim that thousands of Muslims in New Jersey celebrated the September 11 attacks, Trump imitated New York Times reporter Serge Kovaleski with flailing and bent-arm gestures. Kovaleski has arthrogryposis, which limits joint movement. Trump denied mocking the disability and said he was generically depicting a flustered reporter.",
+      "why_it_matters": "The episode joined an inflammatory false claim about Muslims with a degrading personal attack on a journalist whose reporting contradicted Trump.",
+      "evidence": [
+        {
+          "label": "Video of Trump's pantomime",
+          "url": "https://www.washingtonpost.com/video/politics/trump-mocks-physically-handicapped-reporter/2015/11/25/9e92b950-93d6-11e5-befa-99ceebcbb272_video.html",
+          "publisher": "The Washington Post",
+          "source_type": "primary_video",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Trump's written denial and demand for an apology",
+          "url": "https://www.washingtonpost.com/news/post-politics/wp/2015/11/28/trump-i-wont-apologize-to-the-new-york-times-for-mocking-its-reporter-the-paper-should-give-me-an-apology/",
+          "publisher": "The Washington Post",
+          "source_type": "statement_news_report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Contextual review of the video and Trump's defense",
+          "url": "https://www.politifact.com/factchecks/2016/oct/20/donald-trump/donald-trump-says-hillary-clinton-wrong-say-he-moc/",
+          "publisher": "PolitiFact",
+          "source_type": "fact_check",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["disability", "journalists", "kovaleski", "muslims", "falsehood"],
+      "confidence": "high",
+      "editorial_note": "The visual conduct is undisputed; Trump's claimed intent is disputed. Describe what the video shows and include his denial rather than asserting access to his private intent."
+    },
+    {
+      "id": "charlottesville-both-sides",
+      "title": "Trump assigned blame to 'both sides' after the white-supremacist rally in Charlottesville",
+      "date_start": "2017-08-12",
+      "date_end": "2017-08-15",
+      "people": ["Donald Trump", "Heather Heyer"],
+      "category": "racialized public conduct",
+      "status_label": "Documented official remarks; context preserved",
+      "summary": "After a white-supremacist and neo-Nazi rally in Charlottesville produced racist violence and the killing of Heather Heyer, Trump said there was 'blame on both sides' and 'very fine people on both sides.' In the same August 15 exchange, he explicitly said he was not referring to neo-Nazis and white nationalists and that they should be condemned totally.",
+      "why_it_matters": "Even with the explicit condemnation included, the remarks cast counterprotesters and participants in an event organized around white supremacy as morally comparable, providing rhetorical cover at a moment requiring clarity.",
+      "evidence": [
+        {
+          "label": "Full August 15, 2017 remarks and press exchange",
+          "url": "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-infrastructure/",
+          "publisher": "Trump White House Archives",
+          "source_type": "official_transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "August 14 statement condemning racist groups",
+          "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-president-trump/",
+          "publisher": "Trump White House Archives",
+          "source_type": "official_statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["charlottesville", "white-supremacy", "neo-nazis", "race", "both-sides"],
+      "confidence": "high",
+      "editorial_note": "Do not say Trump called neo-Nazis 'very fine people.' The full transcript expressly excludes neo-Nazis and white nationalists from that phrase; the criticism should focus on the broader equivalence and framing."
+    },
+    {
+      "id": "covid-testing-and-disinfectant-statements",
+      "title": "Trump made false testing assurances and publicly speculated about injecting disinfectant during COVID-19",
+      "date_start": "2020-03-06",
+      "date_end": "2020-04-23",
+      "people": ["Donald Trump"],
+      "category": "public-health misinformation",
+      "status_label": "Documented false assurance and unqualified medical speculation",
+      "summary": "At the CDC on March 6, 2020, Trump said that anybody who wanted a COVID-19 test could get one, while hospitals were reporting severe testing shortages and delays. At an April 23 briefing, after hearing a presentation on disinfectants' effects on surfaces, he asked whether disinfectant could be used 'by injection inside' or through another internal cleaning process and directed doctors to check it.",
+      "why_it_matters": "Presidential communication during an emergency can shape life-or-death choices. False reassurance obscured a major capacity failure, while improvising about dangerous substances at the podium displaced careful medical guidance.",
+      "evidence": [
+        {
+          "label": "March 6 CDC visit transcript",
+          "url": "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-tour-centers-disease-control-prevention-atlanta-ga/",
+          "publisher": "Trump White House Archives",
+          "source_type": "official_transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "April 23 coronavirus briefing transcript",
+          "url": "https://www.govinfo.gov/app/details/DCPD-202000286",
+          "publisher": "Government Publishing Office",
+          "source_type": "official_transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "National hospital pulse survey documenting testing and supply shortages",
+          "url": "https://oig.hhs.gov/reports/all/2020/hospital-experiences-responding-to-the-covid-19-pandemic-results-of-a-national-pulse-survey-march-23-27-2020/",
+          "publisher": "U.S. Department of Health and Human Services, Office of Inspector General",
+          "source_type": "government_report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["covid-19", "testing", "disinfectant", "public-health", "misinformation"],
+      "confidence": "high",
+      "editorial_note": "Do not paraphrase this as 'Trump told people to inject bleach.' The accurate criticism is that he publicly asked medical officials to investigate injection or internal application of disinfectant."
+    },
+    {
+      "id": "2020-election-falsehood-campaign",
+      "title": "Trump pursued a multi-part campaign to overturn an election he had lost",
+      "date_start": "2020-11-03",
+      "date_end": "2021-01-06",
+      "people": ["Donald Trump", "Rudy Giuliani", "John Eastman"],
+      "category": "election subversion",
+      "status_label": "Congressional finding grounded in testimony and records",
+      "summary": "The House January 6 Committee found that Trump knowingly disseminated false fraud claims, pressured state officials and the Justice Department, supported a false-elector effort, pressured Vice President Mike Pence, and summoned supporters to Washington as part of an attempt to remain in power despite losing the 2020 election. State certifications and repeated court defeats contradicted the core fraud narrative.",
+      "why_it_matters": "The peaceful transfer of power is a constitutional baseline. The record describes not one angry statement but an organized effort across courts, states, federal agencies, Congress, and a mass gathering.",
+      "evidence": [
+        {
+          "label": "Final Report of the Select Committee to Investigate the January 6th Attack",
+          "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/pdf/GPO-J6-REPORT.pdf",
+          "publisher": "U.S. House of Representatives via GovInfo",
+          "source_type": "congressional_report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "GovInfo collection page for the January 6 report",
+          "url": "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+          "publisher": "Government Publishing Office",
+          "source_type": "government_archive",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["2020-election", "january-6", "false-electors", "pence", "democracy"],
+      "confidence": "high",
+      "editorial_note": "Label this as a congressional investigative finding, not a criminal conviction. Separate the committee's factual findings from subsequent criminal cases and immunity disputes."
+    },
+    {
+      "id": "obama-apes-social-post",
+      "title": "Trump's account reposted a racist video depicting Barack and Michelle Obama as apes, and he refused to apologize",
+      "date_start": "2026-02-05",
+      "date_end": "2026-02-12",
+      "people": ["Donald Trump", "Barack Obama", "Michelle Obama"],
+      "category": "racist public conduct",
+      "status_label": "Documented social-media post and official response",
+      "summary": "Trump's Truth Social account reposted a false-election video that ended with Barack and Michelle Obama depicted as apes. The post was deleted after public condemnation. Trump said he had not watched the whole video, refused to apologize, said he had not made a mistake, and kept the staff member the White House blamed for posting it.",
+      "why_it_matters": "The ape trope has a long racist history when directed at Black people. A presidential account's publication of it, followed by refusal to apologize or discipline anyone, is evidence of both degrading conduct and institutional tolerance.",
+      "evidence": [
+        {
+          "label": "Official transcript: deleted post portraying the Obamas as apes",
+          "url": "https://www.govinfo.gov/content/pkg/DCPD-202600092/pdf/DCPD-202600092.pdf",
+          "publisher": "Government Publishing Office",
+          "source_type": "official_transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Official follow-up remarks on staff responsibility and discipline",
+          "url": "https://www.govinfo.gov/content/pkg/DCPD-202600098/pdf/DCPD-202600098.pdf",
+          "publisher": "Government Publishing Office",
+          "source_type": "official_transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Contemporaneous report and preserved image of the post",
+          "url": "https://apnews.com/article/a48a6b8884a88f9ec30cd4913e352b51",
+          "publisher": "Associated Press",
+          "source_type": "news_report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["obama", "racism", "truth-social", "presidential-conduct", "2026"],
+      "confidence": "high",
+      "editorial_note": "The White House attributed the post to a staff member; do not claim evidence proves Trump personally selected or uploaded the clip. His own recorded refusal to apologize is independently documented."
+    },
+    {
+      "id": "new-york-civil-fraud",
+      "title": "New York courts held Trump and senior family executives liable for persistent business fraud",
+      "date_start": "2011",
+      "date_end": "2025-08-21",
+      "people": ["Donald Trump", "Donald Trump Jr.", "Eric Trump", "Trump Organization"],
+      "category": "business fraud",
+      "status_label": "Civil liability affirmed; disgorgement award vacated",
+      "summary": "A New York trial court found that Donald Trump and his business repeatedly used deceptive financial statements, and found Donald Trump Jr. and Eric Trump liable on claims tied to the scheme. In 2025, the Appellate Division affirmed the liability findings and injunctive relief but vacated the large disgorgement awards as excessive under constitutional constraints.",
+      "why_it_matters": "The case tested the reliability of the family's core business representations in court and produced an affirmed liability judgment, while the appellate reduction prevents the monetary sanction from being overstated.",
+      "evidence": [
+        {
+          "label": "Trial court post-trial decision",
+          "url": "https://www.nycourts.gov/LegacyPDFS/press/PDFs/OAGvTrump-PostTrialDecision.pdf",
+          "publisher": "Supreme Court of the State of New York",
+          "source_type": "court_opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "2025 Appellate Division opinion",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2025/2025_04756.htm",
+          "publisher": "New York State Law Reporting Bureau",
+          "source_type": "court_opinion",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["civil-fraud", "trump-organization", "donald-jr", "eric-trump", "new-york"],
+      "confidence": "high",
+      "editorial_note": "Do not repeat the original monetary judgment as though it remains intact. The 2025 appellate disposition affirmed liability and injunctions but vacated disgorgement. Ivanka Trump was dismissed from the case on limitations grounds."
+    },
+    {
+      "id": "trump-organization-tax-fraud-conviction",
+      "title": "Two Trump Organization companies were convicted on all 17 tax-fraud and related felony counts",
+      "date_start": "2005",
+      "date_end": "2023-01-13",
+      "people": ["Trump Corporation", "Trump Payroll Corporation", "Allen Weisselberg", "Donald Trump"],
+      "category": "corporate crime",
+      "status_label": "Corporate criminal conviction",
+      "summary": "A Manhattan jury convicted two Trump Organization entities on all 17 felony counts, including tax fraud, falsifying business records, conspiracy, and a scheme to defraud, based on off-the-books executive compensation. The companies were sentenced to the statutory maximum fine of about $1.6 million. Donald Trump and his children were not personally charged in that prosecution.",
+      "why_it_matters": "The verdict establishes criminal wrongdoing inside the family company at the executive level. Accurate attribution is essential: the convicted defendants were corporate entities, not Donald Trump personally.",
+      "evidence": [
+        {
+          "label": "New York court record describing the 17-count corporate convictions",
+          "url": "https://www.nycourts.gov/reporter/3dseries/2023/2023_51485.htm",
+          "publisher": "New York State Law Reporting Bureau",
+          "source_type": "court_record",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "New York attorney general statement on the guilty verdict",
+          "url": "https://ag.ny.gov/press-release/2022/statement-attorney-general-james-guilty-verdict-trump-organization",
+          "publisher": "Office of the New York Attorney General",
+          "source_type": "government_statement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Report on the statutory-maximum corporate sentence",
+          "url": "https://apnews.com/article/e2f1d01525dafb64be8738c8b4f32085",
+          "publisher": "Associated Press",
+          "source_type": "news_report",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["trump-organization", "tax-fraud", "weisselberg", "corporate-crime", "new-york"],
+      "confidence": "high",
+      "editorial_note": "Keep the corporate/person distinction prominent. The companies were convicted; Donald Trump, Donald Trump Jr., Eric Trump, and Ivanka Trump were not defendants in this criminal trial."
+    },
+    {
+      "id": "trump-foundation-misuse",
+      "title": "Trump paid $2 million and admitted facts showing misuse of his charitable foundation",
+      "date_start": "2016-01",
+      "date_end": "2019-12-10",
+      "people": ["Donald Trump", "Donald Trump Jr.", "Ivanka Trump", "Eric Trump", "Donald J. Trump Foundation"],
+      "category": "charity abuse",
+      "status_label": "Settlement with factual admissions, payment, and dissolution",
+      "summary": "Under a New York court-approved resolution, Trump paid $2 million to charities and made 19 factual admissions concerning misuse of the Donald J. Trump Foundation, including allowing campaign staff to direct a veterans fundraiser and using charitable assets for political purposes. The foundation dissolved under court supervision, and Trump and his three adult children accepted governance and training restrictions.",
+      "why_it_matters": "Using charitable money and a veterans fundraiser to serve political or personal interests converts public generosity into private advantage and implicates the whole family foundation's governance.",
+      "evidence": [
+        {
+          "label": "Attorney general summary of payment, admissions, and dissolution",
+          "url": "https://ag.ny.gov/press-release/2019/donald-j-trump-pays-court-ordered-2-million-illegally-using-trump-foundation",
+          "publisher": "Office of the New York Attorney General",
+          "source_type": "government_record",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["trump-foundation", "charity", "veterans", "family", "self-dealing"],
+      "confidence": "high",
+      "editorial_note": "This was a civil resolution with admissions, not a criminal conviction. Use the admitted facts and court-ordered remedies rather than broader unsupported claims about all foundation activity."
+    },
+    {
+      "id": "foreign-government-payments-presidency",
+      "title": "Trump businesses received at least $7.8 million from foreign governments during his first presidency",
+      "date_start": "2017-01-20",
+      "date_end": "2024-01-04",
+      "people": ["Donald Trump", "Trump Organization"],
+      "category": "foreign conflicts of interest",
+      "status_label": "Congressional staff finding from accounting records; no merits adjudication",
+      "summary": "A House Oversight Democratic staff report, based on records produced by Trump's former accounting firm, identified at least $7.8 million paid by 20 foreign governments to four Trump properties during only part of his first term. The report characterized the payments as unconstitutional emoluments, but the constitutional merits were not finally adjudicated after related litigation became moot.",
+      "why_it_matters": "A president retaining ownership of businesses patronized by foreign states creates a direct channel for governments to put money into the president's commercial network, whether or not a court ultimately labels each payment unconstitutional.",
+      "evidence": [
+        {
+          "label": "White House for Sale: How Princes, Prime Ministers, and Premiers Paid Off President Trump",
+          "url": "https://www.congress.gov/118/meeting/house/116733/documents/HMKP-118-JU00-20240110-SD004.pdf",
+          "publisher": "U.S. House Committee on Oversight and Accountability Democratic staff",
+          "source_type": "congressional_staff_report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Committee release summarizing the accounting-record findings",
+          "url": "https://oversightdemocrats.house.gov/news/press-releases/oversight-democrats-release-report-proving-trump-pocketed-millions-from-at-least",
+          "publisher": "House Committee on Oversight and Accountability Democrats",
+          "source_type": "congressional_statement",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["foreign-payments", "emoluments", "conflicts", "trump-hotels", "presidency"],
+      "confidence": "high",
+      "editorial_note": "Attribute the $7.8 million figure and constitutional conclusion to the Democratic staff report. The payment records are evidence; the Emoluments Clauses theory did not receive a final merits judgment."
+    },
+    {
+      "id": "ivanka-kushner-white-house-nepotism",
+      "title": "Trump installed his daughter and son-in-law as senior White House advisers while they retained complex private interests",
+      "date_start": "2017-01-20",
+      "date_end": "2021-01-20",
+      "people": ["Donald Trump", "Ivanka Trump", "Jared Kushner"],
+      "category": "nepotism and conflicts of interest",
+      "status_label": "Documented appointments; lawful under DOJ interpretation",
+      "summary": "Trump appointed daughter Ivanka Trump and son-in-law Jared Kushner to influential White House positions despite their limited government experience and extensive private financial interests. The Justice Department's Office of Legal Counsel concluded that the federal anti-nepotism statute did not bar presidential appointments to the White House Office. Ethics disclosures, recusals, and security-clearance concerns nevertheless followed throughout their service.",
+      "why_it_matters": "Legal permissibility does not resolve the democratic problem of concentrating public authority in unelected family members whose private holdings create recurring conflict questions.",
+      "evidence": [
+        {
+          "label": "DOJ opinion on the anti-nepotism statute and White House appointments",
+          "url": "https://www.justice.gov/olc/opinion/application-anti-nepotism-statute-presidential-appointment-white-house-office",
+          "publisher": "U.S. Department of Justice, Office of Legal Counsel",
+          "source_type": "legal_opinion",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Kushner and Ivanka Trump ethics records",
+          "url": "https://www.oge.gov/web/oge.nsf/Resources/Jared%2BKushner%2Band%2BIvanka%2BTrump%2BRecords%2Bthrough%2BAugust%2B16%2C%2B2017",
+          "publisher": "U.S. Office of Government Ethics",
+          "source_type": "government_records",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "House Oversight whistleblower record on security-clearance overrides",
+          "url": "https://oversightdemocrats.house.gov/imo/media/doc/2019-04-01.EEC%20to%20Cipollone-WH%20re%20Security%20Clearances%201.pdf",
+          "publisher": "House Committee on Oversight and Reform",
+          "source_type": "congressional_correspondence",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["nepotism", "ivanka-trump", "jared-kushner", "ethics", "security-clearance"],
+      "confidence": "high",
+      "editorial_note": "State clearly that DOJ found the anti-nepotism statute inapplicable to these White House appointments. Conflict and clearance concerns should not be rewritten as an adjudicated nepotism-law violation."
+    },
+    {
+      "id": "kushner-affinity-foreign-government-money",
+      "title": "Jared Kushner's firm took billions from foreign sovereign funds after his White House service and while he returned to diplomacy",
+      "date_start": "2021-01-21",
+      "date_end": "2026-03-19",
+      "people": ["Jared Kushner", "Donald Trump", "Affinity Partners"],
+      "category": "family foreign conflicts of interest",
+      "status_label": "Documented investments and fees; congressional investigation, no adjudication",
+      "summary": "After serving as a senior White House adviser with a major Middle East portfolio, Jared Kushner's Affinity Partners received a $2 billion commitment from Saudi Arabia's sovereign wealth fund and additional foreign sovereign investment. Senate Finance investigators reported large management fees and little or no investor return through mid-2024. In 2026, congressional investigators raised new conflict concerns as Kushner again participated in U.S. Middle East diplomacy while seeking or managing foreign-government capital.",
+      "why_it_matters": "The sequence creates an unusually direct appearance that access and public diplomacy can be followed by private financial reward, then overlap again with official influence. The concern is structural even without proof of a quid pro quo.",
+      "evidence": [
+        {
+          "label": "House Oversight inquiry into Saudi Arabia's $2 billion Affinity investment",
+          "url": "https://oversightdemocrats.house.gov/news/press-releases/chairwoman-maloney-launches-probe-of-saudi-government-s-2-billion-investment-in",
+          "publisher": "House Committee on Oversight and Reform Democrats",
+          "source_type": "congressional_investigation",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate Finance findings on Affinity's fees, investors, and returns",
+          "url": "https://www.finance.senate.gov/chairmans-news/wyden-investigation-of-kushner-firm-continues-new-letter-outlines-affinity-partners-fee-structure-lack-of-return-to-investors-questionable-deals-with-foreign-governments",
+          "publisher": "U.S. Senate Committee on Finance",
+          "source_type": "congressional_investigation",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "2026 inquiry into foreign fundraising during renewed diplomatic work",
+          "url": "https://www.finance.senate.gov/ranking-members-news/wyden-garcia-investigate-kushner-raising-billions-from-middle-east-governments-while-negotiating-us-foreign-policy",
+          "publisher": "U.S. Senate Committee on Finance",
+          "source_type": "congressional_investigation",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["jared-kushner", "affinity-partners", "saudi-arabia", "foreign-investment", "conflicts"],
+      "confidence": "medium-high",
+      "editorial_note": "The investments and congressional inquiries are documented, but there is no adjudicated quid pro quo. Attribute fee and performance figures to the committee's review of Affinity disclosures."
+    },
+    {
+      "id": "gop-election-certification-objections",
+      "title": "147 Republican lawmakers voted to reject certified 2020 electoral votes after the Capitol attack",
+      "date_start": "2021-01-06",
+      "date_end": "2021-01-07",
+      "people": ["139 House Republicans", "Ted Cruz", "Josh Hawley", "Cindy Hyde-Smith", "John Kennedy", "Roger Marshall", "Tommy Tuberville", "Cynthia Lummis", "Rick Scott"],
+      "category": "Republican enabling",
+      "status_label": "Official congressional votes",
+      "summary": "After rioters attacked the Capitol, 139 House Republicans and eight Republican senators voted for at least one objection to certified electoral votes from Arizona or Pennsylvania. The votes sought to discard lawful state results even though no evidence demonstrated outcome-changing fraud.",
+      "why_it_matters": "Trump's election falsehood became an institutional party act. Continuing the objections after the violence normalized using Congress to undermine certified results for partisan advantage.",
+      "evidence": [
+        {
+          "label": "House roll call 10: objection to Arizona's electoral votes",
+          "url": "https://clerk.house.gov/Votes/202110",
+          "publisher": "Clerk of the U.S. House of Representatives",
+          "source_type": "official_vote",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "House roll call 11: objection to Pennsylvania's electoral votes",
+          "url": "https://clerk.house.gov/Votes/202111",
+          "publisher": "Clerk of the U.S. House of Representatives",
+          "source_type": "official_vote",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate vote 1: Arizona objection",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00001.htm",
+          "publisher": "United States Senate",
+          "source_type": "official_vote",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate vote 2: Pennsylvania objection",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00002.htm",
+          "publisher": "United States Senate",
+          "source_type": "official_vote",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["gop", "2020-election", "electoral-college", "january-6", "congress"],
+      "confidence": "high",
+      "editorial_note": "The 147 figure is a unique-member count: 139 House members and eight senators supported at least one of the two objections, not necessarily both."
+    },
+    {
+      "id": "gop-first-impeachment-acquittal",
+      "title": "Senate Republicans acquitted Trump in the Ukraine pressure case despite a separate GAO finding that the aid hold broke the law",
+      "date_start": "2019-07-18",
+      "date_end": "2020-02-05",
+      "people": ["Donald Trump", "Mitch McConnell", "Mitt Romney", "Senate Republican Conference"],
+      "category": "Republican enabling",
+      "status_label": "Senate acquittal; separate GAO legal violation finding",
+      "summary": "Trump was impeached for abusing presidential power by pressuring Ukraine to announce investigations useful to his reelection and for obstructing Congress. The Government Accountability Office separately concluded that the Office of Management and Budget violated the Impoundment Control Act by withholding congressionally appropriated security assistance for a policy reason. Fifty-two Republican senators voted not guilty on the abuse-of-power article; Mitt Romney was the lone Republican vote to convict.",
+      "why_it_matters": "The episode shows party protection operating even where a nonpartisan congressional watchdog found the underlying aid hold unlawful. The Senate vote was a constitutional and political judgment, not a finding that the hold was legal.",
+      "evidence": [
+        {
+          "label": "GAO decision: withholding Ukraine security assistance violated the Impoundment Control Act",
+          "url": "https://www.gao.gov/products/b-331564",
+          "publisher": "U.S. Government Accountability Office",
+          "source_type": "government_legal_decision",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "House Intelligence Committee impeachment inquiry report",
+          "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_IN8_18-PURL-gpo129303/pdf/GOVPUB-Y4_IN8_18-PURL-gpo129303.pdf",
+          "publisher": "U.S. House Permanent Select Committee on Intelligence via GovInfo",
+          "source_type": "congressional_report",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Senate vote on Article I, abuse of power",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00033.htm",
+          "publisher": "United States Senate",
+          "source_type": "official_vote",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["first-impeachment", "ukraine", "gao", "impoundment-control-act", "gop"],
+      "confidence": "high",
+      "editorial_note": "The GAO decision addressed OMB's aid withholding, not every factual or constitutional allegation in the impeachment articles. Trump was acquitted because the Senate did not reach the required two-thirds vote."
+    },
+    {
+      "id": "gop-second-impeachment-acquittal",
+      "title": "Forty-three Republican senators acquitted Trump after January 6, even as McConnell called him morally responsible",
+      "date_start": "2021-01-06",
+      "date_end": "2021-02-13",
+      "people": ["Donald Trump", "Mitch McConnell", "43 Republican senators"],
+      "category": "Republican enabling",
+      "status_label": "Senate acquittal despite a 57-vote majority for conviction",
+      "summary": "The Senate voted 57-43 to convict Trump of incitement of insurrection, ten votes short of the two-thirds threshold. All 43 not-guilty votes came from Republicans. Mitch McConnell voted to acquit on the theory that the Senate lacked jurisdiction after Trump left office, then said Trump was 'practically and morally responsible' for provoking the events and had fed supporters falsehoods.",
+      "why_it_matters": "The record makes the enabling mechanism unusually explicit: a party leader acknowledged grave responsibility while using a contested procedural theory to avoid the constitutional consequence.",
+      "evidence": [
+        {
+          "label": "Senate roll call on the article of impeachment",
+          "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00059.htm",
+          "publisher": "United States Senate",
+          "source_type": "official_vote",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "McConnell's post-acquittal statement",
+          "url": "https://www.republicanleader.senate.gov/newsroom/remarks/mcconnell-on-impeachment-disgraceful-dereliction-cannot-lead-senate-to-defy-our-own-constitutional-guardrails",
+          "publisher": "Office of Senate Republican Leader Mitch McConnell",
+          "source_type": "official_statement",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Congressional Record of the February 13, 2021 proceedings",
+          "url": "https://www.govinfo.gov/content/pkg/CREC-2021-02-13/pdf/CREC-2021-02-13-pt1-PgS735-2.pdf",
+          "publisher": "Government Publishing Office",
+          "source_type": "congressional_record",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["second-impeachment", "january-6", "mcconnell", "gop", "acquittal"],
+      "confidence": "high",
+      "editorial_note": "The Senate acquitted Trump because conviction requires two thirds of senators present, even though a bipartisan majority voted guilty. McConnell's jurisdiction theory was disputed by other senators and constitutional scholars."
+    }
+  ]
+}
