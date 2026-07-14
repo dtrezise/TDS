@@ -14,17 +14,17 @@ export const metadata: Metadata = {
     url: "https://dtrezise.github.io/TDS/america-first-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/america-first-test-hero.jpg",
-      width: 1732,
-      height: 908,
-      alt: "America First Test — Power at home. Credibility abroad.",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      width: 1731,
+      height: 909,
+      alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "America First Test | TDS",
     description: "Power at home. Credibility abroad.",
-    images: ["https://dtrezise.github.io/TDS/america-first-test-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -85,7 +85,7 @@ function ArrowIcon() {
 export default function AmericaFirstTestPage() {
   return (
     <main className="patriotic-page test-page test-page--america">
-      <SiteHeader active="america-first" />
+      <SiteHeader active="tests" />
       <PageMasthead src="/america-first-test-hero.jpg" alt="America First Test — Power at home. Credibility abroad." priority />
       <TestSuiteNav active="america-first" />
 

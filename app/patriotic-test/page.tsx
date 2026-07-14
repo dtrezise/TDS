@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
 import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
+import { ShareEBox } from "../share-ebox";
 
 export const metadata: Metadata = {
   title: "Patriotic Test | TDS",
@@ -15,17 +16,17 @@ export const metadata: Metadata = {
     url: "https://dtrezise.github.io/TDS/patriotic-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/patriotic-test-hero.jpg",
-      width: 1732,
-      height: 908,
-      alt: "Patriotic Test — The Constitution Above the Leader",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      width: 1731,
+      height: 909,
+      alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Patriotic Test | TDS",
     description: "A patriot defends the Constitution and the rights of the people—not a leader's demand for personal loyalty.",
-    images: ["https://dtrezise.github.io/TDS/patriotic-test-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -171,13 +172,15 @@ function ArrowIcon() {
 }
 
 function EvidenceRecord({ item }: { item: CaseFile }) {
+  const anchor = `patriotic-${item.id}`;
   return (
-    <article className="patriotic-record" id={`patriotic-${item.id}`}>
+    <article className="patriotic-record" id={anchor}>
       <p className="patriotic-record__date">{item.date}</p>
       <h3>{item.title}</h3>
       <div className="patriotic-record__status"><strong>Record status</strong><span>{item.status}</span></div>
       <p>{item.summary}</p>
       <p className="patriotic-record__significance"><strong>Why it matters</strong>{item.significance}</p>
+      <ShareEBox anchor={anchor} title={item.title} summary={item.summary} status={item.status} context="Patriotic Test" />
       <div className="patriotic-record__links">
         {item.sources.slice(0, 2).map((source) => (
           <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.publisher}: {source.label} <ArrowIcon /></a>
@@ -191,7 +194,7 @@ function EvidenceRecord({ item }: { item: CaseFile }) {
 export default function PatrioticTestPage() {
   return (
     <main className="patriotic-page">
-      <SiteHeader active="patriotic" />
+      <SiteHeader active="tests" />
       <PageMasthead src="/patriotic-test-hero.jpg" alt="Patriotic Test — The Constitution Above the Leader" priority />
       <TestSuiteNav active="patriotic" />
 
@@ -270,6 +273,7 @@ export default function PatrioticTestPage() {
               <div className="patriotic-record__status"><strong>Record status</strong><span>{pressCase.status}</span></div>
               <p>{pressCase.summary}</p>
               <p className="patriotic-record__significance"><strong>Why it matters</strong>{pressCase.significance}</p>
+              <ShareEBox anchor={pressCase.id} title={pressCase.title} summary={pressCase.summary} status={pressCase.status} context="Patriotic Test · Free press" />
               <div className="patriotic-record__links">
                 {pressCase.sources.map((source) => (
                   <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.publisher}: {source.label} <ArrowIcon /></a>

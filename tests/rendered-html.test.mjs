@@ -3,7 +3,9 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const html = await readFile(new URL("../out/index.html", import.meta.url), "utf8");
-const voicesHtml = await readFile(new URL("../out/voices/index.html", import.meta.url), "utf8");
+const voicesHubHtml = await readFile(new URL("../out/voices/index.html", import.meta.url), "utf8");
+const rooftopsHtml = await readFile(new URL("../out/rooftops/index.html", import.meta.url), "utf8");
+const testsHubHtml = await readFile(new URL("../out/tests/index.html", import.meta.url), "utf8");
 const blindEyesHtml = await readFile(new URL("../out/blind-eyes/index.html", import.meta.url), "utf8");
 const antiChristHtml = await readFile(new URL("../out/anti-christ/index.html", import.meta.url), "utf8");
 const christianityTestHtml = await readFile(new URL("../out/christianity-test/index.html", import.meta.url), "utf8");
@@ -12,7 +14,7 @@ const americaFirstTestHtml = await readFile(new URL("../out/america-first-test/i
 const dealTestHtml = await readFile(new URL("../out/deal-test/index.html", import.meta.url), "utf8");
 const methodologyHtml = await readFile(new URL("../out/methodology/index.html", import.meta.url), "utf8");
 
-const renderedPages = [html, voicesHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml, methodologyHtml];
+const renderedPages = [html, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml, methodologyHtml];
 
 function primaryNavigation(pageHtml) {
   const match = pageHtml.match(/<nav aria-label="Primary navigation">([\s\S]*?)<\/nav>/);
@@ -22,7 +24,8 @@ function primaryNavigation(pageHtml) {
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
-  assert.match(html, /Trump Derangement Syndrome \| The Evidence Archive/);
+  assert.match(html, /Trump Derangement Syndrome/);
+  assert.doesNotMatch(primaryNavigation(html), /The Evidence Archive/);
   assert.match(html, /DERANGEMENT/);
   assert.match(html, /denying the record/);
   assert.match(html, /Accountability is not derangement\. Refusing the record is\./);
@@ -44,7 +47,7 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Deals &amp; outcomes/);
   assert.match(html, /forgiveness met Trump/);
   assert.match(html, /evidence-hero\.jpg/);
-  assert.match(html, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/og\.png"/);
+  assert.match(html, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/share-banner\.png"/);
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
   assert.doesNotMatch(html, /The central contradiction/);
   assert.doesNotMatch(html, /Six non-negotiable rules/);
@@ -65,26 +68,46 @@ test("exports accessible archive controls", () => {
   assert.ok((html.match(/target="_blank"/g) ?? []).length > 150, "expected the evidence and teaching links to render");
 });
 
+test("exports the Voices and Tests springboard pages", () => {
+  assert.match(voicesHubHtml, /<title>Voices \| TDS/);
+  assert.match(voicesHubHtml, /Hear the resistance/);
+  assert.match(voicesHubHtml, /Examine the complicity/);
+  assert.match(voicesHubHtml, /href="\/rooftops\/"/);
+  assert.match(voicesHubHtml, /href="\/blind-eyes\/"/);
+  assert.match(voicesHubHtml, /href="\/anti-christ\/"/);
+  assert.match(voicesHubHtml, /rooftops-hero\.jpg/);
+  assert.match(voicesHubHtml, /blind-eyes-hero\.jpg/);
+  assert.match(voicesHubHtml, /anti-christ-hero\.jpg/);
+
+  assert.match(testsHubHtml, /<title>Tests \| TDS/);
+  assert.match(testsHubHtml, /Four claims/);
+  assert.match(testsHubHtml, /Four tests/);
+  assert.match(testsHubHtml, /href="\/christianity-test\/"/);
+  assert.match(testsHubHtml, /href="\/patriotic-test\/"/);
+  assert.match(testsHubHtml, /href="\/america-first-test\/"/);
+  assert.match(testsHubHtml, /href="\/deal-test\/"/);
+});
+
 test("exports the Christian resistance directory", () => {
-  assert.match(voicesHtml, /<title>Shout It from the Rooftops \| TDS/);
-  assert.match(voicesHtml, /A directory for Christian resistance/);
-  assert.match(voicesHtml, /Proclaim it on the housetops/);
-  assert.match(voicesHtml, /Matthew 10:27/);
-  assert.match(voicesHtml, /Christians Against Christian Nationalism/);
-  assert.match(voicesHtml, /Amanda Tyler/);
-  assert.match(voicesHtml, /William J\. Barber II/);
-  assert.match(voicesHtml, /Russell Moore/);
-  assert.match(voicesHtml, /Jemar Tisby/);
-  assert.match(voicesHtml, /Kristin Kobes Du Mez/);
-  assert.match(voicesHtml, /Brian Kaylor/);
-  assert.match(voicesHtml, /Basis for inclusion|Source for this description/);
-  assert.match(voicesHtml, /bsky\.app\/intent\/compose/);
-  assert.match(voicesHtml, /facebook\.com\/sharer\/sharer\.php/);
-  assert.match(voicesHtml, /mailto:/);
-  assert.match(voicesHtml, /aria-live="polite"/);
-  assert.match(voicesHtml, /application\/ld\+json/);
-  assert.match(voicesHtml, /rooftops-hero\.jpg/);
-  assert.ok((voicesHtml.match(/class="voice-card"/g) ?? []).length === 12, "expected 12 curated voice profiles");
+  assert.match(rooftopsHtml, /<title>Shout It from the Rooftops \| TDS/);
+  assert.match(rooftopsHtml, /A directory for Christian resistance/);
+  assert.match(rooftopsHtml, /Proclaim it on the housetops/);
+  assert.match(rooftopsHtml, /Matthew 10:27/);
+  assert.match(rooftopsHtml, /Christians Against Christian Nationalism/);
+  assert.match(rooftopsHtml, /Amanda Tyler/);
+  assert.match(rooftopsHtml, /William J\. Barber II/);
+  assert.match(rooftopsHtml, /Russell Moore/);
+  assert.match(rooftopsHtml, /Jemar Tisby/);
+  assert.match(rooftopsHtml, /Kristin Kobes Du Mez/);
+  assert.match(rooftopsHtml, /Brian Kaylor/);
+  assert.match(rooftopsHtml, /Basis for inclusion|Source for this description/);
+  assert.match(rooftopsHtml, /bsky\.app\/intent\/compose/);
+  assert.match(rooftopsHtml, /facebook\.com\/sharer\/sharer\.php/);
+  assert.match(rooftopsHtml, /mailto:/);
+  assert.match(rooftopsHtml, /aria-live="polite"/);
+  assert.match(rooftopsHtml, /application\/ld\+json/);
+  assert.match(rooftopsHtml, /rooftops-hero\.jpg/);
+  assert.ok((rooftopsHtml.match(/class="voice-card"/g) ?? []).length === 12, "expected 12 curated voice profiles");
 });
 
 test("exports the Blind Eyes accountability directory", () => {
@@ -249,21 +272,34 @@ test("exports the complete publication methodology", () => {
   assert.match(methodologyHtml, /ARCHIVE_DATA_ARCHITECTURE\.md/);
 });
 
+test("adds a share composer trigger to every evidence eBox", () => {
+  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 80, "expected every archive case file to be shareable");
+  assert.ok((rooftopsHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 18, "expected every Rooftops movement and voice card to be shareable");
+  assert.ok((blindEyesHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 8, "expected every Blind Eyes profile to be shareable");
+  assert.ok((antiChristHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 120, "expected every Anti Christ evidence and quotation card to be shareable");
+  assert.ok((patrioticTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 16, "expected every Patriotic Test record to be shareable");
+  assert.ok((americaFirstTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 14, "expected every America First Test record to be shareable");
+  assert.ok((dealTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 12, "expected every Deal Test record to be shareable");
+  for (const pageHtml of renderedPages) {
+    assert.match(pageHtml, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/share-banner\.png"/);
+  }
+});
+
 test("uses one uncluttered four-section header on every page", () => {
   for (const pageHtml of renderedPages) {
     const nav = primaryNavigation(pageHtml);
     assert.match(nav, />Evidence</);
-    assert.match(nav, />Christianity Test</);
-    assert.match(nav, />Patriotic Test</);
-    assert.match(nav, />Methodology</);
-    assert.doesNotMatch(nav, /Anti Christ|Blind Eyes|Rooftops|Categories|Take action|Profiles|Full record/);
+    assert.match(nav, />Voices</);
+    assert.match(nav, />Tests</);
+    assert.match(nav, />Methods</);
+    assert.doesNotMatch(nav, /The Evidence Archive|Christianity Test|Patriotic Test|Anti Christ|Blind Eyes|Rooftops|Categories|Take action|Profiles|Full record/);
     assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 4, "expected exactly four primary links");
   }
 
-  assert.match(christianityTestHtml, /href="\/voices\/"/);
+  assert.match(christianityTestHtml, /href="\/rooftops\/"/);
   assert.match(christianityTestHtml, /href="\/blind-eyes\/"/);
   assert.match(christianityTestHtml, /href="\/anti-christ\/"/);
-  assert.match(voicesHtml, /href="\/christianity-test\/"/);
+  assert.match(rooftopsHtml, /href="\/christianity-test\/"/);
   assert.match(blindEyesHtml, /href="\/christianity-test\/"/);
   assert.match(antiChristHtml, /href="\/christianity-test\/"/);
   assert.match(html, /href="\/patriotic-test\/"/);

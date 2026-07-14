@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { caseFiles, categories, type CaseFile } from "@/data/cases";
+import { ShareEBox } from "./share-ebox";
 
 const categoryShort: Record<CaseFile["category"], string> = {
   "Law & accountability": "Accountability",
@@ -34,6 +35,13 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
         <p className="status-line"><span>Record status</span>{item.status}</p>
         <p className="case-summary">{item.summary}</p>
         <p className="case-significance"><strong>Why it matters:</strong> {item.significance}</p>
+        <ShareEBox
+          anchor={item.id}
+          title={item.title}
+          summary={item.summary}
+          status={item.status}
+          context={`${categoryShort[item.category]} · ${item.date}`}
+        />
 
         {item.faithLens?.length ? (
           <aside className="faith-note">

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dtrezise.github.io/TDS/og.png",
-        width: 1734,
-        height: 907,
+        url: "https://dtrezise.github.io/TDS/share-banner.png",
+        width: 1731,
+        height: 909,
         alt: "TDS — The Evidence Archive. The derangement is denying the record.",
       },
     ],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TDS — The Evidence Archive",
     description: "The derangement is denying the record.",
-    images: ["https://dtrezise.github.io/TDS/og.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

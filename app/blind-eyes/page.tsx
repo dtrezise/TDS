@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import directory from "@/research/blind-eyes/directory.json";
 import { PageMasthead, SiteHeader } from "../site-chrome";
-import { ShareTools } from "../voices/share-tools";
+import { ShareTools } from "../share-tools";
+import { ShareEBox } from "../share-ebox";
 
 export const metadata: Metadata = {
   title: "Blind Eyes | TDS",
@@ -17,10 +18,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dtrezise.github.io/TDS/blind-eyes-hero.jpg",
-        width: 1732,
-        height: 908,
-        alt: "Blind Eyes — The pulpits that bless political power",
+        url: "https://dtrezise.github.io/TDS/share-banner.png",
+        width: 1731,
+        height: 909,
+        alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
       },
     ],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blind Eyes | TDS",
     description: "A sourced index of the pulpits and ministries that bless Christian nationalism and Trump-centered power.",
-    images: ["https://dtrezise.github.io/TDS/blind-eyes-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -59,7 +60,7 @@ export default function BlindEyesPage() {
     <main className="blind-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <SiteHeader active="christianity" />
+      <SiteHeader active="voices" />
       <PageMasthead src="/blind-eyes-hero.jpg" alt="Blind Eyes — The pulpits that bless political power" priority />
 
       <section className="blind-hero">
@@ -130,6 +131,13 @@ export default function BlindEyesPage() {
                 <small>{profile.alignment_strength}</small>
               </div>
               <p className="blind-card__summary">{profile.summary}</p>
+              <ShareEBox
+                anchor={profile.id}
+                title={profile.name}
+                summary={profile.summary}
+                status={`${profile.alignment} · ${profile.alignment_strength}`}
+                context="Blind Eyes · Documented public witness"
+              />
 
               <div className="blind-record" aria-label={`Evidence concerning ${profile.name}`}>
                 <h4>Documented record</h4>
@@ -181,7 +189,7 @@ export default function BlindEyesPage() {
           {directory.definition_sources.map((source) => (
             <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.label} · {source.publisher} <ArrowIcon /></a>
           ))}
-          <Link href="/voices">Hear the Christians resisting this movement <ArrowIcon /></Link>
+          <Link href="/rooftops">Hear the Christians resisting this movement <ArrowIcon /></Link>
         </div>
       </section>
 

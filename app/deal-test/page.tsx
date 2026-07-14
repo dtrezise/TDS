@@ -14,17 +14,17 @@ export const metadata: Metadata = {
     url: "https://dtrezise.github.io/TDS/deal-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/deal-test-hero.jpg",
-      width: 1733,
-      height: 908,
-      alt: "The Deal Test — Promises. Leverage. Results.",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      width: 1731,
+      height: 909,
+      alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Deal Test | TDS",
     description: "Promises. Leverage. Results.",
-    images: ["https://dtrezise.github.io/TDS/deal-test-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -79,7 +79,7 @@ function ArrowIcon() {
 export default function DealTestPage() {
   return (
     <main className="patriotic-page test-page test-page--deals">
-      <SiteHeader active="deals" />
+      <SiteHeader active="tests" />
       <PageMasthead src="/deal-test-hero.jpg" alt="The Deal Test — Promises. Leverage. Results." priority />
       <TestSuiteNav active="deals" />
 

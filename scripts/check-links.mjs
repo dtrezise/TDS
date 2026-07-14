@@ -16,7 +16,7 @@ const queue = [...urls];
 const results = [];
 const workerCount = 12;
 
-async function check(url) {
+async function checkOnce(url) {
   try {
     const response = await fetch(url, {
       redirect: "follow",
@@ -34,6 +34,12 @@ async function check(url) {
   }
 }
 
+async function check(url) {
+  const first = await checkOnce(url);
+  if (first.status !== 0 && first.status < 500) return first;
+  return checkOnce(url);
+}
+
 async function worker() {
   while (queue.length) {
     const url = queue.shift();
@@ -43,8 +49,11 @@ async function worker() {
 
 await Promise.all(Array.from({ length: workerCount }, () => worker()));
 
-const restricted = results.filter((result) => [401, 403, 429].includes(result.status));
-const failed = results.filter((result) => result.status === 0 || (result.status >= 400 && ![401, 403, 429].includes(result.status)));
+// Some evidence hosts block automated audits or terminate the TLS handshake at
+// their edge even though the same public URL remains usable in a browser.
+const accessRestrictedStatuses = [401, 403, 429, 525];
+const restricted = results.filter((result) => accessRestrictedStatuses.includes(result.status));
+const failed = results.filter((result) => result.status === 0 || (result.status >= 400 && !accessRestrictedStatuses.includes(result.status)));
 
 for (const result of [...failed, ...restricted]) {
   const label = result.status === 0 ? "ERR" : String(result.status);

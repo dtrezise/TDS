@@ -10,7 +10,7 @@ type ShareToolsProps = {
 };
 
 export function ShareTools({
-  canonicalUrl = "https://dtrezise.github.io/TDS/voices/",
+  canonicalUrl = "https://dtrezise.github.io/TDS/rooftops/",
   shareTitle = "Shout It from the Rooftops — Christian voices resisting Christian nationalism",
   shareText = "Christian nationalism is not the only Christian voice in public life. Follow the people naming it, resisting it, and building faithful alternatives.",
   label = "Share this directory",

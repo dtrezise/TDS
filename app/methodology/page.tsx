@@ -15,17 +15,17 @@ export const metadata: Metadata = {
     url: "https://dtrezise.github.io/TDS/methodology/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/methodology-hero.jpg",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
-      alt: "Methodology — Facts first. Status always.",
+      alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Methodology | TDS",
     description: "Harsh argument. Exact record.",
-    images: ["https://dtrezise.github.io/TDS/methodology-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

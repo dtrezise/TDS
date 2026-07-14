@@ -12,7 +12,8 @@ import {
 } from "@/data/anti-christ";
 import type { EvidenceSource } from "@/data/cases";
 import { PageMasthead, SiteHeader } from "../site-chrome";
-import { ShareTools } from "../voices/share-tools";
+import { ShareTools } from "../share-tools";
+import { ShareEBox } from "../share-ebox";
 
 export const metadata: Metadata = {
   title: "Anti Christ | TDS",
@@ -27,10 +28,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dtrezise.github.io/TDS/anti-christ-hero.jpg",
-        width: 1732,
-        height: 908,
-        alt: "Anti Christ — The conduct against the teaching",
+        url: "https://dtrezise.github.io/TDS/share-banner.png",
+        width: 1731,
+        height: 909,
+        alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
       },
     ],
   },
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anti Christ | TDS",
     description: "Documented conduct tested against the words and example of Christ.",
-    images: ["https://dtrezise.github.io/TDS/anti-christ-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -76,7 +77,7 @@ export default function AntiChristPage() {
     <main className="anti-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <SiteHeader active="christianity" />
+      <SiteHeader active="voices" />
       <PageMasthead src="/anti-christ-hero.jpg" alt="Anti Christ — The conduct against the teaching" priority />
 
       <section className="anti-hero">
@@ -145,13 +146,20 @@ export default function AntiChristPage() {
             </header>
             <ol className="anti-top-five">
               {category.featuredCases.map((item, index) => (
-                <li key={`${category.id}-${item.id}`}>
+                <li id={`anti-${category.id}-${item.id}`} key={`${category.id}-${item.id}`}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="anti-case-date">{item.date}</p>
                     <h4>{item.title}</h4>
                     <p>{item.summary}</p>
                     <small><strong>Status:</strong> {item.status}</small>
+                    <ShareEBox
+                      anchor={`anti-${category.id}-${item.id}`}
+                      title={item.title}
+                      summary={item.summary}
+                      status={item.status}
+                      context={`Anti Christ · ${category.label}`}
+                    />
                   </div>
                   <a href={item.sources[0].url} target="_blank" rel="noreferrer" aria-label={`${sourceAction(item.sources[0])}: ${item.title}`}>
                     {sourceAction(item.sources[0])} <ArrowIcon />
@@ -171,11 +179,18 @@ export default function AntiChristPage() {
         </div>
         <div className="anti-quote-grid">
           {antiChristQuotes.map((item, index) => (
-            <figure key={`${item.case_id}-${index}`}>
+            <figure id={`anti-quote-${item.case_id}-${index + 1}`} key={`${item.case_id}-${index}`}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <blockquote>“{item.quote}”</blockquote>
               <figcaption>{item.context}</figcaption>
               <a href={item.url} target="_blank" rel="noreferrer">{item.media_type}: {item.source_label} <ArrowIcon /></a>
+              <ShareEBox
+                anchor={`anti-quote-${item.case_id}-${index + 1}`}
+                title={`Trump: “${item.quote}”`}
+                summary={item.context}
+                status={`${item.media_type} · linked record`}
+                context="Anti Christ · His words"
+              />
             </figure>
           ))}
         </div>
@@ -206,12 +221,19 @@ export default function AntiChristPage() {
             <p className="anti-category-caution"><strong>Editorial boundary:</strong> {category.theologicalCaution}</p>
             <div className="anti-collection-grid">
               {category.allCases.map((item) => (
-                <article className="anti-record-card" key={`${category.id}-all-${item.id}`}>
+                <article className="anti-record-card" id={`anti-all-${category.id}-${item.id}`} key={`${category.id}-all-${item.id}`}>
                   <div className="anti-record-card__meta"><span>{item.date}</span><span>{item.category}</span></div>
                   <h4>{item.title}</h4>
                   <p>{item.summary}</p>
                   <div className="anti-record-status"><strong>Record status</strong><span>{item.status}</span></div>
                   {item.faithAnalysis ? <p className="anti-record-faith"><strong>Christianity test · editorial analysis:</strong> {item.faithAnalysis}</p> : null}
+                  <ShareEBox
+                    anchor={`anti-all-${category.id}-${item.id}`}
+                    title={item.title}
+                    summary={item.summary}
+                    status={item.status}
+                    context={`Anti Christ · ${category.label}`}
+                  />
                   <div className="anti-record-sources">
                     {item.sources.map((source) => (
                       <a href={source.url} target="_blank" rel="noreferrer" key={`${item.id}-${source.url}`}>

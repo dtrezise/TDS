@@ -14,17 +14,17 @@ export const metadata: Metadata = {
     url: "https://dtrezise.github.io/TDS/christianity-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/christianity-test-hero.jpg",
-      width: 1729,
-      height: 910,
-      alt: "Christianity Test — Test the witness by the fruit",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      width: 1731,
+      height: 909,
+      alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Christianity Test | TDS",
     description: "Test the public witness by the public record and the cited teaching.",
-    images: ["https://dtrezise.github.io/TDS/christianity-test-hero.jpg"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -91,7 +91,7 @@ const relatedPages = [
   {
     eyebrow: "Amplify",
     title: "Rooftops",
-    href: "/voices",
+    href: "/rooftops",
     description: "Christian leaders, pastors, writers, researchers, and movements publicly resisting Christian nationalism—with direct ways to follow, connect, organize, and share.",
   },
   {
@@ -115,7 +115,7 @@ function ArrowIcon() {
 export default function ChristianityTestPage() {
   return (
     <main className="christianity-page">
-      <SiteHeader active="christianity" />
+      <SiteHeader active="tests" />
       <PageMasthead src="/christianity-test-hero.jpg" alt="Christianity Test — Test the witness by the fruit" priority />
       <TestSuiteNav active="christianity" />
 

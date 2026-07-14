@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export type PrimarySection = "evidence" | "christianity" | "patriotic" | "america-first" | "deals" | "methodology";
+export type PrimarySection = "evidence" | "voices" | "tests" | "methodology";
 export type TestSection = "christianity" | "patriotic" | "america-first" | "deals";
 
 function publicAssetPath(src: string) {
@@ -13,16 +13,16 @@ function publicAssetPath(src: string) {
 export function SiteHeader({ active }: { active: PrimarySection }) {
   const items: Array<{ label: string; href: string; section: PrimarySection }> = [
     { label: "Evidence", href: "/", section: "evidence" },
-    { label: "Christianity Test", href: "/christianity-test", section: "christianity" },
-    { label: "Patriotic Test", href: "/patriotic-test", section: "patriotic" },
-    { label: "Methodology", href: "/methodology", section: "methodology" },
+    { label: "Voices", href: "/voices", section: "voices" },
+    { label: "Tests", href: "/tests", section: "tests" },
+    { label: "Methods", href: "/methodology", section: "methodology" },
   ];
 
   return (
     <header className="site-header">
       <Link className="wordmark" href="/" aria-label="TDS Evidence Archive home">
         <span className="wordmark__mark">TDS</span>
-        <span className="wordmark__text">Trump Derangement Syndrome | The Evidence Archive</span>
+        <span className="wordmark__text">Trump Derangement Syndrome</span>
       </Link>
       <nav aria-label="Primary navigation">
         {items.map((item) => (
