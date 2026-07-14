@@ -648,6 +648,62 @@
       "editorial_note": "Say explicitly that some Christian traditions still permit capital punishment in limited circumstances. This entry presents a direct conflict with Catholic teaching and a broader Gospel critique of vengeance, not a claim of total Christian consensus."
     },
     {
+      "id": "faith-kirk-memorial-forgiveness-2025",
+      "title": "At Charlie Kirk's memorial, forgiveness met Trump's stated hatred of opponents",
+      "date_start": "2025-09-21",
+      "date_end": "2026-07-13",
+      "people": ["Donald Trump", "Erika Kirk", "Charlie Kirk", "Tyler Robinson"],
+      "category": "personal-conduct-and-forgiveness",
+      "status_label": "documented memorial remarks; accused man charged and not convicted",
+      "summary": "At Charlie Kirk's September 21, 2025 memorial, Erika Kirk said she forgave the man charged with killing her husband because forgiveness was what Christ did and that hate should not answer hate. Trump later praised Charlie for not hating opponents, then said he disagreed: he hated his opponent and did not want the best for them, adding an apology to Erika. The remarks create a documented moral contrast. Trump did not explicitly call Erika weak or directly condemn her forgiveness. As of July 13, 2026, Tyler Robinson was charged, had not entered a plea, and had not been ordered to stand trial; final preliminary-hearing arguments were scheduled for September 1.",
+      "why_it_matters": "The contrast occurred inside an explicitly Christian memorial and requires little speculation. Erika Kirk articulated Christ-centered forgiveness in the face of devastating loss; Trump answered the theme by publicly affirming hatred and ill will toward political opponents. That posture directly opposes Jesus' commands to forgive, love enemies, and pray for persecutors, and it exposes how vengeance can be marketed as strength even when a grieving Christian chooses mercy.",
+      "christian_teaching": [
+        {
+          "citation": "Matthew 5:43-48 and 6:14-15",
+          "principle": "Jesus commands love and prayer for enemies and makes forgiveness of others central to discipleship.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        },
+        {
+          "citation": "Galatians 5:22-23",
+          "principle": "The fruit of the Spirit includes love, peace, patience, kindness, generosity, faithfulness, gentleness, and self-control—not cultivated hatred or vengeance.",
+          "url": "https://bible.usccb.org/bible/galatians/5"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Official transcript of Trump's memorial remarks",
+          "url": "https://www.govinfo.gov/content/pkg/DCPD-202500936/pdf/DCPD-202500936.pdf",
+          "publisher": "Government Publishing Office / Compilation of Presidential Documents",
+          "source_type": "official presidential transcript",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Contemporaneous report documenting both Erika Kirk's forgiveness and Trump's remarks",
+          "url": "https://apnews.com/article/b5469086954908b162f464da966cf238",
+          "publisher": "Associated Press",
+          "source_type": "reputable contemporaneous reporting",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Current report on the unresolved preliminary-hearing status",
+          "url": "https://apnews.com/article/21f979ed659cbe9c216481dd9f41c56e",
+          "publisher": "Associated Press",
+          "source_type": "reputable current legal reporting",
+          "accessed": "2026-07-13"
+        },
+        {
+          "label": "Formal charging record in State v. Tyler James Robinson",
+          "url": "https://atty.utahcounty.gov/cms/uploads/TJR_Information_49872215e3.pdf",
+          "publisher": "Utah County Attorney",
+          "source_type": "official criminal charging information",
+          "accessed": "2026-07-13"
+        }
+      ],
+      "tags": ["forgiveness", "love-of-enemies", "vengeance", "Charlie-Kirk", "Erika-Kirk", "memorial", "criminal-charge", "Fruit-of-the-Spirit"],
+      "confidence": "high",
+      "editorial_note": "Do not say Trump called Erika weak, mocked her directly, or explicitly attacked her act of forgiveness; the record supports a sharp contrast, not those broader claims. Refer to Robinson as charged or accused unless and until a verdict changes his status. Update after the September 1, 2026 preliminary-hearing arguments and any probable-cause ruling."
+    },
+    {
       "id": "faith-america-first-2017-2025",
       "title": "America First made national advantage the administration's controlling moral horizon",
       "date_start": "2017-01-20",

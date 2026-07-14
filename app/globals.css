@@ -329,6 +329,74 @@ a {
   text-transform: uppercase;
 }
 
+.faith-framework {
+  background: var(--blue-light);
+  border-bottom: 1px solid var(--ink);
+  display: grid;
+  gap: 6vw;
+  grid-template-columns: minmax(240px, 0.58fr) minmax(0, 1.42fr);
+  padding: clamp(64px, 7vw, 100px) 7vw;
+}
+
+.faith-framework__heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 3.7vw, 4.4rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  margin: 18px 0 22px;
+}
+
+.faith-framework__heading > p:last-child {
+  font-family: var(--serif);
+  line-height: 1.58;
+  max-width: 480px;
+}
+
+.faith-framework__grid {
+  border-left: 1px solid #aab9c4;
+  border-top: 1px solid #aab9c4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.faith-framework__grid article {
+  border-bottom: 1px solid #aab9c4;
+  border-right: 1px solid #aab9c4;
+  padding: clamp(22px, 2.3vw, 34px);
+}
+
+.faith-framework__grid article > span {
+  color: var(--red-dark);
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.faith-framework__grid h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 1.7vw, 1.85rem);
+  line-height: 1.12;
+  margin: 14px 0 10px;
+}
+
+.faith-framework__grid a {
+  color: var(--red-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.faith-framework__grid p {
+  color: #3b4751;
+  font-size: 0.87rem;
+  line-height: 1.55;
+  margin: 18px 0 0;
+}
+
 .archive {
   padding: clamp(70px, 7vw, 110px) 4vw;
 }
@@ -752,6 +820,18 @@ a {
   margin: 18px 0 0;
 }
 
+.method__note a {
+  border-bottom: 1px solid #ffe2cf;
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 footer {
   align-items: center;
   background: var(--paper-bright);
@@ -798,6 +878,7 @@ footer > a {
   }
 
   .thesis,
+  .faith-framework,
   .archive__heading,
   .method {
     gap: 60px;
@@ -850,6 +931,11 @@ footer > a {
     padding-right: 6vw;
   }
 
+  .faith-framework {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
   .archive {
     padding-left: 0;
     padding-right: 0;
@@ -896,6 +982,10 @@ footer > a {
 }
 
 @media (max-width: 560px) {
+  .faith-framework__grid {
+    grid-template-columns: 1fr;
+  }
+
   .scoreboard div {
     align-items: flex-start;
     flex-direction: column;

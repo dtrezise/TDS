@@ -21,13 +21,18 @@ Rotate these roles to the foreground as the work requires:
 ## Evidence rules
 
 - Prefer primary sources. Use strong reporting as a bridge or when no primary source is public.
+- A citation is not immunity: independently verify factual allegations before repeating them, because republication can itself create defamation exposure.
 - Preserve exact dates and current procedural status.
 - Never convert a charge, referral, investigation, or settlement into a guilt finding.
 - Never transfer guilt from an associate, company, family member, party, or movement to another person.
 - Preserve acquittals, dismissals, vacated remedies, adverse appeal results, disputed intent, and exculpatory context.
 - A harsh conclusion must rest on a narrower, defensible factual claim.
 - Pair each published case with at least one direct evidence link; use multiple independent records when they add material verification.
+- Review titles, captions, social cards, and snippets separately; each must be defensible when read without the full article.
+- For unresolved accusations, identify the accuser, preserve the subject's denial or response, and state explicitly that no guilt finding has occurred.
+- Do not assert hidden motive or intent unless it is admitted, adjudicated, or supported by unusually strong evidence that is explained in the record.
 - For Christianity analysis, cite the teaching and explain the ethical comparison. Do not claim one interpretation binds all Christians.
+- Apply the full prepublication checklist in `EDITORIAL_STANDARDS.md` before adding a public case file.
 - Keep raw research in `research/` and the public mapping in `data/cases.ts`.
 - Run the research audit, link audit, static build, and rendered-HTML tests before publishing.
 

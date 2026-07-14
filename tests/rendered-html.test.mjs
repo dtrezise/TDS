@@ -11,10 +11,15 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Case files, not catchphrases/);
   assert.match(html, /Christianity test/);
   assert.match(html, /Evidence rules/);
-  assert.match(html, /55<!-- --> documented case files|55<\/strong><span>documented case files/);
+  assert.match(html, /56<!-- --> documented case files|56<\/strong><span>documented case files/);
   assert.match(html, /Record status/);
   assert.match(html, /birthright-citizenship order/i);
   assert.match(html, /Project 2025/);
+  assert.match(html, /faith-kirk-memorial-forgiveness-2025/);
+  assert.match(html, /forgiveness met Trump/);
+  assert.match(html, /The fruit of the Spirit/);
+  assert.match(html, /A citation is not immunity/);
+  assert.match(html, /EDITORIAL_STANDARDS\.md/);
   assert.match(html, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/og\.png"/);
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);

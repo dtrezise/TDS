@@ -12,6 +12,65 @@ const categoryShort: Record<CaseFile["category"], string> = {
   "MAGA & movement": "Movement",
 };
 
+const christianStandards = [
+  {
+    standard: "Truth, not false witness",
+    tradition: "Ten Commandments · Jesus",
+    references: "Exodus 20:16 · Matthew 5:37",
+    href: "https://bible.usccb.org/bible/matthew/5",
+    test: "Compare documented lies, concealment, and corrected false claims with the command for truthful witness and dependable speech.",
+  },
+  {
+    standard: "Do not steal; steward faithfully",
+    tradition: "Ten Commandments · Jesus",
+    references: "Exodus 20:15 · Luke 16:10–13",
+    href: "https://bible.usccb.org/bible/luke/16",
+    test: "Use precise civil findings about charity, business, or public resources—never turn misuse or fraud findings into an unsupported criminal-theft claim.",
+  },
+  {
+    standard: "Fidelity, not adultery",
+    tradition: "Ten Commandments · Jesus",
+    references: "Exodus 20:14 · Matthew 5:27–28",
+    href: "https://bible.usccb.org/bible/matthew/5",
+    test: "Examine authenticated speech and adjudicated conduct while keeping disputed extramarital allegations explicitly disputed.",
+  },
+  {
+    standard: "Mercy and forgiveness",
+    tradition: "Beatitudes · Lord's Prayer",
+    references: "Matthew 5:7 · 6:14–15",
+    href: "https://bible.usccb.org/bible/matthew/6",
+    test: "Ask whether grief, crime, and conflict are answered with mercy and forgiveness or converted into a politics of vengeance.",
+  },
+  {
+    standard: "Love enemies; make peace",
+    tradition: "Beatitudes · Sermon on the Mount",
+    references: "Matthew 5:9 · 5:43–48",
+    href: "https://bible.usccb.org/bible/matthew/5",
+    test: "Compare threats, dehumanization, and stated hatred with Jesus' commands to make peace, love enemies, and pray for persecutors.",
+  },
+  {
+    standard: "The fruit of the Spirit",
+    tradition: "Apostolic teaching",
+    references: "Galatians 5:22–23",
+    href: "https://bible.usccb.org/bible/galatians/5",
+    test: "Look for love, joy, peace, patience, kindness, generosity, faithfulness, gentleness, and self-control in public character.",
+  },
+  {
+    standard: "Authority as service",
+    tradition: "Jesus on leadership",
+    references: "Mark 10:42–45",
+    href: "https://bible.usccb.org/bible/mark/10",
+    test: "Test self-exaltation, domination, and loyalty demands against leadership defined as service rather than being served.",
+  },
+  {
+    standard: "Welcome the stranger; serve the poor",
+    tradition: "Jesus on judgment",
+    references: "Matthew 25:35–40",
+    href: "https://bible.usccb.org/bible/matthew/25",
+    test: "Judge policy by its documented treatment of migrants, refugees, children, the hungry, the sick, and people with the least power.",
+  },
+] as const;
+
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
@@ -98,7 +157,7 @@ export function TdsArchive() {
         <nav aria-label="Primary navigation">
           <a href="#evidence">Evidence</a>
           <a href="#faith">Christianity test</a>
-          <a href="#method">Method</a>
+          <a href="#method">Standards</a>
         </nav>
       </header>
 
@@ -147,6 +206,24 @@ export function TdsArchive() {
             This archive pairs conduct with teachings about truth, humility, mercy, fidelity, the stranger, the poor, peacemaking, and repentance. It does not claim every Christian interprets policy alike. It asks whether the public character being defended resembles the character being preached.
           </p>
           <a href="#evidence" onClick={() => setCategory("Christianity & character")}>View the Christianity case files <ArrowIcon /></a>
+        </div>
+      </section>
+
+      <section className="faith-framework" aria-labelledby="faith-framework-title">
+        <div className="faith-framework__heading">
+          <p className="section-label">The Christian standard</p>
+          <h2 id="faith-framework-title">Commands, character, and the teachings of Jesus.</h2>
+          <p>These are the recurring tests used in the case files. The archive compares public evidence with the teaching; it does not claim to judge anyone&apos;s soul.</p>
+        </div>
+        <div className="faith-framework__grid">
+          {christianStandards.map((item, index) => (
+            <article key={item.standard}>
+              <span>{String(index + 1).padStart(2, "0")} · {item.tradition}</span>
+              <h3>{item.standard}</h3>
+              <a href={item.href} target="_blank" rel="noreferrer">{item.references} <ArrowIcon /></a>
+              <p>{item.test}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -203,12 +280,14 @@ export function TdsArchive() {
           <li><span>02</span><div><h3>Status is part of the fact</h3><p>Verdict, liability finding, charge, allegation, settlement, acquittal, dismissal, appeal, and political judgment are not interchangeable.</p></div></li>
           <li><span>03</span><div><h3>No guilt by association</h3><p>Family members, officials, organizations, and movements appear only for their own documented conduct or a specific evidenced connection.</p></div></li>
           <li><span>04</span><div><h3>Analysis is labeled</h3><p>The moral and political conclusion is openly editorial. The source link shows what the underlying record actually says.</p></div></li>
-          <li><span>05</span><div><h3>Corrections stay visible</h3><p>Material reversals, dismissals, appeal outcomes, and source corrections are added to the case file instead of quietly erased.</p></div></li>
+          <li><span>05</span><div><h3>A citation is not immunity</h3><p>Repeating an accusation can create liability. We verify the underlying claim, disclose denials and limiting facts, and never let a headline outrun the evidence.</p></div></li>
+          <li><span>06</span><div><h3>Corrections stay visible</h3><p>Material reversals, dismissals, appeal outcomes, and source corrections are added to the case file instead of quietly erased.</p></div></li>
         </ol>
         <div className="method__note">
           <strong>Last evidence review</strong>
           <span>{lastReviewed}</span>
-          <p>This is a curated launch archive, not a claim that every grievance has already been captured. The catalog is designed to expand without lowering its evidence standard.</p>
+          <p>This is a curated archive, not a claim that every grievance has already been captured. “Trump Derangement Syndrome” is political rhetoric, not a diagnosis. TDS is an independent editorial project and is not affiliated with Trump, his organizations, or any person or institution discussed here.</p>
+          <a href="https://github.com/dtrezise/TDS/blob/main/EDITORIAL_STANDARDS.md" target="_blank" rel="noreferrer">Read the full legal and editorial standards <ArrowIcon /></a>
         </div>
       </section>
 

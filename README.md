@@ -27,7 +27,7 @@ npm test
 - Add material reversals, dismissals, appeals, and corrections to the record.
 - Never treat association, family relationship, party membership, or religious identity as proof of misconduct.
 
-The initial research catalog contains 59 raw case files, 159 evidence links, and 40 Christian-teaching links. The public site presents 55 files after suppressing four purely duplicative legal/business records. See `research/README.md` for the lane breakdown and maintenance notes.
+The research catalog contains 60 raw case files, 163 evidence links, and 42 Christian-teaching links. The public site presents 56 files after suppressing four purely duplicative legal/business records. See `research/README.md` for the lane breakdown and maintenance notes, and `EDITORIAL_STANDARDS.md` for the defamation, status-language, trademark, and prepublication rules.
 
 ## Deployment
 

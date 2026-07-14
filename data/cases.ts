@@ -124,6 +124,7 @@ const featuredIds = new Set([
   "family-separation-zero-tolerance",
   "obama-apes-social-post",
   "faith-repentance-2015",
+  "faith-kirk-memorial-forgiveness-2025",
   "faith-mass-deportation-2025",
   "faith-project2025-schedule-policy-career-2022-2025",
 ]);
