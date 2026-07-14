@@ -15,6 +15,7 @@
     "audit:archive": "node scripts/archive-export.mjs --check",
     "audit:links": "node scripts/check-links.mjs",
     "audit:voices": "node scripts/check-voice-links.mjs",
+    "audit:blind-eyes": "node scripts/check-blind-eyes-links.mjs",
     "archive:export": "node scripts/archive-export.mjs --output outputs/archive-export-v1.json --sql-output outputs/archive-seed-v1.sql",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"

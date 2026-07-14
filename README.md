@@ -30,6 +30,8 @@ npm test
 
 The research catalog contains 60 raw case files, 163 evidence links, and 42 Christian-teaching links. The public site presents 56 files after suppressing four purely duplicative legal/business records. See `research/README.md` for the lane breakdown and maintenance notes, and `EDITORIAL_STANDARDS.md` for the defamation, status-language, trademark, and prepublication rules.
 
+The site also includes two complementary church-witness directories: **Rooftops** amplifies Christians resisting Christian nationalism, while **Blind Eyes** documents eight leaders, churches, networks, and political ministries that advance, normalize, or religiously legitimize it. Blind Eyes uses 24 claim-specific evidence records, publishes denials and limiting context beside the criticism, and labels its scriptural comparisons as editorial analysis.
+
 The database-ready schema and migration plan live in `docs/ARCHIVE_DATA_ARCHITECTURE.md`. D1 and R2 remain inactive; the public site continues to read the reviewed JSON research until the documented activation and shadow-read gates are satisfied.
 
 ## Deployment

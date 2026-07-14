@@ -2,15 +2,22 @@
 
 import { useState } from "react";
 
-const canonicalUrl = "https://dtrezise.github.io/TDS/voices/";
-const shareTitle = "Shout It from the Rooftops — Christian voices resisting Christian nationalism";
-const shareText = "Christian nationalism is not the only Christian voice in public life. Follow the people naming it, resisting it, and building faithful alternatives.";
+type ShareToolsProps = {
+  canonicalUrl?: string;
+  shareTitle?: string;
+  shareText?: string;
+  label?: string;
+};
 
-const encodedUrl = encodeURIComponent(canonicalUrl);
-const encodedText = encodeURIComponent(`${shareText}\n\n${canonicalUrl}`);
-
-export function ShareTools() {
+export function ShareTools({
+  canonicalUrl = "https://dtrezise.github.io/TDS/voices/",
+  shareTitle = "Shout It from the Rooftops — Christian voices resisting Christian nationalism",
+  shareText = "Christian nationalism is not the only Christian voice in public life. Follow the people naming it, resisting it, and building faithful alternatives.",
+  label = "Share this directory",
+}: ShareToolsProps = {}) {
   const [status, setStatus] = useState("");
+  const encodedUrl = encodeURIComponent(canonicalUrl);
+  const encodedText = encodeURIComponent(`${shareText}\n\n${canonicalUrl}`);
 
   async function copyPage() {
     try {
@@ -37,7 +44,7 @@ export function ShareTools() {
   }
 
   return (
-    <div className="share-tools" aria-label="Share this directory">
+    <div className="share-tools" aria-label={label}>
       <button className="share-tools__primary" type="button" onClick={sharePage}>Share this page</button>
       <button type="button" onClick={copyPage}>Copy link</button>
       <a href={`https://bsky.app/intent/compose?text=${encodedText}`} target="_blank" rel="noreferrer">Bluesky ↗</a>

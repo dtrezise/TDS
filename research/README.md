@@ -8,6 +8,8 @@ The launch research was completed on July 13, 2026 in three independent lanes:
 
 Together the files contain 60 researched records and 163 direct evidence links. The public site publishes 56 case files because four business/legal entries that were duplicated across research lanes are suppressed in `data/cases.ts`. Faith entries remain separate when they apply a distinct moral analysis to an event covered elsewhere.
 
+`blind-eyes/directory.json` is a separate, profile-based accountability directory. Its first edition contains eight Christian leaders, churches, networks, or political ministries, 24 claim-specific evidence records, and 16 linked Christian-teaching references. Each profile preserves its alignment level and a visible denial, response, or limiting-context field; inclusion is never based on association alone.
+
 Each JSON record includes a status label, summary, significance statement, evidence list, tags, confidence, and an editorial caution. Those cautions are part of the maintenance record even when they are not shown verbatim on the public card.
 
 Apply the prepublication gate in `../EDITORIAL_STANDARDS.md` before a new record is published. A linked source does not by itself make a repeated allegation safe or accurate.
@@ -18,6 +20,8 @@ Run:
 npm run audit:research
 npm run audit:archive
 npm run audit:links
+npm run audit:voices
+npm run audit:blind-eyes
 npm run archive:export
 ```
 

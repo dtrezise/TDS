@@ -159,7 +159,8 @@ export function TdsArchive() {
           <a href="#evidence">Evidence</a>
           <a href="#faith">Christianity test</a>
           <a href="#method">Standards</a>
-          <Link className="nav-join" href="/voices">Voices / Join</Link>
+          <Link href="/blind-eyes">Blind Eyes</Link>
+          <Link className="nav-join" href="/voices">Rooftops / Join</Link>
         </nav>
       </header>
 
@@ -296,7 +297,7 @@ export function TdsArchive() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Accountability is not derangement. Refusing the record is.</p>
-        <div className="footer-links"><Link href="/voices">Find Christian voices</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/blind-eyes">Blind Eyes</Link><Link href="/voices">Rooftops</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

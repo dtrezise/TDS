@@ -1,0 +1,407 @@
+{
+  "reviewed": "2026-07-13",
+  "scope": "A claim-specific directory of prominent Christian leaders, churches, and political ministries whose documented words or organizing work advance, normalize, or provide religious legitimacy for Christian nationalism, Christian nationhood, or Trump-centered partisan Christianity.",
+  "editorial_note": "The page criticizes public conduct and public theology. It does not judge anyone's salvation, treat Christians as a monolith, or infer a person's position from association alone. Each alignment label is limited to the evidence shown, and denials or material limiting context are included.",
+  "scripture": {
+    "reference": "Mark 8:18",
+    "url": "https://bible.usccb.org/bible/mark/8"
+  },
+  "definition_sources": [
+    {
+      "label": "Christian-nation idea fuels U.S. conservative causes",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/4ea388e8d80c54016a6a4460cbef9b82"
+    },
+    {
+      "label": "Christian Nationalism and the January 6 Insurrection",
+      "publisher": "BJC and Freedom From Religion Foundation",
+      "url": "https://bjconline.org/app/uploads/2026/05/Christian_Nationalism_and_the_Jan6_Insurrection-2-9-22.pdf"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "franklin-graham",
+      "name": "Franklin Graham",
+      "role": "Evangelist · BGEA and Samaritan's Purse president",
+      "alignment": "Trump sacralization and partisan faith-sorting",
+      "alignment_strength": "Documented alignment; not self-identification",
+      "summary": "Graham has repeatedly supplied religious legitimacy to Trump while drawing a spiritual boundary around Trump's political opposition. The evidence supports a narrower finding of Trump sacralization and partisan faith-sorting; it does not establish that Graham personally adopts the Christian-nationalist label.",
+      "evidence": [
+        {
+          "date": "2020-08-28",
+          "type": "Direct interview",
+          "finding": "Graham told CBN that the Democratic Party was opposed to faith, while also acknowledging that millions of Democrats were wonderful people and that his father remained a Democrat.",
+          "source_label": "Franklin Graham says the Democratic Party is 'opposed to faith'",
+          "publisher": "CBN News",
+          "url": "https://cbn.com/news/us/exclusive-franklin-graham-tells-cbn-news-he-thinks-democratic-party-opposed-faith"
+        },
+        {
+          "date": "2025-01-20",
+          "type": "First-party record",
+          "finding": "At Trump's second inauguration, Graham prayed that God alone saved Trump from assassination and raised him up with strength and power, placing Trump's political return inside a claim of divine intervention.",
+          "source_label": "Franklin Graham leads prayer at Trump's inauguration",
+          "publisher": "Billy Graham Evangelistic Association",
+          "url": "https://billygraham.org/decision-magazine/articles/franklin-graham-leads-prayer-at-president-trumps-inauguration"
+        },
+        {
+          "date": "2026-05-17",
+          "type": "Movement context",
+          "finding": "Graham appeared on the program for Rededicate 250, a government-linked Christian event that critics described as promoting a MAGA-centered Christian-nationalist account of the nation's founding.",
+          "source_label": "Trump administration joins prayer gathering criticized for Christian nationalism",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/c677a4c43070e9da261f4ec5ebcf62a4"
+        }
+      ],
+      "response_context": "Public prayer for a president is not itself Christian nationalism. Graham has prayed for leaders of both parties, and the cited CBN interview included his acknowledgment of faithful Democrats. The concern documented here is the repeated conversion of Trump support and party conflict into claims about divine appointment and fidelity to faith.",
+      "christian_analysis": "This archive argues that treating one political leader as specially raised by God while marking an opposing party as hostile to faith risks replacing a church gathered around Christ with a church sorted by partisan loyalty. The comparison is to Christian warnings against faction and favoritism, not a verdict on Graham's soul.",
+      "teachings": [
+        {
+          "reference": "1 Corinthians 1:10-13",
+          "principle": "Paul rebukes factions that divide the church around human leaders and asks whether Christ has been divided.",
+          "url": "https://bible.usccb.org/bible/1corinthians/1"
+        },
+        {
+          "reference": "James 2:1-9",
+          "principle": "Faith in Christ is not to be practiced with partiality or status-based favoritism.",
+          "url": "https://bible.usccb.org/bible/james/2"
+        }
+      ]
+    },
+    {
+      "id": "eric-metaxas",
+      "name": "Eric Metaxas",
+      "role": "Author · radio host · Trump religious-liberty commissioner",
+      "alignment": "Election denial sacralized as Christian resistance",
+      "alignment_strength": "Repeated direct statements and movement leadership",
+      "summary": "Metaxas used Christian certainty and resistance imagery to promote Trump's effort to overturn the 2020 result. He later helped popularize a 'Bonhoeffer moment' framework that scholars and Bonhoeffer relatives said was being manipulated in support of Christian nationalism.",
+      "evidence": [
+        {
+          "date": "2020-12-02",
+          "type": "Reported direct statement",
+          "finding": "On a prayer call, Metaxas presented the false claim that the 2020 election had been stolen as something he knew in his heart and said God was on Trump's side.",
+          "source_label": "How Eric Metaxas went from Trump despiser to true believer",
+          "publisher": "Religion News Service",
+          "url": "https://religionnews.com/2020/12/03/metaxas-jesus-trump-stolen-election-christian-nationalism-rod-dreher-sidney-powell/"
+        },
+        {
+          "date": "2020-12-09",
+          "type": "Video record",
+          "finding": "In a Salem Radio Network video about the election fight, Metaxas said supporters needed to fight to the death and to the last drop of blood. The page preserves the clip and transcript.",
+          "source_label": "Metaxas says 'fight to the death' in election struggle",
+          "publisher": "Media Matters",
+          "url": "https://www.mediamatters.org/charlie-kirk/right-wing-radio-host-eric-metaxas-we-need-fight-death-last-drop-blood"
+        },
+        {
+          "date": "2024-11-22",
+          "type": "Independent review and response",
+          "finding": "The AP reported that Bonhoeffer scholars accused Metaxas of manipulating Bonhoeffer's story to support Christian nationalism. It also recorded Metaxas's response that he had spoken sloppily about Bonhoeffer's family and apologized.",
+          "source_label": "Bonhoeffer's legacy claimed and debated",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/493ff264db9529f67085c6bacb72a7a9"
+        }
+      ],
+      "response_context": "Metaxas has written that faith is political but politics must not become an idol. The AP also preserved his apology for one inflammatory characterization of Bonhoeffer's family. Those points are included because they limit, but do not erase, the documented election falsehoods and violent rhetoric.",
+      "christian_analysis": "The Christian contradiction is not political engagement; it is presenting a debunked electoral claim with the certainty of faith and answering defeat with death-and-blood rhetoric. That posture is tested here against Jesus' commands to make peace and love enemies and against James's description of wisdom as peaceable and gentle.",
+      "teachings": [
+        {
+          "reference": "Matthew 5:9, 43-48",
+          "principle": "Jesus blesses peacemakers and commands love and prayer for enemies.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        },
+        {
+          "reference": "James 3:13-18",
+          "principle": "Wisdom from above is peaceable, gentle, open to reason, and produces a harvest of righteousness in peace.",
+          "url": "https://bible.usccb.org/bible/james/3"
+        }
+      ]
+    },
+    {
+      "id": "lance-wallnau",
+      "name": "Lance Wallnau",
+      "role": "Charismatic political strategist · Seven Mountain advocate",
+      "alignment": "Christian-nationalist and dominion-oriented organizing",
+      "alignment_strength": "First-party advocacy",
+      "summary": "Wallnau openly defends a form of Christian nationalism and says his Seven Mountain mission is to move Christian influence into the systems that shape nations. He also presents Trump as divinely chosen and has described electoral opposition through demonic and biblical-enemy imagery.",
+      "evidence": [
+        {
+          "date": "2022-05-30",
+          "type": "First-party position",
+          "finding": "Wallnau argued for redefining Christian nationalism and called on supporters to do what is necessary to guard the nation so the Gospel can spread.",
+          "source_label": "We might need to redefine 'Christian Nationalism'",
+          "publisher": "Lance Wallnau",
+          "url": "https://lancewallnau.com/we-might-need-to-redefine-christian-nationalism/"
+        },
+        {
+          "date": "Undated; reviewed 2026-07-13",
+          "type": "First-party movement statement",
+          "finding": "Wallnau's organization says it catalyzed the language of seven mountains and seeks to turn the church's latent potential into power inside the systems that shape cities and nations.",
+          "source_label": "The Seven Mountain mission",
+          "publisher": "Lance Wallnau",
+          "url": "https://lancewallnau.com/our-story/"
+        },
+        {
+          "date": "2024-10-18",
+          "type": "Direct statement with independent context",
+          "finding": "The AP documented Wallnau applying 'Jezebel spirit' language to Kamala Harris while decreeing a Trump victory, part of a political-spiritual warfare campaign. The AP said he did not respond to its request for comment.",
+          "source_label": "How 'Jezebel spirit' rhetoric demonized a candidate",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/0a513c9e549a57a33f864341556d1b7a"
+        }
+      ],
+      "response_context": "Wallnau describes his project as defending self-government, national freedom, and the free course of the Gospel—not as racial nationalism. The page does not equate his Seven Mountain program with a completed theocracy; it documents the program's stated pursuit of Christian power across public systems.",
+      "christian_analysis": "This archive argues that turning a political rival into the personification of a demonic archetype makes flesh-and-blood opponents into spiritual enemies. It also tests the pursuit of power over social systems against Jesus' definition of leadership as service rather than domination.",
+      "teachings": [
+        {
+          "reference": "Ephesians 6:10-18",
+          "principle": "The spiritual struggle is explicitly not against flesh and blood, a warning against converting human political opponents into demons.",
+          "url": "https://bible.usccb.org/bible/ephesians/6"
+        },
+        {
+          "reference": "Mark 10:42-45",
+          "principle": "Jesus contrasts rulers who lord power over others with greatness expressed through service.",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        }
+      ]
+    },
+    {
+      "id": "doug-wilson-christ-church-crec",
+      "name": "Doug Wilson, Christ Church & CREC",
+      "role": "Pastor · church and classical-education network leader",
+      "alignment": "Explicit Christian nationalism and 'Mere Christendom'",
+      "alignment_strength": "Self-described movement leadership",
+      "summary": "Wilson publicly defends Christian nationalism and a society that formally recognizes Christ's authority. Christ Church and the Communion of Reformed Evangelical Churches have become national infrastructure for that project, including congregations tied to senior Trump administration figures.",
+      "evidence": [
+        {
+          "date": "2024-04-22",
+          "type": "First-party position",
+          "finding": "Wilson's Christian-nationalism FAQ rejects a merely creedal definition of American nationhood while saying an atheist can still be American and denying that his proposal is racial nationalism.",
+          "source_label": "FAQs on Christian Nationalism",
+          "publisher": "Doug Wilson, Blog & Mablog",
+          "url": "https://dougwils.com/books-and-culture/s7-engaging-the-culture/faqs-on-christian-nationalism.html"
+        },
+        {
+          "date": "2025-08-08",
+          "type": "Network record",
+          "finding": "An AP report on Christ Church and CREC showed pastors in Wilson's network advocating household voting or repeal of women's voting rights. The report did not attribute every statement to Wilson himself.",
+          "source_label": "Hegseth reposts video featuring pastors opposing women's vote",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/d962f472910fb47a0c66cd37b01f550d"
+        },
+        {
+          "date": "2025-09-05",
+          "type": "Independent movement review",
+          "finding": "The AP reported that Wilson gave a full-throated defense of Christian nationalism in Washington and traced the expanding influence of Christ Church, CREC, its schools, and its publishing network.",
+          "source_label": "A once-fringe Christian leader gets a welcome in Washington",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/8eb7a46747301dd939df18ba64ac5577"
+        }
+      ],
+      "response_context": "Wilson expressly rejects white nationalism and says non-Christians can be Americans. The women's-voting statements in the AP video came from multiple network pastors, so this profile attributes them to the network rather than falsely assigning every quotation to Wilson.",
+      "christian_analysis": "The page tests a hierarchical political order and proposals that would reduce women's independent civic voice against the equal dignity of people in Christ and Jesus' rejection of domination as the model of authority. Christians disagree about church office and family roles; that disagreement does not itself establish a right to unequal citizenship.",
+      "teachings": [
+        {
+          "reference": "Galatians 3:26-29",
+          "principle": "Baptismal identity in Christ relativizes divisions of ethnicity, legal status, and sex as measures of belonging.",
+          "url": "https://bible.usccb.org/bible/galatians/3"
+        },
+        {
+          "reference": "Mark 10:42-45",
+          "principle": "Christian authority is measured by service, not by lording status over others.",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        }
+      ]
+    },
+    {
+      "id": "greg-locke-global-vision",
+      "name": "Greg Locke & Global Vision Bible Church",
+      "role": "Pastor · Trump rally and revival speaker",
+      "alignment": "Partisan church identity and election-war mobilization",
+      "alignment_strength": "Documented conduct; label expressly rejected",
+      "summary": "Locke turned party affiliation into a test of Christian identity and used his pulpit and public prayer in the movement contesting the 2020 election. He rejects the Christian-nationalist and theocracy labels, so this page describes the conduct rather than overriding that denial.",
+      "evidence": [
+        {
+          "date": "2022-05-15",
+          "type": "Sermon video and transcript report",
+          "finding": "Locke told worshippers they could not be Christian and vote Democratic and said Democratic voters should leave his church, making partisan identity a boundary of Christian fellowship.",
+          "source_label": "Greg Locke says Christians cannot vote Democratic",
+          "publisher": "ChurchLeaders",
+          "url": "https://churchleaders.com/news/424869-greg-locke-says-christians-cant-vote-democrat-speaks-of-insurrection-overshadowing-generosity-to-single-moms-on-mothers-day.html"
+        },
+        {
+          "date": "2020-12-12 to 2021-01-06",
+          "type": "Documented movement participation",
+          "finding": "The BJC/FFRF January 6 report documents Locke's prayers and election-war rhetoric at pro-Trump events preceding the Capitol attack. Inclusion records his own speech; it does not allege that he committed the attack.",
+          "source_label": "Christian Nationalism and the January 6 Insurrection",
+          "publisher": "BJC and Freedom From Religion Foundation",
+          "url": "https://bjconline.org/app/uploads/2026/05/Christian_Nationalism_and_the_Jan6_Insurrection-2-9-22.pdf"
+        },
+        {
+          "date": "2022-03-31",
+          "type": "Denial and context",
+          "finding": "In an interview, Locke rejected the Christian-nationalist label and said he did not want a theocracy. The same report examined his false election and COVID claims and his political celebrity ministry.",
+          "source_label": "Pastor Greg Locke's political ministry",
+          "publisher": "The Washington Post",
+          "url": "https://www.washingtonpost.com/nation/2022/03/31/tennessee-pastor-extremist-politics/"
+        }
+      ],
+      "response_context": "Locke says he does not want theocracy and rejects the Christian-nationalist label. The profile therefore does not call him a self-identified Christian nationalist; it documents a pulpit that made party membership a spiritual boundary and helped sacralize the effort to keep Trump in power.",
+      "christian_analysis": "Declaring an entire party's voters outside Christianity replaces confession of Christ with a ballot test. The comparison here is to Paul's rebuke of faction and his warning against judging another servant over disputed matters—not a claim that political choices are morally irrelevant.",
+      "teachings": [
+        {
+          "reference": "Romans 14:1-13",
+          "principle": "Christians are warned not to despise or pass judgment on another servant over disputed matters.",
+          "url": "https://bible.usccb.org/bible/romans/14"
+        },
+        {
+          "reference": "1 Corinthians 1:10-13",
+          "principle": "The church is not to be divided into factions organized around human leaders.",
+          "url": "https://bible.usccb.org/bible/1corinthians/1"
+        }
+      ]
+    },
+    {
+      "id": "robert-jeffress-first-baptist-dallas",
+      "name": "Robert Jeffress & First Baptist Dallas",
+      "role": "Senior pastor · longtime Trump religious adviser",
+      "alignment": "Christian-nation advocacy and Trump religious legitimation",
+      "alignment_strength": "Documented alignment; label expressly rejected",
+      "summary": "Jeffress rejects the Christian-nationalist label and says non-Christians deserve equal rights, yet he argues that America was founded as a Christian nation and has repeatedly given Trump religious validation while discounting Christian appeals for mercy toward people targeted by Trump policy.",
+      "evidence": [
+        {
+          "date": "2024-02-17",
+          "type": "Direct interview with limiting context",
+          "finding": "Jeffress told the AP he did not identify as a Christian nationalist but did believe America was founded as a Christian nation. He also said non-Christians should have the same rights as Christians.",
+          "source_label": "Christian-nation idea fuels conservative causes",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/4ea388e8d80c54016a6a4460cbef9b82"
+        },
+        {
+          "date": "2024-11-07",
+          "type": "Direct statement",
+          "finding": "After Trump's reelection, Jeffress said people supported Trump for policies rather than piety and dismissed fears that Trump wanted an oppressive theocracy.",
+          "source_label": "White evangelical support for Trump's presidency",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/dbfd2b4fe5b2ea27968876f19ee20c84"
+        },
+        {
+          "date": "2025-01-21",
+          "type": "Direct response to a mercy appeal",
+          "finding": "After Bishop Mariann Budde asked Trump to show mercy to frightened LGBTQ+ people and immigrants, Jeffress said she had insulted rather than encouraged Trump and reported disgust in the audience.",
+          "source_label": "Trump demands apology after bishop's plea for mercy",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/a95b36f962be93c8647cc5144266da11"
+        }
+      ],
+      "response_context": "Jeffress denies supporting theocracy, affirms equal rights for non-Christians, and has said a church administrator assisted a congregant afraid during immigration enforcement. Those facts matter. The criticism is that his public voice has repeatedly privileged Trump and Christian nationhood over equally public demands for mercy.",
+      "christian_analysis": "When a bishop's restrained plea for mercy is treated as an insult to presidential power, the page asks which authority governs the church's witness: access to Caesar or Jesus' blessing of the merciful and identification with the stranger. The analysis concerns that public choice, not Jeffress's private faith.",
+      "teachings": [
+        {
+          "reference": "Matthew 5:7",
+          "principle": "Jesus calls the merciful blessed.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        },
+        {
+          "reference": "Matthew 25:31-46",
+          "principle": "Jesus identifies service to the stranger and people in need with service to himself.",
+          "url": "https://bible.usccb.org/bible/matthew/25"
+        }
+      ]
+    },
+    {
+      "id": "sean-feucht-let-us-worship",
+      "name": "Sean Feucht & Let Us Worship",
+      "role": "Worship leader · political revival organizer",
+      "alignment": "Christian-nationalist worship and state-capitol mobilization",
+      "alignment_strength": "Conditional self-identification and direct infrastructure",
+      "summary": "Feucht explicitly defends nationalism, conditionally accepts the Christian-nationalist label, and moves worship gatherings into state capitals and election-season political space through partnerships with TPUSA Faith. He also says he does not want a theocracy.",
+      "evidence": [
+        {
+          "date": "2024-03-01",
+          "type": "First-party position and denial",
+          "finding": "Feucht wrote that nationalism is good and that if his positions make him a Christian nationalist, so be it. In the same essay he said he did not want a theocracy and affirmed religious freedom.",
+          "source_label": "Defining 'Christian Nationalism'",
+          "publisher": "Sean Feucht",
+          "url": "https://www.seanfeucht.com/op-ed/defining-christian-nationalism"
+        },
+        {
+          "date": "2023-06-24",
+          "type": "First-party movement statement",
+          "finding": "Feucht described a war for America's soul and explained that he and Charlie Kirk created a TPUSA Faith partnership to bring revival into state capitals across the country.",
+          "source_label": "There is a war being fought for the soul of America",
+          "publisher": "Sean Feucht",
+          "url": "https://www.seanfeucht.com/op-ed/dt0e4kne87sug6iyrfp9zfx4zkyema"
+        },
+        {
+          "date": "2024-10-26",
+          "type": "On-site reported record",
+          "finding": "A Baptist News Global reporter documented Feucht embracing the Christian-nationalist label during the capitol tour and recorded speakers describing God's kingdom as a theocracy and denying other kingdoms a right to prosper.",
+          "source_label": "Of worship warfare, theocracy and a weekend with Sean Feucht",
+          "publisher": "Baptist News Global",
+          "url": "https://baptistnews.com/article/of-worship-warfare-theocracy-and-a-weekend-with-sean-feucht/"
+        }
+      ],
+      "response_context": "Feucht expressly says he supports religious freedom and does not want a Christian theocracy. His events also present themselves as worship and evangelism, and participants report conversions and recovery. The page's concern is the deliberate fusion of those practices with election timing, nationalism, Trump-aligned infrastructure, and claims of spiritual war.",
+      "christian_analysis": "Worship directed toward God becomes politically dangerous when it doubles as a technology for winning the nation for one movement. The page tests that fusion against Jesus' kingdom not being derived from worldly power and his blessing of peacemakers rather than spiritualized partisan combatants.",
+      "teachings": [
+        {
+          "reference": "John 18:33-38",
+          "principle": "Jesus tells Pilate that his kingdom does not derive from this world; otherwise his followers would fight.",
+          "url": "https://bible.usccb.org/bible/john/18"
+        },
+        {
+          "reference": "Matthew 5:9, 43-48",
+          "principle": "Jesus blesses peacemakers and commands love of enemies rather than a politics of spiritualized hostility.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        }
+      ]
+    },
+    {
+      "id": "tpusa-faith",
+      "name": "TPUSA Faith",
+      "role": "National church-mobilization arm of Turning Point USA",
+      "alignment": "Partisan movement infrastructure inside churches",
+      "alignment_strength": "First-party institutional mission",
+      "summary": "TPUSA Faith explicitly organizes pastors and congregations to move the American church toward Turning Point's culture-war and electoral program. Its own materials describe the church as necessary to winning back the country, eliminating 'wokeism' from pulpits, and turning the nation toward God.",
+      "evidence": [
+        {
+          "date": "2023-06-04",
+          "type": "First-party event record",
+          "finding": "At a summit for more than 1,100 pastors, TPUSA said the church must take an active posture in directing the nation and that most churches were failing to do so.",
+          "source_label": "Turning Point USA's Pastors Summit",
+          "publisher": "Turning Point USA",
+          "url": "https://tpusa.com/live/recap-turning-point-usas-pastors-summit/"
+        },
+        {
+          "date": "2024-07-27",
+          "type": "First-party event record",
+          "finding": "At the Believers' Summit, Charlie Kirk said TPUSA Faith was launched because a church afraid of government could not win back the country; TPUSA said its goal was ultimately to turn the nation toward God.",
+          "source_label": "The Believers' Summit: A call to unity and biblical truth",
+          "publisher": "Turning Point USA",
+          "url": "https://tpusa.com/live/tpusas-the-believers-summit-a-call-to-unity-and-biblical-truth/"
+        },
+        {
+          "date": "Reviewed 2026-07-13",
+          "type": "Current first-party mission",
+          "finding": "A TPUSA Faith prayer page says the organization exists to unite the American church around primary Christian doctrines and eliminate 'wokeism' from the pulpit, while recruiting 'godly patriots' to carry the mission forward.",
+          "source_label": "TPUSA Faith prayer card and mission",
+          "publisher": "Turning Point USA",
+          "url": "https://tpusa.com/prayercard/"
+        }
+      ],
+      "response_context": "TPUSA Faith describes its work as civic engagement, defense of biblical values, evangelism, and opposition to totalitarianism—not as establishment of a state church. This profile does not attribute every speaker's statement to the organization; it relies on the organization's own mission language and events.",
+      "christian_analysis": "The concern is institutional: a partisan political organization is discipling pastors to define Christian courage through its culture-war agenda and the recovery of national power. The page tests 'winning back the country' against a kingdom Jesus distinguished from worldly rule and against leadership defined as service.",
+      "teachings": [
+        {
+          "reference": "John 18:33-38",
+          "principle": "Jesus distinguishes his kingdom from political sovereignty maintained by worldly force.",
+          "url": "https://bible.usccb.org/bible/john/18"
+        },
+        {
+          "reference": "Mark 10:42-45",
+          "principle": "Jesus rejects domination as the pattern for Christian leadership and substitutes service.",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        }
+      ]
+    }
+  ]
+}

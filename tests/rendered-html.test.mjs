@@ -4,6 +4,7 @@ import test from "node:test";
 
 const html = await readFile(new URL("../out/index.html", import.meta.url), "utf8");
 const voicesHtml = await readFile(new URL("../out/voices/index.html", import.meta.url), "utf8");
+const blindEyesHtml = await readFile(new URL("../out/blind-eyes/index.html", import.meta.url), "utf8");
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
@@ -55,7 +56,35 @@ test("exports the Christian resistance directory", () => {
   assert.ok((voicesHtml.match(/class="voice-card"/g) ?? []).length === 12, "expected 12 curated voice profiles");
 });
 
-test("links the archive and directory in both directions", () => {
-  assert.match(html, /Voices \/ Join/);
+test("exports the Blind Eyes accountability directory", () => {
+  assert.match(blindEyesHtml, /<title>Blind Eyes \| TDS/);
+  assert.match(blindEyesHtml, /Blind eyes/);
+  assert.match(blindEyesHtml, /Loud pulpits/);
+  assert.match(blindEyesHtml, /Do you have eyes/);
+  assert.match(blindEyesHtml, /Mark 8:18/);
+  assert.match(blindEyesHtml, /Franklin Graham/);
+  assert.match(blindEyesHtml, /Eric Metaxas/);
+  assert.match(blindEyesHtml, /Lance Wallnau/);
+  assert.match(blindEyesHtml, /Doug Wilson, Christ Church &amp; CREC/);
+  assert.match(blindEyesHtml, /Greg Locke &amp; Global Vision Bible Church/);
+  assert.match(blindEyesHtml, /Robert Jeffress &amp; First Baptist Dallas/);
+  assert.match(blindEyesHtml, /Sean Feucht &amp; Let Us Worship/);
+  assert.match(blindEyesHtml, /TPUSA Faith/);
+  assert.match(blindEyesHtml, /Denial, response, or limiting context/);
+  assert.match(blindEyesHtml, /Christianity test · editorial analysis/);
+  assert.match(blindEyesHtml, /No guilt by association/);
+  assert.match(blindEyesHtml, /bsky\.app\/intent\/compose/);
+  assert.match(blindEyesHtml, /facebook\.com\/sharer\/sharer\.php/);
+  assert.match(blindEyesHtml, /mailto:/);
+  assert.match(blindEyesHtml, /application\/ld\+json/);
+  assert.ok((blindEyesHtml.match(/class="blind-card"/g) ?? []).length === 8, "expected 8 documented Blind Eyes profiles");
+});
+
+test("links the archive, Rooftops, and Blind Eyes in both directions", () => {
+  assert.match(html, /Rooftops \/ Join/);
+  assert.match(html, /Blind Eyes/);
   assert.match(voicesHtml, /Evidence archive/);
+  assert.match(voicesHtml, /Blind Eyes/);
+  assert.match(blindEyesHtml, /Rooftops/);
+  assert.match(blindEyesHtml, /Evidence archive/);
 });
