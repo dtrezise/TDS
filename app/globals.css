@@ -3867,6 +3867,16 @@ footer p {
 
 /* eBox sharing */
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .ebox-share-trigger {
   align-items: center;
   align-self: flex-start;
@@ -3945,17 +3955,18 @@ footer p {
   background: var(--paper);
   border: 1px solid var(--ink);
   display: grid;
-  grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
+  grid-template-columns: 1fr;
 }
 
 .ebox-share-preview > img {
-  height: 100%;
+  aspect-ratio: 3 / 1;
+  height: auto;
   object-fit: cover;
   width: 100%;
 }
 
 .ebox-share-preview__body {
-  border-left: 1px solid var(--ink);
+  border-top: 1px solid var(--ink);
   padding: 22px 24px;
 }
 
@@ -4006,6 +4017,26 @@ footer p {
   min-height: 40px;
   padding: 9px 14px;
   text-transform: uppercase;
+}
+
+.ebox-share-destinations button {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 52px;
+  padding: 10px;
+}
+
+.ebox-share-destinations button svg {
+  fill: currentColor;
+  height: 21px;
+  width: 21px;
+}
+
+.ebox-share-destinations button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
 }
 
 .ebox-share-destinations button.is-selected {
@@ -4996,11 +5027,10 @@ footer p {
   }
 
   .ebox-share-preview > img {
-    height: clamp(120px, 30vw, 190px);
+    height: auto;
   }
 
   .ebox-share-preview__body {
-    border-left: 0;
     border-top: 1px solid var(--ink);
   }
 
@@ -5043,7 +5073,7 @@ footer p {
   }
 
   .ebox-share-destinations button {
-    flex: 1 1 33%;
+    flex: 1 1 18%;
   }
 
   .ebox-share-actions > button:not(.button) {
@@ -5074,6 +5104,305 @@ footer p {
 .test-page--america { --page-test-color: #2f6655; }
 .test-page--deals { --page-test-color: #6b4a73; }
 .test-page--world { --page-test-color: #1f6875; }
+
+.test-scorecard {
+  scroll-margin-top: 76px;
+}
+
+.scorecard-formula {
+  background: var(--ink);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 0.42fr)) minmax(260px, 1.25fr);
+  margin-bottom: 26px;
+}
+
+.scorecard-formula > div,
+.scorecard-formula > p {
+  border-right: 1px solid #59636b;
+  margin: 0;
+  min-height: 124px;
+  padding: 22px 24px;
+}
+
+.scorecard-formula > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.scorecard-formula > div strong {
+  color: #eeb968;
+  font-family: var(--serif);
+  font-size: 2.35rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.scorecard-formula > div span {
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.scorecard-formula > p {
+  align-items: center;
+  border-right: 0;
+  color: #d8dde0;
+  display: flex;
+  font-family: var(--serif);
+  line-height: 1.55;
+}
+
+.criterion-point-scale,
+.scorecard-scale {
+  border-left: 1px solid #9dabb5;
+  border-top: 1px solid #9dabb5;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 26px;
+}
+
+.criterion-point-scale article,
+.scorecard-scale article {
+  border-bottom: 1px solid #9dabb5;
+  border-right: 1px solid #9dabb5;
+  min-height: 156px;
+  padding: 20px;
+}
+
+.criterion-point-scale strong,
+.criterion-point-scale span,
+.scorecard-scale strong,
+.scorecard-scale span {
+  display: block;
+}
+
+.criterion-point-scale strong,
+.scorecard-scale strong {
+  color: var(--page-test-color);
+  font-family: var(--serif);
+  font-size: 1.65rem;
+}
+
+.criterion-point-scale span,
+.scorecard-scale span {
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.criterion-point-scale p,
+.scorecard-scale p {
+  color: #46535c;
+  font-size: 0.74rem;
+  line-height: 1.45;
+  margin: 14px 0 0;
+}
+
+.scorecard-criteria article {
+  min-height: 380px;
+}
+
+.scorecard-criterion__foundation {
+  color: var(--red-dark);
+  display: block;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.scorecard-criteria article > p:first-of-type {
+  border-top: 1px solid #9dabb5;
+  padding-top: 18px;
+}
+
+.faith-note,
+.case-test-note,
+.patriotic-record,
+.blind-faith-test,
+.anti-top-five li,
+.anti-quote-grid figure,
+.anti-record-card,
+.anti-record-faith {
+  position: relative;
+}
+
+.faith-note__label,
+.blind-faith-test__label {
+  display: block;
+  padding-right: 76px;
+}
+
+.case-test-note__heading,
+.patriotic-record h3,
+.anti-record-card h4 {
+  padding-right: 76px;
+}
+
+.test-score-badge {
+  --score-color: var(--ink);
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  z-index: 8;
+}
+
+.test-score-badge--christianity { --score-color: #193148; }
+.test-score-badge--patriotic { --score-color: #9a601d; }
+.test-score-badge--america-first { --score-color: #2f6655; }
+.test-score-badge--deal { --score-color: #6b4a73; }
+.test-score-badge--world-standing { --score-color: #1f6875; }
+
+.test-score-badge__link {
+  align-items: baseline;
+  background: var(--score-color);
+  border: 1px solid color-mix(in srgb, white 40%, var(--score-color));
+  color: white !important;
+  display: flex !important;
+  height: 50px;
+  justify-content: center;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  min-width: 58px;
+  padding: 0 7px !important;
+  text-decoration: none;
+}
+
+.test-score-badge__link strong {
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+
+.test-score-badge__link small {
+  font-size: 0.48rem;
+  font-weight: 800;
+}
+
+.test-score-badge__link:focus-visible {
+  outline: 3px solid #eeb968;
+  outline-offset: 3px;
+}
+
+.test-score-popover {
+  background: #fffdf7;
+  border: 1px solid var(--score-color);
+  box-shadow: 0 16px 38px rgba(7, 18, 28, 0.24);
+  color: var(--ink);
+  display: block;
+  opacity: 0;
+  padding: 18px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  transform: translateY(-5px);
+  transition: opacity 140ms ease, transform 140ms ease, visibility 140ms ease;
+  visibility: hidden;
+  width: min(340px, calc(100vw - 44px));
+  z-index: 20;
+}
+
+.test-score-badge:hover .test-score-popover,
+.test-score-badge:focus-within .test-score-popover {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.test-score-popover__topline,
+.test-score-popover__formula,
+.test-score-popover__empty,
+.test-score-popover__criteria,
+.test-score-popover__action,
+.test-score-popover__criteria > span {
+  display: block;
+}
+
+.test-score-popover__topline {
+  align-items: start;
+  border-bottom: 3px solid var(--score-color);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.test-score-popover__topline strong {
+  font-family: var(--serif);
+  font-size: 1rem;
+}
+
+.test-score-popover__topline em {
+  color: var(--score-color);
+  font-size: 0.57rem;
+  font-style: normal;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.test-score-popover__formula,
+.test-score-popover__empty {
+  font-size: 0.68rem;
+  line-height: 1.45;
+  padding: 12px 0;
+}
+
+.test-score-popover__criteria {
+  border-top: 1px solid #cec7ba;
+  max-height: 290px;
+  overflow: auto;
+}
+
+.test-score-popover__criteria > span {
+  display: grid;
+  font-size: 0.66rem;
+  gap: 4px 10px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  line-height: 1.35;
+  padding: 10px 0;
+}
+
+.test-score-popover__criteria > span + span {
+  border-top: 1px solid #ded8cd;
+}
+
+.test-score-popover__criteria b {
+  color: var(--score-color);
+}
+
+.test-score-popover__criteria small {
+  color: #5f5a52;
+  grid-column: 1 / -1;
+}
+
+.test-score-popover__action {
+  border-top: 1px solid #cec7ba;
+  color: var(--score-color);
+  font-size: 0.61rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  padding-top: 11px;
+  text-transform: uppercase;
+}
+
+.anti-words .test-score-popover {
+  color: var(--ink);
+}
+
+.anti-top-five li > a {
+  margin-top: 52px;
+}
 
 .christianity-page .section-label,
 .patriotic-page .section-label {
@@ -5124,6 +5453,21 @@ footer p {
 }
 
 @media (max-width: 1100px) {
+  .scorecard-formula {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .scorecard-formula > p {
+    border-top: 1px solid #59636b;
+    grid-column: 1 / -1;
+    min-height: 0;
+  }
+
+  .criterion-point-scale,
+  .scorecard-scale {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .tests-hub-page .test-hub-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -5141,6 +5485,11 @@ footer p {
 }
 
 @media (max-width: 820px) {
+  .criterion-point-scale,
+  .scorecard-scale {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .site-header nav .primary-nav__link {
     border-bottom: 0;
   }
@@ -5182,6 +5531,51 @@ footer p {
 }
 
 @media (max-width: 560px) {
+  .scorecard-formula {
+    grid-template-columns: 1fr;
+  }
+
+  .scorecard-formula > div,
+  .scorecard-formula > p {
+    border-bottom: 1px solid #59636b;
+    border-right: 0;
+    min-height: 0;
+  }
+
+  .criterion-point-scale,
+  .scorecard-scale {
+    grid-template-columns: 1fr;
+  }
+
+  .criterion-point-scale article,
+  .scorecard-scale article {
+    min-height: 0;
+  }
+
+  .test-score-badge {
+    right: 10px;
+    top: 10px;
+  }
+
+  .test-score-badge__link {
+    height: 44px;
+    min-width: 52px;
+  }
+
+  .test-score-popover {
+    width: min(300px, calc(100vw - 28px));
+  }
+
+  .faith-note,
+  .case-test-note,
+  .blind-faith-test {
+    padding-top: 68px;
+  }
+
+  .anti-top-five li > a {
+    margin-top: 48px;
+  }
+
   .scoreboard {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0;

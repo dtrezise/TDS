@@ -4,8 +4,10 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { caseFiles, categories, type CaseFile } from "@/data/cases";
 import { buildCaseTestLenses } from "@/data/case-test-lenses";
+import { scoreCaseAgainstRubric } from "@/data/test-rubrics";
 import { ShareEBox } from "./share-ebox";
 import { SiteFooter } from "./site-chrome";
+import { TestScoreBadge } from "./test-score-badge";
 
 const categoryShort: Record<CaseFile["category"], string> = {
   "Law & accountability": "Accountability",
@@ -24,6 +26,9 @@ function ArrowIcon() {
 
 function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
   const testLenses = buildCaseTestLenses(item);
+  const christianityScore = item.faithLens?.length
+    ? scoreCaseAgainstRubric(item, "christianity", "Fails")
+    : null;
 
   return (
     <article className={`case-card ${item.featured ? "case-card--featured" : ""}`} id={item.id}>
@@ -49,6 +54,7 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
 
         {item.faithLens?.length ? (
           <aside className="faith-note">
+            {christianityScore ? <TestScoreBadge score={christianityScore} id={`${item.id}-christianity-score`} /> : null}
             <span className="faith-note__label">Christianity test</span>
             <p>{item.faithAnalysis}</p>
             <div className="faith-note__links">
@@ -64,6 +70,7 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
         <div className="case-test-stack" aria-label="Additional evidence tests">
           {testLenses.map((test) => (
             <aside className={`case-test-note case-test-note--${test.id}`} key={`${item.id}-${test.id}`}>
+              <TestScoreBadge score={test.score} id={`${item.id}-${test.id}-score`} />
               <div className="case-test-note__heading">
                 <Link href={test.href}>{test.label}</Link>
                 <span>{test.finding}</span>

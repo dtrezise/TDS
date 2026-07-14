@@ -3,6 +3,7 @@ import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
 import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { TestEvidenceRecord } from "../test-evidence-record";
+import { TestScorecard } from "../test-scorecard";
 
 export const metadata: Metadata = {
   title: "Deal Test | TDS",
@@ -27,17 +28,6 @@ export const metadata: Metadata = {
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
-
-const dealStandards = [
-  ["Promise", "What exact outcome was sold?", "Record the public commitment before the terms, timetable, or rhetoric changes."],
-  ["Leverage", "What did each side need?", "Distinguish durable bargaining power from threats that also impose costs on the United States."],
-  ["Concessions", "What did America give?", "Count sanctions relief, access, recognition, deadlines, subsidies, security commitments, and foregone alternatives."],
-  ["Verification", "How could performance be measured?", "A photo, announcement, memorandum, or aspiration is not an enforceable and inspectable result."],
-  ["Delivery", "What actually happened?", "Compare jobs, purchases, weapons limits, cost, schedule, and conduct with the agreement's stated target."],
-  ["Durability", "Did the result survive?", "A bargain should remain useful after the summit, news cycle, administration, market shock, or first violation."],
-  ["Public cost", "Who absorbed the downside?", "Include tax subsidies, retrofit costs, consumer prices, military exposure, debt, displacement, and opportunity cost."],
-  ["Beneficiary", "Who gained the most?", "Separate national benefit from personal prestige, political spectacle, private branding, or a counterparty's strategic gain."],
-] as const;
 
 const groups = [
   {
@@ -110,22 +100,10 @@ export default function DealTestPage() {
         </div>
       </section>
 
-      <section className="patriotic-standards" aria-labelledby="deal-standards-title">
-        <div className="patriotic-standards__heading">
-          <p className="section-label">Eight questions</p>
-          <h2 id="deal-standards-title">The Deal Test scorecard.</h2>
-          <p>The scorecard resists a familiar political trick: declaring victory at announcement, ignoring concessions, and redefining the objective after performance falls short.</p>
-        </div>
-        <div className="patriotic-standards__grid">
-          {dealStandards.map((item, index) => (
-            <article key={item[0]}>
-              <span>{String(index + 1).padStart(2, "0")} · {item[1]}</span>
-              <h3>{item[0]}</h3>
-              <p>{item[2]}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TestScorecard
+        testId="deal"
+        intro="The scorecard resists declaring victory at announcement, ignoring concessions, and redefining the objective after performance falls short."
+      />
 
       <section className="patriotic-record-section" id="deal-record" aria-labelledby="deal-record-title">
         <header>
@@ -141,7 +119,7 @@ export default function DealTestPage() {
               <div><h2 id={`deal-group-${group.number}`}>{group.title}</h2><p>{group.thesis}</p></div>
             </div>
             <div className="patriotic-record-grid">
-              {group.ids.map((id) => <TestEvidenceRecord item={getCase(id)} prefix="deal" key={id} />)}
+              {group.ids.map((id) => <TestEvidenceRecord item={getCase(id)} testId="deal" key={id} />)}
             </div>
           </section>
         ))}

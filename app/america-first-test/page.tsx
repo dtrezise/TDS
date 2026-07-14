@@ -3,6 +3,7 @@ import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
 import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { TestEvidenceRecord } from "../test-evidence-record";
+import { TestScorecard } from "../test-scorecard";
 
 export const metadata: Metadata = {
   title: "America First Test | TDS",
@@ -27,17 +28,6 @@ export const metadata: Metadata = {
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
-
-const standards = [
-  ["National interest, measured", "Costs and benefits belong in the same ledger", "Does the policy measurably improve Americans' security, prosperity, health, and freedom after predictable costs are counted?", "https://www.gao.gov/yellowbook"],
-  ["Sovereignty without imperialism", "UN Charter, Articles 2(1) and 2(4)", "Does the United States defend self-determination and territorial integrity—including when a powerful president wants another country's land or resources?", "https://www.un.org/en/about-us/un-charter/full-text"],
-  ["Alliances as force multipliers", "North Atlantic Treaty, Article 5", "Does the policy strengthen credible collective defense, or turn treaty commitments into personal protection money?", "https://www.nato.int/cps/en/natolive/official_texts_17120.htm"],
-  ["Congress decides war", "U.S. Constitution, Article I; War Powers Resolution", "Was force necessary, lawful, disclosed, and authorized through the constitutional institution assigned the power to declare war?", "https://constitution.congress.gov/browse/essay/artI-S8-C11-1/ALDE_00013587/"],
-  ["Cooperation against borderless threats", "Climate, disease, trafficking, and finance cross borders", "Does withdrawal improve American capacity—or surrender information, standard-setting, and coordinated leverage to others?", "https://www.gao.gov/products/gao-24-106102"],
-  ["Diplomacy before improvisation", "Foreign service, development, intelligence, and verification", "Does the administration preserve expert capacity and lawful institutions needed to prevent conflict, monitor agreements, and protect Americans?", "https://www.congress.gov/crs-product/IF12044"],
-  ["Trade that serves the public", "Constitutional authority and household cost", "Are tariffs lawful, predictable, and tied to an achievable objective—or are Americans paying an unstable tax while the goal keeps changing?", "https://www.cbo.gov/publication/62210"],
-  ["Credibility is national power", "Promises, threats, data, and law must remain believable", "Will allies, adversaries, markets, and citizens trust the next commitment after this one?", "https://www.gao.gov/products/gao-21-105160"],
-] as const;
 
 const groups = [
   {
@@ -116,23 +106,10 @@ export default function AmericaFirstTestPage() {
         </div>
       </section>
 
-      <section className="patriotic-standards" aria-labelledby="america-standards-title">
-        <div className="patriotic-standards__heading">
-          <p className="section-label">Eight recurring lenses</p>
-          <h2 id="america-standards-title">What the America First Test measures.</h2>
-          <p>These lenses do not dictate one foreign-policy ideology. They require a policy advertised as “America First” to disclose its authority, theory of success, cost, opportunity cost, beneficiary, and durable outcome.</p>
-        </div>
-        <div className="patriotic-standards__grid">
-          {standards.map((item, index) => (
-            <article key={item[0]}>
-              <span>{String(index + 1).padStart(2, "0")} · {item[1]}</span>
-              <h3>{item[0]}</h3>
-              <a href={item[3]} target="_blank" rel="noreferrer">Read the governing record <ArrowIcon /></a>
-              <p>{item[2]}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TestScorecard
+        testId="america-first"
+        intro="The rubric does not dictate one foreign-policy ideology. It requires a policy advertised as “America First” to disclose authority, costs, opportunity costs, beneficiaries, and durable outcomes."
+      />
 
       <section className="patriotic-record-section" id="america-record" aria-labelledby="america-record-title">
         <header>
@@ -148,7 +125,7 @@ export default function AmericaFirstTestPage() {
               <div><h2 id={`america-group-${group.number}`}>{group.title}</h2><p>{group.thesis}</p></div>
             </div>
             <div className="patriotic-record-grid">
-              {group.ids.map((id) => <TestEvidenceRecord item={getCase(id)} prefix="america" key={id} />)}
+              {group.ids.map((id) => <TestEvidenceRecord item={getCase(id)} testId="america-first" key={id} />)}
             </div>
           </section>
         ))}

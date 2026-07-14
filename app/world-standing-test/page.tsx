@@ -3,6 +3,7 @@ import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
 import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { TestEvidenceRecord } from "../test-evidence-record";
+import { TestScorecard } from "../test-scorecard";
 
 export const metadata: Metadata = {
   title: "World Standing Test | TDS",
@@ -27,15 +28,6 @@ export const metadata: Metadata = {
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
-
-const standards = [
-  ["Credible commitments", "Treaties, guarantees, and agreements", "Do allies, adversaries, markets, and citizens have reason to believe the next U.S. commitment will survive the next threat, grievance, or news cycle?"],
-  ["Alliance leverage", "Influence multiplied through trusted partners", "Did the action increase shared capacity and bargaining power—or make partners hedge against an unpredictable United States?"],
-  ["A seat at the table", "Institutions set rules with or without us", "Did withdrawal improve American leverage, or surrender votes, information, standards, and agenda-setting power to others?"],
-  ["National capacity", "Diplomacy, aid, health, science, and expertise", "Did the action preserve the people and institutions needed to prevent crises, understand local conditions, and implement policy?"],
-  ["Lawful example", "Power reinforced by constitutional credibility", "Can the United States defend sovereignty, law, elections, and human rights abroad while visibly weakening those commitments at home?"],
-  ["Economic influence", "Currency, trade, technology, sanctions, and markets", "Did the policy make U.S. rules and markets more attractive and dependable—or encourage partners to build alternatives?"],
-] as const;
 
 const groups = [
   {
@@ -108,22 +100,10 @@ export default function WorldStandingTestPage() {
         </div>
       </section>
 
-      <section className="patriotic-standards" aria-labelledby="world-standards-title">
-        <div className="patriotic-standards__heading">
-          <p className="section-label">Six recurring measures</p>
-          <h2 id="world-standards-title">What the World Standing Test measures.</h2>
-          <p>Influence is not sentiment alone. It rests on assets, relationships, rules, expertise, credibility, and the demonstrated ability to assemble others behind a durable objective.</p>
-        </div>
-        <div className="patriotic-standards__grid world-standards-grid">
-          {standards.map((item, index) => (
-            <article key={item[0]}>
-              <span>{String(index + 1).padStart(2, "0")} · {item[1]}</span>
-              <h3>{item[0]}</h3>
-              <p>{item[2]}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TestScorecard
+        testId="world-standing"
+        intro="Influence is not sentiment alone. It rests on assets, relationships, rules, expertise, credibility, prevention, and the demonstrated ability to assemble others behind a durable objective."
+      />
 
       <section className="patriotic-record-section" id="world-record" aria-labelledby="world-record-title">
         <header>
@@ -139,7 +119,7 @@ export default function WorldStandingTestPage() {
               <div><h2 id={`world-group-${group.number}`}>{group.title}</h2><p>{group.thesis}</p></div>
             </div>
             <div className="patriotic-record-grid">
-              {group.ids.map((id) => <TestEvidenceRecord item={getCase(id)} prefix="world" key={id} />)}
+              {group.ids.map((id) => <TestEvidenceRecord item={getCase(id)} testId="world-standing" key={id} />)}
             </div>
           </section>
         ))}

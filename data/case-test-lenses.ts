@@ -1,4 +1,5 @@
 import type { CaseFile } from "./cases";
+import { scoreCaseAgainstRubric, type TestScore } from "./test-rubrics";
 
 export type CaseTestLens = {
   id: "patriotic" | "america-first" | "deal" | "world-standing";
@@ -6,7 +7,10 @@ export type CaseTestLens = {
   href: string;
   finding: "Fails" | "Implicates" | "Not directly implicated";
   analysis: string;
+  score: TestScore;
 };
+
+type UnscoredCaseTestLens = Omit<CaseTestLens, "score">;
 
 function firstSentence(text: string) {
   const match = text.match(/^.*?[.!?](?:\s|$)/);
@@ -19,7 +23,7 @@ function lens(
   href: string,
   finding: CaseTestLens["finding"],
   analysis: string,
-): CaseTestLens {
+): UnscoredCaseTestLens {
   return { id, label, href, finding, analysis };
 }
 
@@ -45,7 +49,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
   const foreignOrAlliance = /foreign|world|allia|nato|ukraine|russia|china|iran|qatar|venezuela|greenland|canada|panama|afghan|north korea|climate|who|usaid|united nations|diploma|tariff|trade|emolument/.test(text);
   const bargainOrOutcome = /deal|agreement|settlement|bankrupt|business|fraud|tariff|trade|purchase|subsid|jobs|summit|contract|aircraft|jet|payment|economic|cost|price|leverage|concession|retrofit/.test(text);
 
-  let patriotic: CaseTestLens;
+  let patriotic: UnscoredCaseTestLens;
   if (isLaw || isDemocracy || (officeOrConstitution && (isWorld || isMovement))) {
     patriotic = lens(
       "patriotic",
@@ -72,7 +76,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  let americaFirst: CaseTestLens;
+  let americaFirst: UnscoredCaseTestLens;
   if (isWorld) {
     americaFirst = lens(
       "america-first",
@@ -99,7 +103,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  let deal: CaseTestLens;
+  let deal: UnscoredCaseTestLens;
   if (isDeal) {
     deal = lens(
       "deal",
@@ -126,7 +130,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  let worldStanding: CaseTestLens;
+  let worldStanding: UnscoredCaseTestLens;
   if (isWorld) {
     worldStanding = lens(
       "world-standing",
@@ -153,5 +157,8 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  return [patriotic, americaFirst, deal, worldStanding];
+  return [patriotic, americaFirst, deal, worldStanding].map((entry) => ({
+    ...entry,
+    score: scoreCaseAgainstRubric(item, entry.id, entry.finding),
+  }));
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
+import { TestScorecard } from "../test-scorecard";
 
 export const metadata: Metadata = {
   title: "Christianity Test | TDS",
@@ -27,65 +28,6 @@ export const metadata: Metadata = {
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
-
-const christianStandards = [
-  {
-    standard: "Truth, not false witness",
-    tradition: "Ten Commandments · Jesus",
-    references: "Exodus 20:16 · Matthew 5:37",
-    href: "https://bible.usccb.org/bible/matthew/5",
-    test: "Compare documented lies, concealment, and corrected false claims with the command for truthful witness and dependable speech.",
-  },
-  {
-    standard: "Do not steal; steward faithfully",
-    tradition: "Ten Commandments · Jesus",
-    references: "Exodus 20:15 · Luke 16:10–13",
-    href: "https://bible.usccb.org/bible/luke/16",
-    test: "Use precise civil findings about charity, business, or public resources—never turn misuse or fraud findings into an unsupported criminal-theft claim.",
-  },
-  {
-    standard: "Fidelity, not adultery",
-    tradition: "Ten Commandments · Jesus",
-    references: "Exodus 20:14 · Matthew 5:27–28",
-    href: "https://bible.usccb.org/bible/matthew/5",
-    test: "Examine authenticated speech and adjudicated conduct while keeping disputed extramarital allegations explicitly disputed.",
-  },
-  {
-    standard: "Mercy and forgiveness",
-    tradition: "Beatitudes · Lord's Prayer",
-    references: "Matthew 5:7 · 6:14–15",
-    href: "https://bible.usccb.org/bible/matthew/6",
-    test: "Ask whether grief, crime, and conflict are answered with mercy and forgiveness or converted into a politics of vengeance.",
-  },
-  {
-    standard: "Love enemies; make peace",
-    tradition: "Beatitudes · Sermon on the Mount",
-    references: "Matthew 5:9 · 5:43–48",
-    href: "https://bible.usccb.org/bible/matthew/5",
-    test: "Compare threats, dehumanization, and stated hatred with Jesus' commands to make peace, love enemies, and pray for persecutors.",
-  },
-  {
-    standard: "The fruit of the Spirit",
-    tradition: "Apostolic teaching",
-    references: "Galatians 5:22–23",
-    href: "https://bible.usccb.org/bible/galatians/5",
-    test: "Look for love, joy, peace, patience, kindness, generosity, faithfulness, gentleness, and self-control in public character.",
-  },
-  {
-    standard: "Authority as service",
-    tradition: "Jesus on leadership",
-    references: "Mark 10:42–45",
-    href: "https://bible.usccb.org/bible/mark/10",
-    test: "Test self-exaltation, domination, and loyalty demands against leadership defined as service rather than being served.",
-  },
-  {
-    standard: "Welcome the stranger; serve the poor",
-    tradition: "Jesus on judgment",
-    references: "Matthew 25:35–40",
-    href: "https://bible.usccb.org/bible/matthew/25",
-    test: "Judge policy by its documented treatment of migrants, refugees, children, the hungry, the sick, and people with the least power.",
-  },
-] as const;
 
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
@@ -123,23 +65,10 @@ export default function ChristianityTestPage() {
         </ol>
       </section>
 
-      <section className="faith-framework faith-framework--page" aria-labelledby="faith-framework-title">
-        <div className="faith-framework__heading">
-          <p className="section-label">The recurring lenses</p>
-          <h2 id="faith-framework-title">Commands, character, and the teachings of Jesus.</h2>
-          <p>These lenses accompany relevant case files on the Evidence page. They remain visible beside the evidence so the moral analysis cannot be separated from the factual status beneath it.</p>
-        </div>
-        <div className="faith-framework__grid">
-          {christianStandards.map((item, index) => (
-            <article key={item.standard}>
-              <span>{String(index + 1).padStart(2, "0")} · {item.tradition}</span>
-              <h3>{item.standard}</h3>
-              <a href={item.href} target="_blank" rel="noreferrer">{item.references} <ArrowIcon /></a>
-              <p>{item.test}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TestScorecard
+        testId="christianity"
+        intro="Each applicable criterion is scored from direct conflict to strong alignment. These lenses accompany relevant case files so the moral analysis remains attached to the factual status beneath it."
+      />
 
       <section className="framework-caution">
         <div>

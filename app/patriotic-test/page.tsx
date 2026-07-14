@@ -3,6 +3,9 @@ import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
 import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { ShareEBox } from "../share-ebox";
+import { TestScorecard } from "../test-scorecard";
+import { TestScoreBadge } from "../test-score-badge";
+import { scoreCaseAgainstRubric, scoreTextAgainstRubric } from "@/data/test-rubrics";
 
 export const metadata: Metadata = {
   title: "Patriotic Test | TDS",
@@ -29,65 +32,6 @@ export const metadata: Metadata = {
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
-
-const constitutionalStandards = [
-  {
-    standard: "The Constitution above the leader",
-    foundation: "Article VI · Presidential oath",
-    references: "Constitutional oath and supremacy",
-    href: "https://constitution.congress.gov/constitution/article-6/",
-    test: "Public officers swear to support the Constitution, not to obey a president, party, movement, or personality. Personal loyalty cannot displace constitutional duty.",
-  },
-  {
-    standard: "Free elections and peaceful transfer",
-    foundation: "Articles I & II · 12th Amendment",
-    references: "Electoral votes and transfer of power",
-    href: "https://constitution.congress.gov/constitution/amendment-12/",
-    test: "A patriot accepts lawful election results and challenges them through evidence and courts—not pressure campaigns, false electors, intimidation, or force.",
-  },
-  {
-    standard: "Rule of law, accurately stated",
-    foundation: "Constitutional government",
-    references: "The Constitution of the United States",
-    href: "https://constitution.congress.gov/constitution/",
-    test: "No leader is above legal accountability. But patriotism also requires precision: a verdict, finding, charge, allegation, acquittal, dismissal, pardon, and political judgment are not interchangeable.",
-  },
-  {
-    standard: "Checks, balances, and independent oversight",
-    foundation: "Articles I–III",
-    references: "Separated powers",
-    href: "https://constitution.congress.gov/browse/article-2/",
-    test: "Congress, courts, inspectors general, professional civil servants, and lawful investigations are safeguards—not enemies to purge when they constrain a president.",
-  },
-  {
-    standard: "Free speech, press, assembly, and petition",
-    foundation: "First Amendment",
-    references: "The five protected freedoms",
-    href: "https://constitution.congress.gov/constitution/amendment-1/",
-    test: "Government may answer criticism and retains broad control over genuinely restricted presidential spaces. Where press access is opened generally, however, it may not punish protected viewpoints or turn admission into a loyalty test.",
-  },
-  {
-    standard: "Equal citizenship and due process",
-    foundation: "Fifth & 14th Amendments",
-    references: "Citizenship and equal protection",
-    href: "https://constitution.congress.gov/constitution/amendment-14/",
-    test: "Rights do not depend on race, birthplace, religion, party, or approval of the president. Executive power does not erase constitutional citizenship or due process.",
-  },
-  {
-    standard: "Public office, not private benefit",
-    foundation: "Emoluments clauses · Public trust",
-    references: "Foreign Emoluments Clause",
-    href: "https://constitution.congress.gov/browse/essay/artI-S9-C8-3-1/ALDE_00013204/",
-    test: "Presidential authority is held for the republic. Financial conflicts, self-protection, family enrichment, and use of office against personal enemies demand documented scrutiny.",
-  },
-  {
-    standard: "Lawful power is still answerable",
-    foundation: "Article II · Democratic accountability",
-    references: "The pardon power",
-    href: "https://constitution.congress.gov/browse/essay/artII-S2-C1-3-1/ALDE_00013316/",
-    test: "A constitutional power can be lawfully exercised and still be reckless, corrupting, self-serving, or destructive of accountability. Legality is the floor, not the whole patriotic test.",
-  },
-] as const;
 
 const evidenceGroups = [
   {
@@ -173,8 +117,10 @@ function ArrowIcon() {
 
 function EvidenceRecord({ item }: { item: CaseFile }) {
   const anchor = `patriotic-${item.id}`;
+  const score = scoreCaseAgainstRubric(item, "patriotic", "Fails");
   return (
     <article className="patriotic-record" id={anchor}>
+      <TestScoreBadge score={score} id={`${anchor}-score`} />
       <p className="patriotic-record__date">{item.date}</p>
       <h3>{item.title}</h3>
       <div className="patriotic-record__status"><strong>Record status</strong><span>{item.status}</span></div>
@@ -225,23 +171,10 @@ export default function PatrioticTestPage() {
         </div>
       </section>
 
-      <section className="patriotic-standards" aria-labelledby="patriotic-standards-title">
-        <div className="patriotic-standards__heading">
-          <p className="section-label">Eight recurring lenses</p>
-          <h2 id="patriotic-standards-title">What the patriotic test measures.</h2>
-          <p>The Constitution allocates power, protects rights, and requires public officers to support the constitutional order. These lenses turn those commitments into questions readers can apply to the record.</p>
-        </div>
-        <div className="patriotic-standards__grid">
-          {constitutionalStandards.map((item, index) => (
-            <article key={item.standard}>
-              <span>{String(index + 1).padStart(2, "0")} · {item.foundation}</span>
-              <h3>{item.standard}</h3>
-              <a href={item.href} target="_blank" rel="noreferrer">{item.references} <ArrowIcon /></a>
-              <p>{item.test}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <TestScorecard
+        testId="patriotic"
+        intro="The Constitution allocates power, protects rights, and requires public officers to support the constitutional order. The score makes those commitments directly applicable to each record."
+      />
 
       <section className="patriotic-record-section" id="patriotic-record" aria-labelledby="patriotic-record-title">
         <header>
@@ -269,6 +202,10 @@ export default function PatrioticTestPage() {
           </div>
           <div className="patriotic-record-grid patriotic-record-grid--single">
             <article className="patriotic-record" id={pressCase.id}>
+              <TestScoreBadge
+                score={scoreTextAgainstRubric("patriotic", [pressCase.title, pressCase.status, pressCase.summary, pressCase.significance].join(" "), "Fails")}
+                id={`${pressCase.id}-score`}
+              />
               <p className="patriotic-record__date">{pressCase.date}</p>
               <h3>{pressCase.title}</h3>
               <div className="patriotic-record__status"><strong>Record status</strong><span>{pressCase.status}</span></div>
