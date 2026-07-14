@@ -170,7 +170,8 @@ export function TdsArchive() {
           <p className="section-label">A documented case against denial</p>
           <h1>DERANGEMENT <em>denying the record.</em></h1>
           <p className="hero__lede">
-            “Trump Derangement Syndrome” is usually deployed to dismiss critics. This archive turns the phrase back on the loyalty test: how much verified misconduct must be ignored, excused, or celebrated to keep believing the myth?
+            Accountability is not derangement. Refusing the record is.<br />
+            How much verified misconduct must be ignored, excused, or celebrated to keep believing the myth?
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#evidence">Open the case files</a>

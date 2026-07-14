@@ -12,6 +12,9 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Trump Derangement Syndrome \| The Evidence Archive/);
   assert.match(html, /DERANGEMENT/);
   assert.match(html, /denying the record/);
+  assert.match(html, /Accountability is not derangement\. Refusing the record is\./);
+  assert.match(html, /How much verified misconduct must be ignored, excused, or celebrated to keep believing the myth\?/);
+  assert.doesNotMatch(html, /usually deployed to dismiss critics/);
   assert.match(html, /Case files, not catchphrases/);
   assert.match(html, /Christianity test/);
   assert.match(html, /Evidence rules/);
