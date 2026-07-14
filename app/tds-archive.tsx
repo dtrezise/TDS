@@ -101,6 +101,7 @@ export function TdsArchive() {
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#evidence">Open the case files</a>
+            <Link className="button button--text" href="/patriotic-test">Apply the Patriotic Test <ArrowIcon /></Link>
             <Link className="button button--text" href="/methodology">Read our evidence rules <ArrowIcon /></Link>
           </div>
         </div>
@@ -170,7 +171,7 @@ export function TdsArchive() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Accountability is not derangement. Refusing the record is.</p>
-        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </>
   );

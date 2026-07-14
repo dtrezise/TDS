@@ -7,9 +7,10 @@ const voicesHtml = await readFile(new URL("../out/voices/index.html", import.met
 const blindEyesHtml = await readFile(new URL("../out/blind-eyes/index.html", import.meta.url), "utf8");
 const antiChristHtml = await readFile(new URL("../out/anti-christ/index.html", import.meta.url), "utf8");
 const christianityTestHtml = await readFile(new URL("../out/christianity-test/index.html", import.meta.url), "utf8");
+const patrioticTestHtml = await readFile(new URL("../out/patriotic-test/index.html", import.meta.url), "utf8");
 const methodologyHtml = await readFile(new URL("../out/methodology/index.html", import.meta.url), "utf8");
 
-const renderedPages = [html, voicesHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, methodologyHtml];
+const renderedPages = [html, voicesHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, methodologyHtml];
 
 function primaryNavigation(pageHtml) {
   const match = pageHtml.match(/<nav aria-label="Primary navigation">([\s\S]*?)<\/nav>/);
@@ -27,6 +28,7 @@ test("exports the finished evidence archive", () => {
   assert.doesNotMatch(html, /usually deployed to dismiss critics/);
   assert.match(html, /Case files, not catchphrases/);
   assert.match(html, /Christianity test/);
+  assert.match(html, /Apply the Patriotic Test/);
   assert.match(html, /Read our evidence rules/);
   assert.match(html, /56<!-- --> documented case files|56<\/strong><span>documented case files/);
   assert.match(html, /Record status/);
@@ -146,6 +148,34 @@ test("exports the Christianity Test framework and collection hub", () => {
   assert.match(christianityTestHtml, /faith-framework__grid"><article>/);
 });
 
+test("exports the Patriotic Test framework and evidence record", () => {
+  assert.match(patrioticTestHtml, /<title>Patriotic Test \| TDS/);
+  assert.match(patrioticTestHtml, /patriotic-test-hero\.jpg/);
+  assert.match(patrioticTestHtml, /A patriot owes loyalty to the Constitution/);
+  assert.match(patrioticTestHtml, /A loyalist asks what serves the leader/);
+  assert.match(patrioticTestHtml, /The leader above the law/);
+  assert.match(patrioticTestHtml, /The Constitution above the leader/);
+  assert.match(patrioticTestHtml, /Free elections and peaceful transfer/);
+  assert.match(patrioticTestHtml, /Rule of law, accurately stated/);
+  assert.match(patrioticTestHtml, /Checks, balances, and independent oversight/);
+  assert.match(patrioticTestHtml, /Free speech, press, assembly, and petition/);
+  assert.match(patrioticTestHtml, /Equal citizenship and due process/);
+  assert.match(patrioticTestHtml, /Public office, not private benefit/);
+  assert.match(patrioticTestHtml, /Lawful power is still answerable/);
+  assert.match(patrioticTestHtml, /Power must yield to elections/);
+  assert.match(patrioticTestHtml, /The executive must obey law and oversight/);
+  assert.match(patrioticTestHtml, /Office is a trust, not a personal weapon/);
+  assert.match(patrioticTestHtml, /A free press is not a presidential favor/);
+  assert.match(patrioticTestHtml, /election-subversion-january-6-report/);
+  assert.match(patrioticTestHtml, /gop-election-certification-objections/);
+  assert.match(patrioticTestHtml, /Completed lawful exercise of presidential clemency/);
+  assert.match(patrioticTestHtml, /District-court preliminary injunction; appellate panel stayed relief for restricted presidential spaces but not the East Room/);
+  assert.match(patrioticTestHtml, /USCOURTS-dcd-1_25-cv-00532-0/);
+  assert.match(patrioticTestHtml, /25-5109LDSN3\.pdf/);
+  assert.match(patrioticTestHtml, /Patriotism is not a shortcut around proof/);
+  assert.ok((patrioticTestHtml.match(/class="patriotic-record"/g) ?? []).length === 12, "expected 11 archive records and one press-access record");
+});
+
 test("exports the complete publication methodology", () => {
   assert.match(methodologyHtml, /<title>Methodology \| TDS/);
   assert.match(methodologyHtml, /methodology-hero\.jpg/);
@@ -163,14 +193,15 @@ test("exports the complete publication methodology", () => {
   assert.match(methodologyHtml, /ARCHIVE_DATA_ARCHITECTURE\.md/);
 });
 
-test("uses one uncluttered three-section header on every page", () => {
+test("uses one uncluttered four-section header on every page", () => {
   for (const pageHtml of renderedPages) {
     const nav = primaryNavigation(pageHtml);
     assert.match(nav, />Evidence</);
     assert.match(nav, />Christianity Test</);
+    assert.match(nav, />Patriotic Test</);
     assert.match(nav, />Methodology</);
     assert.doesNotMatch(nav, /Anti Christ|Blind Eyes|Rooftops|Categories|Take action|Profiles|Full record/);
-    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 3, "expected exactly three primary links");
+    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 4, "expected exactly four primary links");
   }
 
   assert.match(christianityTestHtml, /href="\/voices\/"/);
@@ -179,4 +210,5 @@ test("uses one uncluttered three-section header on every page", () => {
   assert.match(voicesHtml, /href="\/christianity-test\/"/);
   assert.match(blindEyesHtml, /href="\/christianity-test\/"/);
   assert.match(antiChristHtml, /href="\/christianity-test\/"/);
+  assert.match(html, /href="\/patriotic-test\/"/);
 });

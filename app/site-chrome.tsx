@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export type PrimarySection = "evidence" | "christianity" | "methodology";
+export type PrimarySection = "evidence" | "christianity" | "patriotic" | "methodology";
 
 function publicAssetPath(src: string) {
   const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
@@ -13,6 +13,7 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
   const items: Array<{ label: string; href: string; section: PrimarySection }> = [
     { label: "Evidence", href: "/", section: "evidence" },
     { label: "Christianity Test", href: "/christianity-test", section: "christianity" },
+    { label: "Patriotic Test", href: "/patriotic-test", section: "patriotic" },
     { label: "Methodology", href: "/methodology", section: "methodology" },
   ];
 
