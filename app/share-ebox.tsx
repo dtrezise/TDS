@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
-import shareLogo from "@/app/assets/tds-share-logo.png";
 
 type Destination = "x" | "bluesky" | "facebook" | "linkedin" | "email";
 
@@ -46,6 +45,13 @@ function clipped(value: string, max: number) {
   const normalized = cleanText(value);
   if (normalized.length <= max) return normalized;
   return `${normalized.slice(0, Math.max(0, max - 1)).trimEnd()}…`;
+}
+
+function shareLogoPath() {
+  const githubPagesBase = window.location.pathname === "/TDS" || window.location.pathname.startsWith("/TDS/")
+    ? "/TDS"
+    : "";
+  return `${githubPagesBase}/tds-share-logo.png`;
 }
 
 function composePost(
@@ -178,8 +184,10 @@ export function ShareEBox({ anchor, title, summary, status, context }: ShareEBox
 
             <div className="ebox-share-preview" aria-label="Outgoing post preview">
               <Image
-                src={shareLogo}
+                src={shareLogoPath()}
                 alt="TDS — Trump Derangement Syndrome. The Evidence Archive."
+                width={1500}
+                height={500}
                 priority={false}
                 unoptimized
               />
