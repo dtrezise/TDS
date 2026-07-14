@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
-import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { TestEvidenceRecord } from "../test-evidence-record";
 
 export const metadata: Metadata = {
@@ -81,6 +81,20 @@ export default function DealTestPage() {
     <main className="patriotic-page test-page test-page--deals">
       <SiteHeader active="tests" />
       <PageMasthead src="/deal-test-hero.jpg" alt="The Deal Test — Promises. Leverage. Results." priority />
+
+      <section className="patriotic-contrast" aria-label="Deal branding compared with deal performance">
+        <article>
+          <span>The brand</span>
+          <h2>Announcement as victory.</h2>
+          <p>Big number. Dominant posture. Personal praise. Ambiguous terms. The next headline arrives before the public can compare the promise with delivery.</p>
+        </article>
+        <article>
+          <span>The verdict</span>
+          <h2>Terms, performance, and cost.</h2>
+          <p>Baseline. Written commitment. Concessions. Verification. Delivery. Durability. Public cost. Beneficiary. A mixed result remains mixed.</p>
+        </article>
+      </section>
+
       <TestSuiteNav active="deals" />
 
       <section className="patriotic-intro">
@@ -94,19 +108,6 @@ export default function DealTestPage() {
           <p>A deal can be partial rather than simply good or bad. Carrier preserved a contractual job quota but still laid off hundreds. NATO burden sharing increased despite Trump&apos;s reckless conditional-defense rhetoric. Foxconn&apos;s original megaproject collapsed while a smaller operation and later investment continued. The archive keeps both sides because a real scorecard cannot move the goalposts after the fact.</p>
           <Link href="#deal-record">Audit the record <ArrowIcon /></Link>
         </div>
-      </section>
-
-      <section className="patriotic-contrast" aria-label="Deal branding compared with deal performance">
-        <article>
-          <span>The brand</span>
-          <h2>Announcement as victory.</h2>
-          <p>Big number. Dominant posture. Personal praise. Ambiguous terms. The next headline arrives before the public can compare the promise with delivery.</p>
-        </article>
-        <article>
-          <span>The audit</span>
-          <h2>Terms, performance, and cost.</h2>
-          <p>Baseline. Written commitment. Concessions. Verification. Delivery. Durability. Public cost. Beneficiary. A mixed result remains mixed.</p>
-        </article>
       </section>
 
       <section className="patriotic-standards" aria-labelledby="deal-standards-title">
@@ -146,16 +147,6 @@ export default function DealTestPage() {
         ))}
       </section>
 
-      <section className="test-corrections" aria-labelledby="deal-corrections-title">
-        <div><p className="section-label">Record corrections</p><h2 id="deal-corrections-title">The criticism cannot outrun the receipt.</h2></div>
-        <div className="test-corrections__list">
-          <article><strong>The Qatar training facility is in Idaho—not Colorado.</strong><p>Mountain Home Air Force Base completed an environmental assessment in 2022 for a U.S.-led training and support facility for Qatar&apos;s F-15QA aircraft. It is not a sovereign Qatari base, and the planning record predates the 2025 aircraft gift.</p><a href="https://www.mountainhome.af.mil/About-MHAFB/Environmental-Info/" target="_blank" rel="noreferrer">Read the Air Force environmental record <ArrowIcon /></a></article>
-          <article><strong>The gifted aircraft raises grave questions; “bribe” is not an adjudicated fact.</strong><p>The Pentagon accepted Qatar&apos;s 747 and funded its retrofit for presidential service. The archive documents the foreign-government gift, ethics objections, cost, security concerns, and personal-library disposition plan without claiming a criminal quid pro quo that no cited court has found.</p></article>
-          <article><strong>The Iran comparison is multi-factor.</strong><p>The archive documents the path from JCPOA withdrawal to nuclear escalation, direct U.S. strikes, disrupted Hormuz traffic, and a fragile later arrangement. It does not claim that one 2018 decision mechanically caused every act by Iran, Israel, Congress, shipping firms, or later administrations.</p></article>
-          <article><strong>“World pariah” and “laughing stock” are rhetoric.</strong><p>The Deal Test uses measurable substitutes: treaty commitments, UN votes, counterparty performance, purchase shortfalls, job counts, court rulings, costs, military exposure, retaliatory measures, and durability.</p></article>
-        </div>
-      </section>
-
       <section className="patriotic-boundary">
         <div><p className="section-label">The boundary</p><h2>Failure is a result to demonstrate—not a nickname.</h2></div>
         <div>
@@ -165,11 +156,7 @@ export default function DealTestPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>Promises. Leverage. Results.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/america-first-test">America First Test</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Promises. Leverage. Results." />
     </main>
   );
 }

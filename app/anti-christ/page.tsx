@@ -11,7 +11,7 @@ import {
   antiChristTitleNote,
 } from "@/data/anti-christ";
 import type { EvidenceSource } from "@/data/cases";
-import { PageMasthead, SiteHeader } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader } from "../site-chrome";
 import { ShareTools } from "../share-tools";
 import { ShareEBox } from "../share-ebox";
 
@@ -278,11 +278,7 @@ export default function AntiChristPage() {
         />
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>Test the public witness by the public record.</p>
-        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/">Evidence</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Test the public witness by the public record." />
     </main>
   );
 }

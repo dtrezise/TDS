@@ -12,9 +12,10 @@ const christianityTestHtml = await readFile(new URL("../out/christianity-test/in
 const patrioticTestHtml = await readFile(new URL("../out/patriotic-test/index.html", import.meta.url), "utf8");
 const americaFirstTestHtml = await readFile(new URL("../out/america-first-test/index.html", import.meta.url), "utf8");
 const dealTestHtml = await readFile(new URL("../out/deal-test/index.html", import.meta.url), "utf8");
+const worldStandingTestHtml = await readFile(new URL("../out/world-standing-test/index.html", import.meta.url), "utf8");
 const methodologyHtml = await readFile(new URL("../out/methodology/index.html", import.meta.url), "utf8");
 
-const renderedPages = [html, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml, methodologyHtml];
+const renderedPages = [html, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml, worldStandingTestHtml, methodologyHtml];
 
 function primaryNavigation(pageHtml) {
   const match = pageHtml.match(/<nav aria-label="Primary navigation">([\s\S]*?)<\/nav>/);
@@ -24,10 +25,9 @@ function primaryNavigation(pageHtml) {
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
-  assert.match(html, /Trump Derangement Syndrome/);
+  assert.match(html, /TRUMP DERANGEMENT SYNDROME/);
   assert.doesNotMatch(primaryNavigation(html), /The Evidence Archive/);
-  assert.match(html, /DERANGEMENT/);
-  assert.match(html, /denying the record/);
+  assert.doesNotMatch(html, /<h1>DERANGEMENT/);
   assert.match(html, /Accountability is not derangement\. Refusing the record is\./);
   assert.match(html, /How much verified misconduct must be ignored, excused, or celebrated to keep believing the myth\?/);
   assert.doesNotMatch(html, /usually deployed to dismiss critics/);
@@ -35,7 +35,7 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Christianity test/);
   assert.match(html, /Apply the Patriotic Test/);
   assert.match(html, /Read our evidence rules/);
-  assert.match(html, /80<!-- --> documented case files|80<\/strong><span>documented case files/);
+  assert.match(html, /80<\/strong><span>case files/);
   assert.match(html, /Record status/);
   assert.match(html, /birthright-citizenship order/i);
   assert.match(html, /Project 2025/);
@@ -51,6 +51,7 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
   assert.doesNotMatch(html, /The central contradiction/);
   assert.doesNotMatch(html, /Six non-negotiable rules/);
+  assert.doesNotMatch(html, /Four tests, one record/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
@@ -58,6 +59,16 @@ test("keeps the case-level Christianity Tests visible", () => {
   assert.ok((html.match(/class="faith-note"/g) ?? []).length === 21, "expected 21 visible Christianity Tests");
   assert.ok((html.match(/faith-note__label">Christianity test/g) ?? []).length === 21, "expected every test to keep its visible label");
   assert.doesNotMatch(html, /<details class="faith-note"/);
+});
+
+test("applies the four additional tests to every Evidence eBox without forcing a conclusion", () => {
+  assert.ok((html.match(/class="case-test-note case-test-note--patriotic"/g) ?? []).length === 80, "expected a Patriotic Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--america-first"/g) ?? []).length === 80, "expected an America First Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--deal"/g) ?? []).length === 80, "expected a Deal Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--world-standing"/g) ?? []).length === 80, "expected a World Standing Test lens on every case");
+  assert.match(html, /Not directly implicated/);
+  assert.match(html, />Fails</);
+  assert.match(html, />Implicates</);
 });
 
 test("exports accessible archive controls", () => {
@@ -78,14 +89,16 @@ test("exports the Voices and Tests springboard pages", () => {
   assert.match(voicesHubHtml, /rooftops-hero\.jpg/);
   assert.match(voicesHubHtml, /blind-eyes-hero\.jpg/);
   assert.match(voicesHubHtml, /anti-christ-hero\.jpg/);
+  assert.doesNotMatch(voicesHubHtml, /class="hub-intro"/);
 
   assert.match(testsHubHtml, /<title>Tests \| TDS/);
-  assert.match(testsHubHtml, /Four claims/);
-  assert.match(testsHubHtml, /Four tests/);
+  assert.doesNotMatch(testsHubHtml, /class="hub-intro"/);
   assert.match(testsHubHtml, /href="\/christianity-test\/"/);
   assert.match(testsHubHtml, /href="\/patriotic-test\/"/);
   assert.match(testsHubHtml, /href="\/america-first-test\/"/);
   assert.match(testsHubHtml, /href="\/deal-test\/"/);
+  assert.match(testsHubHtml, /href="\/world-standing-test\/"/);
+  assert.match(testsHubHtml, /world-standing-test-hero\.png/);
 });
 
 test("exports the Christian resistance directory", () => {
@@ -161,7 +174,7 @@ test("exports the Anti Christ teaching comparison", () => {
   assert.ok((antiChristHtml.match(/class="anti-record-card"/g) ?? []).length === 71, "expected 71 expanded category placements");
 });
 
-test("exports the Christianity Test framework and collection hub", () => {
+test("exports the Christianity Test framework without the redundant Voices collection", () => {
   assert.match(christianityTestHtml, /<title>Christianity Test \| TDS/);
   assert.match(christianityTestHtml, /christianity-test-hero\.jpg/);
   assert.match(christianityTestHtml, /Test the public witness by the public record/);
@@ -172,9 +185,8 @@ test("exports the Christianity Test framework and collection hub", () => {
   assert.match(christianityTestHtml, /Mercy and forgiveness/);
   assert.match(christianityTestHtml, /The fruit of the Spirit/);
   assert.match(christianityTestHtml, /Welcome the stranger; serve the poor/);
-  assert.match(christianityTestHtml, /Rooftops/);
-  assert.match(christianityTestHtml, /Blind Eyes/);
-  assert.match(christianityTestHtml, /Anti Christ/);
+  assert.doesNotMatch(christianityTestHtml, /The Christianity Collection/);
+  assert.doesNotMatch(christianityTestHtml, /christianity-collection/);
   assert.match(christianityTestHtml, /faith-framework__grid"><article>/);
 });
 
@@ -209,9 +221,10 @@ test("exports the Patriotic Test framework and evidence record", () => {
   assert.match(patrioticTestHtml, /iran-nuclear-strikes-war-powers-2025/);
   assert.match(patrioticTestHtml, /rubio-usaid-state-dismantling-2025/);
   assert.ok((patrioticTestHtml.match(/class="patriotic-record"/g) ?? []).length === 16, "expected 15 archive records and one press-access record");
+  assert.ok(patrioticTestHtml.indexOf("patriotic-contrast") < patrioticTestHtml.indexOf("test-suite-nav"), "expected Loyalism and Patriotism immediately before the test navigation");
 });
 
-test("exports the America First Test framework, evidence, and limiting context", () => {
+test("exports the America First Test framework and evidence", () => {
   assert.match(americaFirstTestHtml, /<title>America First Test \| TDS/);
   assert.match(americaFirstTestHtml, /america-first-test-hero\.jpg/);
   assert.match(americaFirstTestHtml, /Putting Americans first requires measuring what Americans actually gain/);
@@ -226,13 +239,12 @@ test("exports the America First Test framework, evidence, and limiting context",
   assert.match(americaFirstTestHtml, /ukraine-aid-pause-and-un-vote-2025/);
   assert.match(americaFirstTestHtml, /venezuela-lethal-boat-strikes-2025/);
   assert.match(americaFirstTestHtml, /alien-enemies-act-summary-removals-2025/);
-  assert.match(americaFirstTestHtml, /Venezuelan oil is not simply/);
-  assert.match(americaFirstTestHtml, /Dollar decline is not one-cause proof/);
-  assert.match(americaFirstTestHtml, /“Pariah” and “laughing stock” are opinions/);
+  assert.doesNotMatch(americaFirstTestHtml, /Claims we will not overstate/);
   assert.ok((americaFirstTestHtml.match(/class="patriotic-record test-record"/g) ?? []).length === 14, "expected all 14 America First records");
+  assert.ok(americaFirstTestHtml.indexOf("Leader-first nationalism") < americaFirstTestHtml.indexOf("test-suite-nav"), "expected the America First contrast immediately before the test navigation");
 });
 
-test("exports the Deal Test scorecard, records, and corrections", () => {
+test("exports the Deal Test scorecard and records without a public corrections section", () => {
   assert.match(dealTestHtml, /<title>Deal Test \| TDS/);
   assert.match(dealTestHtml, /deal-test-hero\.jpg/);
   assert.match(dealTestHtml, /A deal is not a press conference/);
@@ -249,10 +261,30 @@ test("exports the Deal Test scorecard, records, and corrections", () => {
   assert.match(dealTestHtml, /trump-casino-company-bankruptcies-2004-2009/);
   assert.match(dealTestHtml, /qatar-gifted-presidential-jet-2025-2026/);
   assert.match(dealTestHtml, /iran-deal-exit-to-hormuz-crisis-2018-2026/);
-  assert.match(dealTestHtml, /Qatar training facility is in Idaho—not Colorado/);
-  assert.match(dealTestHtml, /“bribe” is not an adjudicated fact/);
+  assert.doesNotMatch(dealTestHtml, /Record corrections/);
+  assert.doesNotMatch(dealTestHtml, /class="test-corrections"/);
   assert.match(dealTestHtml, /not personal bankruptcy/);
   assert.ok((dealTestHtml.match(/class="patriotic-record test-record"/g) ?? []).length === 12, "expected ten new and two existing deal records");
+  assert.ok(dealTestHtml.indexOf("The brand") < dealTestHtml.indexOf("test-suite-nav"), "expected The Brand and The Verdict immediately before the test navigation");
+});
+
+test("exports the World Standing Test framework and evidence", () => {
+  assert.match(worldStandingTestHtml, /<title>World Standing Test \| TDS/);
+  assert.match(worldStandingTestHtml, /world-standing-test-hero\.png/);
+  assert.match(worldStandingTestHtml, /Power as isolation/);
+  assert.match(worldStandingTestHtml, /World standing, tested/);
+  assert.match(worldStandingTestHtml, /credible commitments/i);
+  assert.match(worldStandingTestHtml, /Alliance leverage/);
+  assert.match(worldStandingTestHtml, /A seat at the table/);
+  assert.match(worldStandingTestHtml, /National capacity/);
+  assert.match(worldStandingTestHtml, /Lawful example/);
+  assert.match(worldStandingTestHtml, /Economic influence/);
+  assert.match(worldStandingTestHtml, /who-withdrawal-2025-2026/);
+  assert.match(worldStandingTestHtml, /rubio-usaid-state-dismantling-2025/);
+  assert.match(worldStandingTestHtml, /ukraine-aid-pause-and-un-vote-2025/);
+  assert.match(worldStandingTestHtml, /iran-nuclear-strikes-war-powers-2025/);
+  assert.match(worldStandingTestHtml, /china-phase-one-purchase-shortfall-2020-2025/);
+  assert.ok((worldStandingTestHtml.match(/class="patriotic-record test-record"/g) ?? []).length === 17, "expected all 17 World Standing records");
 });
 
 test("exports the complete publication methodology", () => {
@@ -280,6 +312,7 @@ test("adds a share composer trigger to every evidence eBox", () => {
   assert.ok((patrioticTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 16, "expected every Patriotic Test record to be shareable");
   assert.ok((americaFirstTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 14, "expected every America First Test record to be shareable");
   assert.ok((dealTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 12, "expected every Deal Test record to be shareable");
+  assert.ok((worldStandingTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 17, "expected every World Standing Test record to be shareable");
   for (const pageHtml of renderedPages) {
     assert.match(pageHtml, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/share-banner\.png"/);
   }
@@ -296,20 +329,30 @@ test("uses one uncluttered four-section header on every page", () => {
     assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 4, "expected exactly four primary links");
   }
 
-  assert.match(christianityTestHtml, /href="\/rooftops\/"/);
-  assert.match(christianityTestHtml, /href="\/blind-eyes\/"/);
-  assert.match(christianityTestHtml, /href="\/anti-christ\/"/);
-  assert.match(rooftopsHtml, /href="\/christianity-test\/"/);
-  assert.match(blindEyesHtml, /href="\/christianity-test\/"/);
-  assert.match(antiChristHtml, /href="\/christianity-test\/"/);
   assert.match(html, /href="\/patriotic-test\/"/);
   assert.match(html, /href="\/america-first-test\/"/);
   assert.match(html, /href="\/deal-test\/"/);
-  for (const pageHtml of [christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml]) {
+  assert.match(html, /href="\/world-standing-test\/"/);
+  for (const pageHtml of [christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml, worldStandingTestHtml]) {
     assert.match(pageHtml, /aria-label="Evidence tests"/);
     assert.match(pageHtml, /href="\/christianity-test\/"/);
     assert.match(pageHtml, /href="\/patriotic-test\/"/);
     assert.match(pageHtml, /href="\/america-first-test\/"/);
     assert.match(pageHtml, /href="\/deal-test\/"/);
+    assert.match(pageHtml, /href="\/world-standing-test\/"/);
+  }
+});
+
+test("uses the same four-link footer and a far-right arrow on every page", () => {
+  for (const pageHtml of renderedPages) {
+    const match = pageHtml.match(/<footer>([\s\S]*?)<\/footer>/);
+    assert.ok(match, "expected the shared footer");
+    const footer = match[1];
+    assert.match(footer, />Evidence</);
+    assert.match(footer, />Voices</);
+    assert.match(footer, />Tests</);
+    assert.match(footer, />Methods</);
+    assert.match(footer, /class="footer-top" href="#top" aria-label="Back to top">↑<\/a>$/);
+    assert.doesNotMatch(footer, />Back to top/);
   }
 });

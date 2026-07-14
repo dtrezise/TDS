@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
-import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { TestEvidenceRecord } from "../test-evidence-record";
 
 export const metadata: Metadata = {
@@ -87,6 +87,20 @@ export default function AmericaFirstTestPage() {
     <main className="patriotic-page test-page test-page--america">
       <SiteHeader active="tests" />
       <PageMasthead src="/america-first-test-hero.jpg" alt="America First Test — Power at home. Credibility abroad." priority />
+
+      <section className="patriotic-contrast" aria-label="National interest compared with leader-first nationalism">
+        <article>
+          <span>Leader-first nationalism</span>
+          <h2>The performance of dominance.</h2>
+          <p>Strength is measured by threats, spectacle, unilateral action, praise for the leader, and visible submission from others—even when Americans absorb the cost or the result unravels.</p>
+        </article>
+        <article>
+          <span>America first, tested</span>
+          <h2>The durable power of a free republic.</h2>
+          <p>Strength is measured by security, prosperity, legal authority, trusted commitments, capable institutions, democratic allies, public consent, and results that survive the announcement.</p>
+        </article>
+      </section>
+
       <TestSuiteNav active="america-first" />
 
       <section className="patriotic-intro">
@@ -100,19 +114,6 @@ export default function AmericaFirstTestPage() {
           <p>The focus is Donald Trump and the officials who designed or carried out the policy—including Marco Rubio, J.D. Vance, and Stephen Miller where the record establishes a specific role. Each entry separates completed acts, court holdings, temporary measures, threats, disputed legal theories, and editorial conclusions.</p>
           <Link href="#america-record">Examine the record <ArrowIcon /></Link>
         </div>
-      </section>
-
-      <section className="patriotic-contrast" aria-label="National interest compared with leader-first nationalism">
-        <article>
-          <span>Leader-first nationalism</span>
-          <h2>The performance of dominance.</h2>
-          <p>Strength is measured by threats, spectacle, unilateral action, praise for the leader, and visible submission from others—even when Americans absorb the cost or the result unravels.</p>
-        </article>
-        <article>
-          <span>America first, tested</span>
-          <h2>The durable power of a free republic.</h2>
-          <p>Strength is measured by security, prosperity, legal authority, trusted commitments, capable institutions, democratic allies, public consent, and results that survive the announcement.</p>
-        </article>
       </section>
 
       <section className="patriotic-standards" aria-labelledby="america-standards-title">
@@ -153,17 +154,6 @@ export default function AmericaFirstTestPage() {
         ))}
       </section>
 
-      <section className="test-corrections" aria-labelledby="america-corrections-title">
-        <div><p className="section-label">Claims we will not overstate</p><h2 id="america-corrections-title">A correction is part of the evidence.</h2></div>
-        <div className="test-corrections__list">
-          <article><strong>NATO did not dissolve.</strong><p>The United States remained a member. The alliance reaffirmed Article 5, adopted a five-percent investment target, and reported sharply higher allied spending. The archive criticizes Trump&apos;s conditional-protection threat while preserving the later bargaining result.</p></article>
-          <article><strong>Threats are not completed annexations.</strong><p>Greenland, Canada, and the Panama Canal were not annexed. The record establishes coercive rhetoric and pressure, followed in Greenland&apos;s case by Trump saying he would not use force.</p></article>
-          <article><strong>Venezuelan oil is not simply “stolen U.S. oil.”</strong><p>The administration asserted control over sales and revenue, but its own order says the funds remain Venezuelan sovereign property. The capture, force, custody, and control claims are serious enough without erasing that legal distinction.</p></article>
-          <article><strong>Dollar decline is not one-cause proof.</strong><p>The archive is monitoring reserve-share, exchange-rate, Treasury-market, oil-invoicing, sanctions, and fiscal data. It does not currently publish a causal finding that one Trump policy “destroyed the dollar” or ended the petrodollar.</p></article>
-          <article><strong>“Pariah” and “laughing stock” are opinions.</strong><p>This archive instead publishes inspectable indicators: votes, withdrawals, retaliation, court rulings, alliance commitments, trade costs, public polling, investment, and policy outcomes.</p></article>
-        </div>
-      </section>
-
       <section className="patriotic-boundary">
         <div><p className="section-label">The boundary</p><h2>Foreign-policy criticism is not hindsight masquerading as proof.</h2></div>
         <div>
@@ -173,11 +163,7 @@ export default function AmericaFirstTestPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>Power at home. Credibility abroad.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/deal-test">Deal Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Power at home. Credibility abroad." />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
-import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { ShareEBox } from "../share-ebox";
 
 export const metadata: Metadata = {
@@ -196,6 +196,20 @@ export default function PatrioticTestPage() {
     <main className="patriotic-page">
       <SiteHeader active="tests" />
       <PageMasthead src="/patriotic-test-hero.jpg" alt="Patriotic Test — The Constitution Above the Leader" priority />
+
+      <section className="patriotic-contrast" aria-label="Patriotism compared with loyalism">
+        <article>
+          <span>Loyalism</span>
+          <h2>The leader above the law.</h2>
+          <p>Truth bends to the leader. Institutions are legitimate only when they obey. Critics become enemies. Power is judged by whether it protects the movement.</p>
+        </article>
+        <article>
+          <span>Patriotism</span>
+          <h2>The Constitution above the leader.</h2>
+          <p>Facts constrain the leader. Institutions keep their lawful independence. Dissent remains protected. Power is judged by whether it preserves rights and republican government.</p>
+        </article>
+      </section>
+
       <TestSuiteNav active="patriotic" />
 
       <section className="patriotic-intro">
@@ -209,19 +223,6 @@ export default function PatrioticTestPage() {
           <p>The focus is Donald Trump and the officials, allies, and lawmakers who helped execute, legitimize, or excuse specific acts. Every entry preserves its legal and evidentiary status. Criticism is not proof; neither is a pardon an acquittal or a lawful power beyond moral and democratic judgment.</p>
           <Link href="#patriotic-record">Examine the record <ArrowIcon /></Link>
         </div>
-      </section>
-
-      <section className="patriotic-contrast" aria-label="Patriotism compared with loyalism">
-        <article>
-          <span>Loyalism</span>
-          <h2>The leader above the law.</h2>
-          <p>Truth bends to the leader. Institutions are legitimate only when they obey. Critics become enemies. Power is judged by whether it protects the movement.</p>
-        </article>
-        <article>
-          <span>Patriotism</span>
-          <h2>The Constitution above the leader.</h2>
-          <p>Facts constrain the leader. Institutions keep their lawful independence. Dissent remains protected. Power is judged by whether it preserves rights and republican government.</p>
-        </article>
       </section>
 
       <section className="patriotic-standards" aria-labelledby="patriotic-standards-title">
@@ -297,11 +298,7 @@ export default function PatrioticTestPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>The Constitution above the leader.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/christianity-test">Christianity Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="The Constitution above the leader." />
     </main>
   );
 }

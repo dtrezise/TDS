@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import directory from "@/research/voices/directory.json";
-import { PageMasthead, SiteHeader } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader } from "../site-chrome";
 import { ShareTools } from "../share-tools";
 import { ShareEBox } from "../share-ebox";
 
@@ -194,11 +193,7 @@ export default function RooftopsPage() {
         <ShareTools />
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>Speak in the light. Make faithful dissent easier to find.</p>
-        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/">Evidence</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Speak in the light. Make faithful dissent easier to find." />
     </main>
   );
 }

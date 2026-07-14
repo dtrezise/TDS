@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { SiteHeader } from "../site-chrome";
+import { SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Tests | TDS",
-  description: "Apply four explicit standards to the record: Christianity, patriotism, America First, and the claimed art of the deal.",
+  description: "Apply five explicit standards to the record: Christianity, patriotism, America First, deal performance, and world standing.",
   alternates: { canonical: "https://dtrezise.github.io/TDS/tests/" },
   openGraph: {
     title: "The Tests | TDS",
-    description: "Four standards. One documented record. Examine the contradictions.",
+    description: "Five standards. One documented record. Examine the contradictions.",
     url: "https://dtrezise.github.io/TDS/tests/",
     type: "website",
     images: [{
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Tests | TDS",
-    description: "Four standards. One documented record. Examine the contradictions.",
+    description: "Five standards. One documented record. Examine the contradictions.",
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
@@ -34,6 +34,7 @@ const tests = [
     premise: "Does the conduct align with the commandments, Jesus’s teaching, the Beatitudes, and the fruit of the Spirit?",
     href: "/christianity-test",
     image: "/christianity-test-hero.jpg",
+    tone: "christianity",
   },
   {
     number: "02",
@@ -41,6 +42,7 @@ const tests = [
     premise: "Does the conduct defend constitutional government, equal citizenship, free expression, a free press, and the rule of law?",
     href: "/patriotic-test",
     image: "/patriotic-test-hero.jpg",
+    tone: "patriotic",
   },
   {
     number: "03",
@@ -48,6 +50,7 @@ const tests = [
     premise: "Did the policy measurably strengthen Americans’ security, prosperity, alliances, institutions, and standing in the world?",
     href: "/america-first-test",
     image: "/america-first-test-hero.jpg",
+    tone: "america-first",
   },
   {
     number: "04",
@@ -55,6 +58,15 @@ const tests = [
     premise: "Did the deal produce a durable, enforceable, favorable result—or merely a headline, concession, conflict, or transfer of risk?",
     href: "/deal-test",
     image: "/deal-test-hero.jpg",
+    tone: "deal",
+  },
+  {
+    number: "05",
+    title: "World Standing Test",
+    premise: "Did the conduct strengthen—or surrender—U.S. credibility, alliance leverage, expertise, financial influence, and the ability to shape global rules?",
+    href: "/world-standing-test",
+    image: "/world-standing-test-hero.png",
+    tone: "world-standing",
   },
 ] as const;
 
@@ -69,17 +81,9 @@ export default function TestsHubPage() {
     <main className="hub-page tests-hub-page">
       <SiteHeader active="tests" />
 
-      <section className="hub-intro" id="top">
-        <p className="section-label">Standards made explicit</p>
-        <h1>Four claims.<br /><em>Four tests.</em></h1>
-        <p>
-          A test is useful only when its standard is stated before the conclusion. Each page defines that standard, presents the relevant record, preserves important context, and links to the underlying evidence.
-        </p>
-      </section>
-
       <section className="test-hub-grid" aria-label="Evidence tests">
         {tests.map((test) => (
-          <article className="test-hub-card" key={test.number}>
+          <article className={`test-hub-card test-hub-card--${test.tone}`} key={test.number}>
             <Link className="test-hub-card__image" href={test.href} aria-label={`Open ${test.title}`}>
               <Image
                 src={publicAssetPath(test.image)}
@@ -87,6 +91,7 @@ export default function TestsHubPage() {
                 width={1733}
                 height={908}
                 sizes="(max-width: 760px) 100vw, 50vw"
+                unoptimized
               />
             </Link>
             <div className="test-hub-card__body">
@@ -110,11 +115,7 @@ export default function TestsHubPage() {
         <Link href="/methodology">Inspect the editorial standard <span aria-hidden="true">↗</span></Link>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">Trump Derangement Syndrome</span></div>
-        <p>Apply the standard. Examine the record. Preserve the context.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/voices">Voices</Link><Link href="/methodology">Methods</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Apply the standard. Examine the record. Preserve the context." />
     </main>
   );
 }

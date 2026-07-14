@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { lastReviewed } from "@/data/cases";
-import { PageMasthead, SiteHeader } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Methodology | TDS",
@@ -155,11 +155,7 @@ export default function MethodologyPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>Facts first. Status always.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/christianity-test">Christianity Test</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Facts first. Status always." />
     </main>
   );
 }

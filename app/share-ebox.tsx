@@ -2,7 +2,11 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
-import shareBanner from "../public/share-banner.png";
+
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const shareBanner = process.env.GITHUB_ACTIONS === "true" && repositoryName
+  ? `/${repositoryName}/share-banner.png`
+  : "/share-banner.png";
 
 type Destination = "x" | "bluesky" | "facebook" | "linkedin" | "email";
 
@@ -161,7 +165,14 @@ export function ShareEBox({ anchor, title, summary, status, context }: ShareEBox
             </div>
 
             <div className="ebox-share-preview" aria-label="Outgoing post preview">
-              <Image src={shareBanner} alt="TDS — Trump Derangement Syndrome. The Evidence Archive." priority={false} />
+              <Image
+                src={shareBanner}
+                alt="TDS — Trump Derangement Syndrome. The Evidence Archive."
+                width={1731}
+                height={909}
+                priority={false}
+                unoptimized
+              />
               <div className="ebox-share-preview__body">
                 <p className="eyebrow">{context ?? "Evidence Archive"}</p>
                 <h3>{title}</h3>

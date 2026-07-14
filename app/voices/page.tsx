@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { SiteHeader } from "../site-chrome";
+import { SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Voices | TDS",
@@ -68,14 +68,6 @@ export default function VoicesHubPage() {
     <main className="hub-page voices-hub-page">
       <SiteHeader active="voices" />
 
-      <section className="hub-intro" id="top">
-        <p className="section-label">Public witness under examination</p>
-        <h1>Hear the resistance.<br /><em>Examine the complicity.</em></h1>
-        <p>
-          The Christian response to Trumpism is not one story. This section makes three distinct records easy to find without crowding the primary evidence archive.
-        </p>
-      </section>
-
       <section className="hub-card-grid" aria-label="Voices sections">
         {sections.map((section) => (
           <article className="hub-card" key={section.title}>
@@ -86,6 +78,7 @@ export default function VoicesHubPage() {
                 width={1733}
                 height={908}
                 sizes="(max-width: 760px) 100vw, 33vw"
+                unoptimized
               />
             </Link>
             <div className="hub-card__body">
@@ -107,11 +100,7 @@ export default function VoicesHubPage() {
         <Link href="/methodology">Read the methods <span aria-hidden="true">↗</span></Link>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">Trump Derangement Syndrome</span></div>
-        <p>Accountability is not derangement. Refusing the record is.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/tests">Tests</Link><Link href="/methodology">Methods</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Accountability is not derangement. Refusing the record is." />
     </main>
   );
 }

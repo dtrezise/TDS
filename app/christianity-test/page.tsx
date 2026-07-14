@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
+import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Christianity Test | TDS",
@@ -87,27 +87,6 @@ const christianStandards = [
   },
 ] as const;
 
-const relatedPages = [
-  {
-    eyebrow: "Amplify",
-    title: "Rooftops",
-    href: "/rooftops",
-    description: "Christian leaders, pastors, writers, researchers, and movements publicly resisting Christian nationalism—with direct ways to follow, connect, organize, and share.",
-  },
-  {
-    eyebrow: "Document",
-    title: "Blind Eyes",
-    href: "/blind-eyes",
-    description: "An evidence-led directory of the leaders, churches, networks, and political ministries that bless, build, or normalize Trump-centered Christian nationalism.",
-  },
-  {
-    eyebrow: "Compare",
-    title: "Anti Christ",
-    href: "/anti-christ",
-    description: "Trump's documented conduct organized against specific Christian teachings: false witness, theft and stewardship, fidelity, mercy, humility, peacemaking, and servant leadership.",
-  },
-] as const;
-
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
@@ -162,24 +141,6 @@ export default function ChristianityTestPage() {
         </div>
       </section>
 
-      <section className="christianity-collection" aria-labelledby="christianity-collection-title">
-        <div className="christianity-collection__heading">
-          <p className="section-label">The Christianity collection</p>
-          <h2 id="christianity-collection-title">Hear the dissent. Examine the complicity. Test the conduct.</h2>
-          <p>These three projects deepen the faith analysis without crowding the main Evidence archive.</p>
-        </div>
-        <div className="christianity-collection__grid">
-          {relatedPages.map((page, index) => (
-            <Link href={page.href} key={page.href}>
-              <span>{String(index + 1).padStart(2, "0")} · {page.eyebrow}</span>
-              <h3>{page.title}</h3>
-              <p>{page.description}</p>
-              <strong>Open {page.title} <ArrowIcon /></strong>
-            </Link>
-          ))}
-        </div>
-      </section>
-
       <section className="framework-caution">
         <div>
           <p className="section-label">The boundary</p>
@@ -192,11 +153,7 @@ export default function ChristianityTestPage() {
         </div>
       </section>
 
-      <footer>
-        <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
-        <p>Test the public witness by the public record.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
-      </footer>
+      <SiteFooter tagline="Test the public witness by the public record." />
     </main>
   );
 }

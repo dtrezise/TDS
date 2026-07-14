@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export type PrimarySection = "evidence" | "voices" | "tests" | "methodology";
-export type TestSection = "christianity" | "patriotic" | "america-first" | "deals";
+export type TestSection = "christianity" | "patriotic" | "america-first" | "deals" | "world-standing";
 
 function publicAssetPath(src: string) {
   const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
@@ -19,10 +19,10 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
   ];
 
   return (
-    <header className="site-header">
+    <header className="site-header" id="top">
       <Link className="wordmark" href="/" aria-label="TDS Evidence Archive home">
         <span className="wordmark__mark">TDS</span>
-        <span className="wordmark__text">Trump Derangement Syndrome</span>
+        <span className="wordmark__text">TRUMP DERANGEMENT SYNDROME</span>
       </Link>
       <nav aria-label="Primary navigation">
         {items.map((item) => (
@@ -32,7 +32,7 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
             aria-current={active === item.section ? "page" : undefined}
             key={item.section}
           >
-            {item.label}
+            <span>{item.label}</span>
           </Link>
         ))}
       </nav>
@@ -40,9 +40,9 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
   );
 }
 
-export function PageMasthead({ src, alt, priority = false }: { src: string; alt: string; priority?: boolean }) {
+export function PageMasthead({ src, alt, priority = false, fit = "cover" }: { src: string; alt: string; priority?: boolean; fit?: "cover" | "contain" }) {
   return (
-    <figure className="page-masthead" id="top">
+    <figure className={`page-masthead page-masthead--${fit}`}>
       <Image
         src={publicAssetPath(src)}
         alt={alt}
@@ -50,8 +50,20 @@ export function PageMasthead({ src, alt, priority = false }: { src: string; alt:
         height={908}
         priority={priority}
         sizes="100vw"
+        unoptimized
       />
     </figure>
+  );
+}
+
+export function SiteFooter({ tagline }: { tagline: string }) {
+  return (
+    <footer>
+      <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">Trump Derangement Syndrome</span></div>
+      <p>{tagline}</p>
+      <div className="footer-links"><Link href="/">Evidence</Link><Link href="/voices">Voices</Link><Link href="/tests">Tests</Link><Link href="/methodology">Methods</Link></div>
+      <a className="footer-top" href="#top" aria-label="Back to top">↑</a>
+    </footer>
   );
 }
 
@@ -61,6 +73,7 @@ export function TestSuiteNav({ active }: { active: TestSection }) {
     { label: "Patriotic Test", href: "/patriotic-test", section: "patriotic" },
     { label: "America First Test", href: "/america-first-test", section: "america-first" },
     { label: "Deal Test", href: "/deal-test", section: "deals" },
+    { label: "World Standing Test", href: "/world-standing-test", section: "world-standing" },
   ];
 
   return (
@@ -69,6 +82,7 @@ export function TestSuiteNav({ active }: { active: TestSection }) {
       {tests.map((test) => (
         <Link
           href={test.href}
+          data-test={test.section}
           aria-current={active === test.section ? "page" : undefined}
           key={test.section}
         >
