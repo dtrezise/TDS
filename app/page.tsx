@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="evidence-page">
       <SiteHeader active="evidence" />
-      <PageMasthead src="/evidence-hero.jpg" alt="TDS — The Evidence Archive. The derangement is denying the record." priority fit="contain" />
+      <PageMasthead src="/evidence-hero.jpg" alt="TDS — The Evidence Archive. The derangement is denying the record." priority tone="light" />
       <TdsArchive />
     </main>
   );

@@ -40,9 +40,21 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
   );
 }
 
-export function PageMasthead({ src, alt, priority = false, fit = "cover" }: { src: string; alt: string; priority?: boolean; fit?: "cover" | "contain" }) {
+export function PageMasthead({
+  src,
+  alt,
+  priority = false,
+  fit = "contain",
+  tone = "dark",
+}: {
+  src: string;
+  alt: string;
+  priority?: boolean;
+  fit?: "cover" | "contain";
+  tone?: "dark" | "light";
+}) {
   return (
-    <figure className={`page-masthead page-masthead--${fit}`}>
+    <figure className={`page-masthead page-masthead--${fit} page-masthead--${tone}`}>
       <Image
         src={publicAssetPath(src)}
         alt={alt}

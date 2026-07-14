@@ -157,12 +157,16 @@ a {
 }
 
 .page-masthead--contain {
-  background: #f1eadc;
+  background: var(--ink);
 }
 
 .page-masthead--contain img {
   object-fit: contain;
   object-position: center;
+}
+
+.page-masthead--light {
+  background: #f1eadc;
 }
 
 .site-header nav .nav-join {
@@ -3723,10 +3727,10 @@ footer p {
 }
 
 .hub-card__image {
+  aspect-ratio: 1733 / 908;
   background: var(--ink);
   border-bottom: 1px solid var(--ink);
   display: block;
-  height: clamp(170px, 17vw, 255px);
   overflow: hidden;
 }
 
@@ -3734,7 +3738,7 @@ footer p {
 .test-hub-card__image img {
   display: block;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 180ms ease, opacity 180ms ease;
   width: 100%;
 }
@@ -3797,10 +3801,10 @@ footer p {
 }
 
 .test-hub-card__image {
+  aspect-ratio: 1733 / 908;
   background: var(--ink);
   border-bottom: 1px solid var(--ink);
   display: block;
-  height: clamp(190px, 20vw, 310px);
   overflow: hidden;
 }
 
@@ -5001,11 +5005,6 @@ footer p {
     grid-template-columns: 1fr;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .hub-card__image,
-  .test-hub-card__image {
-    height: clamp(190px, 51vw, 320px);
   }
 
   .hub-card__body,
