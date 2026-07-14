@@ -4,6 +4,12 @@ TDS is an explicitly critical, evidence-first archive of Donald Trump’s public
 
 The editorial argument is forceful; the evidence standard is deliberately conservative. Case files distinguish jury verdicts, court findings, official investigations, charges, allegations, settlements, dismissals, appeals, political judgments, direct statements, reporting, and editorial analysis.
 
+The public information architecture has three primary sections:
+
+- **Evidence** is the main searchable case-file archive. Relevant case-level Christianity Tests remain visible beside the documented conduct.
+- **Christianity Test** explains the teaching-based comparison and hosts the Rooftops, Blind Eyes, and Anti Christ projects.
+- **Methodology** publishes the source hierarchy, status language, defamation safeguards, revision rules, and prepublication workflow.
+
 ## Local development
 
 ```bash

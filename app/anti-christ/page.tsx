@@ -11,6 +11,7 @@ import {
   antiChristTitleNote,
 } from "@/data/anti-christ";
 import type { EvidenceSource } from "@/data/cases";
+import { PageMasthead, SiteHeader } from "../site-chrome";
 import { ShareTools } from "../voices/share-tools";
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dtrezise.github.io/TDS/anti-christ-og.png",
+        url: "https://dtrezise.github.io/TDS/anti-christ-hero.jpg",
         width: 1732,
         height: 908,
         alt: "Anti Christ — The conduct against the teaching",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anti Christ | TDS",
     description: "Documented conduct tested against the words and example of Christ.",
-    images: ["https://dtrezise.github.io/TDS/anti-christ-og.png"],
+    images: ["https://dtrezise.github.io/TDS/anti-christ-hero.jpg"],
   },
 };
 
@@ -75,21 +76,10 @@ export default function AntiChristPage() {
     <main className="anti-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <header className="site-header anti-site-header">
-        <Link className="wordmark" href="/" aria-label="TDS Evidence Archive home">
-          <span className="wordmark__mark">TDS</span>
-          <span className="wordmark__text">Trump Derangement Syndrome | The Evidence Archive</span>
-        </Link>
-        <nav aria-label="Anti Christ page navigation">
-          <a href="#categories">Categories</a>
-          <a href="#words">His words</a>
-          <a href="#full-record">Full record</a>
-          <Link href="/blind-eyes">Blind Eyes</Link>
-          <Link className="nav-archive" href="/">Evidence</Link>
-        </nav>
-      </header>
+      <SiteHeader active="christianity" />
+      <PageMasthead src="/anti-christ-hero.jpg" alt="Anti Christ — The conduct against the teaching" priority />
 
-      <section className="anti-hero" id="top">
+      <section className="anti-hero">
         <div className="anti-hero__copy">
           <p className="section-label">The conduct against the teaching</p>
           <h1><span>ANTI</span><em>CHRIST</em></h1>
@@ -269,7 +259,7 @@ export default function AntiChristPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Test the public witness by the public record.</p>
-        <div className="footer-links"><Link href="/blind-eyes">Blind Eyes</Link><Link href="/voices">Rooftops</Link><Link href="/">Evidence</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/">Evidence</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

@@ -6,6 +6,16 @@ const html = await readFile(new URL("../out/index.html", import.meta.url), "utf8
 const voicesHtml = await readFile(new URL("../out/voices/index.html", import.meta.url), "utf8");
 const blindEyesHtml = await readFile(new URL("../out/blind-eyes/index.html", import.meta.url), "utf8");
 const antiChristHtml = await readFile(new URL("../out/anti-christ/index.html", import.meta.url), "utf8");
+const christianityTestHtml = await readFile(new URL("../out/christianity-test/index.html", import.meta.url), "utf8");
+const methodologyHtml = await readFile(new URL("../out/methodology/index.html", import.meta.url), "utf8");
+
+const renderedPages = [html, voicesHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, methodologyHtml];
+
+function primaryNavigation(pageHtml) {
+  const match = pageHtml.match(/<nav aria-label="Primary navigation">([\s\S]*?)<\/nav>/);
+  assert.ok(match, "expected the shared primary navigation");
+  return match[1];
+}
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
@@ -17,19 +27,25 @@ test("exports the finished evidence archive", () => {
   assert.doesNotMatch(html, /usually deployed to dismiss critics/);
   assert.match(html, /Case files, not catchphrases/);
   assert.match(html, /Christianity test/);
-  assert.match(html, /Evidence rules/);
+  assert.match(html, /Read our evidence rules/);
   assert.match(html, /56<!-- --> documented case files|56<\/strong><span>documented case files/);
   assert.match(html, /Record status/);
   assert.match(html, /birthright-citizenship order/i);
   assert.match(html, /Project 2025/);
   assert.match(html, /faith-kirk-memorial-forgiveness-2025/);
   assert.match(html, /forgiveness met Trump/);
-  assert.match(html, /The fruit of the Spirit/);
-  assert.match(html, /A citation is not immunity/);
-  assert.match(html, /EDITORIAL_STANDARDS\.md/);
+  assert.match(html, /evidence-hero\.jpg/);
   assert.match(html, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/og\.png"/);
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
+  assert.doesNotMatch(html, /The central contradiction/);
+  assert.doesNotMatch(html, /Six non-negotiable rules/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
+});
+
+test("keeps the case-level Christianity Tests visible", () => {
+  assert.ok((html.match(/class="faith-note"/g) ?? []).length === 21, "expected 21 visible Christianity Tests");
+  assert.ok((html.match(/faith-note__label">Christianity test/g) ?? []).length === 21, "expected every test to keep its visible label");
+  assert.doesNotMatch(html, /<details class="faith-note"/);
 });
 
 test("exports accessible archive controls", () => {
@@ -58,6 +74,7 @@ test("exports the Christian resistance directory", () => {
   assert.match(voicesHtml, /mailto:/);
   assert.match(voicesHtml, /aria-live="polite"/);
   assert.match(voicesHtml, /application\/ld\+json/);
+  assert.match(voicesHtml, /rooftops-hero\.jpg/);
   assert.ok((voicesHtml.match(/class="voice-card"/g) ?? []).length === 12, "expected 12 curated voice profiles");
 });
 
@@ -82,6 +99,7 @@ test("exports the Blind Eyes accountability directory", () => {
   assert.match(blindEyesHtml, /facebook\.com\/sharer\/sharer\.php/);
   assert.match(blindEyesHtml, /mailto:/);
   assert.match(blindEyesHtml, /application\/ld\+json/);
+  assert.match(blindEyesHtml, /blind-eyes-hero\.jpg/);
   assert.ok((blindEyesHtml.match(/class="blind-card"/g) ?? []).length === 8, "expected 8 documented Blind Eyes profiles");
 });
 
@@ -104,24 +122,61 @@ test("exports the Anti Christ teaching comparison", () => {
   assert.match(antiChristHtml, /I hate my opponent/);
   assert.match(antiChristHtml, /The category names are theological and editorial/);
   assert.match(antiChristHtml, /Christianity test · editorial analysis/);
-  assert.match(antiChristHtml, /anti-christ-og\.png/);
+  assert.match(antiChristHtml, /anti-christ-hero\.jpg/);
   assert.match(antiChristHtml, /application\/ld\+json/);
   assert.ok((antiChristHtml.match(/class="anti-category"/g) ?? []).length === 8, "expected 8 moral categories");
   assert.ok((antiChristHtml.match(/class="anti-case-date"/g) ?? []).length === 40, "expected five headline records in each category");
   assert.ok((antiChristHtml.match(/class="anti-record-card"/g) ?? []).length === 71, "expected 71 expanded category placements");
 });
 
-test("links the archive, Anti Christ, Rooftops, and Blind Eyes in both directions", () => {
-  assert.match(html, /Rooftops \/ Join/);
-  assert.match(html, /Anti Christ/);
-  assert.match(html, /Blind Eyes/);
-  assert.match(voicesHtml, /Evidence archive/);
-  assert.match(voicesHtml, /Anti Christ/);
-  assert.match(voicesHtml, /Blind Eyes/);
-  assert.match(blindEyesHtml, /Anti Christ/);
-  assert.match(blindEyesHtml, /Rooftops/);
-  assert.match(blindEyesHtml, /Evidence archive/);
-  assert.match(antiChristHtml, /Blind Eyes/);
-  assert.match(antiChristHtml, /Rooftops/);
-  assert.match(antiChristHtml, /Evidence/);
+test("exports the Christianity Test framework and collection hub", () => {
+  assert.match(christianityTestHtml, /<title>Christianity Test \| TDS/);
+  assert.match(christianityTestHtml, /christianity-test-hero\.jpg/);
+  assert.match(christianityTestHtml, /Test the public witness by the public record/);
+  assert.match(christianityTestHtml, /Conduct\. Teaching\. Comparison\./);
+  assert.match(christianityTestHtml, /Truth, not false witness/);
+  assert.match(christianityTestHtml, /Do not steal; steward faithfully/);
+  assert.match(christianityTestHtml, /Fidelity, not adultery/);
+  assert.match(christianityTestHtml, /Mercy and forgiveness/);
+  assert.match(christianityTestHtml, /The fruit of the Spirit/);
+  assert.match(christianityTestHtml, /Welcome the stranger; serve the poor/);
+  assert.match(christianityTestHtml, /Rooftops/);
+  assert.match(christianityTestHtml, /Blind Eyes/);
+  assert.match(christianityTestHtml, /Anti Christ/);
+  assert.match(christianityTestHtml, /faith-framework__grid"><article>/);
+});
+
+test("exports the complete publication methodology", () => {
+  assert.match(methodologyHtml, /<title>Methodology \| TDS/);
+  assert.match(methodologyHtml, /methodology-hero\.jpg/);
+  assert.match(methodologyHtml, /Harsh argument/);
+  assert.match(methodologyHtml, /Six non-negotiable rules/);
+  assert.match(methodologyHtml, /Primary records first/);
+  assert.match(methodologyHtml, /Status is part of the fact/);
+  assert.match(methodologyHtml, /No guilt by association/);
+  assert.match(methodologyHtml, /A citation is not immunity/);
+  assert.match(methodologyHtml, /Corrections stay visible/);
+  assert.match(methodologyHtml, /Source hierarchy/);
+  assert.match(methodologyHtml, /Criminal verdict/);
+  assert.match(methodologyHtml, /Write no broader than the proof/);
+  assert.match(methodologyHtml, /EDITORIAL_STANDARDS\.md/);
+  assert.match(methodologyHtml, /ARCHIVE_DATA_ARCHITECTURE\.md/);
+});
+
+test("uses one uncluttered three-section header on every page", () => {
+  for (const pageHtml of renderedPages) {
+    const nav = primaryNavigation(pageHtml);
+    assert.match(nav, />Evidence</);
+    assert.match(nav, />Christianity Test</);
+    assert.match(nav, />Methodology</);
+    assert.doesNotMatch(nav, /Anti Christ|Blind Eyes|Rooftops|Categories|Take action|Profiles|Full record/);
+    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 3, "expected exactly three primary links");
+  }
+
+  assert.match(christianityTestHtml, /href="\/voices\/"/);
+  assert.match(christianityTestHtml, /href="\/blind-eyes\/"/);
+  assert.match(christianityTestHtml, /href="\/anti-christ\/"/);
+  assert.match(voicesHtml, /href="\/christianity-test\/"/);
+  assert.match(blindEyesHtml, /href="\/christianity-test\/"/);
+  assert.match(antiChristHtml, /href="\/christianity-test\/"/);
 });

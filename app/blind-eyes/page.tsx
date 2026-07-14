@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import directory from "@/research/blind-eyes/directory.json";
+import { PageMasthead, SiteHeader } from "../site-chrome";
 import { ShareTools } from "../voices/share-tools";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dtrezise.github.io/TDS/blind-eyes-og.png",
+        url: "https://dtrezise.github.io/TDS/blind-eyes-hero.jpg",
         width: 1732,
         height: 908,
         alt: "Blind Eyes — The pulpits that bless political power",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blind Eyes | TDS",
     description: "A sourced index of the pulpits and ministries that bless Christian nationalism and Trump-centered power.",
-    images: ["https://dtrezise.github.io/TDS/blind-eyes-og.png"],
+    images: ["https://dtrezise.github.io/TDS/blind-eyes-hero.jpg"],
   },
 };
 
@@ -58,22 +59,10 @@ export default function BlindEyesPage() {
     <main className="blind-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <header className="site-header blind-site-header">
-        <Link className="wordmark" href="/" aria-label="TDS Evidence Archive home">
-          <span className="wordmark__mark">TDS</span>
-          <span className="wordmark__text">Trump Derangement Syndrome | The Evidence Archive</span>
-        </Link>
-        <nav aria-label="Blind Eyes page navigation">
-          <a href="#profiles">Profiles</a>
-          <a href="#method">Method</a>
-          <a href="#share">Share</a>
-          <Link href="/anti-christ">Anti Christ</Link>
-          <Link href="/voices">Rooftops</Link>
-          <Link className="nav-archive" href="/">Evidence</Link>
-        </nav>
-      </header>
+      <SiteHeader active="christianity" />
+      <PageMasthead src="/blind-eyes-hero.jpg" alt="Blind Eyes — The pulpits that bless political power" priority />
 
-      <section className="blind-hero" id="top">
+      <section className="blind-hero">
         <div className="blind-hero__copy">
           <p className="section-label">The other side of the church witness</p>
           <h1>Blind eyes.<br /><em>Loud pulpits.</em></h1>
@@ -213,7 +202,7 @@ export default function BlindEyesPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Look directly at the record. Then test the witness by its fruit.</p>
-        <div className="footer-links"><Link href="/anti-christ">Anti Christ</Link><Link href="/voices">Rooftops</Link><Link href="/">Evidence archive</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/">Evidence</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

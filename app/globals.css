@@ -98,7 +98,7 @@ a {
 
 .site-header nav {
   display: flex;
-  gap: clamp(11px, 1.65vw, 25px);
+  gap: 0;
 }
 
 .site-header nav a {
@@ -113,6 +113,37 @@ a {
 
 .site-header nav a:hover {
   color: var(--red);
+}
+
+.site-header nav .primary-nav__link {
+  border-bottom: 3px solid transparent;
+  padding: 10px 2px 7px;
+}
+
+.site-header nav .primary-nav__link[aria-current="page"] {
+  border-bottom-color: var(--red);
+  color: var(--red-dark);
+}
+
+.site-header nav .primary-nav__link + .primary-nav__link::before {
+  color: var(--rule);
+  content: "|";
+  margin: 0 clamp(11px, 1.65vw, 25px);
+}
+
+.page-masthead {
+  background: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  height: clamp(250px, 34vw, 560px);
+  margin: 0;
+  overflow: hidden;
+}
+
+.page-masthead img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .site-header nav .nav-join {
@@ -130,6 +161,10 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.75fr);
   min-height: calc(100vh - 82px);
+}
+
+.evidence-page .hero {
+  min-height: 560px;
 }
 
 .hero__copy {
@@ -908,7 +943,7 @@ footer > a {
   border-bottom: 1px solid var(--ink);
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(310px, 0.7fr);
-  min-height: 690px;
+  min-height: 540px;
 }
 
 .rooftop-hero__copy {
@@ -1418,7 +1453,7 @@ footer > a {
   border-bottom: 1px solid var(--ink);
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.7fr);
-  min-height: 680px;
+  min-height: 540px;
 }
 
 .blind-hero__copy {
@@ -1924,7 +1959,7 @@ footer > a {
   border-bottom: 1px solid var(--ink);
   display: grid;
   grid-template-columns: minmax(0, 1.48fr) minmax(320px, 0.7fr);
-  min-height: 700px;
+  min-height: 560px;
 }
 
 .anti-hero__copy {
@@ -2575,6 +2610,454 @@ footer > a {
   background: var(--red-dark);
 }
 
+/* Christianity Test hub */
+
+.christianity-page {
+  background: var(--paper);
+}
+
+.framework-intro,
+.methodology-intro,
+.framework-caution,
+.legal-safeguards {
+  border-bottom: 1px solid var(--ink);
+  display: grid;
+  gap: clamp(50px, 8vw, 140px);
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  padding: clamp(64px, 8vw, 118px) 7vw;
+}
+
+.framework-intro h1,
+.methodology-intro h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 5.2vw, 6rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  margin: 22px 0 0;
+}
+
+.framework-intro__copy,
+.methodology-intro > div:last-child,
+.framework-caution > div:last-child,
+.legal-safeguards > div:last-child {
+  align-self: end;
+  border-top: 5px solid var(--red);
+  padding-top: 26px;
+}
+
+.framework-intro__copy p,
+.methodology-intro > div:last-child p,
+.framework-caution > div:last-child p,
+.legal-safeguards > div:last-child p {
+  font-family: var(--serif);
+  font-size: clamp(1.02rem, 1.25vw, 1.28rem);
+  line-height: 1.6;
+}
+
+.framework-intro__copy .framework-intro__lead,
+.methodology-intro > div:last-child .methodology-intro__lead {
+  color: var(--red-dark);
+  font-size: clamp(1.35rem, 1.75vw, 1.9rem);
+  line-height: 1.38;
+  margin-top: 0;
+}
+
+.framework-intro__copy a,
+.framework-caution a,
+.legal-safeguards a {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  margin-top: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.test-boundaries {
+  background: var(--ink);
+  color: white;
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: minmax(250px, 0.65fr) minmax(0, 1.35fr);
+  padding: clamp(64px, 7vw, 104px) 7vw;
+}
+
+.test-boundaries .section-label,
+.method-rules .section-label {
+  color: #eeb968;
+}
+
+.test-boundaries h2,
+.framework-caution h2,
+.method-rules h2,
+.source-hierarchy h2,
+.status-language h2,
+.publication-workflow h2,
+.legal-safeguards h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.45rem, 4.4vw, 5.1rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  margin: 20px 0 0;
+}
+
+.test-boundaries ol,
+.method-rules ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.test-boundaries li,
+.method-rules li {
+  border-top: 1px solid #46505a;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  padding: 25px 0;
+}
+
+.test-boundaries li > span,
+.method-rules li > span {
+  color: #eeb968;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+
+.test-boundaries li strong,
+.method-rules h3 {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  margin: 0;
+}
+
+.test-boundaries li p,
+.method-rules li p {
+  color: #c2c9cf;
+  line-height: 1.6;
+  margin: 9px 0 0;
+}
+
+.faith-framework--page {
+  border-top: 0;
+}
+
+.christianity-collection {
+  background: var(--paper-bright);
+  border-bottom: 1px solid var(--ink);
+  padding: clamp(64px, 7vw, 106px) 7vw;
+}
+
+.christianity-collection__heading {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.55fr);
+  margin-bottom: 45px;
+}
+
+.christianity-collection__heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 4.5vw, 5.2rem);
+  font-weight: 600;
+  grid-row: 2;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.christianity-collection__heading > p:last-child {
+  align-self: end;
+  border-top: 1px solid var(--ink);
+  font-family: var(--serif);
+  grid-column: 2;
+  grid-row: 2;
+  line-height: 1.55;
+  margin: 0;
+  padding-top: 18px;
+}
+
+.christianity-collection__grid {
+  border-left: 1px solid var(--ink);
+  border-top: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.christianity-collection__grid > a {
+  border-bottom: 1px solid var(--ink);
+  border-right: 1px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: clamp(26px, 3vw, 44px);
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.christianity-collection__grid > a:hover {
+  background: var(--ink);
+  color: white;
+}
+
+.christianity-collection__grid > a > span {
+  color: var(--red);
+  font-size: 0.65rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.christianity-collection__grid h3 {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 3.7vw, 4.6rem);
+  letter-spacing: -0.05em;
+  margin: 28px 0 20px;
+}
+
+.christianity-collection__grid p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.christianity-collection__grid strong {
+  font-size: 0.69rem;
+  letter-spacing: 0.08em;
+  margin-top: auto;
+  padding-top: 36px;
+  text-transform: uppercase;
+}
+
+.framework-caution {
+  background: var(--red-dark);
+  color: white;
+}
+
+.framework-caution .section-label {
+  color: #ffd4b8;
+}
+
+.framework-caution > div:last-child {
+  border-top-color: #ffd4b8;
+}
+
+/* Methodology */
+
+.methodology-page {
+  background: var(--paper);
+}
+
+.method-rules {
+  background: var(--ink);
+  color: white;
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: minmax(250px, 0.65fr) minmax(0, 1.35fr);
+  padding: clamp(64px, 7vw, 104px) 7vw;
+}
+
+.source-hierarchy,
+.status-language,
+.publication-workflow {
+  border-bottom: 1px solid var(--ink);
+  padding: clamp(64px, 7vw, 106px) 7vw;
+}
+
+.source-hierarchy {
+  background: var(--blue-light);
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: minmax(250px, 0.62fr) minmax(0, 1.38fr);
+}
+
+.source-hierarchy > div:first-child > p:last-child,
+.status-language__heading > p:last-child {
+  font-family: var(--serif);
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.source-hierarchy__grid {
+  border-left: 1px solid #aab9c4;
+  border-top: 1px solid #aab9c4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.source-hierarchy__grid article {
+  border-bottom: 1px solid #aab9c4;
+  border-right: 1px solid #aab9c4;
+  padding: clamp(24px, 2.5vw, 38px);
+}
+
+.source-hierarchy__grid span,
+.publication-workflow li > span {
+  color: var(--red-dark);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.source-hierarchy__grid h3 {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  line-height: 1.15;
+  margin: 18px 0 12px;
+}
+
+.source-hierarchy__grid p {
+  color: #3b4751;
+  font-size: 0.88rem;
+  line-height: 1.58;
+  margin: 0;
+}
+
+.status-language {
+  background: var(--paper-bright);
+}
+
+.status-language__heading {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.5fr);
+  margin-bottom: 46px;
+}
+
+.status-language__heading h2 {
+  grid-row: 2;
+}
+
+.status-language__heading > p:last-child {
+  align-self: end;
+  border-top: 1px solid var(--ink);
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  padding-top: 18px;
+}
+
+.status-table {
+  border-left: 1px solid var(--ink);
+  border-top: 1px solid var(--ink);
+}
+
+.status-table__row {
+  border-bottom: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: minmax(145px, 0.55fr) minmax(220px, 1fr) minmax(220px, 1.25fr);
+}
+
+.status-table__row > * {
+  border-right: 1px solid var(--ink);
+  line-height: 1.45;
+  padding: 18px 20px;
+}
+
+.status-table__row > strong {
+  font-family: var(--serif);
+}
+
+.status-table__head {
+  background: var(--ink);
+  color: white;
+}
+
+.status-table__head > strong {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.publication-workflow {
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: minmax(250px, 0.62fr) minmax(0, 1.38fr);
+}
+
+.publication-workflow ol {
+  border-top: 1px solid var(--ink);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-workflow li {
+  border-bottom: 1px solid var(--ink);
+  display: grid;
+  gap: 16px 22px;
+  grid-template-columns: 42px minmax(0, 0.7fr) minmax(0, 1fr);
+  padding: 24px 0;
+}
+
+.publication-workflow li strong {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.publication-workflow li p {
+  line-height: 1.55;
+  margin: 0;
+}
+
+.legal-safeguards {
+  background: var(--red-dark);
+  color: white;
+}
+
+.legal-safeguards .section-label {
+  color: #ffd4b8;
+}
+
+.legal-safeguards > div:last-child {
+  border-top-color: #ffd4b8;
+}
+
+.methodology-note {
+  align-items: start;
+  background: var(--blue);
+  color: white;
+  display: grid;
+  gap: 4vw;
+  grid-template-columns: minmax(160px, 0.35fr) minmax(260px, 1fr) minmax(250px, 0.7fr);
+  padding: clamp(40px, 5vw, 70px) 7vw;
+}
+
+.methodology-note strong,
+.methodology-note span {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.methodology-note span {
+  color: #eeb968;
+  margin-top: 8px;
+}
+
+.methodology-note p {
+  font-family: var(--serif);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.methodology-note__links {
+  display: grid;
+  gap: 14px;
+}
+
+.methodology-note__links a {
+  border-bottom: 1px solid #6d8191;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  padding-bottom: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1250px) {
   .site-header {
     gap: 14px;
@@ -2587,7 +3070,7 @@ footer > a {
   }
 
   .site-header nav {
-    gap: 10px;
+    gap: 0;
   }
 
   .site-header nav a {
@@ -2611,7 +3094,7 @@ footer > a {
   }
 
   .site-header nav {
-    gap: 7px;
+    gap: 0;
   }
 
   .site-header nav a {
@@ -2649,6 +3132,14 @@ footer > a {
   .faith-framework,
   .archive__heading,
   .method,
+  .framework-intro,
+  .framework-caution,
+  .test-boundaries,
+  .methodology-intro,
+  .method-rules,
+  .source-hierarchy,
+  .publication-workflow,
+  .legal-safeguards,
   .voices-intro,
   .blind-intro,
   .blind-directory__heading,
@@ -2671,14 +3162,17 @@ footer > a {
 
   .rooftop-hero {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .blind-hero {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .anti-hero {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .rooftop-scripture {
@@ -2730,15 +3224,50 @@ footer > a {
   .method__note {
     grid-column: 1;
   }
+
+  .christianity-collection__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .christianity-collection__grid > a {
+    min-height: 300px;
+  }
+
+  .methodology-note {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .methodology-note__links {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 820px) {
   .site-header {
-    min-height: 70px;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 0;
+    padding: 12px 4vw 0;
   }
 
   .site-header nav {
-    display: none;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .site-header nav .primary-nav__link {
+    border-bottom-width: 3px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.58rem;
+    padding: 11px 3px 9px;
+    text-align: center;
+  }
+
+  .site-header nav .primary-nav__link + .primary-nav__link::before {
+    content: none;
   }
 
   .wordmark__text {
@@ -2750,6 +3279,10 @@ footer > a {
 
   .hero {
     min-height: 0;
+  }
+
+  .page-masthead {
+    height: clamp(210px, 52vw, 400px);
   }
 
   .hero__copy {
@@ -2806,6 +3339,74 @@ footer > a {
   .method {
     padding-left: 6vw;
     padding-right: 6vw;
+  }
+
+  .framework-intro,
+  .framework-caution,
+  .test-boundaries,
+  .methodology-intro,
+  .method-rules,
+  .source-hierarchy,
+  .status-language,
+  .publication-workflow,
+  .legal-safeguards,
+  .christianity-collection,
+  .methodology-note {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .christianity-collection__heading,
+  .status-language__heading {
+    grid-template-columns: 1fr;
+  }
+
+  .christianity-collection__heading h2,
+  .christianity-collection__heading > p:last-child,
+  .status-language__heading h2,
+  .status-language__heading > p:last-child {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .source-hierarchy__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-table {
+    border: 0;
+    display: grid;
+    gap: 18px;
+  }
+
+  .status-table__head {
+    display: none;
+  }
+
+  .status-table__row {
+    border-left: 1px solid var(--ink);
+    border-top: 1px solid var(--ink);
+    grid-template-columns: 1fr;
+  }
+
+  .status-table__row > * {
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .publication-workflow li {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+
+  .publication-workflow li p {
+    grid-column: 2;
+  }
+
+  .methodology-note {
+    grid-template-columns: 1fr;
+  }
+
+  .methodology-note__links {
+    grid-column: 1;
   }
 
   footer {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import directory from "@/research/voices/directory.json";
+import { PageMasthead, SiteHeader } from "../site-chrome";
 import { ShareTools } from "./share-tools";
 
 export const metadata: Metadata = {
@@ -16,10 +17,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://dtrezise.github.io/TDS/og.png",
-        width: 1734,
-        height: 907,
-        alt: "TDS — The Evidence Archive",
+        url: "https://dtrezise.github.io/TDS/rooftops-hero.jpg",
+        width: 1731,
+        height: 909,
+        alt: "Rooftops — Christian voices against Christian nationalism",
       },
     ],
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shout It from the Rooftops",
     description: "Christian voices resisting Christian nationalism—and ways to join them.",
-    images: ["https://dtrezise.github.io/TDS/og.png"],
+    images: ["https://dtrezise.github.io/TDS/rooftops-hero.jpg"],
   },
 };
 
@@ -58,22 +59,10 @@ export default function VoicesPage() {
     <main className="voices-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <header className="site-header voices-site-header">
-        <Link className="wordmark" href="/" aria-label="TDS Evidence Archive home">
-          <span className="wordmark__mark">TDS</span>
-          <span className="wordmark__text">Trump Derangement Syndrome | The Evidence Archive</span>
-        </Link>
-        <nav aria-label="Voices page navigation">
-          <a href="#voices">Voices</a>
-          <a href="#act">Take action</a>
-          <a href="#share">Share</a>
-          <Link href="/anti-christ">Anti Christ</Link>
-          <Link href="/blind-eyes">Blind Eyes</Link>
-          <Link className="nav-archive" href="/">Evidence archive</Link>
-        </nav>
-      </header>
+      <SiteHeader active="christianity" />
+      <PageMasthead src="/rooftops-hero.jpg" alt="Rooftops — Christian voices against Christian nationalism" priority />
 
-      <section className="rooftop-hero" id="top">
+      <section className="rooftop-hero">
         <div className="rooftop-hero__copy">
           <p className="section-label">A directory for Christian resistance</p>
           <h1>Shout it from<br /><em>the rooftops.</em></h1>
@@ -188,7 +177,7 @@ export default function VoicesPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Speak in the light. Make faithful dissent easier to find.</p>
-        <div className="footer-links"><Link href="/anti-christ">Anti Christ</Link><Link href="/blind-eyes">Blind Eyes</Link><Link href="/">Evidence archive</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/">Evidence</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );
