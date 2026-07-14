@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export type PrimarySection = "evidence" | "christianity" | "patriotic" | "methodology";
+export type PrimarySection = "evidence" | "christianity" | "patriotic" | "america-first" | "deals" | "methodology";
+export type TestSection = "christianity" | "patriotic" | "america-first" | "deals";
 
 function publicAssetPath(src: string) {
   const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
@@ -51,5 +52,29 @@ export function PageMasthead({ src, alt, priority = false }: { src: string; alt:
         sizes="100vw"
       />
     </figure>
+  );
+}
+
+export function TestSuiteNav({ active }: { active: TestSection }) {
+  const tests: Array<{ label: string; href: string; section: TestSection }> = [
+    { label: "Christianity Test", href: "/christianity-test", section: "christianity" },
+    { label: "Patriotic Test", href: "/patriotic-test", section: "patriotic" },
+    { label: "America First Test", href: "/america-first-test", section: "america-first" },
+    { label: "Deal Test", href: "/deal-test", section: "deals" },
+  ];
+
+  return (
+    <nav className="test-suite-nav" aria-label="Evidence tests">
+      <span>Apply a test</span>
+      {tests.map((test) => (
+        <Link
+          href={test.href}
+          aria-current={active === test.section ? "page" : undefined}
+          key={test.section}
+        >
+          {test.label}
+        </Link>
+      ))}
+    </nav>
   );
 }

@@ -17,18 +17,18 @@ test("normalizes the legacy research into a deterministic portable archive", asy
 
   assert.deepEqual(first, second);
   assert.deepEqual(validateArchiveExport(first), []);
-  assert.equal(first.counts.cases, 56);
-  assert.equal(first.counts.case_aliases, 60);
-  assert.equal(first.counts.claims, 120);
-  assert.equal(first.counts.sources, 149);
-  assert.equal(first.counts.claim_sources, 326);
+  assert.equal(first.counts.cases, 80);
+  assert.equal(first.counts.case_aliases, 84);
+  assert.equal(first.counts.claims, 168);
+  assert.equal(first.counts.sources, 210);
+  assert.equal(first.counts.claim_sources, 454);
   assert.equal(first.counts.document_snapshots, 0);
   assert.equal(first.counts.editorial_reviews, 0);
   assert.equal(first.counts.corrections, 0);
-  assert.equal(first.tables.claims.filter((claim) => claim.claim_type === "editorial_analysis").length, 39);
+  assert.equal(first.tables.claims.filter((claim) => claim.claim_type === "editorial_analysis").length, 63);
   assert.equal(first.tables.claims.filter((claim) => claim.claim_type === "faith_analysis").length, 21);
-  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "supports").length, 163);
-  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "contextualizes").length, 163);
+  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "supports").length, 227);
+  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "contextualizes").length, 227);
 
   const reviewClaims = first.tables.claims.filter((claim) => claim.publication_state === "review");
   assert.equal(reviewClaims.length, 8, "four suppressed duplicate records should create two review-state claims each");
@@ -57,5 +57,5 @@ test("generates a D1-compatible seed that loads after the Drizzle migration", as
     input: `PRAGMA foreign_keys=ON;\n${migrations.join("\n")}\n${seedSql}\nSELECT count(*) FROM cases;\nSELECT count(*) FROM claims;\nSELECT count(*) FROM claim_sources;\n`,
   });
 
-  assert.equal(output.trim(), "56\n120\n326");
+  assert.equal(output.trim(), "80\n168\n454");
 });

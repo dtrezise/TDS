@@ -1,4 +1,6 @@
+import americaResearch from "@/research/america_first.json";
 import conductResearch from "@/research/conduct_family.json";
+import dealResearch from "@/research/deal_record.json";
 import faithResearch from "@/research/faith_movements.json";
 import legalResearch from "@/research/legal_power.json";
 
@@ -26,7 +28,9 @@ export type CaseFile = {
     | "Truth & public conduct"
     | "Family & business"
     | "Christianity & character"
-    | "MAGA & movement";
+    | "MAGA & movement"
+    | "America & the world"
+    | "Deals & economic power";
   status: string;
   summary: string;
   significance: string;
@@ -68,7 +72,7 @@ type RawItem = {
 };
 
 type ResearchBundle = { items: RawItem[] };
-type ResearchLane = "legal" | "conduct" | "faith";
+type ResearchLane = "legal" | "conduct" | "faith" | "america" | "deal";
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -102,6 +106,9 @@ function categoryFor(item: RawItem, lane: ResearchLane): CaseFile["category"] {
   const category = item.category.toLowerCase();
   const text = `${category} ${item.title} ${(item.tags ?? []).join(" ")}`.toLowerCase();
 
+  if (lane === "america") return "America & the world";
+  if (lane === "deal") return "Deals & economic power";
+
   if (lane === "faith") {
     if (/movement|heritage|project 2025|america.first|nationalism|religious.alliance/.test(text)) return "MAGA & movement";
     return "Christianity & character";
@@ -127,6 +134,10 @@ const featuredIds = new Set([
   "faith-kirk-memorial-forgiveness-2025",
   "faith-mass-deportation-2025",
   "faith-project2025-schedule-policy-career-2022-2025",
+  "ieepa-tariffs-supreme-court-2026",
+  "maduro-capture-and-venezuelan-oil-control-2026",
+  "qatar-gifted-presidential-jet-2025-2026",
+  "iran-deal-exit-to-hormuz-crisis-2018-2026",
 ]);
 
 function mapItem(item: RawItem, lane: ResearchLane): CaseFile {
@@ -170,10 +181,12 @@ const conductItems = (conductResearch as ResearchBundle).items
   .filter((item) => !duplicateConductIds.has(item.id))
   .map((item) => mapItem(item, "conduct"));
 const faithItems = (faithResearch as ResearchBundle).items.map((item) => mapItem(item, "faith"));
+const americaItems = (americaResearch as ResearchBundle).items.map((item) => mapItem(item, "america"));
+const dealItems = (dealResearch as ResearchBundle).items.map((item) => mapItem(item, "deal"));
 
 // Repeated events remain in the faith lane when they support a distinct moral
 // analysis. Purely duplicative legal/business entries are removed above.
-export const caseFiles: CaseFile[] = [...legalItems, ...conductItems, ...faithItems];
+export const caseFiles: CaseFile[] = [...legalItems, ...conductItems, ...faithItems, ...americaItems, ...dealItems];
 
 export const categories = [
   "All evidence",
@@ -183,6 +196,8 @@ export const categories = [
   "Family & business",
   "Christianity & character",
   "MAGA & movement",
+  "America & the world",
+  "Deals & economic power",
 ] as const;
 
-export const lastReviewed = "July 13, 2026";
+export const lastReviewed = "July 14, 2026";

@@ -1,0 +1,489 @@
+{
+  "generated": "2026-07-14",
+  "scope_note": "A foreign-policy, trade, diplomacy, and national-power research lane testing whether policies sold as America First measurably protected Americans, honored constitutional allocations of power, preserved durable alliances, and strengthened U.S. influence. Entries distinguish completed withdrawals and court holdings from threats, forecasts, contested legal theories, ongoing conflicts, and editorial judgments. Strategic retrenchment is not treated as inherently illegitimate, and documented gains remain visible alongside costs.",
+  "items": [
+    {
+      "id": "paris-unfccc-withdrawals-2025-2026",
+      "title": "Trump again withdrew the United States from the Paris climate accord and then ordered withdrawal from the underlying UN climate convention",
+      "date_start": "2025-01-20",
+      "date_end": "2026-01-08",
+      "people": ["Donald Trump"],
+      "category": "america-world",
+      "status_label": "Paris withdrawal effective January 27, 2026; broader convention withdrawal announced",
+      "summary": "Trump ordered a second U.S. withdrawal from the Paris Agreement on his first day back in office, halted international climate-finance commitments, and in January 2026 ordered withdrawal from the UN Framework Convention on Climate Change itself. UNFCCC records the Paris withdrawal as effective January 27, 2026. The administration argued that the agreements unfairly burdened the U.S. economy; the UN climate chief called the later retreat from the convention economically and strategically self-defeating.",
+      "why_it_matters": "Climate risk, energy markets, insurance, agriculture, migration, and technology competition cross borders. An America First test asks whether surrendering a seat in the principal global forum increases U.S. control or leaves standards, markets, and collective risk management to other powers.",
+      "evidence": [
+        {
+          "label": "Executive order directing Paris withdrawal and ending international climate-finance commitments",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/putting-america-first-in-international-environmental-agreements/",
+          "publisher": "The White House",
+          "source_type": "executive-order",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "United States party page recording the January 27, 2026 Paris withdrawal date",
+          "url": "https://unfccc.int/node/61231",
+          "publisher": "UN Framework Convention on Climate Change",
+          "source_type": "official-record",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "UN climate chief statement on the U.S. withdrawal from the UNFCCC",
+          "url": "https://unfccc.int/news/step-back-from-climate-cooperation-will-hurt-us-economy-statement-from-un-climate-chief-on-us",
+          "publisher": "UN Framework Convention on Climate Change",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Paris Agreement", "UNFCCC", "climate", "international cooperation", "energy"],
+      "confidence": "high",
+      "editorial_note": "Separate the completed Paris withdrawal from the distinct legal process and effective date for leaving the UNFCCC. Economic consequences are forecasts and policy judgments, not adjudicated facts."
+    },
+    {
+      "id": "who-withdrawal-2025-2026",
+      "title": "Trump withdrew the United States from the World Health Organization and recalled U.S. personnel",
+      "date_start": "2025-01-20",
+      "date_end": "2026-01-24",
+      "people": ["Donald Trump", "Robert F. Kennedy Jr.", "Marco Rubio"],
+      "category": "america-world",
+      "status_label": "Withdrawal notification completed; outstanding institutional issues remained before WHO governing bodies",
+      "summary": "Trump ordered the United States to withdraw from WHO, pause future funding, recall U.S. personnel and contractors, and stop participation in pandemic-agreement negotiations. WHO acknowledged the withdrawal notification in January 2026 while saying unresolved issues would go to its Executive Board and World Health Assembly. The administration cited cost, independence, and COVID-response failures; WHO disputed those claims and warned that withdrawal makes both the United States and the world less safe.",
+      "why_it_matters": "Pathogen surveillance, data exchange, vaccine coordination, and outbreak response are collective-action systems. The test is not whether WHO is beyond criticism, but whether leaving it produces a stronger replacement or reduces American access and influence when the next cross-border health threat arrives.",
+      "evidence": [
+        {
+          "label": "Executive order withdrawing the United States from WHO",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/withdrawing-the-united-states-from-the-worldhealth-organization/",
+          "publisher": "The White House",
+          "source_type": "executive-order",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "WHO statement acknowledging the U.S. withdrawal notification and identifying unresolved issues",
+          "url": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
+          "publisher": "World Health Organization",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["WHO", "global health", "pandemic preparedness", "withdrawal", "public health"],
+      "confidence": "high",
+      "editorial_note": "Preserve the administration's stated objections and WHO's direct response. Do not claim a future outbreak outcome that has not occurred."
+    },
+    {
+      "id": "nato-threats-and-five-percent-bargain-2024-2026",
+      "title": "Trump threatened conditional NATO protection, while the alliance later reaffirmed Article 5 and adopted a 5 percent investment target",
+      "date_start": "2024-02-10",
+      "date_end": "2026-03-26",
+      "people": ["Donald Trump", "Pete Hegseth", "Marco Rubio"],
+      "category": "america-world",
+      "status_label": "Documented campaign threat and completed alliance agreement; the United States remained in NATO",
+      "summary": "During the 2024 campaign, Trump said he would encourage Russia to do whatever it wanted to a NATO ally he considered delinquent on defense spending. At the June 2025 Hague summit, however, all allies reaffirmed the Article 5 collective-defense guarantee and committed to reach 5 percent of GDP in defined defense and security investments by 2035. NATO reported a 20 percent real increase in European and Canadian defense spending in 2025 and said every ally met the earlier 2 percent benchmark.",
+      "why_it_matters": "The record is mixed and therefore revealing. Burden sharing increased—a concrete result the archive should not deny—but threatening to make treaty defense contingent on a president's payment metaphor weakens the predictability on which deterrence depends. The test measures durable alliance capacity as well as headline leverage.",
+      "evidence": [
+        {
+          "label": "Report and verbatim account of Trump's conditional-defense threat",
+          "url": "https://apnews.com/article/2b8054a9fe185eec34c2c541cece655d",
+          "publisher": "Associated Press",
+          "source_type": "news-reporting",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "The Hague Summit Declaration reaffirming Article 5 and adopting the 5 percent target",
+          "url": "https://www.ncia.nato.int/newsroom/news/the-hague-summit-declaration",
+          "publisher": "NATO",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "NATO annual-report summary of 2025 spending gains",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2026/03/26/nato-secretary-generals-annual-report-shows-significant-increase-in-defence-investment-from-europe-and-canada",
+          "publisher": "NATO",
+          "source_type": "official-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["NATO", "Article 5", "Russia", "defense spending", "alliances"],
+      "confidence": "high",
+      "editorial_note": "Do not say Trump withdrew from or destroyed NATO. Include the spending and Article 5 outcomes as limiting facts while criticizing the coercive threat."
+    },
+    {
+      "id": "greenland-annexation-pressure-2025-2026",
+      "title": "Trump pressed to acquire Greenland and repeatedly left coercion hanging over an allied population that rejected annexation",
+      "date_start": "2025-01-07",
+      "date_end": "2026-01-21",
+      "people": ["Donald Trump", "JD Vance", "Marco Rubio"],
+      "category": "america-world",
+      "status_label": "Documented pressure campaign; no annexation; Trump later said he would not use force",
+      "summary": "Trump revived demands for U.S. control of Greenland, at points refusing to rule out coercion and arguing the territory was necessary for national security. Greenland and Denmark rejected a sale, and polling cited by the Congressional Research Service found overwhelming Greenlandic opposition to joining the United States. In January 2026 Trump said he would not use force and instead demanded immediate negotiations.",
+      "why_it_matters": "A security interest does not erase another people's right to self-determination or the value of treating Denmark as an ally rather than a target. An America First policy should distinguish negotiated basing and mineral access from territorial intimidation.",
+      "evidence": [
+        {
+          "label": "CRS analysis of U.S. interest, Greenlandic opposition, coercive statements, and the later no-force statement",
+          "url": "https://www.congress.gov/crs-product/IN12643",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS Arctic report documenting the broader acquisition campaign and strategic context",
+          "url": "https://www.congress.gov/crs-products/product/pdf/R/R41153",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Greenland", "Denmark", "self-determination", "Arctic", "territorial pressure"],
+      "confidence": "high",
+      "editorial_note": "Use the chronology. Do not write that Trump invaded or annexed Greenland. His later renunciation of force is material limiting context."
+    },
+    {
+      "id": "canada-annexation-and-tariff-coercion-2024-2025",
+      "title": "Trump paired 51st-state rhetoric toward Canada with tariffs that triggered retaliation and anti-American backlash",
+      "date_start": "2024-12-03",
+      "date_end": "2025-05-06",
+      "people": ["Donald Trump", "Howard Lutnick"],
+      "category": "america-world",
+      "status_label": "Documented rhetoric and trade measures; Canada remained sovereign and retaliated",
+      "summary": "Trump repeatedly suggested Canada should become the 51st state while imposing or threatening tariffs against the United States' largest trading partner. Canada retaliated, and CRS reported a sharp decline in Canadian views of the United States and a political rupture described by Canadian leaders as the end of the old bilateral relationship. The administration defended tariffs as leverage over trade, migration, and fentanyl.",
+      "why_it_matters": "Canada is a treaty ally, intelligence partner, energy supplier, and deeply integrated market. The test asks whether humiliating annexation rhetoric and broad tariffs secured durable advantages worth the consumer, business, and alliance costs—or converted interdependence into hostility.",
+      "evidence": [
+        {
+          "label": "CRS account of 51st-state rhetoric, anti-American reaction, and bilateral rupture",
+          "url": "https://www.congress.gov/crs-product/IN12533",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS overview of U.S.-Canada trade tensions, tariffs, and retaliation",
+          "url": "https://www.congress.gov/crs-product/IF12595",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Canada", "tariffs", "51st state", "trade", "alliances"],
+      "confidence": "high",
+      "editorial_note": "Annexation language was rhetoric, not a completed legal action. Trade effects should be updated as later agreements and data develop."
+    },
+    {
+      "id": "panama-canal-sovereignty-pressure-2024-2025",
+      "title": "Trump threatened to take back the Panama Canal despite Panama's treaty-backed sovereignty",
+      "date_start": "2024-12-22",
+      "date_end": "2025-02-06",
+      "people": ["Donald Trump", "Marco Rubio"],
+      "category": "america-world",
+      "status_label": "Documented territorial rhetoric and diplomatic pressure; canal sovereignty did not change",
+      "summary": "Trump said the United States should regain control of the Panama Canal and repeated the claim in his inaugural address. Panama's president rejected the demand, cited the Torrijos-Carter treaties and full Panamanian sovereignty, and denied that another country controlled canal administration. A later Rubio visit produced talks on ports, migration, and China's role, but Panama did not transfer the canal.",
+      "why_it_matters": "Strategic concern about Chinese-linked port investment is a legitimate subject for diplomacy. Claiming an allied country's sovereign infrastructure as American property is a different proposition—one that substitutes threat and historical grievance for treaty compliance and negotiated security cooperation.",
+      "evidence": [
+        {
+          "label": "Panamanian president's English-language response to Trump's inaugural remarks",
+          "url": "https://www.presidencia.gob.pa/storage/documentos/554/comunicado-panama-el-canal-version-ingles-1737411896.pdf",
+          "publisher": "Presidency of Panama",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Panama account of President Mulino's meeting with Secretary Rubio and resulting agreements",
+          "url": "https://www.presidencia.gob.pa/publicacion/panama-y-estados-unidos-logran-avances-en-temas-comerciales-y-migratorios",
+          "publisher": "Presidency of Panama",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS overview identifying Trump's proposal to regain control of the canal",
+          "url": "https://www.congress.gov/crs-product/IF12876",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Panama Canal", "sovereignty", "China", "Marco Rubio", "treaties"],
+      "confidence": "high",
+      "editorial_note": "Distinguish canal administration from Chinese-linked companies operating nearby ports. Do not claim Panama ceded the canal."
+    },
+    {
+      "id": "ukraine-aid-pause-and-un-vote-2025",
+      "title": "After the Oval Office rupture, the administration paused aid and intelligence to Ukraine as the United States voted with Russia at the UN",
+      "date_start": "2025-02-24",
+      "date_end": "2025-03-11",
+      "people": ["Donald Trump", "JD Vance", "Marco Rubio", "Volodymyr Zelenskyy"],
+      "category": "america-world",
+      "status_label": "Documented diplomatic break and temporary pause; assistance and intelligence sharing resumed",
+      "summary": "On the third anniversary of Russia's full-scale invasion, the United States voted with Russia against a UN General Assembly resolution that reaffirmed Ukraine's sovereignty and demanded Russian withdrawal. Days later, after Trump and Vance confronted President Zelenskyy in the Oval Office, the administration paused military assistance and intelligence sharing. CRS records that both were resumed after March 11 talks with Ukraine.",
+      "why_it_matters": "Negotiating an end to war is a legitimate goal. The test asks whether leverage was applied evenhandedly and whether publicly pressuring the invaded partner—while softening attribution of Russian aggression—improved U.S. bargaining power or rewarded the aggressor's preferred framing.",
+      "evidence": [
+        {
+          "label": "UN meeting record documenting the U.S. vote against the Ukraine-backed resolution alongside Russia",
+          "url": "https://press.un.org/en/2025/ga12675.doc.htm",
+          "publisher": "United Nations",
+          "source_type": "official-record",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS ceasefire analysis documenting the aid and intelligence pauses and March 11 resumption",
+          "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12534/IN12534.1.pdf",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "White House defense of Trump and Vance after the Oval Office confrontation",
+          "url": "https://www.whitehouse.gov/releases/2025/02/president-trump-vp-vance-are-standing-up-for-americans/",
+          "publisher": "The White House",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Ukraine", "Russia", "JD Vance", "military aid", "United Nations", "intelligence"],
+      "confidence": "high",
+      "editorial_note": "Always state that the pauses were temporary and later reversed. The judgment that the approach favored Russia is editorial analysis grounded in the vote, sequencing, and allocation of pressure."
+    },
+    {
+      "id": "iran-nuclear-strikes-war-powers-2025",
+      "title": "Trump ordered U.S. strikes on Iranian nuclear facilities without first obtaining specific congressional authorization",
+      "date_start": "2025-06-21",
+      "date_end": "2025-06-23",
+      "people": ["Donald Trump", "JD Vance", "Marco Rubio", "Pete Hegseth"],
+      "category": "america-world",
+      "status_label": "Completed military strikes; constitutional authority disputed; no merits judgment cited",
+      "summary": "At Trump's direction, U.S. forces struck Fordow, Natanz, and Isfahan during the Israel-Iran conflict. The administration relied on the president's Article II authority rather than a new authorization for use of military force. CRS reported that members of Congress questioned the legal basis and their own constitutional war-powers role. A separate CRS assessment said the exact damage and location of Iran's enriched-uranium stockpile were initially uncertain.",
+      "why_it_matters": "A president may face genuine threats and limited time, but 'America First' cannot mean the executive alone decides when the nation enters hostilities. The constitutional test includes Congress, defined objectives, verified results, and an exit strategy—not only the spectacle of force.",
+      "evidence": [
+        {
+          "label": "CRS analysis of the strikes, legal authorities, and congressional war-powers questions",
+          "url": "https://www.congress.gov/crs-product/IN12577",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS initial assessment of the U.S. strikes and uncertainty over damage and uranium stockpiles",
+          "url": "https://www.congress.gov/crs-product/IN12571",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Iran", "war powers", "Article II", "nuclear facilities", "Congress"],
+      "confidence": "high",
+      "editorial_note": "Do not call the strike definitively unconstitutional without a controlling judgment. State the administration's Article II theory and Congress's unresolved objection."
+    },
+    {
+      "id": "venezuela-lethal-boat-strikes-2025",
+      "title": "The administration used lethal military strikes against suspected drug-smuggling boats without a public criminal process",
+      "date_start": "2025-09-02",
+      "date_end": "2025-09-30",
+      "people": ["Donald Trump", "Marco Rubio", "Pete Hegseth"],
+      "category": "america-world",
+      "status_label": "Documented lethal operations; identities, evidence, and legal authority were contested; no judicial merits ruling cited",
+      "summary": "U.S. forces carried out at least three lethal strikes against vessels the administration said were tied to designated trafficking organizations, reportedly killing 17 people by late September 2025. CRS noted that members of Congress and legal observers questioned the factual disclosures, designation-to-targeting theory, and domestic and international legal authority for using military force rather than interdiction and prosecution.",
+      "why_it_matters": "Drug trafficking is a grave public-safety problem, but an executive claim that people are cartel members cannot substitute for disclosed evidence, legal authority, and accountability when the government uses lethal force. The America First test asks what protects Americans without normalizing unreviewable killing.",
+      "evidence": [
+        {
+          "label": "CRS overview of the September 2025 lethal vessel strikes and legal questions",
+          "url": "https://www.congress.gov/crs-product/IF10230",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS sanctions update describing subsequent strikes and vessel seizures",
+          "url": "https://www.congress.gov/crs-product/IF10715",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Venezuela", "boat strikes", "lethal force", "drug trafficking", "due process"],
+      "confidence": "high",
+      "editorial_note": "Use 'suspected' or 'the administration said' for vessel occupants unless individual identities and conduct are established. Do not describe the operations as murder absent an adjudication."
+    },
+    {
+      "id": "maduro-capture-and-venezuelan-oil-control-2026",
+      "title": "U.S. forces captured Nicolás Maduro as Trump asserted control over Venezuela's transition and oil revenue",
+      "date_start": "2026-01-03",
+      "date_end": null,
+      "people": ["Donald Trump", "Marco Rubio", "Nicolás Maduro"],
+      "category": "america-world",
+      "status_label": "Completed capture and extraction; criminal case and international-law disputes unresolved; oil revenue held as Venezuelan sovereign property under U.S. policy",
+      "summary": "U.S. military strikes supported the January 3 capture and extraction of Nicolás Maduro and his wife to face U.S. criminal charges. Trump said the United States would run Venezuela during a transition and officials required sanctioned oil proceeds to move through U.S.-controlled Treasury accounts. The White House says those funds remain Venezuelan sovereign property and are not U.S. assets. Congress and the UN debated whether the operation was lawful law enforcement, an unauthorized use of force, or a violation of Venezuelan sovereignty.",
+      "why_it_matters": "Maduro's authoritarian record and pending U.S. charges do not eliminate constitutional and international-law constraints on regime-changing force. The archive's strongest criticism is the documented assertion of control—not the inaccurate shorthand that the United States simply stole the oil.",
+      "evidence": [
+        {
+          "label": "CRS account of the capture, strikes, transition claims, oil arrangements, and congressional questions",
+          "url": "https://www.congress.gov/crs-product/IN12618",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "White House fact sheet on U.S.-held Venezuelan oil revenue and its sovereign-property status",
+          "url": "https://www.whitehouse.gov/fact-sheets/2026/01/fact-sheet-president-donald-j-trump-safeguards-venezuelan-oil-revenue-for-the-good-of-the-american-and-venezuelan-people/",
+          "publisher": "The White House",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "UN Security Council meeting record on the Venezuela operation",
+          "url": "https://digitallibrary.un.org/record/4100817/files/S_PV.10085-EN.pdf",
+          "publisher": "United Nations Security Council",
+          "source_type": "official-record",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Venezuela", "Nicolás Maduro", "oil", "regime change", "sovereignty", "Marco Rubio"],
+      "confidence": "high",
+      "editorial_note": "Do not say Maduro has been convicted on the pending U.S. charges. Do not say the United States legally owns the oil or revenue; the administration expressly says it remains Venezuelan sovereign property."
+    },
+    {
+      "id": "rubio-usaid-state-dismantling-2025",
+      "title": "Under Marco Rubio, the administration dismantled USAID, terminated most programs, and cut the diplomatic workforce",
+      "date_start": "2025-02-03",
+      "date_end": "2025-09-23",
+      "people": ["Donald Trump", "Marco Rubio", "Russell Vought", "Elon Musk"],
+      "category": "america-world",
+      "status_label": "Major reorganization and program terminations completed; spending-power litigation and congressional-authority questions continued",
+      "summary": "Rubio became acting USAID administrator, announced cancellation of 83 percent of USAID-managed programs, transferred remaining functions to State, and oversaw a State Department reorganization. CRS reported roughly 3,000 State employees separated through reductions in force and voluntary departures by July 2025, while USAID's independent operating role was effectively eliminated. Courts separately considered whether the administration could pause or terminate congressionally funded assistance on its own timetable.",
+      "why_it_matters": "Foreign assistance and professional diplomacy can be wasteful or effective and deserve audit. Eliminating capacity before Congress resolves the structure and funding question risks exchanging reform for unilateral impoundment, weaker disease and famine response, and less U.S. influence where China and Russia are ready to fill the vacuum.",
+      "evidence": [
+        {
+          "label": "CRS overview of USAID dismantlement and Rubio's 83 percent program cancellation",
+          "url": "https://www.congress.gov/crs-products/product/pdf/IF/IF10261",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS account of the State Department reorganization and workforce reductions",
+          "url": "https://www.congress.gov/crs-product/IF12044",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS legal analysis of litigation over the foreign-assistance spending pause",
+          "url": "https://www.congress.gov/crs-product/LSB11303",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-legal-analysis",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["USAID", "State Department", "Marco Rubio", "foreign service", "foreign aid", "impoundment"],
+      "confidence": "high",
+      "editorial_note": "Do not imply every terminated program was effective or every reorganization unlawful. Preserve Congress's later rescissions and the still-developing litigation history."
+    },
+    {
+      "id": "ieepa-tariffs-supreme-court-2026",
+      "title": "The Supreme Court held that Trump's emergency-power statute did not authorize his sweeping tariffs",
+      "date_start": "2025-02-01",
+      "date_end": "2026-02-20",
+      "people": ["Donald Trump", "Howard Lutnick", "Jamieson Greer", "Stephen Miller"],
+      "category": "america-world",
+      "status_label": "Final Supreme Court statutory holding; administration ended the affected tariffs while other tariff authorities remained",
+      "summary": "Trump used the International Emergency Economic Powers Act to impose broad tariffs. In Learning Resources v. Trump, the Supreme Court held that IEEPA does not authorize tariffs. The administration then ended the affected measures. CBO estimated the IEEPA tariffs had collected about $150 billion and said the broader 2025 trade-policy changes temporarily raised inflation and reduced investment, output, and employment, while also lowering projected federal deficits.",
+      "why_it_matters": "The clearest America First failure here is institutional as well as economic: the president claimed a power Congress had not granted. The fiscal benefit from tariff revenue must stay in the record, but so must the Court's rejection and CBO's estimate that Americans bore higher prices and reduced growth.",
+      "evidence": [
+        {
+          "label": "Learning Resources v. Trump opinion holding that IEEPA does not authorize tariffs",
+          "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CBO analysis after the Supreme Court ruling",
+          "url": "https://www.cbo.gov/publication/62210",
+          "publisher": "Congressional Budget Office",
+          "source_type": "government-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "White House video featuring Stephen Miller's public defense of reciprocal tariffs",
+          "url": "https://www.whitehouse.gov/videos/stephen-hopkins/",
+          "publisher": "The White House",
+          "source_type": "primary-video",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["tariffs", "IEEPA", "Supreme Court", "Stephen Miller", "inflation", "trade"],
+      "confidence": "high",
+      "editorial_note": "Specify that the Court interpreted IEEPA; it did not abolish tariffs or invalidate every tariff imposed under other statutes. Include CBO's deficit-reduction estimate as limiting context."
+    },
+    {
+      "id": "alien-enemies-act-summary-removals-2025",
+      "title": "The administration invoked a wartime alien-enemies law for removals, but the Supreme Court required notice and judicial review",
+      "date_start": "2025-03-15",
+      "date_end": "2025-05-16",
+      "people": ["Donald Trump", "Stephen Miller", "Pam Bondi", "Kristi Noem"],
+      "category": "america-world",
+      "status_label": "Presidential proclamation in effect subject to litigation; Supreme Court required habeas procedure, notice, and an opportunity to seek review",
+      "summary": "Trump invoked the 1798 Alien Enemies Act against alleged Tren de Aragua members and directed immediate apprehension, detention, and removal. In April the Supreme Court held that challenges must proceed through habeas petitions in the district of confinement, while confirming that detainees are entitled to notice and an opportunity for judicial review. In May the Court enjoined removals of a Texas class pending further proceedings. Stephen Miller publicly celebrated the first procedural ruling as a victory for the administration.",
+      "why_it_matters": "Calling migration an invasion cannot erase the Fifth Amendment. The episode shows how an administration can market a venue ruling as total vindication even while every controlling opinion preserved due process and left the central statutory question unresolved.",
+      "evidence": [
+        {
+          "label": "Presidential proclamation invoking the Alien Enemies Act",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/03/invocation-of-the-alien-enemies-act-regarding-the-invasion-of-the-united-states-by-tren-de-aragua/",
+          "publisher": "The White House",
+          "source_type": "presidential-proclamation",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Trump v. J.G.G. opinion requiring habeas procedure, notice, and an opportunity to seek review",
+          "url": "https://www.supremecourt.gov/opinions/24pdf/604us2r25_7648.pdf",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "A.A.R.P. v. Trump order blocking removals pending further review",
+          "url": "https://www.supremecourt.gov/opinions/24pdf/605us1r31_7k47.pdf",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "White House post featuring Stephen Miller's response to the first Supreme Court ruling",
+          "url": "https://www.whitehouse.gov/past-events/stephen-miller-on-supreme-court-ruling-this-is-a-monumental-colossal-victory-for-the-rule-of-law/",
+          "publisher": "The White House",
+          "source_type": "primary-video",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Alien Enemies Act", "Stephen Miller", "due process", "immigration", "habeas corpus"],
+      "confidence": "high",
+      "editorial_note": "Do not say the Supreme Court invalidated the proclamation on the merits. Its holdings here concern venue, habeas, notice, review, and temporary relief."
+    },
+    {
+      "id": "state-human-rights-capacity-cuts-2025",
+      "title": "Rubio's State Department reorganization closed most dedicated human-rights offices and narrowed the annual reports",
+      "date_start": "2025-05-01",
+      "date_end": "2025-10-31",
+      "people": ["Donald Trump", "Marco Rubio"],
+      "category": "america-world",
+      "status_label": "Completed organizational changes; effects on report quality and U.S. leverage remain contested",
+      "summary": "The 2025 State Department reorganization closed most regional offices in the Bureau of Democracy, Human Rights, and Labor and removed dedicated discussion of several internationally recognized rights from annual country reports. CRS recorded congressional concern about the integrity of the revised reports and the loss of specialized human-rights capacity. The administration said it was removing redundancy and aligning the department with core national interests.",
+      "why_it_matters": "Human-rights reporting is not charity to other countries; it supports sanctions, asylum decisions, security vetting, diplomacy, and the credibility to challenge abuses by adversaries. An America First test asks whether narrowing the evidence base makes the United States more effective or merely less willing to see inconvenient conduct by partners.",
+      "evidence": [
+        {
+          "label": "CRS analysis of the human-rights bureau closures and narrowed annual reports",
+          "url": "https://www.congress.gov/crs_external_products/IF/HTML/IF10795.html",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS overview of State Department reorganization and workforce reductions",
+          "url": "https://www.congress.gov/crs-product/IF12044",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Marco Rubio", "State Department", "human rights", "Foreign Service", "diplomacy"],
+      "confidence": "high",
+      "editorial_note": "Frame the loss of leverage as analysis. The office closures and report changes are documented; their long-term foreign-policy effects remain to be measured."
+    }
+  ]
+}

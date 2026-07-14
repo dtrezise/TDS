@@ -11,6 +11,8 @@ const categoryShort: Record<CaseFile["category"], string> = {
   "Family & business": "Family & business",
   "Christianity & character": "Faith & character",
   "MAGA & movement": "Movement",
+  "America & the world": "America & world",
+  "Deals & economic power": "Deals & outcomes",
 };
 
 function ArrowIcon() {
@@ -125,6 +127,20 @@ export function TdsArchive() {
         <div><strong>{faithCount}</strong><span>Christianity tests</span></div>
       </section>
 
+      <section className="test-suite" aria-labelledby="test-suite-title">
+        <div className="test-suite__heading">
+          <p className="section-label">Four standards. One inspectable record.</p>
+          <h2 id="test-suite-title">Test the claim against the conduct.</h2>
+          <p>The same evidence can be examined through moral, constitutional, national-interest, and deal-performance standards. Each test states its boundary and preserves contrary context.</p>
+        </div>
+        <div className="test-suite__grid">
+          <Link href="/christianity-test"><span>01 · Moral witness</span><h3>Christianity Test</h3><p>Compare documented conduct with commands, the Beatitudes, Jesus&apos;s teaching, and the fruit of the Spirit.</p><strong>Apply the test <ArrowIcon /></strong></Link>
+          <Link href="/patriotic-test"><span>02 · Constitutional loyalty</span><h3>Patriotic Test</h3><p>Measure loyalty to the Constitution, rule of law, free institutions, equal rights, and the peaceful transfer of power.</p><strong>Apply the test <ArrowIcon /></strong></Link>
+          <Link href="/america-first-test"><span>03 · National interest</span><h3>America First Test</h3><p>Ask whether foreign policy makes Americans safer and stronger without abandoning law, alliances, sovereignty, or long-term power.</p><strong>Apply the test <ArrowIcon /></strong></Link>
+          <Link href="/deal-test"><span>04 · Promises versus results</span><h3>Deal Test</h3><p>Score the promise, leverage, concessions, verification, delivery, durability, public cost, and actual beneficiary.</p><strong>Apply the test <ArrowIcon /></strong></Link>
+        </div>
+      </section>
+
       <section className="archive" id="evidence">
         <div className="archive__heading">
           <div>
@@ -171,7 +187,7 @@ export function TdsArchive() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Accountability is not derangement. Refusing the record is.</p>
-        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/christianity-test">Christianity Test</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </>
   );

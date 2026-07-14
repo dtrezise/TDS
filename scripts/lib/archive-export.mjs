@@ -9,6 +9,8 @@ const researchLanes = [
   { lane: "legal", file: "research/legal_power.json" },
   { lane: "conduct", file: "research/conduct_family.json" },
   { lane: "faith", file: "research/faith_movements.json" },
+  { lane: "america", file: "research/america_first.json" },
+  { lane: "deal", file: "research/deal_record.json" },
 ];
 
 const canonicalCaseIds = new Map([

@@ -1,7 +1,7 @@
 # Archive data architecture and migration plan
 
 Status: **schema-ready; storage not activated**
-Decision date: July 13, 2026
+Decision date: July 13, 2026; baseline refreshed July 14, 2026
 
 ## Decision
 
@@ -20,13 +20,13 @@ The thresholds are operational gates, not hard capacity limits. Editorial workfl
 
 The source archive contains:
 
-- 60 raw research records in three lanes.
-- 56 canonical cases after four duplicate legal/business records are mapped to their canonical cases.
-- 163 source references, normalizing to 149 unique URLs.
+- 84 raw research records in five lanes.
+- 80 canonical cases after four duplicate legal/business records are mapped to their canonical cases.
+- 227 source references, normalizing to 210 unique URLs.
 - 42 Christianity teaching references.
-- Approximately 171 KB of core research JSON.
+- Approximately 234 KB of core research JSON.
 
-The v1 conversion produces 120 claims—one factual record claim for every raw record, plus 39 editorial-analysis and 21 faith-analysis claims—and 326 claim-to-source citation relationships. Evidence directly `supports` the factual claims and `contextualizes` the analysis claims. The eight claims produced from the four suppressed duplicate records remain in `review`, not `published`, state.
+The v1 conversion produces 168 claims—one factual record claim for every raw record, plus 63 editorial-analysis and 21 faith-analysis claims—and 454 claim-to-source citation relationships. Evidence directly `supports` the factual claims and `contextualizes` the analysis claims. The eight claims produced from the four suppressed duplicate records remain in `review`, not `published`, state.
 
 ## Account and binding audit
 

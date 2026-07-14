@@ -1,16 +1,18 @@
 # Research catalog
 
-The launch research was completed on July 13, 2026 in three independent lanes:
+The launch research was completed on July 13, 2026 in three independent lanes and expanded on July 14 with two additional test-specific lanes:
 
 - `legal_power.json` — 19 legal, accountability, democracy, clemency, conflict, immigration, and oversight records.
 - `conduct_family.json` — 20 public-conduct, falsehood, family/business, and Republican-enabling records.
 - `faith_movements.json` — 21 Christianity, Christian-nationalism, MAGA, America First, Heritage, and Project 2025 records, with 42 linked teaching references.
+- `america_first.json` — 14 national-interest, alliance, sovereignty, war-power, trade, immigration-process, development, and diplomatic-capacity records.
+- `deal_record.json` — 10 business, subsidy, diplomacy, trade, foreign-gift, and Iran-agreement performance records.
 
-Together the files contain 60 researched records and 163 direct evidence links. The public site publishes 56 case files because four business/legal entries that were duplicated across research lanes are suppressed in `data/cases.ts`. Faith entries remain separate when they apply a distinct moral analysis to an event covered elsewhere.
+Together the files contain 84 researched records and 227 direct evidence links. The public site publishes 80 canonical case files because four business/legal entries duplicated across research lanes are suppressed in `data/cases.ts`. Faith entries remain separate when they apply a distinct moral analysis to an event covered elsewhere.
 
 `blind-eyes/directory.json` is a separate, profile-based accountability directory. Its first edition contains eight Christian leaders, churches, networks, or political ministries, 24 claim-specific evidence records, and 16 linked Christian-teaching references. Each profile preserves its alignment level and a visible denial, response, or limiting-context field; inclusion is never based on association alone.
 
-`anti-christ/directory.json` curates the reviewed archive into eight moral categories with five headline selections per category and an expanded 47-case collection. Four page-specific direct-record cases cover recorded statements not previously represented in the main 56-case archive. “Anti Christ” is explicitly defined as conduct opposed to Christ's teaching—not a claim about the prophetic Antichrist or a judgment of Trump's soul. Moral headings never replace the underlying procedural status.
+`anti-christ/directory.json` curates the reviewed archive into eight moral categories with five headline selections per category and an expanded 47-case collection. Four page-specific direct-record cases cover recorded statements not previously represented in the original main archive. “Anti Christ” is explicitly defined as conduct opposed to Christ's teaching—not a claim about the prophetic Antichrist or a judgment of Trump's soul. Moral headings never replace the underlying procedural status.
 
 Each JSON record includes a status label, summary, significance statement, evidence list, tags, confidence, and an editorial caution. Those cautions are part of the maintenance record even when they are not shown verbatim on the public card.
 

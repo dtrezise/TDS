@@ -137,7 +137,7 @@ export default function MethodologyPage() {
         </div>
         <div>
           <p>A source link does not immunize a false republication. Unresolved claims are attributed. Secret intent is not invented. Fact, inference, and opinion are separated. Original disputed accusations receive a response opportunity when practicable, and unusually high-risk work should receive media-law review.</p>
-          <p>The Christianity Test follows the same discipline: sin-language and moral analogy never become unsupported criminal-law labels.</p>
+          <p>Every test follows the same discipline. Sin-language and moral analogy never become unsupported criminal-law labels; constitutional criticism preserves the exact posture of a ruling; foreign-policy criticism separates threats from completed acts and mixed outcomes; deal criticism compares the public promise with written terms, concessions, cost, performance, and durability.</p>
           <a href="https://github.com/dtrezise/TDS/blob/main/EDITORIAL_STANDARDS.md" target="_blank" rel="noreferrer">Read the full legal and editorial standards <ArrowIcon /></a>
         </div>
       </section>
@@ -148,6 +148,9 @@ export default function MethodologyPage() {
         <div className="methodology-note__links">
           <a href="https://github.com/dtrezise/TDS/blob/main/docs/ARCHIVE_DATA_ARCHITECTURE.md" target="_blank" rel="noreferrer">Data architecture and revision history <ArrowIcon /></a>
           <Link href="/christianity-test">Christianity Test standards <ArrowIcon /></Link>
+          <Link href="/patriotic-test">Patriotic Test standards <ArrowIcon /></Link>
+          <Link href="/america-first-test">America First Test standards <ArrowIcon /></Link>
+          <Link href="/deal-test">Deal Test scorecard <ArrowIcon /></Link>
           <Link href="/#evidence">Open the evidence archive <ArrowIcon /></Link>
         </div>
       </section>
@@ -155,7 +158,7 @@ export default function MethodologyPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Facts first. Status always.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/christianity-test">Christianity Test</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/christianity-test">Christianity Test</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

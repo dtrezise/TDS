@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { caseFiles, type CaseFile } from "@/data/cases";
-import { PageMasthead, SiteHeader } from "../site-chrome";
+import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Patriotic Test | TDS",
@@ -121,6 +121,17 @@ const evidenceGroups = [
       "faith-retribution-enemy-within-2023-2024",
     ],
   },
+  {
+    number: "04",
+    title: "Emergency and foreign-policy labels do not erase constitutional limits",
+    thesis: "Tariffs, removals, war, and reorganization still require statutory authority, due process, Congress's constitutional role, and officials willing to defend those boundaries.",
+    ids: [
+      "ieepa-tariffs-supreme-court-2026",
+      "alien-enemies-act-summary-removals-2025",
+      "iran-nuclear-strikes-war-powers-2025",
+      "rubio-usaid-state-dismantling-2025",
+    ],
+  },
 ] as const;
 
 const pressCase = {
@@ -182,6 +193,7 @@ export default function PatrioticTestPage() {
     <main className="patriotic-page">
       <SiteHeader active="patriotic" />
       <PageMasthead src="/patriotic-test-hero.jpg" alt="Patriotic Test — The Constitution Above the Leader" priority />
+      <TestSuiteNav active="patriotic" />
 
       <section className="patriotic-intro">
         <div>
@@ -246,10 +258,10 @@ export default function PatrioticTestPage() {
           </section>
         ))}
 
-        <section className="patriotic-group" aria-labelledby="patriotic-group-04">
+        <section className="patriotic-group" aria-labelledby="patriotic-group-05">
           <div className="patriotic-group__heading">
-            <span>04</span>
-            <div><h2 id="patriotic-group-04">A free press is not a presidential favor</h2><p>The First Amendment protects a press able to report without adopting the government&apos;s preferred words or viewpoint.</p></div>
+            <span>05</span>
+            <div><h2 id="patriotic-group-05">A free press is not a presidential favor</h2><p>The First Amendment protects a press able to report without adopting the government&apos;s preferred words or viewpoint.</p></div>
           </div>
           <div className="patriotic-record-grid patriotic-record-grid--single">
             <article className="patriotic-record" id={pressCase.id}>
@@ -284,7 +296,7 @@ export default function PatrioticTestPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>The Constitution above the leader.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/christianity-test">Christianity Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/christianity-test">Christianity Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

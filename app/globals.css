@@ -336,6 +336,98 @@ a {
   text-transform: uppercase;
 }
 
+.test-suite {
+  background: var(--paper-bright);
+  border-bottom: 1px solid var(--ink);
+  padding: clamp(58px, 7vw, 102px) 7vw;
+}
+
+.test-suite__heading {
+  align-items: end;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.55fr);
+  margin-bottom: 38px;
+}
+
+.test-suite__heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.55rem, 4.2vw, 5rem);
+  font-weight: 600;
+  grid-column: 1;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  margin: 4px 0 0;
+}
+
+.test-suite__heading > p:last-child {
+  border-top: 1px solid var(--ink);
+  font-family: var(--serif);
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  line-height: 1.55;
+  margin: 0;
+  padding-top: 17px;
+}
+
+.test-suite__grid {
+  border-left: 1px solid var(--ink);
+  border-top: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.test-suite__grid > a {
+  border-bottom: 1px solid var(--ink);
+  border-right: 1px solid var(--ink);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: clamp(24px, 2.5vw, 38px);
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.test-suite__grid > a:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.test-suite__grid span {
+  color: var(--red-dark);
+  font-size: 0.63rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.test-suite__grid > a:hover span {
+  color: #f0bf7b;
+}
+
+.test-suite__grid h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 2.25vw, 2.8rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 25px 0 18px;
+}
+
+.test-suite__grid p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.test-suite__grid strong {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  margin-top: auto;
+  padding-top: 28px;
+  text-transform: uppercase;
+}
+
 .thesis {
   background: var(--paper-bright);
   border-bottom: 1px solid var(--ink);
@@ -908,6 +1000,7 @@ footer > a {
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-self: end;
 }
@@ -3060,6 +3153,46 @@ footer > a {
 
 /* Patriotic Test */
 
+.test-suite-nav {
+  align-items: stretch;
+  background: var(--ink);
+  color: white;
+  display: grid;
+  grid-template-columns: minmax(150px, 0.55fr) repeat(4, minmax(150px, 1fr));
+  padding: 0 7vw;
+}
+
+.test-suite-nav > * {
+  align-items: center;
+  border-right: 1px solid #44505c;
+  display: flex;
+  min-height: 64px;
+  padding: 14px 20px;
+}
+
+.test-suite-nav > span {
+  border-left: 1px solid #44505c;
+  color: #eeb968;
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.test-suite-nav a {
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.test-suite-nav a:hover,
+.test-suite-nav a[aria-current="page"] {
+  background: var(--red-dark);
+}
+
 .patriotic-page {
   background: var(--paper);
 }
@@ -3383,6 +3516,54 @@ footer > a {
   border-top-color: #ffd4b8;
 }
 
+.test-corrections {
+  background: #e5dccb;
+  border-bottom: 1px solid var(--ink);
+  display: grid;
+  gap: clamp(48px, 7vw, 110px);
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  padding: clamp(62px, 7vw, 104px) 7vw;
+}
+
+.test-corrections h2 {
+  font-family: var(--serif);
+  font-size: clamp(2.7rem, 4.7vw, 5.4rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+  margin: 20px 0 0;
+}
+
+.test-corrections__list {
+  border-top: 5px solid var(--red);
+}
+
+.test-corrections__list article {
+  border-bottom: 1px solid #8b8275;
+  padding: 26px 0;
+}
+
+.test-corrections__list strong {
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 1.8vw, 1.85rem);
+  line-height: 1.2;
+}
+
+.test-corrections__list p {
+  line-height: 1.62;
+  margin: 12px 0 0;
+}
+
+.test-corrections__list a {
+  display: inline-block;
+  font-size: 0.67rem;
+  font-weight: 850;
+  letter-spacing: 0.07em;
+  margin-top: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1250px) {
   .site-header {
     gap: 14px;
@@ -3404,6 +3585,15 @@ footer > a {
 
   .patriotic-standards__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .test-suite__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .test-suite-nav {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
   }
 }
 
@@ -3471,6 +3661,7 @@ footer > a {
   .legal-safeguards,
   .patriotic-intro,
   .patriotic-boundary,
+  .test-corrections,
   .voices-intro,
   .blind-intro,
   .blind-directory__heading,
@@ -3560,6 +3751,16 @@ footer > a {
     grid-template-columns: 1fr;
   }
 
+  .test-suite__heading {
+    grid-template-columns: 1fr;
+  }
+
+  .test-suite__heading h2,
+  .test-suite__heading > p:last-child {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
   .christianity-collection__grid > a {
     min-height: 300px;
   }
@@ -3627,6 +3828,26 @@ footer > a {
 
   .page-masthead {
     height: clamp(210px, 52vw, 400px);
+  }
+
+  .test-suite-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0;
+  }
+
+  .test-suite-nav > span {
+    border-bottom: 1px solid #44505c;
+    border-left: 0;
+    grid-column: 1 / -1;
+    justify-content: center;
+    min-height: 44px;
+  }
+
+  .test-suite-nav a {
+    border-bottom: 1px solid #44505c;
+    justify-content: center;
+    min-height: 54px;
+    text-align: center;
   }
 
   .hero__copy {
@@ -3752,7 +3973,9 @@ footer > a {
   .patriotic-intro,
   .patriotic-boundary,
   .patriotic-standards,
-  .patriotic-record-section {
+  .patriotic-record-section,
+  .test-corrections,
+  .test-suite {
     padding-left: 6vw;
     padding-right: 6vw;
   }
@@ -3789,7 +4012,9 @@ footer > a {
   }
 
   .footer-links {
+    justify-content: center;
     justify-self: center;
+    max-width: 100%;
   }
 
   .rooftop-hero {
@@ -3942,6 +4167,10 @@ footer > a {
   }
 
   .patriotic-standards__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .test-suite__grid {
     grid-template-columns: 1fr;
   }
 

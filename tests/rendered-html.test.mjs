@@ -8,9 +8,11 @@ const blindEyesHtml = await readFile(new URL("../out/blind-eyes/index.html", imp
 const antiChristHtml = await readFile(new URL("../out/anti-christ/index.html", import.meta.url), "utf8");
 const christianityTestHtml = await readFile(new URL("../out/christianity-test/index.html", import.meta.url), "utf8");
 const patrioticTestHtml = await readFile(new URL("../out/patriotic-test/index.html", import.meta.url), "utf8");
+const americaFirstTestHtml = await readFile(new URL("../out/america-first-test/index.html", import.meta.url), "utf8");
+const dealTestHtml = await readFile(new URL("../out/deal-test/index.html", import.meta.url), "utf8");
 const methodologyHtml = await readFile(new URL("../out/methodology/index.html", import.meta.url), "utf8");
 
-const renderedPages = [html, voicesHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, methodologyHtml];
+const renderedPages = [html, voicesHtml, blindEyesHtml, antiChristHtml, christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml, methodologyHtml];
 
 function primaryNavigation(pageHtml) {
   const match = pageHtml.match(/<nav aria-label="Primary navigation">([\s\S]*?)<\/nav>/);
@@ -30,11 +32,16 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Christianity test/);
   assert.match(html, /Apply the Patriotic Test/);
   assert.match(html, /Read our evidence rules/);
-  assert.match(html, /56<!-- --> documented case files|56<\/strong><span>documented case files/);
+  assert.match(html, /80<!-- --> documented case files|80<\/strong><span>documented case files/);
   assert.match(html, /Record status/);
   assert.match(html, /birthright-citizenship order/i);
   assert.match(html, /Project 2025/);
   assert.match(html, /faith-kirk-memorial-forgiveness-2025/);
+  assert.match(html, /ieepa-tariffs-supreme-court-2026/);
+  assert.match(html, /maduro-capture-and-venezuelan-oil-control-2026/);
+  assert.match(html, /qatar-gifted-presidential-jet-2025-2026/);
+  assert.match(html, /America &amp; world/);
+  assert.match(html, /Deals &amp; outcomes/);
   assert.match(html, /forgiveness met Trump/);
   assert.match(html, /evidence-hero\.jpg/);
   assert.match(html, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/og\.png"/);
@@ -165,6 +172,7 @@ test("exports the Patriotic Test framework and evidence record", () => {
   assert.match(patrioticTestHtml, /Power must yield to elections/);
   assert.match(patrioticTestHtml, /The executive must obey law and oversight/);
   assert.match(patrioticTestHtml, /Office is a trust, not a personal weapon/);
+  assert.match(patrioticTestHtml, /Emergency and foreign-policy labels do not erase constitutional limits/);
   assert.match(patrioticTestHtml, /A free press is not a presidential favor/);
   assert.match(patrioticTestHtml, /election-subversion-january-6-report/);
   assert.match(patrioticTestHtml, /gop-election-certification-objections/);
@@ -173,7 +181,55 @@ test("exports the Patriotic Test framework and evidence record", () => {
   assert.match(patrioticTestHtml, /USCOURTS-dcd-1_25-cv-00532-0/);
   assert.match(patrioticTestHtml, /25-5109LDSN3\.pdf/);
   assert.match(patrioticTestHtml, /Patriotism is not a shortcut around proof/);
-  assert.ok((patrioticTestHtml.match(/class="patriotic-record"/g) ?? []).length === 12, "expected 11 archive records and one press-access record");
+  assert.match(patrioticTestHtml, /ieepa-tariffs-supreme-court-2026/);
+  assert.match(patrioticTestHtml, /alien-enemies-act-summary-removals-2025/);
+  assert.match(patrioticTestHtml, /iran-nuclear-strikes-war-powers-2025/);
+  assert.match(patrioticTestHtml, /rubio-usaid-state-dismantling-2025/);
+  assert.ok((patrioticTestHtml.match(/class="patriotic-record"/g) ?? []).length === 16, "expected 15 archive records and one press-access record");
+});
+
+test("exports the America First Test framework, evidence, and limiting context", () => {
+  assert.match(americaFirstTestHtml, /<title>America First Test \| TDS/);
+  assert.match(americaFirstTestHtml, /america-first-test-hero\.jpg/);
+  assert.match(americaFirstTestHtml, /Putting Americans first requires measuring what Americans actually gain/);
+  assert.match(americaFirstTestHtml, /Leader-first nationalism/);
+  assert.match(americaFirstTestHtml, /The durable power of a free republic/);
+  assert.match(americaFirstTestHtml, /National interest, measured/);
+  assert.match(americaFirstTestHtml, /Sovereignty without imperialism/);
+  assert.match(americaFirstTestHtml, /Alliances as force multipliers/);
+  assert.match(americaFirstTestHtml, /Congress decides war/);
+  assert.match(americaFirstTestHtml, /paris-unfccc-withdrawals-2025-2026/);
+  assert.match(americaFirstTestHtml, /nato-threats-and-five-percent-bargain-2024-2026/);
+  assert.match(americaFirstTestHtml, /ukraine-aid-pause-and-un-vote-2025/);
+  assert.match(americaFirstTestHtml, /venezuela-lethal-boat-strikes-2025/);
+  assert.match(americaFirstTestHtml, /alien-enemies-act-summary-removals-2025/);
+  assert.match(americaFirstTestHtml, /Venezuelan oil is not simply/);
+  assert.match(americaFirstTestHtml, /Dollar decline is not one-cause proof/);
+  assert.match(americaFirstTestHtml, /“Pariah” and “laughing stock” are opinions/);
+  assert.ok((americaFirstTestHtml.match(/class="patriotic-record test-record"/g) ?? []).length === 14, "expected all 14 America First records");
+});
+
+test("exports the Deal Test scorecard, records, and corrections", () => {
+  assert.match(dealTestHtml, /<title>Deal Test \| TDS/);
+  assert.match(dealTestHtml, /deal-test-hero\.jpg/);
+  assert.match(dealTestHtml, /A deal is not a press conference/);
+  assert.match(dealTestHtml, /Promise/);
+  assert.match(dealTestHtml, /Leverage/);
+  assert.match(dealTestHtml, /Concessions/);
+  assert.match(dealTestHtml, /Verification/);
+  assert.match(dealTestHtml, /Delivery/);
+  assert.match(dealTestHtml, /Durability/);
+  assert.match(dealTestHtml, /Public cost/);
+  assert.match(dealTestHtml, /Beneficiary/);
+  assert.match(dealTestHtml, /usfl-antitrust-strategy-1983-1988/);
+  assert.match(dealTestHtml, /trump-university-settlement/);
+  assert.match(dealTestHtml, /trump-casino-company-bankruptcies-2004-2009/);
+  assert.match(dealTestHtml, /qatar-gifted-presidential-jet-2025-2026/);
+  assert.match(dealTestHtml, /iran-deal-exit-to-hormuz-crisis-2018-2026/);
+  assert.match(dealTestHtml, /Qatar training facility is in Idaho—not Colorado/);
+  assert.match(dealTestHtml, /“bribe” is not an adjudicated fact/);
+  assert.match(dealTestHtml, /not personal bankruptcy/);
+  assert.ok((dealTestHtml.match(/class="patriotic-record test-record"/g) ?? []).length === 12, "expected ten new and two existing deal records");
 });
 
 test("exports the complete publication methodology", () => {
@@ -211,4 +267,13 @@ test("uses one uncluttered four-section header on every page", () => {
   assert.match(blindEyesHtml, /href="\/christianity-test\/"/);
   assert.match(antiChristHtml, /href="\/christianity-test\/"/);
   assert.match(html, /href="\/patriotic-test\/"/);
+  assert.match(html, /href="\/america-first-test\/"/);
+  assert.match(html, /href="\/deal-test\/"/);
+  for (const pageHtml of [christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml]) {
+    assert.match(pageHtml, /aria-label="Evidence tests"/);
+    assert.match(pageHtml, /href="\/christianity-test\/"/);
+    assert.match(pageHtml, /href="\/patriotic-test\/"/);
+    assert.match(pageHtml, /href="\/america-first-test\/"/);
+    assert.match(pageHtml, /href="\/deal-test\/"/);
+  }
 });

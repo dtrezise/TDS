@@ -1,0 +1,355 @@
+{
+  "generated": "2026-07-14",
+  "scope_note": "A record of selected Trump-branded business, subsidy, trade, diplomatic, security, and gift arrangements tested against announced terms and measurable outcomes. Entries distinguish a bad result from an unlawful act, preserve partial gains and external causes, and do not label a gift a bribe or a negotiation a fraud without an adjudicated basis. The test asks who promised what, what leverage and concessions were exchanged, what happened, who paid, and whether the result endured.",
+  "items": [
+    {
+      "id": "usfl-antitrust-strategy-1983-1988",
+      "title": "The USFL's high-stakes antitrust strategy produced only nominal damages and no operating future",
+      "date_start": "1983",
+      "date_end": "1988-03-10",
+      "people": ["Donald Trump"],
+      "category": "deals-economic-power",
+      "status_label": "Jury antitrust finding affirmed; $1 award trebled to $3; league ceased play",
+      "summary": "Trump owned the New Jersey Generals and became one of the most visible advocates for the United States Football League's move from spring football toward direct fall competition with the NFL and a massive antitrust suit. The jury found one monopolization violation but awarded only $1, automatically trebled to $3. The Second Circuit affirmed, citing evidence that the USFL's own strategy, overspending, product problems, and move to the fall caused much of its injury.",
+      "why_it_matters": "The episode is an early public test of Trump-style leverage: escalate, sue for an enormous sum, and expect the opponent or court to produce the business outcome. The legal win was real but commercially hollow, and the court record placed substantial responsibility on the league's own choices.",
+      "evidence": [
+        {
+          "label": "Federal Judicial Center history of the USFL case and nominal award",
+          "url": "https://www.fjc.gov/history/spotlight-judicial-history/nfl-television-broadcasting",
+          "publisher": "Federal Judicial Center",
+          "source_type": "government-history",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "United States Football League v. National Football League appellate opinion",
+          "url": "https://law.counselstack.com/opinion/united-states-football-league-v-national-football-league-ca2-1988",
+          "publisher": "U.S. Court of Appeals for the Second Circuit via Counsel Stack",
+          "source_type": "court-opinion-mirror",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Contemporary report on the $1 verdict and the relief the USFL sought",
+          "url": "https://www.washingtonpost.com/archive/politics/1986/07/30/usfl-is-awarded-1-in-suit-against-nfl/42dfac77-c55b-4e5f-818e-7ea27d1e6301/",
+          "publisher": "The Washington Post",
+          "source_type": "news-reporting",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["USFL", "New Jersey Generals", "antitrust", "business strategy", "nominal damages"],
+      "confidence": "high",
+      "editorial_note": "Do not claim Trump alone killed the USFL. The appellate record attributes failure to league choices; Trump's personal influence on those choices is supported by reporting, not a judicial finding of personal liability."
+    },
+    {
+      "id": "trump-casino-company-bankruptcies-2004-2009",
+      "title": "Trump's public casino company entered Chapter 11 twice amid recurring losses and heavy debt",
+      "date_start": "2004-11-21",
+      "date_end": "2009-02-17",
+      "people": ["Donald Trump"],
+      "category": "deals-economic-power",
+      "status_label": "Two documented corporate Chapter 11 filings; not personal bankruptcy",
+      "summary": "SEC filings show Trump Hotels & Casino Resorts and subsidiaries filed a prearranged Chapter 11 case in November 2004 after recurring operating losses and a large accumulated deficit. The reorganized Trump Entertainment Resorts and several subsidiaries filed Chapter 11 again in February 2009. Trump had reduced ownership and resigned from the board around the second filing; neither case was a personal bankruptcy.",
+      "why_it_matters": "Chapter 11 is a lawful restructuring tool, not proof of a crime. It is still a measurable counterweight to a personal brand built on unmatched deal-making: creditors and shareholders repeatedly absorbed the consequences of leverage and losses while the Trump name remained the sales asset.",
+      "evidence": [
+        {
+          "label": "2004 annual filing documenting recurring losses, accumulated deficit, and Chapter 11",
+          "url": "https://www.sec.gov/Archives/edgar/data/943320/000119312505067289/d10k.htm",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "source_type": "sec-filing",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "2009 annual filing documenting the second Chapter 11 petition",
+          "url": "https://www.sec.gov/Archives/edgar/data/943320/000119312510061858/d10k.htm",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "source_type": "sec-filing",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["casinos", "Chapter 11", "Atlantic City", "debt", "SEC"],
+      "confidence": "high",
+      "editorial_note": "Never write that Trump personally declared bankruptcy. Limit this record to the corporate filings and ownership roles established by the cited SEC records."
+    },
+    {
+      "id": "carrier-jobs-deal-2016-2017",
+      "title": "The Carrier announcement preserved a job quota but did not stop hundreds of promised layoffs",
+      "date_start": "2016-11-30",
+      "date_end": "2017-12-30",
+      "people": ["Donald Trump", "Mike Pence"],
+      "category": "deals-economic-power",
+      "status_label": "Partially performed incentive agreement; 632 layoffs formally reported",
+      "summary": "Trump and Pence celebrated an agreement under which Carrier would maintain at least 1,069 positions at its Indianapolis facility in exchange for up to $7 million in Indiana incentives. Carrier later filed a state WARN notice for 632 layoffs as other work moved to Mexico. The White House said those layoffs had already been contemplated and that the company would still meet the retained-job quota.",
+      "why_it_matters": "The announcement was not wholly fictitious: jobs were retained. The Deal Test asks whether the public understood the limited quota and taxpayer incentive, or was sold the broader impression that Trump had stopped the offshoring plan. A partial rescue should be measured as partial.",
+      "evidence": [
+        {
+          "label": "Indiana WARN database recording 632 Carrier layoffs",
+          "url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
+          "publisher": "Indiana Department of Workforce Development",
+          "source_type": "government-record",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Report on the retained-job quota, incentives, and later layoffs",
+          "url": "https://www.axios.com/2017/12/15/layoffs-begin-at-carrier-plant-in-indiana-1513304328",
+          "publisher": "Axios",
+          "source_type": "news-reporting",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Carrier", "jobs", "offshoring", "Indiana", "tax incentives"],
+      "confidence": "high",
+      "editorial_note": "Include both the 1,069-position commitment and the 632 layoffs. Do not call the entire agreement fake or say every promised job disappeared."
+    },
+    {
+      "id": "foxconn-wisconsin-subsidy-reset-2017-2025",
+      "title": "The Foxconn Wisconsin megadeal was cut from a 13,000-job vision to a much smaller incentive contract",
+      "date_start": "2017-07-26",
+      "date_end": "2025-09-25",
+      "people": ["Donald Trump", "Scott Walker", "Terry Gou", "Tony Evers"],
+      "category": "deals-economic-power",
+      "status_label": "Original project abandoned and contract renegotiated; smaller operations and new investment later continued",
+      "summary": "Trump and Wisconsin leaders promoted Foxconn's proposed $10 billion LCD campus and up to 13,000 jobs. In 2021 Wisconsin renegotiated the agreement after the original manufacturing plan did not materialize, reducing the state incentive ceiling from $2.85 billion to $80 million and the job target to 1,454. Foxconn maintained a smaller presence and in 2025 announced additional investment and jobs, which is real but far below the original vision.",
+      "why_it_matters": "The gap between groundbreaking spectacle and enforceable delivery is the essence of the Deal Test. Performance-based credits limited some state exposure, but local infrastructure and public planning were organized around a project that was radically downsized.",
+      "evidence": [
+        {
+          "label": "Wisconsin announcement of the original 13,000-job Foxconn plan",
+          "url": "https://content.govdelivery.com/accounts/WIGOV/bulletins/1ad5675",
+          "publisher": "State of Wisconsin",
+          "source_type": "government-release",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Wisconsin announcement of the renegotiated contract and reduced targets",
+          "url": "https://content.govdelivery.com/accounts/WIGOV/bulletins/2ce239d",
+          "publisher": "State of Wisconsin",
+          "source_type": "government-release",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "WEDC announcement of Foxconn's later additional investment and jobs",
+          "url": "https://wedc.org/wedc-foxconn-announce-additional-569-million-investment-in-racine-county/",
+          "publisher": "Wisconsin Economic Development Corporation",
+          "source_type": "government-release",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Foxconn", "Wisconsin", "subsidies", "jobs", "manufacturing"],
+      "confidence": "high",
+      "editorial_note": "Do not say the site is empty or Foxconn created no jobs. The original project failed to materialize as sold; smaller operations and new investment are limiting facts."
+    },
+    {
+      "id": "north-korea-summit-denuclearization-2018-2019",
+      "title": "Trump's summit diplomacy reduced immediate tension but produced no verified North Korean denuclearization plan",
+      "date_start": "2018-06-12",
+      "date_end": "2019-06-30",
+      "people": ["Donald Trump", "Kim Jong Un", "Mike Pompeo"],
+      "category": "deals-economic-power",
+      "status_label": "Summit commitments not converted into a verified denuclearization agreement; negotiations stalled",
+      "summary": "The 2018 Singapore statement committed the parties to new relations, peace, remains recovery, and work toward denuclearization, while Trump unilaterally suspended major U.S.-South Korean exercises. CRS found that the statement lacked a timetable, definitions, missile limits, and verification. The 2019 Hanoi summit ended without agreement; apart from reduced tension and the return of some remains, implementation largely stalled while North Korea advanced weapons capabilities.",
+      "why_it_matters": "Meeting an adversary is not itself failure, and reduced nuclear-war risk was valuable. The deal claim fails where personal rapport and ceremony substituted for sequenced obligations, verification, and reciprocal concessions—the machinery that turns a summit into an enduring security result.",
+      "evidence": [
+        {
+          "label": "CRS history and assessment of the 2018–2019 Trump-Kim negotiations",
+          "url": "https://www.congress.gov/crs-product/R45033",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CRS overview of missing verification, stalled talks, and subsequent weapons advances",
+          "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11415/IF11415.4.pdf",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["North Korea", "Kim Jong Un", "nuclear weapons", "summit", "verification"],
+      "confidence": "high",
+      "editorial_note": "Preserve the reduction in tensions, missile-test pause, remains transfer, and partial site actions. The failure is the absence of a verified durable agreement, not the mere act of negotiating."
+    },
+    {
+      "id": "china-phase-one-purchase-shortfall-2020-2025",
+      "title": "China fell more than $217 billion short of the Phase One purchase commitments in Trump's trade deal",
+      "date_start": "2020-01-15",
+      "date_end": "2025-10-24",
+      "people": ["Donald Trump", "Robert Lighthizer", "Xi Jinping"],
+      "category": "deals-economic-power",
+      "status_label": "Signed agreement with partial implementation and major purchase shortfall; renewed USTR enforcement review",
+      "summary": "Trump's Phase One agreement required specified Chinese purchases and commitments on intellectual property, technology transfer, agriculture, and financial services. USTR later found that China implemented some provisions but fell far short of the 2020–2021 purchase promises and did not address core state-led economic practices. In 2025 USTR estimated purchases were more than $217 billion below the agreement's aggregate commitments and opened a new Section 301 investigation.",
+      "why_it_matters": "Tariffs created leverage and the agreement produced some agricultural and market-access gains. But an enforceable deal is tested by compliance, not signature-day adjectives. The central numerical promise was missed by an extraordinary margin while the structural conflict continued.",
+      "evidence": [
+        {
+          "label": "USTR 2022 report assessing Phase One implementation and limitations",
+          "url": "https://ustr.gov/sites/default/files/2023-02/2022%20USTR%20Report%20to%20Congress%20on%20China%27s%20WTO%20Compliance%20-%20Final.pdf",
+          "publisher": "Office of the U.S. Trade Representative",
+          "source_type": "government-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "USTR 2025 notice estimating a purchase shortfall greater than $217 billion",
+          "url": "https://ustr.gov/sites/default/files/files/Press/Releases/2025/Sec%20301%20China%20Phase%20One%20Initiation%20FRN%2010-24-25.pdf",
+          "publisher": "Office of the U.S. Trade Representative",
+          "source_type": "federal-register-notice",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Contemporaneous USTR-USDA account of agricultural implementation gains",
+          "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases/2020/october/ustr-and-usda-release-report-agricultural-trade-between-united-states-and-china",
+          "publisher": "Office of the U.S. Trade Representative",
+          "source_type": "government-release",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["China", "Phase One", "trade deal", "purchases", "tariffs", "USTR"],
+      "confidence": "high",
+      "editorial_note": "Attribute the shortfall to official U.S. data and keep partial agricultural, financial-services, and intellectual-property gains visible."
+    },
+    {
+      "id": "doha-afghanistan-withdrawal-deal-2020-2021",
+      "title": "Trump's Doha agreement gave the Taliban a withdrawal timetable while excluding the Afghan government and weakening its forces",
+      "date_start": "2020-02-29",
+      "date_end": "2021-08-15",
+      "people": ["Donald Trump", "Mike Pompeo", "Zalmay Khalilzad", "Joe Biden"],
+      "category": "deals-economic-power",
+      "status_label": "Signed agreement followed by U.S. withdrawal and Afghan state collapse; responsibility spans two administrations and long-running structural failures",
+      "summary": "The Doha agreement committed the United States to withdraw troops and contractors in exchange for Taliban counterterrorism assurances and a promise of intra-Afghan talks. The Afghan government was not a signatory and was pressured to release thousands of Taliban prisoners. Trump drew U.S. forces down to 2,500; Biden carried out the final withdrawal; and the Taliban's ensuing advance culminated in the Afghan government's collapse amid long-running dependency, corruption, political division, and security-force weakness.",
+      "why_it_matters": "Ending a twenty-year war was a legitimate and widely shared objective. The Deal Test asks whether the terms protected the partner government, sequenced performance, and preserved leverage. Here the United States granted the Taliban's core demand up front while the promised political settlement never became a durable barrier to takeover.",
+      "evidence": [
+        {
+          "label": "Afghanistan: Background and U.S. Policy in Brief",
+          "url": "https://www.congress.gov/crs-product/R45122",
+          "publisher": "Congressional Research Service",
+          "source_type": "congressional-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "U.S. Military Withdrawal and Taliban Takeover in Afghanistan: Frequently Asked Questions",
+          "url": "https://www.congress.gov/crs-products/product/pdf/R/R46879/5",
+          "publisher": "Congressional Research Service",
+          "source_type": "congressional-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Afghanistan", "Taliban", "Doha agreement", "withdrawal", "Mike Pompeo"],
+      "confidence": "high",
+      "editorial_note": "Do not assign the 2021 collapse solely to Trump. Biden executed the final withdrawal, and the record identifies multiple long-term U.S., Afghan-government, and security-force failures."
+    },
+    {
+      "id": "qatar-gifted-presidential-jet-2025-2026",
+      "title": "The Pentagon accepted Qatar's luxury 747 for presidential use and spent hundreds of millions retrofitting it",
+      "date_start": "2025-05-21",
+      "date_end": "2026-07-08",
+      "people": ["Donald Trump", "Pete Hegseth", "Pam Bondi"],
+      "category": "deals-economic-power",
+      "status_label": "Foreign-government gift accepted and aircraft placed in service; constitutional, ethics, cost, and security objections not adjudicated as bribery",
+      "summary": "The Defense Department accepted a Boeing 747-8 from Qatar for use as a presidential aircraft. By July 2026 the modified jet had entered service after a reported $400 million retrofit, but Trump switched to an older aircraft during a return trip from the NATO summit amid renewed security questions about the new plane's defensive systems. Members of Congress introduced measures asserting an Emoluments Clause problem and seeking to block spending, but those political claims are not a judicial bribery finding.",
+      "why_it_matters": "A gift can save acquisition cost and still create dependency, retrofit expense, security compromise, and the appearance that access to a president is a market. The proper claim is a documented foreign-gift conflict—not the legally unsupported shorthand 'bribe plane.'",
+      "evidence": [
+        {
+          "label": "Report on Pentagon acceptance of the Qatari aircraft",
+          "url": "https://apnews.com/article/c4e1d73c3dbe18397c10e3d3d267bcd6",
+          "publisher": "Associated Press",
+          "source_type": "news-reporting",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Current report on retrofit cost, operational use, and security questions",
+          "url": "https://apnews.com/article/6cb08dcb613a2d7f77d3b0a143f3b216",
+          "publisher": "Associated Press",
+          "source_type": "news-reporting",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Congressional Record text of a proposed Senate resolution objecting to the transfer",
+          "url": "https://www.congress.gov/congressional-record/volume-171/issue-86/senate-section/article/S3065-1",
+          "publisher": "U.S. Congress",
+          "source_type": "congressional-record",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Qatar", "Air Force One", "foreign gift", "emoluments", "security", "retrofit"],
+      "confidence": "high",
+      "editorial_note": "Do not call the aircraft a bribe without proof of a quid pro quo. Congressional objections and introduced resolutions are not court judgments."
+    },
+    {
+      "id": "tariff-volatility-economic-costs-2025-2026",
+      "title": "Trump's stop-start tariff campaign raised prices and uncertainty before the Supreme Court removed its emergency-law foundation",
+      "date_start": "2025-02-01",
+      "date_end": "2026-03-05",
+      "people": ["Donald Trump", "Howard Lutnick", "Jamieson Greer", "Stephen Miller"],
+      "category": "deals-economic-power",
+      "status_label": "CBO macroeconomic estimates and final Supreme Court statutory ruling; other tariffs and trade negotiations continued",
+      "summary": "The administration repeatedly announced, paused, modified, and negotiated broad tariffs while claiming they would restore industry and force better agreements. CBO estimated the 2025 tariff changes temporarily increased inflation and reduced investment, output, and employment, while also generating revenue and lowering federal borrowing. In February 2026 the Supreme Court held that IEEPA did not authorize the emergency tariffs, forcing the administration to end that subset while leaving other statutory tariffs in place.",
+      "why_it_matters": "Tariffs can be lawful industrial policy; volatility is not a strategy by itself. A deal must be scored against consumer prices, retaliation, business planning, enforceable concessions, revenue, and final legal authority—not the volume of announcement-day claims.",
+      "evidence": [
+        {
+          "label": "CBO estimate of tariff effects on inflation, output, investment, employment, and deficits",
+          "url": "https://www.cbo.gov/publication/61389",
+          "publisher": "Congressional Budget Office",
+          "source_type": "government-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Supreme Court opinion holding IEEPA does not authorize tariffs",
+          "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+          "publisher": "Supreme Court of the United States",
+          "source_type": "court-opinion",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "CBO update after termination of the IEEPA tariffs",
+          "url": "https://www.cbo.gov/publication/62210",
+          "publisher": "Congressional Budget Office",
+          "source_type": "government-report",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["tariffs", "trade war", "inflation", "CBO", "Supreme Court", "deals"],
+      "confidence": "high",
+      "editorial_note": "Include revenue and deficit effects. CBO estimates are projections, and the Supreme Court ruling was about IEEPA rather than every tariff authority."
+    },
+    {
+      "id": "iran-deal-exit-to-hormuz-crisis-2018-2026",
+      "title": "After abandoning the Iran nuclear deal, Trump reached war and a de facto Hormuz closure without a durable replacement accord",
+      "date_start": "2018-05-08",
+      "date_end": "2026-07-02",
+      "people": ["Donald Trump", "JD Vance", "Marco Rubio", "Pete Hegseth"],
+      "category": "deals-economic-power",
+      "status_label": "JCPOA withdrawal completed; subsequent nuclear escalation, U.S. combat, oil disruption, and fragile 2026 arrangement documented; causation is multi-factor",
+      "summary": "Trump withdrew from the JCPOA in 2018 without securing a replacement nuclear agreement. Iran later expanded enrichment well beyond JCPOA limits amid sanctions, regional conflict, Israeli attacks, U.S. strikes in 2025, and direct U.S.-Iran combat in 2026. The Strait of Hormuz was effectively closed for more than three months, shutting in millions of barrels per day and driving oil prices higher. A June 2026 memorandum reduced fighting, but the UN called it fragile as confrontations resumed in July.",
+      "why_it_matters": "The comparison is to Trump's own promised alternative: a stronger, safer deal. Eight years after exit, the measurable position was a larger Iranian nuclear program, a direct war, disrupted shipping, and a provisional arrangement rather than the comprehensive replacement that maximum pressure was supposed to deliver.",
+      "evidence": [
+        {
+          "label": "CRS overview of Iran's nuclear program after the JCPOA and 2025 attacks",
+          "url": "https://www.congress.gov/crs-product/IF11583",
+          "publisher": "Congressional Research Service",
+          "source_type": "crs-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "EIA assessment of Hormuz disruption, shut-in production, and oil-price effects",
+          "url": "https://www.eia.gov/pressroom/releases/press586.php",
+          "publisher": "U.S. Energy Information Administration",
+          "source_type": "government-report",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "UN call for restraint describing the June memorandum as fragile amid renewed confrontation",
+          "url": "https://dppa.un.org/en/news/un-calls-for-maximum-restraint-to-preserve-ceasefire-between-the-united-states-and-iran",
+          "publisher": "United Nations Department of Political and Peacebuilding Affairs",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "White House account of the June 2026 Iran memorandum",
+          "url": "https://www.whitehouse.gov/releases/2026/06/president-trumps-iran-agreement-is-america-first-in-action/",
+          "publisher": "The White House",
+          "source_type": "official-statement",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "tags": ["Iran", "JCPOA", "Strait of Hormuz", "oil", "war", "nuclear deal"],
+      "confidence": "high",
+      "editorial_note": "Do not say JCPOA exit alone caused every later event. Iran, Israel, regional armed groups, two U.S. administrations, and other states made consequential choices. The Deal Test compares the promised replacement with the resulting position."
+    }
+  ]
+}

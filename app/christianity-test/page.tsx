@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageMasthead, SiteHeader } from "../site-chrome";
+import { PageMasthead, SiteHeader, TestSuiteNav } from "../site-chrome";
 
 export const metadata: Metadata = {
   title: "Christianity Test | TDS",
@@ -117,6 +117,7 @@ export default function ChristianityTestPage() {
     <main className="christianity-page">
       <SiteHeader active="christianity" />
       <PageMasthead src="/christianity-test-hero.jpg" alt="Christianity Test — Test the witness by the fruit" priority />
+      <TestSuiteNav active="christianity" />
 
       <section className="framework-intro">
         <div>
@@ -194,7 +195,7 @@ export default function ChristianityTestPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Test the public witness by the public record.</p>
-        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/">Evidence</Link><Link href="/patriotic-test">Patriotic Test</Link><Link href="/america-first-test">America First Test</Link><Link href="/deal-test">Deal Test</Link><Link href="/methodology">Methodology</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );
