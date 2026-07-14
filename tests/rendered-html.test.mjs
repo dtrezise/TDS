@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const html = await readFile(new URL("../out/index.html", import.meta.url), "utf8");
+const voicesHtml = await readFile(new URL("../out/voices/index.html", import.meta.url), "utf8");
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
@@ -31,4 +32,30 @@ test("exports accessible archive controls", () => {
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /aria-label="Primary navigation"/);
   assert.ok((html.match(/target="_blank"/g) ?? []).length > 150, "expected the evidence and teaching links to render");
+});
+
+test("exports the Christian resistance directory", () => {
+  assert.match(voicesHtml, /<title>Shout It from the Rooftops \| TDS/);
+  assert.match(voicesHtml, /A directory for Christian resistance/);
+  assert.match(voicesHtml, /Proclaim it on the housetops/);
+  assert.match(voicesHtml, /Matthew 10:27/);
+  assert.match(voicesHtml, /Christians Against Christian Nationalism/);
+  assert.match(voicesHtml, /Amanda Tyler/);
+  assert.match(voicesHtml, /William J\. Barber II/);
+  assert.match(voicesHtml, /Russell Moore/);
+  assert.match(voicesHtml, /Jemar Tisby/);
+  assert.match(voicesHtml, /Kristin Kobes Du Mez/);
+  assert.match(voicesHtml, /Brian Kaylor/);
+  assert.match(voicesHtml, /Basis for inclusion|Source for this description/);
+  assert.match(voicesHtml, /bsky\.app\/intent\/compose/);
+  assert.match(voicesHtml, /facebook\.com\/sharer\/sharer\.php/);
+  assert.match(voicesHtml, /mailto:/);
+  assert.match(voicesHtml, /aria-live="polite"/);
+  assert.match(voicesHtml, /application\/ld\+json/);
+  assert.ok((voicesHtml.match(/class="voice-card"/g) ?? []).length === 12, "expected 12 curated voice profiles");
+});
+
+test("links the archive and directory in both directions", () => {
+  assert.match(html, /Voices \/ Join/);
+  assert.match(voicesHtml, /Evidence archive/);
 });

@@ -13,6 +13,7 @@
     "test": "next build && node --test tests/rendered-html.test.mjs",
     "audit:research": "node scripts/audit-research.mjs",
     "audit:links": "node scripts/check-links.mjs",
+    "audit:voices": "node scripts/check-voice-links.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },

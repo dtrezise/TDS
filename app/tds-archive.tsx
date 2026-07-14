@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { caseFiles, categories, lastReviewed, type CaseFile } from "@/data/cases";
 
@@ -158,6 +159,7 @@ export function TdsArchive() {
           <a href="#evidence">Evidence</a>
           <a href="#faith">Christianity test</a>
           <a href="#method">Standards</a>
+          <Link className="nav-join" href="/voices">Voices / Join</Link>
         </nav>
       </header>
 
@@ -294,7 +296,7 @@ export function TdsArchive() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Accountability is not derangement. Refusing the record is.</p>
-        <a href="#top">Back to top ↑</a>
+        <div className="footer-links"><Link href="/voices">Find Christian voices</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

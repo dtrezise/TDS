@@ -1,0 +1,193 @@
+{
+  "reviewed": "2026-07-13",
+  "scope": "A cross-tradition directory of Christian leaders, writers, researchers, pastors, journalists, and organizations whose first-party work explicitly challenges Christian nationalism or the political capture of Christianity.",
+  "editorial_note": "Inclusion documents relevant public work; it does not imply affiliation with TDS, endorsement of this site, or agreement among the people and organizations listed.",
+  "scripture": {
+    "reference": "Matthew 10:27",
+    "url": "https://bible.usccb.org/bible/matthew/10"
+  },
+  "movements": [
+    {
+      "name": "Christians Against Christian Nationalism",
+      "kind": "Awareness · advocacy · local organizing",
+      "description": "A BJC-led grassroots campaign, launched in 2019, that equips Christians and allies to recognize and resist Christian nationalism in churches, communities, and public life.",
+      "action": "Start here",
+      "url": "https://www.christiansagainstchristiannationalism.org/about",
+      "source": "https://www.christiansagainstchristiannationalism.org/about"
+    },
+    {
+      "name": "Faithful America",
+      "kind": "Rapid-response Christian campaigns",
+      "description": "A national, ecumenical online community organizing Christians against Christian nationalism, white supremacy, and the use of faith to rationalize injustice.",
+      "action": "Join a campaign",
+      "url": "https://www.faithfulamerica.org/campaigns",
+      "source": "https://www.faithfulamerica.org/our-mission"
+    },
+    {
+      "name": "Vote Common Good",
+      "kind": "Training · curriculum · public action",
+      "description": "A Christian-led civic organization offering a free, three-session curriculum for understanding Christian nationalism and responding without surrendering love of neighbor.",
+      "action": "Use the curriculum",
+      "url": "https://www.votecommongood.com/confronting-christian-nationalism-curriculum/",
+      "source": "https://www.votecommongood.com/confronting-christian-nationalism-curriculum/"
+    },
+    {
+      "name": "Disarming Leviathan",
+      "kind": "Conversation · community · ministry tools",
+      "description": "Pastor Caleb Campbell’s ministry helps people engage Christian nationalists in families and churches with clarity, hospitality, and practical gospel-centered tools.",
+      "action": "Enter the community",
+      "url": "https://www.disarmingleviathan.com/group/disarming-leviathan-support-community/about",
+      "source": "https://www.disarmingleviathan.com/about"
+    },
+    {
+      "name": "Repairers of the Breach",
+      "kind": "Moral movement · public theology",
+      "description": "Bishop William J. Barber II’s organization develops moral leaders and public action rooted in the prophetic traditions of faith, including direct opposition to religious nationalism.",
+      "action": "Join the movement",
+      "url": "https://breachrepairers.org/",
+      "source": "https://breachrepairers.org/about-us/our-founder/"
+    },
+    {
+      "name": "Red Letter Christians",
+      "kind": "Jesus-centered media · organizing",
+      "description": "A network centering the teachings of Jesus and challenging nationalism, militarism, racism, and other political ideologies presented as Christianity.",
+      "action": "Explore the network",
+      "url": "https://redletterchristians.org/about-us/our-mission-our-story/",
+      "source": "https://redletterchristians.org/about-us/our-mission-our-story/"
+    }
+  ],
+  "voices": [
+    {
+      "name": "Amanda Tyler",
+      "role": "Baptist religious-liberty advocate",
+      "description": "Executive director of BJC, lead organizer of Christians Against Christian Nationalism, co-host of Respecting Religion, and author of How to End Christian Nationalism.",
+      "why": "Start here for church-state expertise, organizing strategy, and a direct Christian case against merging faith with national identity.",
+      "primary_label": "Meet Amanda",
+      "primary_url": "https://bjconline.org/person/amanda-tyler/",
+      "follow_label": "Respecting Religion podcast",
+      "follow_url": "https://bjconline.org/respectingreligion/",
+      "source": "https://bjconline.org/person/amanda-tyler/"
+    },
+    {
+      "name": "William J. Barber II",
+      "role": "Bishop · pastor · public theologian",
+      "description": "Bishop and president of Repairers of the Breach, known for building a moral movement around poverty, democracy, racism, and the public responsibilities of faith.",
+      "why": "Follow for Black church prophetic witness that rejects religious nationalism and connects public morality to the people policy harms first.",
+      "primary_label": "Meet Bishop Barber",
+      "primary_url": "https://breachrepairers.org/about-us/our-founder/",
+      "follow_label": "Repairers updates",
+      "follow_url": "https://breachrepairers.org/get-involved/news/",
+      "source": "https://breachrepairers.org/about-us/our-founder/"
+    },
+    {
+      "name": "Russell Moore",
+      "role": "Evangelical public theologian",
+      "description": "Christianity Today editor at large and columnist writing about moral courage, Christian ethics, and putting the gospel ahead of politics and tribal loyalty.",
+      "why": "Follow for an evangelical critique of political idolatry addressed to readers still inside conservative Christian institutions.",
+      "primary_label": "Read Russell Moore",
+      "primary_url": "https://www.christianitytoday.com/writers/russell-moore/",
+      "follow_label": "Newsletter and podcast",
+      "follow_url": "https://www.russellmoore.com/subscribe/",
+      "source": "https://www.christianitytoday.com/writers/russell-moore/"
+    },
+    {
+      "name": "Jemar Tisby",
+      "role": "Christian historian · author",
+      "description": "A historian of race and religion whose work traces how white supremacy, Christian institutions, and Christian nationalism reinforce one another.",
+      "why": "Follow for historically grounded analysis that treats racial justice as central—not incidental—to Christian public witness.",
+      "primary_label": "Meet Jemar Tisby",
+      "primary_url": "https://jemartisby.com/about/",
+      "follow_label": "Footnotes newsletter",
+      "follow_url": "https://jemartisby.substack.com/",
+      "source": "https://jemartisby.com/about/"
+    },
+    {
+      "name": "Kristin Kobes Du Mez",
+      "role": "Historian of American Christianity",
+      "description": "A Calvin University historian whose research examines the intersection of gender, religion, politics, militant masculinity, and evangelical support for authoritarian power.",
+      "why": "Follow for the historical architecture behind the Trump-era alliance between white evangelical identity and strongman politics.",
+      "primary_label": "Explore her work",
+      "primary_url": "https://kristindumez.com/",
+      "follow_label": "Du Mez Connections",
+      "follow_url": "https://kristindumez.substack.com/",
+      "source": "https://kristindumez.com/"
+    },
+    {
+      "name": "Andrew Whitehead",
+      "role": "Sociologist · church-focused author",
+      "description": "A sociologist of religion and author of American Idolatry, which argues that Christian nationalism betrays the gospel and damages the church.",
+      "why": "Follow for empirical research translated into language congregations and ordinary Christians can use.",
+      "primary_label": "Meet Andrew Whitehead",
+      "primary_url": "https://news.iu.edu/live/profiles/632-andrew-whitehead",
+      "follow_label": "Newsletter and social links",
+      "follow_url": "https://andrewwhitehead.substack.com/",
+      "source": "https://news.iu.edu/live/profiles/632-andrew-whitehead"
+    },
+    {
+      "name": "Caleb Campbell",
+      "role": "Evangelical pastor · ministry trainer",
+      "description": "Lead pastor of Desert Springs Bible Church and founder of Disarming Leviathan, a ministry for people trying to reach Christian nationalists close to home.",
+      "why": "Follow for practical, gentle, non-naive ways to hold truth and relationship together in a church or family conversation.",
+      "primary_label": "Meet Caleb Campbell",
+      "primary_url": "https://www.disarmingleviathan.com/about",
+      "follow_label": "Listen to the podcast",
+      "follow_url": "https://www.disarmingleviathan.com/podcast",
+      "source": "https://www.disarmingleviathan.com/about"
+    },
+    {
+      "name": "Shane Claiborne",
+      "role": "Christian activist · author",
+      "description": "A Red Letter Christian who measures public faith against the words and life of Jesus, with sustained critiques of nationalism, violence, and political power clothed in Christian symbols.",
+      "why": "Follow for accessible, movement-minded writing that keeps returning the argument to Jesus and the Sermon on the Mount.",
+      "primary_label": "Meet Shane Claiborne",
+      "primary_url": "https://redletterchristians.org/friend/shane-claiborne/",
+      "follow_label": "Read his articles",
+      "follow_url": "https://www.shaneclaiborne.com/articles",
+      "source": "https://redletterchristians.org/2025/01/06/to-christian-nationalists-who-attacked-the-capitol-in-jesus-name/"
+    },
+    {
+      "name": "Tim Whitaker",
+      "role": "Founder · podcast host · organizer",
+      "description": "Founder of The New Evangelicals, a media and community project confronting Christian nationalism, harmful church systems, and exclusionary evangelical politics.",
+      "why": "Follow for frank interviews, social-first explainers, and a community built for people reconstructing faith after evangelical disillusionment.",
+      "primary_label": "Meet Tim Whitaker",
+      "primary_url": "https://www.thenewevangelicals.com/team",
+      "follow_label": "The New Evangelicals",
+      "follow_url": "https://www.thenewevangelicals.com/",
+      "source": "https://www.thenewevangelicals.com/team"
+    },
+    {
+      "name": "Skye Jethani",
+      "role": "Pastor · author · Holy Post co-host",
+      "description": "A pastor and writer who co-hosts Holy Post, a Christian media platform that regularly disentangles discipleship from partisan identity and explains Christian nationalism for church audiences.",
+      "why": "Follow for thoughtful, conversational analysis that can travel well in an evangelical small group or family discussion.",
+      "primary_label": "Visit Holy Post",
+      "primary_url": "https://www.holypost.com/",
+      "follow_label": "Listen to The Skyepod",
+      "follow_url": "https://www.holypost.com/the-skyepod",
+      "source": "https://www.holypost.com/post/what-christian-nationalism-is-actually-about"
+    },
+    {
+      "name": "Jim Wallis",
+      "role": "Public theologian · author",
+      "description": "Theologian, teacher, and Sojourners founder whose recent work calls Christians to reject white Christian nationalism and recover a multiracial, democracy-protecting public faith.",
+      "why": "Follow for a long-view social-gospel argument connecting faith, race, democracy, and public responsibility.",
+      "primary_label": "Explore Jim Wallis",
+      "primary_url": "https://www.jimwallis.org/",
+      "follow_label": "Read at Sojourners",
+      "follow_url": "https://sojo.net/biography/jim-wallis",
+      "source": "https://www.jimwallis.org/"
+    },
+    {
+      "name": "Brian Kaylor",
+      "role": "Baptist minister · journalist",
+      "description": "President and editor in chief of Word&Way, host of Dangerous Dogma, and author of The Bible According to Christian Nationalists.",
+      "why": "Follow for reported analysis of how scripture is used—and misused—in contemporary Christian nationalist politics.",
+      "primary_label": "Meet Brian Kaylor",
+      "primary_url": "https://wordandway.org/brian-kaylor/",
+      "follow_label": "Dangerous Dogma podcast",
+      "follow_url": "https://dogma.wordandway.org/",
+      "source": "https://dogma.wordandway.org/188-brian-kaylor-on-the-bible-according-to-christian-nationalists-with-guest-host-beau-underwood"
+    }
+  ]
+}
