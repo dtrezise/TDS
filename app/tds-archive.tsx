@@ -93,7 +93,7 @@ export function TdsArchive() {
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="TDS Evidence Archive home">
           <span className="wordmark__mark">TDS</span>
-          <span className="wordmark__text">The evidence archive</span>
+          <span className="wordmark__text">Trump Derangement Syndrome | The Evidence Archive</span>
         </a>
         <nav aria-label="Primary navigation">
           <a href="#evidence">Evidence</a>

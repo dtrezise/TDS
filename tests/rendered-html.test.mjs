@@ -6,6 +6,7 @@ const html = await readFile(new URL("../out/index.html", import.meta.url), "utf8
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
+  assert.match(html, /Trump Derangement Syndrome \| The Evidence Archive/);
   assert.match(html, /The derangement is/);
   assert.match(html, /Case files, not catchphrases/);
   assert.match(html, /Christianity test/);

@@ -84,8 +84,12 @@ a {
 }
 
 .wordmark__text {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 800;
+  letter-spacing: 0.035em;
+}
+
+.wordmark--footer .wordmark__text {
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
@@ -811,12 +815,15 @@ footer > a {
     min-height: 70px;
   }
 
-  .site-header nav a:not(:first-child) {
+  .site-header nav {
     display: none;
   }
 
   .wordmark__text {
-    display: none;
+    display: block;
+    font-size: 0.64rem;
+    line-height: 1.25;
+    max-width: calc(100vw - 100px);
   }
 
   .hero {
