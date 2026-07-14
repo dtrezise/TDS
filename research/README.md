@@ -16,7 +16,11 @@ Run:
 
 ```bash
 npm run audit:research
+npm run audit:archive
 npm run audit:links
+npm run archive:export
 ```
+
+`archive:export` creates a deterministic normalized JSON export and a D1-compatible SQL seed under ignored `outputs/`. It does not provision or write to a cloud database. The permanent-ID rules, normalized table map, activation gates, backup policy, and migration runbook are documented in `../docs/ARCHIVE_DATA_ARCHITECTURE.md`; the portable format is defined in `formats/archive-export-v1.schema.json`.
 
 The link audit treats access restrictions such as `403` and `429` separately from dead links because many courts, Congress, USCCB, Heritage, and document hosts reject automated requests while remaining available in a browser.

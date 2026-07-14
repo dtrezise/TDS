@@ -32,6 +32,23 @@ A link is evidence, not immunity. Repeating a defamatory falsehood can create re
 9. **Preserve the audit trail.** Keep the source, access date, relevant quotation or page, status-check date, editorial caution, and later corrections in the research record.
 10. **Offer correction and response.** Correct material errors visibly and promptly. For original accusations or disputed claims not already tested in a public proceeding, seek a response before publication when practicable.
 
+## Structured-record requirements
+
+The normalized archive treats a case, a claim, a source, and the relationship between a claim and source as separate records. Before a database-backed claim is published:
+
+- Assign a permanent claim ID that does not change when its wording or public slug changes.
+- Classify the claim as factual, procedural status, allegation, attribution, editorial analysis, or faith analysis.
+- Record its exact status; do not use confidence as a substitute for legal or evidentiary posture.
+- Attach at least one claim-to-source relationship that says what the source does: supports, contradicts, contextualizes, documents status, contains a denial, or contains a response.
+- Record source retrieval and last-check dates, authority tier, access state, and copyright handling.
+- Add a page, paragraph, section, exhibit, or timestamp locator before quoting a long source.
+- Keep excerpts restrained. The database enforces a 100-word maximum per stored citation excerpt, but ordinary reporting should generally be much shorter and remain `link_only`.
+- Record material denials, responses, appeals, reversals, dismissals, and later status events without erasing the earlier record.
+- Append revisions and visible corrections; do not rewrite the audit trail in place.
+- Record required source, legal-status, defamation, headline, faith, correction, and link reviews with the actual reviewer and outcome. Never manufacture a historical approval during import.
+
+Full schema, import/export, R2 rights, search, backup, and rollback rules are in `docs/ARCHIVE_DATA_ARCHITECTURE.md`.
+
 Useful prepublication guidance: [Reporters Committee for Freedom of the Press](https://www.rcfp.org/resources/pre-publication-review-guide/).
 
 ## Status language

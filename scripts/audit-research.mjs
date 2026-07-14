@@ -24,6 +24,10 @@ for (const file of files) {
     for (const field of ["id", "title", "date_start", "category", "status_label", "summary", "why_it_matters"]) {
       if (!item[field] || typeof item[field] !== "string") errors.push(`${ref}: missing ${field}`);
     }
+    if (!item.editorial_note || typeof item.editorial_note !== "string") errors.push(`${ref}: missing editorial_note`);
+    if (!["high", "medium-high", "medium", "low"].includes(item.confidence)) {
+      errors.push(`${ref}: invalid confidence ${item.confidence ?? "(missing)"}`);
+    }
     if (ids.has(item.id)) errors.push(`${ref}: duplicate id ${item.id}`);
     if (titles.has(item.title)) errors.push(`${ref}: duplicate title ${item.title}`);
     ids.add(item.id);
@@ -41,6 +45,15 @@ for (const file of files) {
         if (!source[field] || typeof source[field] !== "string") errors.push(`${sourceRef}: missing ${field}`);
       }
       if (!/^https:\/\//.test(source.url ?? "")) errors.push(`${sourceRef}: URL must use HTTPS`);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(source.accessed ?? "")) errors.push(`${sourceRef}: missing ISO retrieval date`);
+    }
+
+    for (const [teachingIndex, teaching] of (item.christian_teaching ?? []).entries()) {
+      const teachingRef = `${ref}.christian_teaching[${teachingIndex}]`;
+      for (const field of ["citation", "principle", "url"]) {
+        if (!teaching[field] || typeof teaching[field] !== "string") errors.push(`${teachingRef}: missing ${field}`);
+      }
+      if (!/^https:\/\//.test(teaching.url ?? "")) errors.push(`${teachingRef}: URL must use HTTPS`);
     }
   }
 }

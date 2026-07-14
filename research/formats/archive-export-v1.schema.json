@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dtrezise.github.io/TDS/schemas/archive-export-v1.schema.json",
+  "title": "TDS Archive Portable Export v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "version", "generated_at", "source", "counts", "tables"],
+  "properties": {
+    "format": { "const": "tds-archive-export" },
+    "version": { "const": "1.0.0" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["files", "sha256", "commit"],
+      "properties": {
+        "files": { "type": "array", "items": { "type": "string" }, "minItems": 1, "uniqueItems": true },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "commit": { "type": ["string", "null"] }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "tables": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "categories", "tags", "entities", "sources", "faith_principles", "cases", "case_aliases",
+        "case_revisions", "claims", "claim_revisions", "claim_sources", "entity_aliases", "case_entities",
+        "case_categories", "case_tags", "legal_status_events", "case_faith_principles", "document_snapshots",
+        "editorial_reviews", "corrections", "import_runs"
+      ],
+      "properties": {
+        "categories": { "$ref": "#/$defs/idRows" },
+        "tags": { "$ref": "#/$defs/idRows" },
+        "entities": { "$ref": "#/$defs/idRows" },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+        "faith_principles": { "$ref": "#/$defs/idRows" },
+        "cases": { "type": "array", "items": { "$ref": "#/$defs/case" } },
+        "case_aliases": { "$ref": "#/$defs/relationRows" },
+        "case_revisions": { "$ref": "#/$defs/idRows" },
+        "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+        "claim_revisions": { "$ref": "#/$defs/idRows" },
+        "claim_sources": { "type": "array", "items": { "$ref": "#/$defs/claimSource" } },
+        "entity_aliases": { "$ref": "#/$defs/idRows" },
+        "case_entities": { "$ref": "#/$defs/relationRows" },
+        "case_categories": { "$ref": "#/$defs/relationRows" },
+        "case_tags": { "$ref": "#/$defs/relationRows" },
+        "legal_status_events": { "$ref": "#/$defs/idRows" },
+        "case_faith_principles": { "$ref": "#/$defs/idRows" },
+        "document_snapshots": { "type": "array", "items": { "$ref": "#/$defs/documentSnapshot" } },
+        "editorial_reviews": { "type": "array", "items": { "$ref": "#/$defs/editorialReview" } },
+        "corrections": { "type": "array", "items": { "$ref": "#/$defs/correction" } },
+        "import_runs": { "$ref": "#/$defs/idRows" }
+      }
+    }
+  },
+  "$defs": {
+    "idRows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "properties": { "id": { "type": "string", "minLength": 8 } },
+        "additionalProperties": true
+      }
+    },
+    "relationRows": {
+      "type": "array",
+      "items": { "type": "object", "minProperties": 2, "additionalProperties": true }
+    },
+    "case": {
+      "type": "object",
+      "required": ["id", "slug", "title", "publication_state", "current_status", "summary", "significance", "last_reviewed_at"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^case_[a-f0-9]{24}$" },
+        "slug": { "type": "string" },
+        "title": { "type": "string" },
+        "publication_state": { "enum": ["draft", "review", "published", "withdrawn"] },
+        "current_status": { "type": "string" },
+        "summary": { "type": "string" },
+        "significance": { "type": "string" },
+        "last_reviewed_at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    },
+    "claim": {
+      "type": "object",
+      "required": ["id", "case_id", "claim_key", "claim_type", "claim_status", "text", "publication_state", "last_reviewed_at"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^claim_[a-f0-9]{24}$" },
+        "case_id": { "type": "string", "pattern": "^case_[a-f0-9]{24}$" },
+        "claim_key": { "type": "string" },
+        "claim_type": { "enum": ["factual", "procedural_status", "allegation", "attribution", "editorial_analysis", "faith_analysis"] },
+        "claim_status": { "enum": ["supported", "adjudicated", "attributed", "alleged", "disputed", "denied", "editorial_opinion", "superseded", "retracted"] },
+        "text": { "type": "string" },
+        "publication_state": { "enum": ["draft", "review", "published", "withdrawn"] },
+        "last_reviewed_at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "canonical_url", "original_url", "title", "publisher", "source_type", "authority_tier", "retrieved_at", "access_state", "copyright_handling"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^src_[a-f0-9]{24}$" },
+        "canonical_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "original_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "title": { "type": "string" },
+        "publisher": { "type": "string" },
+        "source_type": { "type": "string" },
+        "authority_tier": { "enum": ["primary", "official", "reporting", "analysis", "scripture"] },
+        "retrieved_at": { "type": "string", "format": "date-time" },
+        "access_state": { "enum": ["active", "restricted", "missing", "superseded", "archived"] },
+        "copyright_handling": { "enum": ["link_only", "limited_excerpt", "redistributable_primary", "public_domain", "permission_granted", "unknown"] }
+      },
+      "additionalProperties": true
+    },
+    "claimSource": {
+      "type": "object",
+      "required": ["id", "claim_id", "source_id", "relationship", "excerpt_word_count", "is_primary"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^cite_[a-f0-9]{24}$" },
+        "claim_id": { "type": "string", "pattern": "^claim_[a-f0-9]{24}$" },
+        "source_id": { "type": "string", "pattern": "^src_[a-f0-9]{24}$" },
+        "relationship": { "enum": ["supports", "contradicts", "contextualizes", "documents_status", "contains_denial", "contains_response"] },
+        "excerpt_word_count": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "is_primary": { "type": "integer", "enum": [0, 1] }
+      },
+      "additionalProperties": true
+    },
+    "documentSnapshot": {
+      "type": "object",
+      "required": ["id", "source_id", "captured_at", "r2_object_key", "content_sha256", "mime_type", "byte_size", "rights_basis"],
+      "properties": {
+        "id": { "type": "string" },
+        "source_id": { "type": "string" },
+        "r2_object_key": { "type": "string" },
+        "content_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "byte_size": { "type": "integer", "minimum": 0 },
+        "rights_basis": { "enum": ["public_domain", "government_record", "permission_granted", "fair_use_excerpt", "other_reviewed"] }
+      },
+      "additionalProperties": true
+    },
+    "editorialReview": {
+      "type": "object",
+      "required": ["id", "case_id", "review_type", "outcome", "reviewer", "reviewed_at"],
+      "properties": {
+        "review_type": { "enum": ["source", "legal_status", "defamation", "headline", "faith", "correction", "link"] },
+        "outcome": { "enum": ["pending", "approved", "changes_required", "blocked"] }
+      },
+      "additionalProperties": true
+    },
+    "correction": {
+      "type": "object",
+      "required": ["id", "case_id", "correction_type", "previous_text", "corrected_text", "explanation", "published_at"],
+      "properties": {
+        "correction_type": { "enum": ["factual", "legal_status", "source", "copy", "headline", "faith_analysis"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}
