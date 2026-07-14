@@ -32,6 +32,8 @@ The research catalog contains 60 raw case files, 163 evidence links, and 42 Chri
 
 The site also includes two complementary church-witness directories: **Rooftops** amplifies Christians resisting Christian nationalism, while **Blind Eyes** documents eight leaders, churches, networks, and political ministries that advance, normalize, or religiously legitimize it. Blind Eyes uses 24 claim-specific evidence records, publishes denials and limiting context beside the criticism, and labels its scriptural comparisons as editorial analysis.
 
+**Anti Christ** organizes Trump's documented conduct into eight teaching-based categories, presents five headline cases in each, and provides an expanded 47-case source collection with short recorded quotations and direct transcript or video links. The title is used in the plain two-word sense—conduct against Christ's teaching—not as an apocalyptic identification.
+
 The database-ready schema and migration plan live in `docs/ARCHIVE_DATA_ARCHITECTURE.md`. D1 and R2 remain inactive; the public site continues to read the reviewed JSON research until the documented activation and shadow-read gates are satisfied.
 
 ## Deployment

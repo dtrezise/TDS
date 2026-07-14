@@ -67,6 +67,7 @@ export default function BlindEyesPage() {
           <a href="#profiles">Profiles</a>
           <a href="#method">Method</a>
           <a href="#share">Share</a>
+          <Link href="/anti-christ">Anti Christ</Link>
           <Link href="/voices">Rooftops</Link>
           <Link className="nav-archive" href="/">Evidence</Link>
         </nav>
@@ -212,7 +213,7 @@ export default function BlindEyesPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Look directly at the record. Then test the witness by its fruit.</p>
-        <div className="footer-links"><Link href="/voices">Rooftops</Link><Link href="/">Evidence archive</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/anti-christ">Anti Christ</Link><Link href="/voices">Rooftops</Link><Link href="/">Evidence archive</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

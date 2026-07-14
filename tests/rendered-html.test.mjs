@@ -5,11 +5,13 @@ import test from "node:test";
 const html = await readFile(new URL("../out/index.html", import.meta.url), "utf8");
 const voicesHtml = await readFile(new URL("../out/voices/index.html", import.meta.url), "utf8");
 const blindEyesHtml = await readFile(new URL("../out/blind-eyes/index.html", import.meta.url), "utf8");
+const antiChristHtml = await readFile(new URL("../out/anti-christ/index.html", import.meta.url), "utf8");
 
 test("exports the finished evidence archive", () => {
   assert.match(html, /<title>TDS — The Evidence Archive/);
   assert.match(html, /Trump Derangement Syndrome \| The Evidence Archive/);
-  assert.match(html, /The derangement is/);
+  assert.match(html, /DERANGEMENT/);
+  assert.match(html, /denying the record/);
   assert.match(html, /Case files, not catchphrases/);
   assert.match(html, /Christianity test/);
   assert.match(html, /Evidence rules/);
@@ -80,11 +82,43 @@ test("exports the Blind Eyes accountability directory", () => {
   assert.ok((blindEyesHtml.match(/class="blind-card"/g) ?? []).length === 8, "expected 8 documented Blind Eyes profiles");
 });
 
-test("links the archive, Rooftops, and Blind Eyes in both directions", () => {
+test("exports the Anti Christ teaching comparison", () => {
+  assert.match(antiChristHtml, /<title>Anti Christ \| TDS/);
+  assert.match(antiChristHtml, /Not a prophecy/);
+  assert.match(antiChristHtml, /Against Christ/);
+  assert.match(antiChristHtml, /Not <em>the<\/em> Antichrist/);
+  assert.match(antiChristHtml, /1 John 2:6/);
+  assert.match(antiChristHtml, /LIES/);
+  assert.match(antiChristHtml, /STEALING/);
+  assert.match(antiChristHtml, /SEXUAL ENTITLEMENT/);
+  assert.match(antiChristHtml, /CRUELTY/);
+  assert.match(antiChristHtml, /VENGEANCE/);
+  assert.match(antiChristHtml, /PRIDE &amp; IDOLATRY/);
+  assert.match(antiChristHtml, /RACISM &amp; CONTEMPT/);
+  assert.match(antiChristHtml, /DOMINATION/);
+  assert.match(antiChristHtml, /Grab them by the pussy/);
+  assert.match(antiChristHtml, /I am your retribution/);
+  assert.match(antiChristHtml, /I hate my opponent/);
+  assert.match(antiChristHtml, /The category names are theological and editorial/);
+  assert.match(antiChristHtml, /Christianity test · editorial analysis/);
+  assert.match(antiChristHtml, /anti-christ-og\.png/);
+  assert.match(antiChristHtml, /application\/ld\+json/);
+  assert.ok((antiChristHtml.match(/class="anti-category"/g) ?? []).length === 8, "expected 8 moral categories");
+  assert.ok((antiChristHtml.match(/class="anti-case-date"/g) ?? []).length === 40, "expected five headline records in each category");
+  assert.ok((antiChristHtml.match(/class="anti-record-card"/g) ?? []).length === 71, "expected 71 expanded category placements");
+});
+
+test("links the archive, Anti Christ, Rooftops, and Blind Eyes in both directions", () => {
   assert.match(html, /Rooftops \/ Join/);
+  assert.match(html, /Anti Christ/);
   assert.match(html, /Blind Eyes/);
   assert.match(voicesHtml, /Evidence archive/);
+  assert.match(voicesHtml, /Anti Christ/);
   assert.match(voicesHtml, /Blind Eyes/);
+  assert.match(blindEyesHtml, /Anti Christ/);
   assert.match(blindEyesHtml, /Rooftops/);
   assert.match(blindEyesHtml, /Evidence archive/);
+  assert.match(antiChristHtml, /Blind Eyes/);
+  assert.match(antiChristHtml, /Rooftops/);
+  assert.match(antiChristHtml, /Evidence/);
 });

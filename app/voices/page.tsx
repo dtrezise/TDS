@@ -67,6 +67,7 @@ export default function VoicesPage() {
           <a href="#voices">Voices</a>
           <a href="#act">Take action</a>
           <a href="#share">Share</a>
+          <Link href="/anti-christ">Anti Christ</Link>
           <Link href="/blind-eyes">Blind Eyes</Link>
           <Link className="nav-archive" href="/">Evidence archive</Link>
         </nav>
@@ -187,7 +188,7 @@ export default function VoicesPage() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Speak in the light. Make faithful dissent easier to find.</p>
-        <div className="footer-links"><Link href="/blind-eyes">Blind Eyes</Link><Link href="/">Evidence archive</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/anti-christ">Anti Christ</Link><Link href="/blind-eyes">Blind Eyes</Link><Link href="/">Evidence archive</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

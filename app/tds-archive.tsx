@@ -159,6 +159,7 @@ export function TdsArchive() {
           <a href="#evidence">Evidence</a>
           <a href="#faith">Christianity test</a>
           <a href="#method">Standards</a>
+          <Link href="/anti-christ">Anti Christ</Link>
           <Link href="/blind-eyes">Blind Eyes</Link>
           <Link className="nav-join" href="/voices">Rooftops / Join</Link>
         </nav>
@@ -167,7 +168,7 @@ export function TdsArchive() {
       <section className="hero" id="top">
         <div className="hero__copy">
           <p className="section-label">A documented case against denial</p>
-          <h1>The derangement is <em>denying the record.</em></h1>
+          <h1>DERANGEMENT <em>denying the record.</em></h1>
           <p className="hero__lede">
             “Trump Derangement Syndrome” is usually deployed to dismiss critics. This archive turns the phrase back on the loyalty test: how much verified misconduct must be ignored, excused, or celebrated to keep believing the myth?
           </p>
@@ -297,7 +298,7 @@ export function TdsArchive() {
       <footer>
         <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">The evidence archive</span></div>
         <p>Accountability is not derangement. Refusing the record is.</p>
-        <div className="footer-links"><Link href="/blind-eyes">Blind Eyes</Link><Link href="/voices">Rooftops</Link><a href="#top">Back to top ↑</a></div>
+        <div className="footer-links"><Link href="/anti-christ">Anti Christ</Link><Link href="/blind-eyes">Blind Eyes</Link><Link href="/voices">Rooftops</Link><a href="#top">Back to top ↑</a></div>
       </footer>
     </main>
   );

@@ -1,0 +1,472 @@
+{
+  "reviewed": "2026-07-14",
+  "scope": "A curated, growing index of Donald Trump's documented public conduct and official actions compared with teachings attributed to Jesus and closely related New Testament moral instruction.",
+  "title_note": "Anti Christ is used as two words: conduct opposed to the teaching and example of Christ. It is not a claim that Donald Trump is the prophetic or apocalyptic Antichrist, and it does not purport to judge his soul.",
+  "editorial_note": "The category names are theological and editorial, not substitutes for criminal-law labels. Each record preserves its actual status. An act may appear in more than one category when it conflicts with more than one teaching.",
+  "scripture": {
+    "reference": "1 John 2:6",
+    "principle": "Whoever claims to abide in Christ ought to live as he lived.",
+    "url": "https://bible.usccb.org/bible/1john/2"
+  },
+  "standalone_cases": [
+    {
+      "id": "megyn-kelly-blood-remark",
+      "title": "Trump answered Megyn Kelly's scrutiny with a degrading blood remark",
+      "date": "August 7–10, 2015",
+      "sortDate": "2015-08-10",
+      "category": "Truth & public conduct",
+      "status": "Documented recorded statement; intended meaning disputed",
+      "summary": "After Kelly questioned his history of insulting women, Trump said she had blood coming from her eyes and 'wherever.' He later said he meant her nose or ears and denied referring to menstruation. The words and the later explanation are both part of the record.",
+      "significance": "The documented response redirected scrutiny of Trump's own language into a gendered attack on the questioner. The criticism does not depend on claiming private knowledge of what he intended by 'wherever.'",
+      "subjects": ["Donald Trump", "Megyn Kelly"],
+      "tags": ["women", "Megyn Kelly", "recorded statement", "public conduct"],
+      "sources": [
+        {
+          "label": "CNN transcript preserving the remark and Trump's later explanation",
+          "publisher": "CNN",
+          "url": "https://transcripts.cnn.com/show/wolf/date/2015-08-10/segment/01",
+          "kind": "Primary source",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Contemporaneous report and recorded quotation",
+          "publisher": "The Washington Post",
+          "url": "https://www.washingtonpost.com/news/post-politics/wp/2015/08/07/trump-says-foxs-megyn-kelly-had-blood-coming-out-of-her-wherever/",
+          "kind": "Reporting",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "faithAnalysis": "Christian speech is judged by whether it builds others up rather than humiliating an opponent. The record supports criticism of the degrading words without pretending to resolve Trump's disputed intent.",
+      "faithLens": [
+        {
+          "teaching": "Speech should build up and give grace rather than degrade.",
+          "reference": "Ephesians 4:29",
+          "url": "https://bible.usccb.org/bible/ephesians/4"
+        }
+      ]
+    },
+    {
+      "id": "pageant-dressing-room-boast",
+      "title": "Trump said pageant ownership let him enter while contestants dressed",
+      "date": "2005–October 2016",
+      "sortDate": "2016-10-14",
+      "category": "Truth & public conduct",
+      "status": "Authenticated recorded statement; separate contestant accounts were not adjudicated",
+      "summary": "In a 2005 Howard Stern interview, Trump said he went backstage while pageant contestants were dressing and was allowed in because he owned the pageant, adding that ownership let him 'get away with things like that.' The recording did not specify Miss Teen USA; this entry does not repeat that broader online claim.",
+      "significance": "Trump's own words present ownership as permission to cross an intimate boundary. Separate contestants later described their experiences, but this record rests on his recording rather than treating their unadjudicated accounts as findings.",
+      "subjects": ["Donald Trump", "Miss Universe Organization contestants"],
+      "tags": ["pageants", "women", "ownership", "Howard Stern", "recording"],
+      "sources": [
+        {
+          "label": "Broadcast transcript containing the Howard Stern audio and limiting context",
+          "publisher": "CNN",
+          "url": "https://transcripts.cnn.com/show/ath/date/2016-10-14/segment/01",
+          "kind": "Primary source",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Broadcast transcript preserving the extended recorded exchange",
+          "publisher": "CNN",
+          "url": "https://transcripts.cnn.com/show/cnnt/date/2016-10-13/segment/02",
+          "kind": "Primary source",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "faithAnalysis": "Ownership does not erase another person's dignity or bodily privacy. The moral comparison is to Trump's recorded attitude, not to an unproved inference about every pageant encounter.",
+      "faithLens": [
+        {
+          "teaching": "Treat others as you would have them treat you.",
+          "reference": "Matthew 7:12",
+          "url": "https://bible.usccb.org/bible/matthew/7"
+        }
+      ]
+    },
+    {
+      "id": "alicia-machado-weight-attack",
+      "title": "Trump publicly renewed his humiliation of Alicia Machado over her weight",
+      "date": "September 27–30, 2016",
+      "sortDate": "2016-09-30",
+      "category": "Truth & public conduct",
+      "status": "Documented recorded statements; disputed nickname allegations remain attributed",
+      "summary": "After Machado's treatment became a debate issue, Trump called the former Miss Universe winner 'the worst' and said she had gained a massive amount of weight and that it was a real problem. Machado said he had called her 'Miss Piggy' and 'Miss Housekeeping'; those separate allegations are attributed to her rather than stated as adjudicated fact.",
+      "significance": "Trump's own response publicly reduced a former employee and pageant winner to her weight instead of answering the underlying concern about degrading treatment.",
+      "subjects": ["Donald Trump", "Alicia Machado"],
+      "tags": ["women", "Alicia Machado", "weight", "public humiliation"],
+      "sources": [
+        {
+          "label": "Video report reproducing Trump's Fox & Friends remarks",
+          "publisher": "Fox News",
+          "url": "https://www.foxnews.com/entertainment/donald-trump-miss-universe-alicia-machado-was-the-absolute-worst",
+          "kind": "Primary source",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "PBS transcript preserving the statement and campaign response",
+          "publisher": "PBS NewsHour",
+          "url": "https://www.pbs.org/newshour/show/strategists-weigh-first-debate-takeaways",
+          "kind": "Reporting",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "faithAnalysis": "Publicly humiliating a person over her body conflicts with Christian commands to use speech for grace and to recognize equal human dignity.",
+      "faithLens": [
+        {
+          "teaching": "Speech should build up and give grace rather than degrade.",
+          "reference": "Ephesians 4:29",
+          "url": "https://bible.usccb.org/bible/ephesians/4"
+        }
+      ]
+    },
+    {
+      "id": "rnc-i-alone-can-fix-it",
+      "title": "Trump made personal indispensability the answer to national crisis",
+      "date": "July 21, 2016",
+      "sortDate": "2016-07-21",
+      "category": "Christianity & character",
+      "status": "Documented convention speech; editorial theological comparison",
+      "summary": "Accepting the Republican nomination, Trump described a nation in crisis and declared, 'I alone can fix it.' The statement was campaign rhetoric, not a literal legal claim of exclusive authority, but it concentrated political hope in one leader's asserted indispensability.",
+      "significance": "Christian teaching directs power toward service, shared counsel, and humility. The archive reads personal-savior rhetoric as a warning sign, not as proof of secret intent or a theological identity.",
+      "subjects": ["Donald Trump"],
+      "tags": ["RNC", "personal power", "pride", "leadership"],
+      "sources": [
+        {
+          "label": "Full text of Trump's Republican National Convention speech",
+          "publisher": "ABC News",
+          "url": "https://abcnews.go.com/Politics/full-text-donald-trumps-2016-republican-national-convention/story?id=40786529",
+          "kind": "Primary source",
+          "accessed": "2026-07-14"
+        },
+        {
+          "label": "Full convention speech video",
+          "publisher": "PBS",
+          "url": "https://www.pbs.org/video/watch-presidential-candidate-donald-trump-s-full-speech-1476405218/",
+          "kind": "Primary source",
+          "accessed": "2026-07-14"
+        }
+      ],
+      "faithAnalysis": "Jesus contrasts rulers who lord power over others with leaders who serve. No political leader is the sole source of rescue in Christian moral reasoning.",
+      "faithLens": [
+        {
+          "teaching": "Greatness is expressed through service rather than domination.",
+          "reference": "Mark 10:42–45",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        }
+      ]
+    }
+  ],
+  "recorded_words": [
+    {
+      "case_id": "faith-election-falsehoods-2020-2022",
+      "quote": "We won this election, and we won it by a landslide.",
+      "context": "January 6 speech; the certified result showed Trump lost.",
+      "source_label": "House January 6 report and evidence archive",
+      "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/pdf/GPO-J6-REPORT.pdf",
+      "media_type": "Official report"
+    },
+    {
+      "case_id": "access-hollywood-recording",
+      "quote": "Grab them by the pussy. You can do anything.",
+      "context": "Authenticated 2005 recording; Trump later apologized for the words and called them locker-room talk.",
+      "source_label": "Original recording and transcript",
+      "url": "https://www.washingtonpost.com/politics/trump-recorded-having-extremely-lewd-conversation-about-women-in-2005/2016/10/07/3b9ce776-8cb4-11e6-bf8a-3d26847eeed4_story.html",
+      "media_type": "Recording"
+    },
+    {
+      "case_id": "faith-repentance-2015",
+      "quote": "I am not sure I have.",
+      "context": "Answer when asked whether he had ever asked God for forgiveness; he later qualified the answer.",
+      "source_label": "Family Leadership Summit transcript",
+      "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-ames-ia-july-18-2015/",
+      "media_type": "Transcript"
+    },
+    {
+      "case_id": "faith-retribution-enemy-within-2023-2024",
+      "quote": "I am your retribution.",
+      "context": "Promise to supporters at CPAC in 2023.",
+      "source_label": "Full CPAC speech",
+      "url": "https://www.c-span.org/program/campaign-2024/former-president-trump-speaks-at-cpac/624800",
+      "media_type": "Video"
+    },
+    {
+      "case_id": "faith-kirk-memorial-forgiveness-2025",
+      "quote": "I hate my opponent, and I don't want the best for them.",
+      "context": "Remarks after Erika Kirk grounded forgiveness in Christ at her husband's memorial.",
+      "source_label": "Official presidential transcript",
+      "url": "https://www.govinfo.gov/content/pkg/DCPD-202500936/pdf/DCPD-202500936.pdf",
+      "media_type": "Official transcript"
+    },
+    {
+      "case_id": "john-mccain-pow-insult",
+      "quote": "I like people that weren't captured.",
+      "context": "Recorded response while attacking prisoner-of-war John McCain; Trump partially retreated under questioning.",
+      "source_label": "Full interview transcript and video",
+      "url": "https://www.cbsnews.com/news/donald-trump-john-mccain-war-hero-captured/",
+      "media_type": "Video"
+    },
+    {
+      "case_id": "covid-testing-and-disinfectant-statements",
+      "quote": "By injection inside or almost a cleaning.",
+      "context": "Public speculation about internal use of disinfectant; Trump asked doctors to investigate rather than directly instructing the public.",
+      "source_label": "Official coronavirus briefing transcript",
+      "url": "https://www.govinfo.gov/app/details/DCPD-202000286",
+      "media_type": "Official transcript"
+    },
+    {
+      "case_id": "pageant-dressing-room-boast",
+      "quote": "I'm allowed to go in because I'm the owner of the pageant.",
+      "context": "Howard Stern recording about entering backstage while contestants dressed.",
+      "source_label": "Broadcast transcript containing the audio",
+      "url": "https://transcripts.cnn.com/show/ath/date/2016-10-14/segment/01",
+      "media_type": "Audio transcript"
+    },
+    {
+      "case_id": "rnc-i-alone-can-fix-it",
+      "quote": "I alone can fix it.",
+      "context": "Republican National Convention acceptance speech.",
+      "source_label": "Full speech video",
+      "url": "https://www.pbs.org/video/watch-presidential-candidate-donald-trump-s-full-speech-1476405218/",
+      "media_type": "Video"
+    }
+  ],
+  "categories": [
+    {
+      "id": "lies",
+      "label": "LIES",
+      "title": "False witness as a governing method",
+      "description": "Repeated false claims, falsified records, defamatory statements, and deception that continued after correction or authoritative contradiction.",
+      "theological_caution": "The category describes documented falsehood and adjudicated fraud precisely; it does not assume every disputed statement was a knowing lie unless the record supports that conclusion.",
+      "teaching": {
+        "reference": "John 8:32; Matthew 5:37",
+        "principle": "Jesus joins discipleship to truth and commands a plain yes or no.",
+        "url": "https://bible.usccb.org/bible/john/8"
+      },
+      "featured_case_ids": [
+        "faith-election-falsehoods-2020-2022",
+        "obama-birther-falsehood",
+        "new-york-civil-business-fraud",
+        "covid-testing-and-disinfectant-statements",
+        "carroll-sexual-abuse-defamation-judgments"
+      ],
+      "all_case_ids": [
+        "faith-election-falsehoods-2020-2022",
+        "obama-birther-falsehood",
+        "new-york-civil-business-fraud",
+        "covid-testing-and-disinfectant-statements",
+        "carroll-sexual-abuse-defamation-judgments",
+        "new-york-falsifying-business-records-conviction",
+        "election-subversion-january-6-report",
+        "central-park-five-death-penalty-campaign",
+        "serge-kovaleski-pantomime",
+        "obama-apes-social-post"
+      ]
+    },
+    {
+      "id": "stealing",
+      "label": "STEALING",
+      "title": "Charity, public trust, and dishonest gain",
+      "description": "Misuse of charitable assets, persistent business fraud, foreign-government payments, consumer litigation, and public power redirected toward private or political benefit.",
+      "theological_caution": "Stealing is a moral heading here, not a claim that every item is the crime of theft. The cards distinguish civil findings, settlements, official violations, corporate convictions, and lawful but ethically disputed conduct.",
+      "teaching": {
+        "reference": "Mark 10:19; Luke 16:10–13",
+        "principle": "Jesus repeats the command not to steal and ties faithfulness to honest stewardship rather than service to wealth.",
+        "url": "https://bible.usccb.org/bible/mark/10"
+      },
+      "featured_case_ids": [
+        "trump-foundation-fiduciary-breach",
+        "new-york-civil-business-fraud",
+        "foreign-government-payments-emoluments",
+        "trump-university-settlement",
+        "ukraine-aid-impoundment-violation"
+      ],
+      "all_case_ids": [
+        "trump-foundation-fiduciary-breach",
+        "new-york-civil-business-fraud",
+        "foreign-government-payments-emoluments",
+        "trump-university-settlement",
+        "ukraine-aid-impoundment-violation",
+        "new-york-falsifying-business-records-conviction",
+        "trump-organization-tax-fraud-conviction",
+        "ivanka-kushner-white-house-nepotism",
+        "faith-obbba-poor-2025"
+      ]
+    },
+    {
+      "id": "sexual-entitlement",
+      "label": "SEXUAL ENTITLEMENT",
+      "title": "Women treated as bodies, trophies, or targets",
+      "description": "Civil sexual-abuse liability, Trump's own recorded boasts, gendered humiliation, and a criminally adjudicated falsification scheme tied to suppressing a claimed sexual encounter.",
+      "theological_caution": "The hush-money verdict adjudicated falsified business records, not adultery. Allegations that were never tried remain attributed; civil liability is not described as a criminal conviction.",
+      "teaching": {
+        "reference": "Matthew 5:27–28; Matthew 7:12",
+        "principle": "Jesus moves sexual ethics inward toward non-objectification and commands treatment of others according to the dignity one expects for oneself.",
+        "url": "https://bible.usccb.org/bible/matthew/5"
+      },
+      "featured_case_ids": [
+        "carroll-sexual-abuse-defamation-judgments",
+        "access-hollywood-recording",
+        "new-york-falsifying-business-records-conviction",
+        "pageant-dressing-room-boast",
+        "megyn-kelly-blood-remark"
+      ],
+      "all_case_ids": [
+        "carroll-sexual-abuse-defamation-judgments",
+        "access-hollywood-recording",
+        "new-york-falsifying-business-records-conviction",
+        "pageant-dressing-room-boast",
+        "megyn-kelly-blood-remark",
+        "alicia-machado-weight-attack"
+      ]
+    },
+    {
+      "id": "cruelty",
+      "label": "CRUELTY",
+      "title": "The stranger, the child, the poor, the condemned",
+      "description": "Policies and rhetoric measured against Jesus' identification with the stranger, the hungry, the sick, the child, and the person treated as disposable.",
+      "theological_caution": "Christians can disagree about borders, budgets, and punishment. The comparison focuses on documented consequences, official language, and whether human dignity remains visible.",
+      "teaching": {
+        "reference": "Matthew 25:35–45; Matthew 19:13–15",
+        "principle": "Jesus identifies himself with the vulnerable and welcomes children rather than treating them as instruments of policy.",
+        "url": "https://bible.usccb.org/bible/matthew/25"
+      },
+      "featured_case_ids": [
+        "family-separation-zero-tolerance",
+        "faith-mass-deportation-2025",
+        "faith-refugee-ceiling-2017-2021",
+        "faith-obbba-poor-2025",
+        "birthright-citizenship-order-unconstitutional"
+      ],
+      "all_case_ids": [
+        "family-separation-zero-tolerance",
+        "faith-mass-deportation-2025",
+        "faith-refugee-ceiling-2017-2021",
+        "faith-obbba-poor-2025",
+        "birthright-citizenship-order-unconstitutional",
+        "faith-death-penalty-2025",
+        "central-park-five-death-penalty-campaign",
+        "faith-america-first-2017-2025",
+        "trump-housing-discrimination-case"
+      ]
+    },
+    {
+      "id": "vengeance",
+      "label": "VENGEANCE",
+      "title": "Hatred marketed as strength",
+      "description": "Retribution promises, enemy language, expanded capital punishment, refusal to reconsider punishment after exoneration, and clemency used for a political movement.",
+      "theological_caution": "Government may punish wrongdoing and a president has constitutional clemency power. The Christian question is whether justice is ordered toward truth and mercy or personalized as vengeance.",
+      "teaching": {
+        "reference": "Matthew 5:43–48; Romans 12:19–21",
+        "principle": "Jesus commands love of enemies; the New Testament rejects personal vengeance and answers evil with good.",
+        "url": "https://bible.usccb.org/bible/matthew/5"
+      },
+      "featured_case_ids": [
+        "faith-retribution-enemy-within-2023-2024",
+        "faith-kirk-memorial-forgiveness-2025",
+        "faith-death-penalty-2025",
+        "central-park-five-death-penalty-campaign",
+        "january-6-blanket-clemency"
+      ],
+      "all_case_ids": [
+        "faith-retribution-enemy-within-2023-2024",
+        "faith-kirk-memorial-forgiveness-2025",
+        "faith-death-penalty-2025",
+        "central-park-five-death-penalty-campaign",
+        "january-6-blanket-clemency",
+        "second-impeachment-january-6",
+        "pardons-investigation-allies-2020",
+        "john-mccain-pow-insult"
+      ]
+    },
+    {
+      "id": "pride",
+      "label": "PRIDE & IDOLATRY",
+      "title": "The leader as savior, scripture as prop",
+      "description": "Self-exemption from repentance, claims of personal indispensability, religious symbolism used for dominance, Bible merchandising, and political power wrapped in divine favor.",
+      "theological_caution": "Religious speech and patriotic Bibles are not inherently wrong. The criticism concerns documented self-exaltation, commerce, coercive symbolism, and the fusion of Christian identity with one political leader.",
+      "teaching": {
+        "reference": "Mark 1:15; Philippians 2:3–8",
+        "principle": "Jesus begins with repentance, while Christian leadership is patterned on humility and self-emptying service.",
+        "url": "https://bible.usccb.org/bible/philippians/2"
+      },
+      "featured_case_ids": [
+        "faith-repentance-2015",
+        "rnc-i-alone-can-fix-it",
+        "faith-lafayette-bible-2020",
+        "faith-nationalist-campaign-fusion-2024",
+        "faith-paula-white-prosperity-2016-2025"
+      ],
+      "all_case_ids": [
+        "faith-repentance-2015",
+        "rnc-i-alone-can-fix-it",
+        "faith-lafayette-bible-2020",
+        "faith-nationalist-campaign-fusion-2024",
+        "faith-paula-white-prosperity-2016-2025",
+        "faith-america-first-2017-2025",
+        "faith-anti-christian-bias-taskforce-2025",
+        "faith-project2025-schedule-policy-career-2022-2025",
+        "faith-retribution-enemy-within-2023-2024"
+      ]
+    },
+    {
+      "id": "racism",
+      "label": "RACISM & CONTEMPT",
+      "title": "Hierarchy, humiliation, and the neighbor denied",
+      "description": "Racial conspiracy, degrading imagery, wrongful-conviction intransigence, false equivalence around white supremacy, discrimination litigation, and proximity offered to a white nationalist.",
+      "theological_caution": "Intent is not inferred where disputed. The page describes the words, images, legal status, and institutional response, including Trump's express condemnation of neo-Nazis in the full Charlottesville exchange.",
+      "teaching": {
+        "reference": "Luke 10:25–37; Galatians 3:28",
+        "principle": "Jesus makes the despised outsider a model neighbor, and Christian identity rejects ethnic hierarchy.",
+        "url": "https://bible.usccb.org/bible/luke/10"
+      },
+      "featured_case_ids": [
+        "obama-apes-social-post",
+        "obama-birther-falsehood",
+        "central-park-five-death-penalty-campaign",
+        "charlottesville-both-sides",
+        "trump-housing-discrimination-case"
+      ],
+      "all_case_ids": [
+        "obama-apes-social-post",
+        "obama-birther-falsehood",
+        "central-park-five-death-penalty-campaign",
+        "charlottesville-both-sides",
+        "trump-housing-discrimination-case",
+        "faith-fuentes-dinner-2022",
+        "serge-kovaleski-pantomime",
+        "faith-refugee-ceiling-2017-2021",
+        "family-separation-zero-tolerance"
+      ]
+    },
+    {
+      "id": "domination",
+      "label": "DOMINATION",
+      "title": "Power that serves itself",
+      "description": "Election subversion, abuse of office, attacks on oversight, loyalty-centered civil-service restructuring, obstruction evidence, and pardons or clemency benefiting allies and a political movement.",
+      "theological_caution": "The records distinguish impeachment from conviction, accusation from adjudication, and lawful constitutional power from the editorial judgment about how that power was used.",
+      "teaching": {
+        "reference": "Mark 10:42–45",
+        "principle": "Jesus contrasts rulers who lord power over others with authority expressed through service.",
+        "url": "https://bible.usccb.org/bible/mark/10"
+      },
+      "featured_case_ids": [
+        "election-subversion-january-6-report",
+        "first-impeachment-ukraine",
+        "mass-inspector-general-firings-2025",
+        "faith-project2025-schedule-policy-career-2022-2025",
+        "january-6-blanket-clemency"
+      ],
+      "all_case_ids": [
+        "election-subversion-january-6-report",
+        "first-impeachment-ukraine",
+        "mass-inspector-general-firings-2025",
+        "faith-project2025-schedule-policy-career-2022-2025",
+        "january-6-blanket-clemency",
+        "mueller-obstruction-evidence",
+        "second-impeachment-january-6",
+        "pardons-investigation-allies-2020",
+        "birthright-citizenship-order-unconstitutional",
+        "faith-heritage-first-term-2017-2018",
+        "faith-anti-christian-bias-taskforce-2025"
+      ]
+    }
+  ]
+}
