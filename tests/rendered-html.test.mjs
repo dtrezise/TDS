@@ -128,6 +128,7 @@ test("exports the Voices and Tests springboard pages", () => {
   assert.match(testsHubHtml, /href="\/deal-test\/"/);
   assert.match(testsHubHtml, /href="\/world-standing-test\/"/);
   assert.match(testsHubHtml, /world-standing-test-hero\.png/);
+  assert.doesNotMatch(christianityTestHtml, />Apply a test</);
 });
 
 test("exports the Christian resistance directory", () => {

@@ -90,7 +90,6 @@ export function TestSuiteNav({ active }: { active: TestSection }) {
 
   return (
     <nav className="test-suite-nav" aria-label="Evidence tests">
-      <span>Apply a test</span>
       {tests.map((test) => (
         <Link
           href={test.href}
