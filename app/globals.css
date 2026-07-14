@@ -123,7 +123,7 @@ a {
     linear-gradient(rgba(245, 240, 231, 0.92), rgba(245, 240, 231, 0.98)),
     repeating-linear-gradient(90deg, transparent 0, transparent calc(10% - 1px), rgba(16, 21, 28, 0.12) 10%);
   display: grid;
-  padding: clamp(70px, 9vw, 150px) clamp(28px, 7vw, 120px) clamp(70px, 9vw, 130px) 6vw;
+  padding: clamp(54px, 6vw, 100px) clamp(28px, 7vw, 120px) clamp(56px, 6vw, 96px) 6vw;
 }
 
 .section-label,
@@ -138,11 +138,11 @@ a {
 
 .hero h1 {
   font-family: var(--serif);
-  font-size: clamp(4.3rem, 9vw, 9.7rem);
-  font-weight: 700;
-  letter-spacing: -0.072em;
-  line-height: 0.82;
-  margin: 38px 0 34px;
+  font-size: clamp(3.4rem, 6.3vw, 7.2rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+  margin: 28px 0;
   max-width: 1050px;
 }
 
@@ -155,8 +155,8 @@ a {
 .hero__lede {
   border-left: 5px solid var(--ink);
   font-family: var(--serif);
-  font-size: clamp(1.18rem, 1.65vw, 1.65rem);
-  line-height: 1.48;
+  font-size: clamp(1.08rem, 1.25vw, 1.35rem);
+  line-height: 1.52;
   margin: 0;
   max-width: 790px;
   padding-left: 24px;
@@ -167,7 +167,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 42px;
+  margin-top: 32px;
 }
 
 .button {
@@ -201,7 +201,7 @@ a {
   background: var(--blue);
   color: white;
   display: grid;
-  padding: clamp(50px, 6vw, 100px) clamp(28px, 4vw, 68px);
+  padding: clamp(42px, 4.5vw, 74px) clamp(28px, 4vw, 68px);
   position: relative;
 }
 
@@ -216,10 +216,10 @@ a {
 .hero__brief-number {
   color: rgba(255, 255, 255, 0.12);
   font-family: var(--serif);
-  font-size: clamp(7rem, 12vw, 12rem);
+  font-size: clamp(5rem, 7vw, 8rem);
   font-weight: 800;
   line-height: 0.8;
-  margin: 0 0 42px;
+  margin: 0 0 28px;
 }
 
 .hero__brief .eyebrow {
@@ -228,15 +228,16 @@ a {
 
 .hero__brief h2 {
   font-family: var(--serif);
-  font-size: clamp(2.2rem, 3.4vw, 4rem);
-  letter-spacing: -0.045em;
-  line-height: 1.02;
-  margin: 18px 0 28px;
+  font-size: clamp(1.8rem, 2.55vw, 3.05rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin: 14px 0 20px;
 }
 
 .hero__brief > p:not(.hero__brief-number):not(.eyebrow) {
-  font-size: 1rem;
-  line-height: 1.68;
+  font-size: 0.95rem;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -244,8 +245,8 @@ a {
   border-top: 1px solid rgba(255, 255, 255, 0.34);
   color: #ced9e1;
   font-size: 0.8rem !important;
-  margin-top: 30px !important;
-  padding-top: 24px;
+  margin-top: 22px !important;
+  padding-top: 18px;
 }
 
 .scoreboard {
@@ -261,7 +262,7 @@ a {
   border-right: 1px solid #38414b;
   display: flex;
   gap: 16px;
-  min-height: 130px;
+  min-height: 110px;
   padding: 24px 3vw;
 }
 
@@ -272,7 +273,7 @@ a {
 .scoreboard strong {
   color: #eeb968;
   font-family: var(--serif);
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-size: clamp(2.2rem, 3vw, 3.5rem);
   line-height: 1;
 }
 
@@ -291,17 +292,18 @@ a {
   display: grid;
   gap: 9vw;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  padding: clamp(80px, 11vw, 170px) 7vw;
+  padding: clamp(70px, 8vw, 120px) 7vw;
 }
 
 .thesis h2,
 .archive h2,
 .method h2 {
   font-family: var(--serif);
-  font-size: clamp(3.2rem, 6.5vw, 7.5rem);
-  letter-spacing: -0.065em;
-  line-height: 0.93;
-  margin: 28px 0 0;
+  font-size: clamp(2.65rem, 4.8vw, 5.6rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  margin: 20px 0 0;
 }
 
 .thesis__copy {
@@ -313,7 +315,7 @@ a {
 
 .thesis__copy p {
   font-family: var(--serif);
-  font-size: clamp(1.12rem, 1.55vw, 1.5rem);
+  font-size: clamp(1.05rem, 1.25vw, 1.3rem);
   line-height: 1.58;
 }
 
@@ -328,7 +330,7 @@ a {
 }
 
 .archive {
-  padding: clamp(80px, 9vw, 140px) 4vw;
+  padding: clamp(70px, 7vw, 110px) 4vw;
 }
 
 .archive__heading {
@@ -336,7 +338,7 @@ a {
   display: grid;
   gap: 5vw;
   grid-template-columns: 1.4fr 0.6fr;
-  margin: 0 auto 70px;
+  margin: 0 auto 52px;
   max-width: 1600px;
 }
 
@@ -507,10 +509,11 @@ a {
 
 .case-card h3 {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.2vw, 3.55rem);
-  letter-spacing: -0.045em;
-  line-height: 1.02;
-  margin: 26px 0 20px;
+  font-size: clamp(1.7rem, 2.35vw, 2.65rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin: 22px 0 18px;
 }
 
 .status-line {
@@ -675,7 +678,7 @@ a {
   display: grid;
   gap: 8vw;
   grid-template-columns: minmax(260px, 0.65fr) minmax(0, 1fr);
-  padding: clamp(80px, 10vw, 160px) 7vw;
+  padding: clamp(70px, 8vw, 120px) 7vw;
 }
 
 .method .section-label {
@@ -689,7 +692,7 @@ a {
 }
 
 .method h2 {
-  font-size: clamp(3.2rem, 6vw, 6.5rem);
+  font-size: clamp(2.65rem, 4.4vw, 4.9rem);
 }
 
 .method__rules {
@@ -831,15 +834,15 @@ footer > a {
   }
 
   .hero__copy {
-    padding: 80px 6vw;
+    padding: 64px 6vw;
   }
 
   .hero h1 {
-    font-size: clamp(4rem, 19vw, 7rem);
+    font-size: clamp(3.15rem, 14vw, 5rem);
   }
 
   .hero__brief {
-    min-height: 590px;
+    min-height: 500px;
   }
 
   .thesis {
