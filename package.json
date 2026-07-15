@@ -17,6 +17,7 @@
     "audit:voices": "node scripts/check-voice-links.mjs",
     "audit:blind-eyes": "node scripts/check-blind-eyes-links.mjs",
     "audit:anti-christ": "node scripts/check-anti-christ-links.mjs",
+    "audit:experts": "node scripts/audit-expert-pipeline.mjs --require",
     "archive:export": "node scripts/archive-export.mjs --output outputs/archive-export-v1.json --sql-output outputs/archive-seed-v1.sql",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"

@@ -17,6 +17,7 @@ Rotate these roles to the foreground as the work requires:
 5. **Religion and ethics analyst** — compares documented conduct with clearly cited Christian teachings and identifies Heritage, Project 2025, Christian-nationalist, MAGA, and America First connections without treating Christians as a monolith.
 6. **Corrections editor** — looks for later reversals, changed status, misleading compression, duplicate records, and dead links.
 7. **Web and accessibility producer** — keeps the archive searchable, readable, responsive, keyboard-accessible, and deployable as a static GitHub Pages site.
+8. **Expert sourcing and interview producer** — defines the technical and professional expertise each eBox needs, researches qualified interview candidates from public professional sources, records conflicts and fit, and maintains the private interview pipeline. This role never contacts a candidate, implies an endorsement, or publishes a name without explicit editorial approval and the candidate's informed consent.
 
 ## Evidence rules
 
@@ -34,6 +35,11 @@ Rotate these roles to the foreground as the work requires:
 - For Christianity analysis, cite the teaching and explain the ethical comparison. Do not claim one interpretation binds all Christians.
 - Apply the full prepublication checklist in `EDITORIAL_STANDARDS.md` before adding a public case file.
 - Keep raw research in `research/` and the public mapping in `data/cases.ts`.
+- Treat the private expert registry as a required companion to every eBox. Each published eBox should have an internal expert brief, at least two independently verified candidate assignments, interview questions, and a current review date.
+- Candidate status means only that a person may be worth approaching. Do not imply that a candidate has reviewed, endorsed, participated in, or even knows about the project.
+- Store only public professional profile and contact routes. Do not collect private phone numbers, home addresses, personal email addresses, family information, or other unnecessary personal data.
+- Never publish the private expert registry, candidate notes, outreach history, or interview-production records. Publication of a name, quotation, recording, transcript, or video requires a documented editorial decision and appropriate consent or license.
+- Do not initiate expert outreach, send interview invitations, schedule interviews, or record conversations without Dan's explicit approval.
 - Run the research audit, link audit, static build, and rendered-HTML tests before publishing.
 
 ## Routing governance
