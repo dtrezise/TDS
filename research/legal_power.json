@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13",
+  "generated": "2026-07-15",
   "scope_note": "A legal-records and misuse-of-power research set covering selected high-salience matters from Trump's business career through his second administration. Entries distinguish adjudicated findings from allegations, investigative conclusions, impeachment judgments, dismissed charges, lawful but controversial exercises of power, and pending appeals. Summaries use primary legal and government records wherever practicable and do not treat an indictment, congressional referral, pardon, or investigative report as a criminal conviction.",
   "items": [
     {
@@ -744,6 +744,72 @@
       ],
       "confidence": "high",
       "editorial_note": "A pardon is lawful and does not by itself prove a corrupt bargain. Ground criticism in the recipients' relationships to Trump, their adjudicated offenses, and the accountability consequences."
+    },
+    {
+      "id": "trump-amplified-criminalize-socialism-deport-leaders-video-2026",
+      "title": "Trump amplified a video calling for democratic socialism to be criminalized and its leaders deported",
+      "date_start": "2026-07-12",
+      "date_end": "2026-07-12",
+      "people": [
+        "Donald Trump",
+        "Michael Savage",
+        "Zohran Mamdani",
+        "Bernie Sanders"
+      ],
+      "category": "constitutional-rights-and-political-opposition",
+      "status_label": "Documented presidential social-media amplification; the quoted demands were Michael Savage's, not Trump's own words",
+      "summary": "On July 12, 2026, Donald Trump's Truth Social account shared a YouTube link to Michael Savage's video titled \"DEMOCRATIC SOCIALISM MUST BE CRIMINALIZED; LEADERS DEPORTED.\" Trump added no accompanying explanation or disclaimer. In the video, Savage argued for criminalizing democratic socialism and deporting its leaders while discussing New York City Mayor Zohran Mamdani and Sen. Bernie Sanders. The record establishes Trump's amplification of that material; it does not establish that Trump authored or adopted every statement in the video.",
+      "why_it_matters": "A sitting president's decision to distribute a call to criminalize a peaceful political ideology and deport its leaders conflicts with constitutional pluralism, even without treating every word as Trump's own. The First Amendment protects political speech and association. The narrow grievance is the use of presidential reach to amplify punishment of political belief—not a claim that Trump issued an arrest or deportation order.",
+      "evidence": [
+        {
+          "label": "Trump's Truth Social post linking to the Savage video",
+          "url": "https://truthsocial.com/%40realDonaldTrump/posts/116909300964979990",
+          "publisher": "Truth Social",
+          "source_type": "primary-social-media-record",
+          "accessed": "2026-07-15"
+        },
+        {
+          "label": "Michael Savage video shared by Trump",
+          "url": "https://www.youtube.com/watch?v=55mGpfhO-lg",
+          "publisher": "Michael Savage via YouTube",
+          "source_type": "primary-video",
+          "accessed": "2026-07-15"
+        },
+        {
+          "label": "Constitution Annotated overview of First Amendment freedom of political association",
+          "url": "https://constitution.congress.gov/browse/essay/amdt1-8-1/ALDE_00013139/",
+          "publisher": "Congress.gov / Library of Congress",
+          "source_type": "official-constitutional-analysis",
+          "accessed": "2026-07-15"
+        },
+        {
+          "label": "Reporting on Trump's share and the video's attributed statements",
+          "url": "https://www.the-independent.com/news/world/americas/us-politics/trump-michael-savage-deport-communists-democratic-socialists-b3014032.html",
+          "publisher": "The Independent",
+          "source_type": "news-journalism",
+          "accessed": "2026-07-15"
+        }
+      ],
+      "christian_teaching": [
+        {
+          "citation": "Matthew 5:43–48",
+          "principle": "Jesus commands love and prayer for enemies rather than using power to stigmatize and punish opponents.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
+        }
+      ],
+      "tags": [
+        "First Amendment",
+        "freedom of association",
+        "political opponents",
+        "democratic socialism",
+        "deportation rhetoric",
+        "presidential amplification",
+        "Michael Savage",
+        "Zohran Mamdani",
+        "Bernie Sanders"
+      ],
+      "confidence": "high",
+      "editorial_note": "Do not say Trump personally authored, ordered, or explicitly adopted every statement in the video. State that his account shared or amplified a video with this title and content and added no distancing commentary. Do not characterize the post as a deportation order or an arrest directive."
     }
   ]
 }

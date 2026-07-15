@@ -52,7 +52,7 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Christianity test/);
   assert.match(html, /Apply the Patriotic Test/);
   assert.match(html, /Read our evidence rules/);
-  assert.match(html, /80<\/strong><span>case files/);
+  assert.match(html, /81<\/strong><span>case files/);
   assert.match(html, /Record status/);
   assert.match(html, /birthright-citizenship order/i);
   assert.match(html, /Project 2025/);
@@ -73,24 +73,24 @@ test("exports the finished evidence archive", () => {
 });
 
 test("keeps the case-level Christianity Tests visible", () => {
-  assert.ok((html.match(/class="faith-note"/g) ?? []).length === 21, "expected 21 visible Christianity Tests");
-  assert.ok((html.match(/faith-note__label">Christianity test/g) ?? []).length === 21, "expected every test to keep its visible label");
+  assert.ok((html.match(/class="faith-note"/g) ?? []).length === 22, "expected 22 visible Christianity Tests");
+  assert.ok((html.match(/faith-note__label">Christianity test/g) ?? []).length === 22, "expected every test to keep its visible label");
   assert.doesNotMatch(html, /<details class="faith-note"/);
 });
 
 test("applies the four additional tests to every Evidence eBox without forcing a conclusion", () => {
-  assert.ok((html.match(/class="case-test-note case-test-note--patriotic"/g) ?? []).length === 80, "expected a Patriotic Test lens on every case");
-  assert.ok((html.match(/class="case-test-note case-test-note--america-first"/g) ?? []).length === 80, "expected an America First Test lens on every case");
-  assert.ok((html.match(/class="case-test-note case-test-note--deal"/g) ?? []).length === 80, "expected a Deal Test lens on every case");
-  assert.ok((html.match(/class="case-test-note case-test-note--world-standing"/g) ?? []).length === 80, "expected a World Standing Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--patriotic"/g) ?? []).length === 81, "expected a Patriotic Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--america-first"/g) ?? []).length === 81, "expected an America First Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--deal"/g) ?? []).length === 81, "expected a Deal Test lens on every case");
+  assert.ok((html.match(/class="case-test-note case-test-note--world-standing"/g) ?? []).length === 81, "expected a World Standing Test lens on every case");
   assert.match(html, /Not directly implicated/);
   assert.match(html, />Fails</);
   assert.match(html, />Implicates</);
-  assert.ok((html.match(/class="test-score-badge test-score-badge--christianity"/g) ?? []).length === 21, "expected a Christianity rubric score on every applicable case");
-  assert.ok((html.match(/class="test-score-badge test-score-badge--patriotic"/g) ?? []).length === 80, "expected a Patriotic score on every case");
-  assert.ok((html.match(/class="test-score-badge test-score-badge--america-first"/g) ?? []).length === 80, "expected an America First score on every case");
-  assert.ok((html.match(/class="test-score-badge test-score-badge--deal"/g) ?? []).length === 80, "expected a Deal score on every case");
-  assert.ok((html.match(/class="test-score-badge test-score-badge--world-standing"/g) ?? []).length === 80, "expected a World Standing score on every case");
+  assert.ok((html.match(/class="test-score-badge test-score-badge--christianity"/g) ?? []).length === 22, "expected a Christianity rubric score on every applicable case");
+  assert.ok((html.match(/class="test-score-badge test-score-badge--patriotic"/g) ?? []).length === 81, "expected a Patriotic score on every case");
+  assert.ok((html.match(/class="test-score-badge test-score-badge--america-first"/g) ?? []).length === 81, "expected an America First score on every case");
+  assert.ok((html.match(/class="test-score-badge test-score-badge--deal"/g) ?? []).length === 81, "expected a Deal score on every case");
+  assert.ok((html.match(/class="test-score-badge test-score-badge--world-standing"/g) ?? []).length === 81, "expected a World Standing score on every case");
   assert.match(html, /test-score-popover__criteria/);
   assert.match(html, /Open the complete rubric/);
   assert.match(html, /href="\/patriotic-test\/#patriotic-scorecard"/);
@@ -347,7 +347,7 @@ test("exports the complete publication methodology", () => {
 });
 
 test("adds a share composer trigger to every evidence eBox", () => {
-  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 80, "expected every archive case file to be shareable");
+  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 81, "expected every archive case file to be shareable");
   assert.ok((rooftopsHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 18, "expected every Rooftops movement and voice card to be shareable");
   assert.ok((blindEyesHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 8, "expected every Blind Eyes profile to be shareable");
   assert.ok((antiChristHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 120, "expected every Anti Christ evidence and quotation card to be shareable");
@@ -358,7 +358,7 @@ test("adds a share composer trigger to every evidence eBox", () => {
   for (const pageHtml of renderedPages) {
     assert.match(pageHtml, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/share-banner\.png"/);
   }
-  assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 80, "expected the archive share buttons to say Share evidence");
+  assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 81, "expected the archive share buttons to say Share evidence");
   assert.doesNotMatch(html, /> Share eBox</);
   assert.match(shareEBoxSource, /tds-share-logo\.png/);
   assert.match(shareEBoxSource, /function DestinationIcon/);

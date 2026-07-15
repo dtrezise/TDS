@@ -2,13 +2,13 @@
 
 The launch research was completed on July 13, 2026 in three independent lanes and expanded on July 14 with two additional test-specific lanes:
 
-- `legal_power.json` — 19 legal, accountability, democracy, clemency, conflict, immigration, and oversight records.
+- `legal_power.json` — 20 legal, accountability, democracy, clemency, conflict, immigration, and oversight records.
 - `conduct_family.json` — 20 public-conduct, falsehood, family/business, and Republican-enabling records.
 - `faith_movements.json` — 21 Christianity, Christian-nationalism, MAGA, America First, Heritage, and Project 2025 records, with 42 linked teaching references.
 - `america_first.json` — 14 national-interest, alliance, sovereignty, war-power, trade, immigration-process, development, and diplomatic-capacity records.
 - `deal_record.json` — 10 business, subsidy, diplomacy, trade, foreign-gift, and Iran-agreement performance records.
 
-Together the files contain 84 researched records and 227 direct evidence links. The public site publishes 80 canonical case files because four business/legal entries duplicated across research lanes are suppressed in `data/cases.ts`. Faith entries remain separate when they apply a distinct moral analysis to an event covered elsewhere.
+Together the files contain 85 researched records and 231 direct evidence links. The public site publishes 81 canonical case files because four business/legal entries duplicated across research lanes are suppressed in `data/cases.ts`. Faith entries remain separate when they apply a distinct moral analysis to an event covered elsewhere.
 
 `blind-eyes/directory.json` is a separate, profile-based accountability directory. Its first edition contains eight Christian leaders, churches, networks, or political ministries, 24 claim-specific evidence records, and 16 linked Christian-teaching references. Each profile preserves its alignment level and a visible denial, response, or limiting-context field; inclusion is never based on association alone.
 

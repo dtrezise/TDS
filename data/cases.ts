@@ -138,6 +138,7 @@ const featuredIds = new Set([
   "maduro-capture-and-venezuelan-oil-control-2026",
   "qatar-gifted-presidential-jet-2025-2026",
   "iran-deal-exit-to-hormuz-crisis-2018-2026",
+  "trump-amplified-criminalize-socialism-deport-leaders-video-2026",
 ]);
 
 function mapItem(item: RawItem, lane: ResearchLane): CaseFile {
@@ -200,4 +201,4 @@ export const categories = [
   "Deals & economic power",
 ] as const;
 
-export const lastReviewed = "July 14, 2026";
+export const lastReviewed = "July 15, 2026";
