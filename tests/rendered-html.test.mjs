@@ -342,8 +342,9 @@ test("exports the complete publication methodology", () => {
   assert.match(methodologyHtml, /Source hierarchy/);
   assert.match(methodologyHtml, /Criminal verdict/);
   assert.match(methodologyHtml, /Write no broader than the proof/);
-  assert.match(methodologyHtml, /EDITORIAL_STANDARDS\.md/);
-  assert.match(methodologyHtml, /ARCHIVE_DATA_ARCHITECTURE\.md/);
+  assert.match(methodologyHtml, /Full legal and editorial standards are maintained privately/);
+  assert.match(methodologyHtml, /Data architecture and revision history are maintained privately/);
+  assert.doesNotMatch(methodologyHtml, /github\.com\/dtrezise\/TDS/i);
 });
 
 test("adds a share composer trigger to every evidence eBox", () => {
