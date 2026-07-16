@@ -64,4 +64,4 @@ Open `ios/TDSArchive/TDSArchive.xcodeproj` in Xcode and run the `TDSArchive` sch
 
 ## Deployment
 
-The workflow in `.github/workflows/pages.yml` builds the static export and deploys it to GitHub Pages on every push to `main`.
+The validated site is deployed through the repository's Sites configuration. The GitHub Pages workflow builds the static export on pushes to `main` when the repository is public or the `GITHUB_PAGES_ENABLED` repository variable is set to `true`. GitHub Pages cannot currently be enabled for this private repository under the account's present plan.

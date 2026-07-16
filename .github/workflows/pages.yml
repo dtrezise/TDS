@@ -16,6 +16,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event.repository.visibility == 'public' || vars.GITHUB_PAGES_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -42,6 +43,7 @@ jobs:
           path: out
 
   deploy:
+    if: github.event.repository.visibility == 'public' || vars.GITHUB_PAGES_ENABLED == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
