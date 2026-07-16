@@ -140,8 +140,8 @@ export function TdsArchive() {
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#evidence">Open the case files</a>
-            <Link className="button button--text" href="/patriotic-test">Apply the Patriotic Test <ArrowIcon /></Link>
-            <Link className="button button--text" href="/methodology">Read our evidence rules <ArrowIcon /></Link>
+            <Link className="button button--text" href="/patriotic-test/">Apply the Patriotic Test <ArrowIcon /></Link>
+            <Link className="button button--text" href="/methodology/">Read our evidence rules <ArrowIcon /></Link>
           </div>
         </div>
         <aside className="hero__brief">

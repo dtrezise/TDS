@@ -8,14 +8,14 @@ import { TestScorecard } from "../test-scorecard";
 export const metadata: Metadata = {
   title: "World Standing Test | TDS",
   description: "A documented test of how Trump-era conduct affected U.S. credibility, alliance leverage, institutional reach, expertise, financial influence, and capacity to lead.",
-  alternates: { canonical: "https://dtrezise.github.io/TDS/world-standing-test/" },
+  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/world-standing-test/" },
   openGraph: {
     title: "World Standing Test — Power is also the ability to lead",
     description: "Measure influence, credibility, capacity, alliances, rule-setting power, and the consequences of withdrawal.",
-    url: "https://dtrezise.github.io/TDS/world-standing-test/",
+    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/world-standing-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "World Standing Test | TDS",
     description: "Power is also the ability to lead.",
-    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
+    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
   },
 };
 
@@ -130,7 +130,7 @@ export default function WorldStandingTestPage() {
         <div>
           <p>The test does not assume that every international institution deserves continued membership, that every ally is right, or that every use of force reduces standing. Withdrawal, coercion, or force can produce gains. Those gains remain in the record.</p>
           <p>The conclusion turns on the full ledger: what capacity remained, what partners did, what competitors gained, what commitments endured, and whether the United States retained more or less ability to shape the next decision.</p>
-          <Link href="/methodology">Read the complete methods <ArrowIcon /></Link>
+          <Link href="/methodology/">Read the complete methods <ArrowIcon /></Link>
         </div>
       </section>
 

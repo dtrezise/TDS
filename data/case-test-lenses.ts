@@ -54,7 +54,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     patriotic = lens(
       "patriotic",
       "Patriotic Test",
-      "/patriotic-test",
+      "/patriotic-test/",
       "Fails",
       `The record conflicts with rule-of-law government, constitutional restraint, equal citizenship, or public accountability. ${recordPoint}`,
     );
@@ -62,7 +62,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     patriotic = lens(
       "patriotic",
       "Patriotic Test",
-      "/patriotic-test",
+      "/patriotic-test/",
       "Implicates",
       `Constitutional self-government depends on public truth, equal dignity, and loyalty to law above a leader. ${recordPoint}`,
     );
@@ -70,7 +70,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     patriotic = lens(
       "patriotic",
       "Patriotic Test",
-      "/patriotic-test",
+      "/patriotic-test/",
       "Not directly implicated",
       "This record documents serious conduct, but it does not by itself establish a constitutional, civil-liberties, or public-authority failure.",
     );
@@ -81,7 +81,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     americaFirst = lens(
       "america-first",
       "America First Test",
-      "/america-first-test",
+      "/america-first-test/",
       "Fails",
       `The claimed national benefit must be measured against costs to Americans, lawful institutions, security, and durable leverage. ${recordPoint}`,
     );
@@ -89,7 +89,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     americaFirst = lens(
       "america-first",
       "America First Test",
-      "/america-first-test",
+      "/america-first-test/",
       "Implicates",
       `This outcome bears on whether national-interest branding delivered a measurable and durable benefit to Americans. ${recordPoint}`,
     );
@@ -97,7 +97,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     americaFirst = lens(
       "america-first",
       "America First Test",
-      "/america-first-test",
+      "/america-first-test/",
       "Not directly implicated",
       "The cited record does not directly measure a foreign-policy, national-security, trade, or broad public-benefit outcome.",
     );
@@ -108,7 +108,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     deal = lens(
       "deal",
       "Deal Test",
-      "/deal-test",
+      "/deal-test/",
       "Fails",
       `The promised result, concessions, delivery, durability, public cost, and beneficiary do not support the advertised deal-making claim. ${recordPoint}`,
     );
@@ -116,7 +116,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     deal = lens(
       "deal",
       "Deal Test",
-      "/deal-test",
+      "/deal-test/",
       "Implicates",
       `This record bears on the gap between branding and measurable terms, delivery, cost, or beneficiary. ${recordPoint}`,
     );
@@ -124,7 +124,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     deal = lens(
       "deal",
       "Deal Test",
-      "/deal-test",
+      "/deal-test/",
       "Not directly implicated",
       "This evidence does not itself document a bargain, transaction, negotiated commitment, or measurable delivery claim.",
     );
@@ -135,7 +135,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     worldStanding = lens(
       "world-standing",
       "World Standing Test",
-      "/world-standing-test",
+      "/world-standing-test/",
       "Fails",
       `The record shows a cost to U.S. credibility, alliance leverage, lawful example, expertise, or the ability to shape international outcomes. ${recordPoint}`,
     );
@@ -143,7 +143,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     worldStanding = lens(
       "world-standing",
       "World Standing Test",
-      "/world-standing-test",
+      "/world-standing-test/",
       "Implicates",
       `America's influence also rests on credible commitments and the democratic example it presents abroad. ${recordPoint}`,
     );
@@ -151,7 +151,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     worldStanding = lens(
       "world-standing",
       "World Standing Test",
-      "/world-standing-test",
+      "/world-standing-test/",
       "Not directly implicated",
       "The cited record does not directly establish a consequence for alliances, diplomacy, international credibility, or U.S. global influence.",
     );

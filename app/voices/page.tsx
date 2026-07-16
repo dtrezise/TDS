@@ -6,14 +6,14 @@ import { SiteFooter, SiteHeader } from "../site-chrome";
 export const metadata: Metadata = {
   title: "Voices | TDS",
   description: "Three ways to examine the Christian public witness around Trumpism: faithful resistance, documented complicity, and conduct tested against the teaching of Jesus.",
-  alternates: { canonical: "https://dtrezise.github.io/TDS/voices/" },
+  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/voices/" },
   openGraph: {
     title: "Voices | TDS",
     description: "Hear the resistance. Examine the complicity. Test the conduct.",
-    url: "https://dtrezise.github.io/TDS/voices/",
+    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/voices/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Voices | TDS",
     description: "Hear the resistance. Examine the complicity. Test the conduct.",
-    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
+    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
   },
 };
 
@@ -32,7 +32,7 @@ const sections = [
     eyebrow: "Faithful resistance",
     title: "Rooftops",
     description: "Christian leaders, pastors, historians, writers, and movements publicly resisting Christian nationalism and offering faithful alternatives.",
-    href: "/rooftops",
+    href: "/rooftops/",
     image: "/rooftops-hero.jpg",
     imageAlt: "Rooftops — Christian voices against Christian nationalism",
     action: "Hear the voices",
@@ -41,7 +41,7 @@ const sections = [
     eyebrow: "Documented alignment",
     title: "Blind Eyes",
     description: "A sourced record of prominent Christian leaders and institutions that have excused, sanctified, or materially advanced Trump-aligned Christian nationalism.",
-    href: "/blind-eyes",
+    href: "/blind-eyes/",
     image: "/blind-eyes-hero.jpg",
     imageAlt: "Blind Eyes — pulpits that bless political power",
     action: "Examine the record",
@@ -50,7 +50,7 @@ const sections = [
     eyebrow: "Conduct against teaching",
     title: "Anti Christ",
     description: "Not a prophecy claim. A category-by-category comparison of documented conduct with commandments, the Beatitudes, the fruit of the Spirit, and Jesus’s teaching.",
-    href: "/anti-christ",
+    href: "/anti-christ/",
     image: "/anti-christ-hero.jpg",
     imageAlt: "Anti Christ — conduct against the teaching",
     action: "Apply the comparison",
@@ -97,7 +97,7 @@ export default function VoicesHubPage() {
         <p>
           Inclusion in Rooftops does not imply affiliation with this archive. Inclusion in Blind Eyes records sourceable public conduct, not a claim about a person’s private faith. Anti Christ compares conduct with teaching; it does not claim supernatural knowledge or assign a prophetic identity.
         </p>
-        <Link href="/methodology">Read the methods <span aria-hidden="true">↗</span></Link>
+        <Link href="/methodology/">Read the methods <span aria-hidden="true">↗</span></Link>
       </section>
 
       <SiteFooter tagline="Accountability is not derangement. Refusing the record is." />

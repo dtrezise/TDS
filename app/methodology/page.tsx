@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   title: "Methodology | TDS",
   description: "The TDS Evidence Archive's source hierarchy, status language, defamation safeguards, correction rules, and publication workflow.",
   alternates: {
-    canonical: "https://dtrezise.github.io/TDS/methodology/",
+    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/methodology/",
   },
   openGraph: {
     title: "Methodology — Facts first. Status always.",
     description: "Harsh argument, exact record: the archive's research and publication standards.",
-    url: "https://dtrezise.github.io/TDS/methodology/",
+    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/methodology/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Methodology | TDS",
     description: "Harsh argument. Exact record.",
-    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
+    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
   },
 };
 
@@ -147,10 +147,10 @@ export default function MethodologyPage() {
         <p>This is a curated archive, not a claim that every grievance has already been captured. TDS is an independent editorial project and is not affiliated with Trump, his organizations, or any person or institution discussed here.</p>
         <div className="methodology-note__links">
           <span>Data architecture and revision history are maintained privately with the archive.</span>
-          <Link href="/christianity-test">Christianity Test standards <ArrowIcon /></Link>
-          <Link href="/patriotic-test">Patriotic Test standards <ArrowIcon /></Link>
-          <Link href="/america-first-test">America First Test standards <ArrowIcon /></Link>
-          <Link href="/deal-test">Deal Test scorecard <ArrowIcon /></Link>
+          <Link href="/christianity-test/">Christianity Test standards <ArrowIcon /></Link>
+          <Link href="/patriotic-test/">Patriotic Test standards <ArrowIcon /></Link>
+          <Link href="/america-first-test/">America First Test standards <ArrowIcon /></Link>
+          <Link href="/deal-test/">Deal Test scorecard <ArrowIcon /></Link>
           <Link href="/#evidence">Open the evidence archive <ArrowIcon /></Link>
         </div>
       </section>

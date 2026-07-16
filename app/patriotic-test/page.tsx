@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   title: "Patriotic Test | TDS",
   description: "A documented test of loyalty to the Constitution, rule of law, free elections, a free press, equal rights, checks and balances, and public power used for public—not personal—ends.",
   alternates: {
-    canonical: "https://dtrezise.github.io/TDS/patriotic-test/",
+    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/patriotic-test/",
   },
   openGraph: {
     title: "Patriotic Test — The Constitution Above the Leader",
     description: "A constitutional test of Trump, his administration, and the allies who helped execute or excuse abuses of public power.",
-    url: "https://dtrezise.github.io/TDS/patriotic-test/",
+    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/patriotic-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Patriotic Test | TDS",
     description: "A patriot defends the Constitution and the rights of the people—not a leader's demand for personal loyalty.",
-    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
+    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
   },
 };
 
@@ -231,7 +231,7 @@ export default function PatrioticTestPage() {
           <p>“Unpatriotic,” “authoritarian,” “abuse of power,” and “loyalist” are editorial judgments here, not criminal charges. They are applied to documented conduct and explained constitutional principles—not presumed motives, party identity, family relationship, or association alone.</p>
           <p>Some records are verdicts or final rulings. Others are congressional findings, preliminary orders, direct rhetoric, acquittals, dismissals, unresolved disputes, or lawful exercises of power with grave accountability consequences. The status travels with the claim.</p>
           <p>Patriotism also protects the rights of people we oppose. The test therefore rejects both leader-worship and careless accusation: constitutional criticism must remain as exact as the record.</p>
-          <Link href="/methodology">Read the complete methodology <ArrowIcon /></Link>
+          <Link href="/methodology/">Read the complete methodology <ArrowIcon /></Link>
         </div>
       </section>
 

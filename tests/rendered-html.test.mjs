@@ -64,7 +64,7 @@ test("exports the finished evidence archive", () => {
   assert.match(html, /Deals &amp; outcomes/);
   assert.match(html, /forgiveness met Trump/);
   assert.match(html, /evidence-hero\.jpg/);
-  assert.match(html, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/share-banner\.png"/);
+  assert.match(html, /property="og:image" content="https:\/\/tds-evidence-archive-dan\.trapezy\.chatgpt\.site\/share-banner\.png"/);
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
   assert.doesNotMatch(html, /The central contradiction/);
   assert.doesNotMatch(html, /Six non-negotiable rules/);
@@ -357,7 +357,7 @@ test("adds a share composer trigger to every evidence eBox", () => {
   assert.ok((dealTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 12, "expected every Deal Test record to be shareable");
   assert.ok((worldStandingTestHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 17, "expected every World Standing Test record to be shareable");
   for (const pageHtml of renderedPages) {
-    assert.match(pageHtml, /property="og:image" content="https:\/\/dtrezise\.github\.io\/TDS\/share-banner\.png"/);
+    assert.match(pageHtml, /property="og:image" content="https:\/\/tds-evidence-archive-dan\.trapezy\.chatgpt\.site\/share-banner\.png"/);
   }
   assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 81, "expected the archive share buttons to say Share evidence");
   assert.doesNotMatch(html, /> Share eBox</);

@@ -8,14 +8,14 @@ import { TestScorecard } from "../test-scorecard";
 export const metadata: Metadata = {
   title: "America First Test | TDS",
   description: "A documented test of whether Trump administration foreign policy made Americans safer, stronger, freer, and more credible.",
-  alternates: { canonical: "https://dtrezise.github.io/TDS/america-first-test/" },
+  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/america-first-test/" },
   openGraph: {
     title: "America First Test — Power at home. Credibility abroad.",
     description: "National interest measured by results, law, alliances, sovereignty, costs, and long-term American power.",
-    url: "https://dtrezise.github.io/TDS/america-first-test/",
+    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/america-first-test/",
     type: "website",
     images: [{
-      url: "https://dtrezise.github.io/TDS/share-banner.png",
+      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "America First Test | TDS",
     description: "Power at home. Credibility abroad.",
-    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
+    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
   },
 };
 
@@ -136,7 +136,7 @@ export default function AmericaFirstTestPage() {
         <div>
           <p>“Isolationist,” “imperial,” “reckless,” and “anti-American” are editorial judgments, not legal verdicts. The archive ties them to stated principles and documented consequences, while preserving mixed results, lawful authority where it exists, uncertainty, resumption of paused measures, and competing explanations.</p>
           <p>Some outcomes remain in motion. A policy can be legal but self-defeating, unlawful but popular, coercive yet temporarily effective, or morally objectionable despite producing a concession. The record must show which claim is being made.</p>
-          <Link href="/methodology">Read the complete methodology <ArrowIcon /></Link>
+          <Link href="/methodology/">Read the complete methodology <ArrowIcon /></Link>
         </div>
       </section>
 

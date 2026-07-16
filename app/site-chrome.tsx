@@ -13,9 +13,9 @@ function publicAssetPath(src: string) {
 export function SiteHeader({ active }: { active: PrimarySection }) {
   const items: Array<{ label: string; href: string; section: PrimarySection }> = [
     { label: "Evidence", href: "/", section: "evidence" },
-    { label: "Voices", href: "/voices", section: "voices" },
-    { label: "Tests", href: "/tests", section: "tests" },
-    { label: "Methods", href: "/methodology", section: "methodology" },
+    { label: "Voices", href: "/voices/", section: "voices" },
+    { label: "Tests", href: "/tests/", section: "tests" },
+    { label: "Methods", href: "/methodology/", section: "methodology" },
   ];
 
   return (
@@ -73,7 +73,7 @@ export function SiteFooter({ tagline }: { tagline: string }) {
     <footer>
       <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">Trump Derangement Syndrome</span></div>
       <p>{tagline}</p>
-      <div className="footer-links"><Link href="/">Evidence</Link><Link href="/voices">Voices</Link><Link href="/tests">Tests</Link><Link href="/methodology">Methods</Link></div>
+      <div className="footer-links"><Link href="/">Evidence</Link><Link href="/voices/">Voices</Link><Link href="/tests/">Tests</Link><Link href="/methodology/">Methods</Link></div>
       <a className="footer-top" href="#top" aria-label="Back to top">↑</a>
     </footer>
   );
@@ -81,11 +81,11 @@ export function SiteFooter({ tagline }: { tagline: string }) {
 
 export function TestSuiteNav({ active }: { active: TestSection }) {
   const tests: Array<{ label: string; href: string; section: TestSection }> = [
-    { label: "Christianity Test", href: "/christianity-test", section: "christianity" },
-    { label: "Patriotic Test", href: "/patriotic-test", section: "patriotic" },
-    { label: "America First Test", href: "/america-first-test", section: "america-first" },
-    { label: "Deal Test", href: "/deal-test", section: "deals" },
-    { label: "World Standing Test", href: "/world-standing-test", section: "world-standing" },
+    { label: "Christianity Test", href: "/christianity-test/", section: "christianity" },
+    { label: "Patriotic Test", href: "/patriotic-test/", section: "patriotic" },
+    { label: "America First Test", href: "/america-first-test/", section: "america-first" },
+    { label: "Deal Test", href: "/deal-test/", section: "deals" },
+    { label: "World Standing Test", href: "/world-standing-test/", section: "world-standing" },
   ];
 
   return (
