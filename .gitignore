@@ -40,6 +40,9 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+/ios/**/.derived/
+*.xcuserstate
+xcuserdata/
 
 # Private editorial operations: candidate sourcing, contact routes, outreach,
 # consent records, interview notes, and unpublished media. Never deploy these.

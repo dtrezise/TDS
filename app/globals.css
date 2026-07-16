@@ -5577,3 +5577,353 @@ footer p {
     gap: 7px;
   }
 }
+
+/* Mobile reading and touch pass */
+
+@media (max-width: 820px) {
+  body {
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .site-header {
+    gap: 6px;
+    padding: 8px 4vw 0;
+  }
+
+  .wordmark {
+    min-height: 44px;
+  }
+
+  .wordmark__mark {
+    font-size: 1.2rem;
+    padding: 7px 9px 6px 7px;
+  }
+
+  .wordmark__text {
+    font-size: 0.72rem;
+    letter-spacing: 0.035em;
+  }
+
+  .site-header nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 0;
+  }
+
+  .site-header nav .primary-nav__link {
+    align-items: center;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    font-size: 0.62rem;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 3px;
+  }
+
+  .site-header nav .primary-nav__link > span {
+    padding: 12px 0 9px;
+  }
+
+  .page-masthead {
+    height: clamp(170px, 47vw, 260px);
+  }
+
+  .page-masthead--contain img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hero__copy {
+    padding: 44px 6vw 48px;
+  }
+
+  .hero__lede {
+    border-left-width: 4px;
+    font-size: 1.12rem;
+    line-height: 1.55;
+    padding-left: 18px;
+  }
+
+  .hero__actions {
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .hero__actions .button {
+    min-height: 48px;
+    padding: 12px 16px;
+    width: 100%;
+  }
+
+  .hero__actions .button--text {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .archive {
+    padding-bottom: 56px;
+    padding-top: 50px;
+  }
+
+  .archive__heading {
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+
+  .archive__heading > p {
+    font-size: 1.03rem;
+    line-height: 1.55;
+  }
+
+  .controls {
+    padding: 22px 6vw 18px;
+  }
+
+  .search-field input,
+  .sort-field select {
+    font-size: 1rem;
+    min-height: 48px;
+  }
+
+  .category-filter {
+    flex-wrap: nowrap;
+    margin-left: -6vw;
+    margin-right: -6vw;
+    overflow-x: auto;
+    padding: 0 6vw 8px;
+    scroll-padding-left: 6vw;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+
+  .category-filter button {
+    flex: 0 0 auto;
+    font-size: 0.74rem;
+    min-height: 44px;
+    padding: 10px 14px;
+    scroll-snap-align: start;
+  }
+
+  .results-line {
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+
+  .results-line button {
+    min-height: 44px;
+    padding: 8px 0 8px 14px;
+  }
+
+  .case-card {
+    display: block;
+  }
+
+  .case-card__rail {
+    border-bottom: 1px solid var(--rule);
+    border-right: 0;
+    padding: 10px 6vw 9px;
+    text-align: left;
+  }
+
+  .case-card__rail span {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    writing-mode: horizontal-tb;
+  }
+
+  .case-card__body {
+    padding: 28px 6vw 36px;
+  }
+
+  .case-card h3 {
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+    line-height: 1.08;
+    margin-top: 18px;
+  }
+
+  .case-summary,
+  .case-significance,
+  .case-test-note p,
+  .faith-note p {
+    font-size: 1.02rem;
+    line-height: 1.62;
+  }
+
+  .ebox-share-trigger {
+    min-height: 44px;
+    padding: 11px 14px;
+  }
+
+  .faith-note,
+  .case-test-note {
+    padding: 48px 17px 18px;
+  }
+
+  .faith-note a,
+  .case-test-note__heading a,
+  .case-test-note__heading span {
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
+
+  .evidence-drawer summary {
+    min-height: 52px;
+    padding: 14px 0;
+  }
+
+  .source-list a {
+    min-height: 60px;
+    padding: 16px;
+  }
+
+  .test-suite-nav {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+
+  .test-suite-nav a {
+    flex: 0 0 auto;
+    min-height: 48px;
+    padding: 0 18px;
+    scroll-snap-align: start;
+  }
+
+  .test-hub-card__body,
+  .hub-card__body {
+    padding: 24px 6vw 30px;
+  }
+
+  .test-hub-card__body p,
+  .hub-card__body > p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .test-hub-card__body a,
+  .hub-card__body a,
+  .footer-links a {
+    align-items: center;
+    display: inline-flex;
+    min-height: 44px;
+  }
+
+  .framework-intro,
+  .methodology-intro,
+  .patriotic-intro,
+  .hub-boundary,
+  .voices-intro,
+  .blind-intro,
+  .anti-definition {
+    gap: 24px;
+    padding-bottom: 52px;
+    padding-top: 52px;
+  }
+
+  .framework-intro h1,
+  .methodology-intro h1,
+  .patriotic-intro h1,
+  .hub-boundary h2 {
+    font-size: clamp(2.25rem, 10vw, 3.35rem);
+    line-height: 1;
+  }
+
+  .framework-intro p,
+  .methodology-intro p,
+  .patriotic-intro p,
+  .hub-boundary p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  footer {
+    gap: 14px 20px;
+    min-height: 0;
+    padding: 28px 6vw;
+  }
+
+  footer p {
+    font-size: 0.96rem;
+    margin: 0;
+  }
+
+  .footer-links {
+    gap: 6px 18px;
+  }
+
+  .footer-top {
+    height: 44px;
+    width: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  .scoreboard div {
+    gap: 7px;
+    min-height: 52px;
+    padding: 8px 4vw;
+  }
+
+  .scoreboard strong {
+    font-size: 1.22rem;
+  }
+
+  .scoreboard span {
+    font-size: 0.58rem;
+    line-height: 1.25;
+  }
+
+  .section-label,
+  .eyebrow,
+  .search-field span,
+  .sort-field span,
+  .results-line span,
+  .case-card__meta > span:last-child,
+  .faith-note__label {
+    font-size: 0.7rem;
+  }
+
+  .rooftop-hero h1,
+  .blind-hero h1 {
+    font-size: clamp(3rem, 13vw, 4.2rem);
+  }
+
+  .anti-hero h1 {
+    font-size: clamp(3.35rem, 15vw, 4.7rem);
+  }
+
+  .rooftop-scripture blockquote,
+  .blind-scripture blockquote,
+  .anti-scripture blockquote {
+    font-size: clamp(1.55rem, 7.4vw, 2.2rem);
+  }
+
+  .criterion-point-scale article,
+  .scorecard-scale article {
+    padding: 18px;
+  }
+
+  .test-score-badge__link {
+    position: relative;
+  }
+
+  .test-score-badge__link::after {
+    content: "";
+    inset: -10px -8px;
+    position: absolute;
+  }
+
+  .test-score-popover {
+    max-height: 70vh;
+    overflow: auto;
+  }
+
+  .ebox-share-dialog__close,
+  .ebox-share-destinations button,
+  .ebox-share-actions button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

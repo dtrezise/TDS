@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0678A979F28A11C420AC0144 /* VoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51951BCD88D6092CAF8F47 /* VoicesView.swift */; };
+		0D9F0B5B8C5DA294B5992529 /* ArchiveModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196FE2F10AEC431529EB063 /* ArchiveModelTests.swift */; };
+		133132EDDD8CB9C36FBAC7DF /* EvidenceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E65404620006F82564DF4 /* EvidenceListView.swift */; };
+		263760C8BD98BB26706F7A12 /* TDSArchiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DE3600359E019EC20D8D5E /* TDSArchiveApp.swift */; };
+		32F82AC7FA8C4117FDDC4E35 /* archive.json in Resources */ = {isa = PBXBuildFile; fileRef = 42367C6A54CD4B918CD68711 /* archive.json */; };
+		3DE0F899D854168806BDC305 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2F42D003B1569CA166B51 /* RootTabView.swift */; };
+		4BA8CB74AA913AD6A9CC97A0 /* MethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A48218F6FB64A16C58F06 /* MethodsView.swift */; };
+		52C5B0599B8F570067A2663C /* ArchiveStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD898D2504A41F5DCB828D7 /* ArchiveStore.swift */; };
+		535C913E507EDAC1A574614B /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E365B7A18E3F55D87172098 /* TestsView.swift */; };
+		5DF85E848926170E13658771 /* CaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4424CA097ED6F65758EF3C /* CaseDetailView.swift */; };
+		8EC28648F0ADF1B58F604056 /* ArchiveModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F33A04E2C1DF3850441435 /* ArchiveModels.swift */; };
+		DCF05B9081C33129D944AE38 /* TDSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB14A61D5ADD407CCC0077F6 /* TDSTheme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBFDFB66D47FB121F95E3D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AC3466E4ADF4F1410D660CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9A99B9EEAAFF726CA7159B;
+			remoteInfo = TDSArchive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A4424CA097ED6F65758EF3C /* CaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseDetailView.swift; sourceTree = "<group>"; };
+		1196FE2F10AEC431529EB063 /* ArchiveModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveModelTests.swift; sourceTree = "<group>"; };
+		2DDFF249357A8D2E4C41B038 /* TDSArchiveTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TDSArchiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32ED8BC8EFCE2BAC9D5EEE02 /* TDSArchive.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TDSArchive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A51951BCD88D6092CAF8F47 /* VoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicesView.swift; sourceTree = "<group>"; };
+		42367C6A54CD4B918CD68711 /* archive.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = archive.json; sourceTree = "<group>"; };
+		55DE3600359E019EC20D8D5E /* TDSArchiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSArchiveApp.swift; sourceTree = "<group>"; };
+		5E365B7A18E3F55D87172098 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
+		609A48218F6FB64A16C58F06 /* MethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsView.swift; sourceTree = "<group>"; };
+		6FD898D2504A41F5DCB828D7 /* ArchiveStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveStore.swift; sourceTree = "<group>"; };
+		8CE2F42D003B1569CA166B51 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		91F33A04E2C1DF3850441435 /* ArchiveModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveModels.swift; sourceTree = "<group>"; };
+		DA9E65404620006F82564DF4 /* EvidenceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvidenceListView.swift; sourceTree = "<group>"; };
+		FB14A61D5ADD407CCC0077F6 /* TDSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDSTheme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		070EDC058508F7ABF30CEFFF /* TDSArchiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				1196FE2F10AEC431529EB063 /* ArchiveModelTests.swift */,
+			);
+			path = TDSArchiveTests;
+			sourceTree = "<group>";
+		};
+		08CE29174F342BDF9FE0197C = {
+			isa = PBXGroup;
+			children = (
+				70D9E5621590D62B29F95DF8 /* Resources */,
+				EC5DCE0D26B2408A451BF4DD /* TDSArchive */,
+				070EDC058508F7ABF30CEFFF /* TDSArchiveTests */,
+				7652936431088CB62E266116 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C14E6325298676F5F402D90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A4424CA097ED6F65758EF3C /* CaseDetailView.swift */,
+				DA9E65404620006F82564DF4 /* EvidenceListView.swift */,
+				609A48218F6FB64A16C58F06 /* MethodsView.swift */,
+				8CE2F42D003B1569CA166B51 /* RootTabView.swift */,
+				5E365B7A18E3F55D87172098 /* TestsView.swift */,
+				3A51951BCD88D6092CAF8F47 /* VoicesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70D9E5621590D62B29F95DF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42367C6A54CD4B918CD68711 /* archive.json */,
+			);
+			name = Resources;
+			path = TDSArchive/Resources;
+			sourceTree = "<group>";
+		};
+		7652936431088CB62E266116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32ED8BC8EFCE2BAC9D5EEE02 /* TDSArchive.app */,
+				2DDFF249357A8D2E4C41B038 /* TDSArchiveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF2E3B69EFBEF1AA14CACB14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91F33A04E2C1DF3850441435 /* ArchiveModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC5DCE0D26B2408A451BF4DD /* TDSArchive */ = {
+			isa = PBXGroup;
+			children = (
+				55DE3600359E019EC20D8D5E /* TDSArchiveApp.swift */,
+				F488BB57D81DCB3FE43E5986 /* Data */,
+				FAA0FDF9AAC1E52B03052205 /* Design */,
+				DF2E3B69EFBEF1AA14CACB14 /* Models */,
+				0C14E6325298676F5F402D90 /* Views */,
+			);
+			path = TDSArchive;
+			sourceTree = "<group>";
+		};
+		F488BB57D81DCB3FE43E5986 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6FD898D2504A41F5DCB828D7 /* ArchiveStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FAA0FDF9AAC1E52B03052205 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				FB14A61D5ADD407CCC0077F6 /* TDSTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0A51ADDBE46391471A3F64D /* TDSArchiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 907A8FD456118302F3D4908C /* Build configuration list for PBXNativeTarget "TDSArchiveTests" */;
+			buildPhases = (
+				30755260EB622578B4004000 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E6F37C6348AF64C8AE4806E /* PBXTargetDependency */,
+			);
+			name = TDSArchiveTests;
+			packageProductDependencies = (
+			);
+			productName = TDSArchiveTests;
+			productReference = 2DDFF249357A8D2E4C41B038 /* TDSArchiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC9A99B9EEAAFF726CA7159B /* TDSArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C642B40CB7DC857AF3D6358 /* Build configuration list for PBXNativeTarget "TDSArchive" */;
+			buildPhases = (
+				35A0585FB3607BBED5BEA178 /* Sources */,
+				54267C5C67000D1528A9E047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDSArchive;
+			packageProductDependencies = (
+			);
+			productName = TDSArchive;
+			productReference = 32ED8BC8EFCE2BAC9D5EEE02 /* TDSArchive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AC3466E4ADF4F1410D660CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B12A15A8D8AD88D22A98DA90 /* Build configuration list for PBXProject "TDSArchive" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 08CE29174F342BDF9FE0197C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7652936431088CB62E266116 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC9A99B9EEAAFF726CA7159B /* TDSArchive */,
+				B0A51ADDBE46391471A3F64D /* TDSArchiveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54267C5C67000D1528A9E047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F82AC7FA8C4117FDDC4E35 /* archive.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30755260EB622578B4004000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9F0B5B8C5DA294B5992529 /* ArchiveModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35A0585FB3607BBED5BEA178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC28648F0ADF1B58F604056 /* ArchiveModels.swift in Sources */,
+				52C5B0599B8F570067A2663C /* ArchiveStore.swift in Sources */,
+				5DF85E848926170E13658771 /* CaseDetailView.swift in Sources */,
+				133132EDDD8CB9C36FBAC7DF /* EvidenceListView.swift in Sources */,
+				4BA8CB74AA913AD6A9CC97A0 /* MethodsView.swift in Sources */,
+				3DE0F899D854168806BDC305 /* RootTabView.swift in Sources */,
+				263760C8BD98BB26706F7A12 /* TDSArchiveApp.swift in Sources */,
+				DCF05B9081C33129D944AE38 /* TDSTheme.swift in Sources */,
+				535C913E507EDAC1A574614B /* TestsView.swift in Sources */,
+				0678A979F28A11C420AC0144 /* VoicesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E6F37C6348AF64C8AE4806E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9A99B9EEAAFF726CA7159B /* TDSArchive */;
+			targetProxy = DBFDFB66D47FB121F95E3D1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6113C50A045835401DC26CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.tdsevidence.archive;
+				PRODUCT_MODULE_NAME = TDSArchive;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A0EB73576F7FDED133F6471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "TDS Evidence";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9B497249FD76727025CFFEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.tdsevidence.archive.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDSArchive.app/TDSArchive";
+			};
+			name = Debug;
+		};
+		A90FDEBC10C708ECDA9EA7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.tdsevidence.archive;
+				PRODUCT_MODULE_NAME = TDSArchive;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFEB4D167C53365555F2A87F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "TDS Evidence";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F87CCCA791CD979E10C45A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.tdsevidence.archive.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDSArchive.app/TDSArchive";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C642B40CB7DC857AF3D6358 /* Build configuration list for PBXNativeTarget "TDSArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6113C50A045835401DC26CB2 /* Debug */,
+				A90FDEBC10C708ECDA9EA7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		907A8FD456118302F3D4908C /* Build configuration list for PBXNativeTarget "TDSArchiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B497249FD76727025CFFEC6 /* Debug */,
+				F87CCCA791CD979E10C45A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B12A15A8D8AD88D22A98DA90 /* Build configuration list for PBXProject "TDSArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0EB73576F7FDED133F6471 /* Debug */,
+				CFEB4D167C53365555F2A87F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AC3466E4ADF4F1410D660CE /* Project object */;
+}
