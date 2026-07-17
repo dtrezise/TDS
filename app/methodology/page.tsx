@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   title: "Methodology | TDS",
   description: "The TDS Evidence Archive's source hierarchy, status language, defamation safeguards, correction rules, and publication workflow.",
   alternates: {
-    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/methodology/",
+    canonical: "https://dtrezise.github.io/TDS/methodology/",
   },
   openGraph: {
     title: "Methodology — Facts first. Status always.",
     description: "Harsh argument, exact record: the archive's research and publication standards.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/methodology/",
+    url: "https://dtrezise.github.io/TDS/methodology/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Methodology | TDS",
     description: "Harsh argument. Exact record.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

@@ -201,4 +201,4 @@ export const categories = [
   "Deals & economic power",
 ] as const;
 
-export const lastReviewed = "July 15, 2026";
+export const lastReviewed = "July 17, 2026";

@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   title: "Patriotic Test | TDS",
   description: "A documented test of loyalty to the Constitution, rule of law, free elections, a free press, equal rights, checks and balances, and public power used for public—not personal—ends.",
   alternates: {
-    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/patriotic-test/",
+    canonical: "https://dtrezise.github.io/TDS/patriotic-test/",
   },
   openGraph: {
     title: "Patriotic Test — The Constitution Above the Leader",
     description: "A constitutional test of Trump, his administration, and the allies who helped execute or excuse abuses of public power.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/patriotic-test/",
+    url: "https://dtrezise.github.io/TDS/patriotic-test/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Patriotic Test | TDS",
     description: "A patriot defends the Constitution and the rights of the people—not a leader's demand for personal loyalty.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

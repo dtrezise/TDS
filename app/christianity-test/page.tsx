@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   title: "Christianity Test | TDS",
   description: "How the TDS Evidence Archive compares documented public conduct with the commands, character, and teachings of Jesus—without claiming to judge anyone's soul.",
   alternates: {
-    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/christianity-test/",
+    canonical: "https://dtrezise.github.io/TDS/christianity-test/",
   },
   openGraph: {
     title: "Christianity Test — Test the witness by the fruit",
     description: "The archive's framework for comparing public conduct with Christian teaching.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/christianity-test/",
+    url: "https://dtrezise.github.io/TDS/christianity-test/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Christianity Test | TDS",
     description: "Test the public witness by the public record and the cited teaching.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

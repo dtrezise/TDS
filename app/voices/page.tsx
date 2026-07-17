@@ -6,14 +6,14 @@ import { SiteFooter, SiteHeader } from "../site-chrome";
 export const metadata: Metadata = {
   title: "Voices | TDS",
   description: "Three ways to examine the Christian public witness around Trumpism: faithful resistance, documented complicity, and conduct tested against the teaching of Jesus.",
-  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/voices/" },
+  alternates: { canonical: "https://dtrezise.github.io/TDS/voices/" },
   openGraph: {
     title: "Voices | TDS",
     description: "Hear the resistance. Examine the complicity. Test the conduct.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/voices/",
+    url: "https://dtrezise.github.io/TDS/voices/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Voices | TDS",
     description: "Hear the resistance. Examine the complicity. Test the conduct.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

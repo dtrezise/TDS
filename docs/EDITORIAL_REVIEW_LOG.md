@@ -15,6 +15,12 @@ This internal log preserves claims that were corrected, narrowed, excluded, or h
 | “The United States stole Venezuelan oil.” | Overstates the cited legal and factual record. The administration asserted control over sales and revenue while its order described the funds as Venezuelan sovereign property. | Publish the documented capture, force, custody, sales control, and sovereign-property language without converting the dispute into an adjudicated theft finding. | Adjusted and published in narrower form. |
 | “Trump destroyed the dollar / ended the petrodollar.” | The archive lacks a defensible single-cause record; reserve share, exchange rates, Treasury markets, oil invoicing, sanctions, and fiscal policy have multiple drivers. | Hold until a sourced, time-bounded causal claim can be stated and reviewed. | Open — research required before publication. |
 
+## 2026-07-17 — Trump-IRS settlement case review
+
+| Flagged shorthand or claim | Editorial risk | Publication treatment | Status |
+|---|---|---|---|
+| “Trump's IRS deal was corrupt” or “Trump committed fraud.” | The July 13 order found improper purpose and bad faith, imposed sanctions, and made disciplinary referrals; it did not enter a criminal conviction or adjudicate every underlying tax-leak allegation. | Publish the court's exact findings, the bar referrals, the prohibition on citing the purported settlement, the administration's defense, and the unresolved implementation and appeal questions. | Narrowed and published with status review required. |
+
 ## Operating rule
 
 When a proposed claim outruns the record, editors should take one of three actions:

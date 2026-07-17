@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   title: "Anti Christ | TDS",
   description: "A sourced comparison of Donald Trump's documented conduct with the teachings and example of Jesus Christ—organized by lies, dishonest gain, sexual entitlement, cruelty, vengeance, pride, racism, and domination.",
   alternates: {
-    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/anti-christ/",
+    canonical: "https://dtrezise.github.io/TDS/anti-christ/",
   },
   openGraph: {
     title: "Anti Christ — The conduct against the teaching",
     description: "Eight moral categories. Forty headline examples. Every status and source visible.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/anti-christ/",
+    url: "https://dtrezise.github.io/TDS/anti-christ/",
     type: "website",
     images: [
       {
-        url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+        url: "https://dtrezise.github.io/TDS/share-banner.png",
         width: 1731,
         height: 909,
         alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anti Christ | TDS",
     description: "Documented conduct tested against the words and example of Christ.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -61,7 +61,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   name: "Anti Christ",
   description: metadata.description,
-  url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/anti-christ/",
+  url: "https://dtrezise.github.io/TDS/anti-christ/",
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: antiChristStats.uniqueCases,
@@ -69,7 +69,7 @@ const jsonLd = {
       "@type": "ListItem",
       position: index + 1,
       name: category.label,
-      url: `https://tds-evidence-archive-dan.trapezy.chatgpt.site/anti-christ/#${category.id}`,
+      url: `https://dtrezise.github.io/TDS/anti-christ/#${category.id}`,
     })),
   },
 };
@@ -285,7 +285,7 @@ export default function AntiChristPage() {
           <p>Share the documented words, the actual legal status, and the teaching together. The contradiction is strongest when none of the context is hidden.</p>
         </div>
         <ShareTools
-          canonicalUrl="https://tds-evidence-archive-dan.trapezy.chatgpt.site/anti-christ/"
+          canonicalUrl="https://dtrezise.github.io/TDS/anti-christ/"
           shareTitle="Anti Christ — The conduct against the teaching"
           shareText="A sourced comparison of Donald Trump's documented conduct with the teachings and example of Jesus Christ."
           label="Share the Anti Christ evidence page"

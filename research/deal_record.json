@@ -350,6 +350,43 @@
       "tags": ["Iran", "JCPOA", "Strait of Hormuz", "oil", "war", "nuclear deal"],
       "confidence": "high",
       "editorial_note": "Do not say JCPOA exit alone caused every later event. Iran, Israel, regional armed groups, two U.S. administrations, and other states made consequential choices. The Deal Test compares the promised replacement with the resulting position."
+    },
+    {
+      "id": "trump-irs-settlement-improper-purpose-2026",
+      "title": "A federal judge found Trump's IRS settlement case was brought for an improper purpose and sanctioned counsel",
+      "date_start": "2026-01-01",
+      "date_end": "2026-07-13",
+      "people": ["Donald Trump", "Donald Trump Jr.", "Eric Trump", "Todd Blanche", "Stanley Woodward"],
+      "category": "deals-economic-power",
+      "status_label": "District-court finding; settlement terms barred from future official use; disciplinary referrals pending",
+      "summary": "After Trump, his adult sons, and the Trump Organization sued the IRS and Treasury over leaked tax records, the parties announced a May settlement that included broad tax protections and a proposed $1.776 billion Anti-Weaponization Fund. On July 13, 2026, Judge Kathleen Williams found that the plaintiffs acted in bad faith and that the case was brought for an improper purpose, barred the parties from citing the purported settlement in official proceedings, imposed non-monetary sanctions, and referred lawyers and senior Justice Department officials to bar authorities. The order did not reopen the case or adjudicate the underlying tax-leak allegations.",
+      "why_it_matters": "The record presents a narrow, adjudicated accountability question: whether presidential control over the defendant agencies and the settlement's protections made the litigation an improper vehicle for conferring legal legitimacy on benefits to the president, his family, and allies. The court's findings are not a criminal conviction and do not resolve every underlying tax or leak claim.",
+      "evidence": [
+        {
+          "label": "July 13, 2026 district-court order, Document 106",
+          "url": "https://www.courtlistener.com/docket/72207870/106/trump-v-internal-revenue-service/",
+          "publisher": "U.S. District Court for the Southern District of Florida via CourtListener",
+          "source_type": "court-order",
+          "accessed": "2026-07-17"
+        },
+        {
+          "label": "Reuters report on the order, sanctions, and disciplinary referrals",
+          "url": "https://www.investing.com/news/economy-news/us-judge-voids-trumps-settlement-with-irs-4788983",
+          "publisher": "Reuters",
+          "source_type": "news-reporting",
+          "accessed": "2026-07-17"
+        },
+        {
+          "label": "Senate Finance Committee leaders' July 16 request for implementation answers",
+          "url": "https://www.warren.senate.gov/newsroom/press-releases/after-federal-judge-calls-trump-immunity-order-illegal-warren-and-wyden-press-treasury-irs-to-cease-implementation/",
+          "publisher": "U.S. Senate",
+          "source_type": "senate-release",
+          "accessed": "2026-07-17"
+        }
+      ],
+      "tags": ["IRS", "Treasury", "settlement", "tax audits", "government ethics", "Rule 11", "Anti-Weaponization Fund"],
+      "confidence": "high",
+      "editorial_note": "Use the court's precise findings: improper purpose, bad faith, sanctions, and referrals for possible discipline. Do not call the conduct criminal, do not say the judge found a bribe or corruption as a legal conclusion, and preserve the administration's defense and the unresolved underlying leak allegations. Status must be rechecked for appeals and disciplinary action."
     }
   ]
 }

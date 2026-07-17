@@ -8,14 +8,14 @@ import { TestScorecard } from "../test-scorecard";
 export const metadata: Metadata = {
   title: "Deal Test | TDS",
   description: "A documented scorecard for Donald Trump's business, subsidy, diplomatic, trade, and foreign-government deals.",
-  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/deal-test/" },
+  alternates: { canonical: "https://dtrezise.github.io/TDS/deal-test/" },
   openGraph: {
     title: "The Deal Test — Promises. Leverage. Results.",
     description: "Score the promise, leverage, concessions, verification, delivery, durability, public cost, and beneficiary.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/deal-test/",
+    url: "https://dtrezise.github.io/TDS/deal-test/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Deal Test | TDS",
     description: "Promises. Leverage. Results.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

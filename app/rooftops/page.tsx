@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   title: "Shout It from the Rooftops | TDS",
   description: "Christian leaders, writers, pastors, researchers, and movements speaking out against Christian nationalism—with direct ways to follow, connect, organize, and share.",
   alternates: {
-    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/rooftops/",
+    canonical: "https://dtrezise.github.io/TDS/rooftops/",
   },
   openGraph: {
     title: "Shout It from the Rooftops — Christian voices resisting Christian nationalism",
     description: "Follow the people naming Christian nationalism, resisting it, and building faithful alternatives.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/rooftops/",
+    url: "https://dtrezise.github.io/TDS/rooftops/",
     type: "website",
     images: [
       {
-        url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+        url: "https://dtrezise.github.io/TDS/share-banner.png",
         width: 1731,
         height: 909,
         alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shout It from the Rooftops",
     description: "Christian voices resisting Christian nationalism—and ways to join them.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -46,7 +46,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   name: "Shout It from the Rooftops",
   description: metadata.description,
-  url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/rooftops/",
+  url: "https://dtrezise.github.io/TDS/rooftops/",
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: directory.voices.length,

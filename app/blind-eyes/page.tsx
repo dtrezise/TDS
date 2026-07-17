@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   title: "Blind Eyes | TDS",
   description: "An evidence-led directory of Christian leaders, churches, and political ministries that advance, normalize, or religiously legitimize Christian nationalism and Trump-centered partisan Christianity.",
   alternates: {
-    canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/blind-eyes/",
+    canonical: "https://dtrezise.github.io/TDS/blind-eyes/",
   },
   openGraph: {
     title: "Blind Eyes — The pulpits that bless political power",
     description: "Documented words, movement ties, limiting context, and Christian teaching comparisons.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/blind-eyes/",
+    url: "https://dtrezise.github.io/TDS/blind-eyes/",
     type: "website",
     images: [
       {
-        url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+        url: "https://dtrezise.github.io/TDS/share-banner.png",
         width: 1731,
         height: 909,
         alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blind Eyes | TDS",
     description: "A sourced index of the pulpits and ministries that bless Christian nationalism and Trump-centered power.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
@@ -44,7 +44,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   name: "Blind Eyes",
   description: metadata.description,
-  url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/blind-eyes/",
+  url: "https://dtrezise.github.io/TDS/blind-eyes/",
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: directory.profiles.length,
@@ -52,7 +52,7 @@ const jsonLd = {
       "@type": "ListItem",
       position: index + 1,
       name: profile.name,
-      url: `https://tds-evidence-archive-dan.trapezy.chatgpt.site/blind-eyes/#${profile.id}`,
+      url: `https://dtrezise.github.io/TDS/blind-eyes/#${profile.id}`,
     })),
   },
 };
@@ -218,7 +218,7 @@ export default function BlindEyesPage() {
           <p>Share the evidence, including the denials and limiting facts. The argument is strongest when readers can inspect exactly what was said and decide whether the public witness resembles the teaching.</p>
         </div>
         <ShareTools
-          canonicalUrl="https://tds-evidence-archive-dan.trapezy.chatgpt.site/blind-eyes/"
+          canonicalUrl="https://dtrezise.github.io/TDS/blind-eyes/"
           shareTitle="Blind Eyes — The pulpits that bless political power"
           shareText="A sourced directory of Christian leaders, churches, and political ministries advancing or legitimizing Christian nationalism and Trump-centered partisan Christianity."
           label="Share the Blind Eyes directory"

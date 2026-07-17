@@ -6,14 +6,14 @@ import { SiteFooter, SiteHeader } from "../site-chrome";
 export const metadata: Metadata = {
   title: "Tests | TDS",
   description: "Apply five explicit standards to the record: Christianity, patriotism, America First, deal performance, and world standing.",
-  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/tests/" },
+  alternates: { canonical: "https://dtrezise.github.io/TDS/tests/" },
   openGraph: {
     title: "The Tests | TDS",
     description: "Five standards. One documented record. Examine the contradictions.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/tests/",
+    url: "https://dtrezise.github.io/TDS/tests/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Tests | TDS",
     description: "Five standards. One documented record. Examine the contradictions.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 

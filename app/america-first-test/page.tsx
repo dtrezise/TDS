@@ -8,14 +8,14 @@ import { TestScorecard } from "../test-scorecard";
 export const metadata: Metadata = {
   title: "America First Test | TDS",
   description: "A documented test of whether Trump administration foreign policy made Americans safer, stronger, freer, and more credible.",
-  alternates: { canonical: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/america-first-test/" },
+  alternates: { canonical: "https://dtrezise.github.io/TDS/america-first-test/" },
   openGraph: {
     title: "America First Test — Power at home. Credibility abroad.",
     description: "National interest measured by results, law, alliances, sovereignty, costs, and long-term American power.",
-    url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/america-first-test/",
+    url: "https://dtrezise.github.io/TDS/america-first-test/",
     type: "website",
     images: [{
-      url: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png",
+      url: "https://dtrezise.github.io/TDS/share-banner.png",
       width: 1731,
       height: 909,
       alt: "TDS — Trump Derangement Syndrome. The Evidence Archive.",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "America First Test | TDS",
     description: "Power at home. Credibility abroad.",
-    images: ["https://tds-evidence-archive-dan.trapezy.chatgpt.site/share-banner.png"],
+    images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
 };
 
