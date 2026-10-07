@@ -14,10 +14,10 @@
       "why_it_matters": "The episode is an early public test of Trump-style leverage: escalate, sue for an enormous sum, and expect the opponent or court to produce the business outcome. The legal win was real but commercially hollow, and the court record placed substantial responsibility on the league's own choices.",
       "evidence": [
         {
-          "label": "Federal Judicial Center history of the USFL case and nominal award",
-          "url": "https://www.fjc.gov/history/spotlight-judicial-history/nfl-television-broadcasting",
-          "publisher": "Federal Judicial Center",
-          "source_type": "government-history",
+          "label": "Second Circuit opinion recounting the USFL case, verdict, and nominal award",
+          "url": "https://law.justia.com/cases/federal/appellate-courts/F2/842/1335/295681/",
+          "publisher": "U.S. Court of Appeals for the Second Circuit via Justia",
+          "source_type": "court-opinion-mirror",
           "accessed": "2026-07-14"
         },
         {
@@ -334,7 +334,7 @@
         },
         {
           "label": "UN call for restraint describing the June memorandum as fragile amid renewed confrontation",
-          "url": "https://dppa.un.org/en/news/un-calls-for-maximum-restraint-to-preserve-ceasefire-between-the-united-states-and-iran",
+          "url": "https://dppa.un.org/en/speeches-and-statements/un-calls-for-maximum-restraint-to-preserve-ceasefire-between-the",
           "publisher": "United Nations Department of Political and Peacebuilding Affairs",
           "source_type": "official-statement",
           "accessed": "2026-07-14"

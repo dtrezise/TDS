@@ -115,7 +115,7 @@ export default function AmericaFirstTestPage() {
         <header>
           <p className="section-label">The record</p>
           <h2 id="america-record-title">National interest is a conclusion to prove—not a label to paste on power.</h2>
-          <p>Fourteen new case files examine institutional withdrawal, allied coercion, war powers, lethal force, Ukraine, tariffs, due process, and foreign-policy capacity.</p>
+          <p>The archive now examines institutional withdrawal, allied and territorial coercion, war powers, authoritarian courtship, treaty and trade choices, lethal force, Ukraine, tariffs, due process, and foreign-policy capacity across a much larger evidence set.</p>
         </header>
 
         {groups.map((group) => (

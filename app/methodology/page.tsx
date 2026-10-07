@@ -55,6 +55,15 @@ const statusRows = [
   ["Editorial judgment", "This archive argues…", "Disclose the facts supporting the conclusion."],
 ] as const;
 
+const scopeDomains = [
+  ["Accountability", "Criminal cases, civil liability, official findings, investigations, settlements, pardons, appeals, dismissals, and corrections—each at its exact status."],
+  ["Democratic power", "Elections, courts, Congress, oversight, prosecutors, civil service, free press, protest, military deployment, and other checks on executive authority."],
+  ["Public trust", "Documented falsehoods, retaliation, reckless rhetoric, self-glorification, administrative failure, and conduct relevant to presidential character even when not unlawful."],
+  ["Conflicts and private benefit", "Specifically evidenced overlap among public office, campaigns, family businesses, foreign interests, financial products, contracts, appointments, and official information."],
+  ["America and the world", "Sovereignty threats, alliances, treaties, wars, institutional withdrawal, authoritarian courtship, diplomacy, human rights, and measurable effects on U.S. influence."],
+  ["Promises and outcomes", "Deals, tariffs, subsidies, construction, public projects, and branded promises tested against cost, beneficiary, delivery, durability, and unintended consequence."],
+] as const;
+
 function ArrowIcon() {
   return <span aria-hidden="true">↗</span>;
 }
@@ -87,6 +96,19 @@ export default function MethodologyPage() {
             <li key={rule[0]}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{rule[0]}</h3><p>{rule[1]}</p></div></li>
           ))}
         </ol>
+      </section>
+
+      <section className="source-hierarchy" aria-labelledby="scope-title">
+        <div>
+          <p className="section-label">What qualifies for review</p>
+          <h2 id="scope-title">Broad scope. Narrow claims.</h2>
+          <p>A case file need not allege a crime. It must document a specific act, explain the public-interest standard it implicates, and preserve status and countercontext. Inclusion means worthy of examination—not proved illegal, corrupt, disloyal, or mentally unwell.</p>
+        </div>
+        <div className="source-hierarchy__grid">
+          {scopeDomains.map((domain, index) => (
+            <article key={domain[0]}><span>{String(index + 1).padStart(2, "0")}</span><h3>{domain[0]}</h3><p>{domain[1]}</p></article>
+          ))}
+        </div>
       </section>
 
       <section className="source-hierarchy" aria-labelledby="source-hierarchy-title">
@@ -156,7 +178,7 @@ export default function MethodologyPage() {
       <section className="methodology-note">
         <div><strong>Last evidence review</strong><span>{lastReviewed}</span></div>
         <div><strong>Archive system updated</strong><span>{archiveUpdated}</span></div>
-        <p>This is a curated archive, not a claim that every grievance has already been captured. TDS is an independent editorial project and is not affiliated with Trump, his organizations, or any person or institution discussed here.</p>
+        <p>This is a curated and expanding archive, not a claim that every grievance has already been captured. Policy disagreement alone is not enough: every case requires a specific documented act, material public significance, reliable sources, current status, and a defensible claim boundary. TDS is independent and is not affiliated with Trump, his organizations, or any person or institution discussed here.</p>
         <div className="methodology-note__links">
           <span>Each permanent case file publishes its latest source-check date. Revision history and unpublished review material are retained outside the public artifact.</span>
           <Link href="/christianity-test/">Christianity Test standards <ArrowIcon /></Link>

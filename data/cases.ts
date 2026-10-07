@@ -1,6 +1,7 @@
 import americaResearch from "@/research/america_first.json";
 import conductResearch from "@/research/conduct_family.json";
 import dealResearch from "@/research/deal_record.json";
+import expansionResearch from "@/research/scope_expansion.json";
 import faithResearch from "@/research/faith_movements.json";
 import legalResearch from "@/research/legal_power.json";
 
@@ -75,7 +76,7 @@ type RawItem = {
 };
 
 type ResearchBundle = { items: RawItem[] };
-type ResearchLane = "legal" | "conduct" | "faith" | "america" | "deal";
+type ResearchLane = "legal" | "conduct" | "faith" | "america" | "deal" | "expansion";
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -114,6 +115,15 @@ function categoryFor(item: RawItem, lane: ResearchLane): CaseFile["category"] {
   if (lane === "america") return "America & the world";
   if (lane === "deal") return "Deals & economic power";
 
+  if (lane === "expansion") {
+    if (/law-accountability/.test(category)) return "Law & accountability";
+    if (/democracy-and-power/.test(category)) return "Democracy & power";
+    if (/truth-and-public-conduct/.test(category)) return "Truth & public conduct";
+    if (/family-business/.test(category)) return "Family & business";
+    if (/deals-economic-power/.test(category)) return "Deals & economic power";
+    return "America & the world";
+  }
+
   if (lane === "faith") {
     if (/movement|heritage|project 2025|america.first|nationalism|religious.alliance/.test(text)) return "MAGA & movement";
     return "Christianity & character";
@@ -144,6 +154,14 @@ const featuredIds = new Set([
   "qatar-gifted-presidential-jet-2025-2026",
   "iran-deal-exit-to-hormuz-crisis-2018-2026",
   "trump-amplified-criminalize-socialism-deport-leaders-video-2026",
+  "la-san-diego-iran-rally-language-2026",
+  "midterm-mail-ballot-order-injunction-2026",
+  "law-firm-retaliation-orders-2025-2026",
+  "kennedy-center-self-renaming-2025-2026",
+  "international-organizations-mass-withdrawal-2026",
+  "helsinki-putin-election-interference-denial-2018",
+  "trump-memecoin-presidential-access-dinner-2025",
+  "epstein-files-deadline-omissions-2025-2026",
 ]);
 
 function mapItem(item: RawItem, lane: ResearchLane): CaseFile {
@@ -196,10 +214,11 @@ const conductItems = (conductResearch as ResearchBundle).items
 const faithItems = (faithResearch as ResearchBundle).items.map((item) => mapItem(item, "faith"));
 const americaItems = (americaResearch as ResearchBundle).items.map((item) => mapItem(item, "america"));
 const dealItems = (dealResearch as ResearchBundle).items.map((item) => mapItem(item, "deal"));
+const expansionItems = (expansionResearch as ResearchBundle).items.map((item) => mapItem(item, "expansion"));
 
 // Repeated events remain in the faith lane when they support a distinct moral
 // analysis. Purely duplicative legal/business entries are removed above.
-export const caseFiles: CaseFile[] = [...legalItems, ...conductItems, ...faithItems, ...americaItems, ...dealItems];
+export const caseFiles: CaseFile[] = [...legalItems, ...conductItems, ...faithItems, ...americaItems, ...dealItems, ...expansionItems];
 
 export const categories = [
   "All evidence",
@@ -213,5 +232,5 @@ export const categories = [
   "Deals & economic power",
 ] as const;
 
-export const lastReviewed = "August 21, 2026";
+export const lastReviewed = "October 7, 2026";
 export const archiveUpdated = "October 7, 2026";

@@ -9,6 +9,7 @@ const researchFiles = [
   ["faith_movements.json", "faith"],
   ["america_first.json", "america"],
   ["deal_record.json", "deal"],
+  ["scope_expansion.json", "expansion"],
 ];
 const duplicateConductIds = new Set([
   "e-jean-carroll-liability",

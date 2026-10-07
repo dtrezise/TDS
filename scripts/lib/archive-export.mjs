@@ -11,6 +11,7 @@ const researchLanes = [
   { lane: "faith", file: "research/faith_movements.json" },
   { lane: "america", file: "research/america_first.json" },
   { lane: "deal", file: "research/deal_record.json" },
+  { lane: "expansion", file: "research/scope_expansion.json" },
 ];
 
 const canonicalCaseIds = new Map([

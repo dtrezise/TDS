@@ -20,13 +20,13 @@ The thresholds are operational gates, not hard capacity limits. Editorial workfl
 
 The source archive contains:
 
-- 86 raw research records in five lanes.
-- 82 canonical cases after four duplicate legal/business records are mapped to their canonical cases.
-- 238 source references, normalizing to 221 unique URLs.
+- 128 raw research records in six lanes.
+- 124 canonical cases after four duplicate legal/business records are mapped to their canonical cases.
+- 376 source references, normalizing to 356 unique URLs.
 - 42 Christianity teaching references.
 - Approximately 234 KB of core research JSON.
 
-The v1 conversion produces 172 claims and 476 claim-to-source citation relationships. Evidence directly `supports` factual claims and `contextualizes` analysis claims. Claims produced from suppressed duplicate records remain in `review`, not `published`, state.
+The v1 conversion produces 256 claims and 752 claim-to-source citation relationships. Evidence directly `supports` factual claims and `contextualizes` analysis claims. Claims produced from suppressed duplicate records remain in `review`, not `published`, state.
 
 ## Account and binding audit
 

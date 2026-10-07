@@ -23,6 +23,7 @@ export default function AboutPage() {
 
       <PolicySection title="What appears here">
         <p>Each evidence case file uses a permanent ID, a narrow summary, an exact procedural or evidentiary status, a reason for inclusion, retrieval dates, and links to the strongest records available. Moral and civic “tests” are labeled editorial analysis and do not replace the factual record.</p>
+        <p>Scope extends beyond crimes. The archive may examine constitutional overreach, election administration, retaliation, conflicts of interest, clemency, institutional self-branding, reckless presidential conduct, misuse of public resources, territorial coercion, alliance and treaty conduct, authoritarian courtship, and failures of promised delivery. Inclusion means that documented conduct warrants public-interest examination; it is not a declaration that the conduct was illegal.</p>
         <p>The archive can be incomplete even when a published entry is accurate. Coverage choices, research capacity, archival access, and publication risk all affect what has been reviewed.</p>
       </PolicySection>
 

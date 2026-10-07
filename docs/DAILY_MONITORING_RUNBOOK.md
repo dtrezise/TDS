@@ -4,11 +4,13 @@ The scheduled monitor is a discovery and reconciliation system, not an autonomou
 
 ## Daily scope
 
-1. Search for material developments involving Donald Trump and specifically evidenced conduct by administration officials, family members, MAGA/America First organizations, and Christian-nationalist infrastructure already in scope.
-2. Recheck open legal, regulatory, legislative, correction, appeal, dismissal, and policy-status questions attached to existing evidence files.
-3. Prefer courts, dockets, statutes, agencies, Congress, official transcripts, filed financial records, authenticated recordings, and direct institutional material. Use reputable reporting to find and contextualize the underlying record.
-4. Record retrieval date, exact status, source relationship, denial or response, contrary evidence, unresolved gaps, and the existing permanent case ID when the development belongs to a published file.
-5. Run read-only research, archive-portability, privacy-boundary, and link-health checks when the local environment permits.
+1. Search for material developments involving Donald Trump and specifically evidenced conduct by administration officials, family members, businesses, campaigns, MAGA/America First organizations, and Christian-nationalist infrastructure.
+2. Apply the full case-file scope: legal accountability; elections and democratic institutions; misuse or personalization of public power; clemency; appointments and retaliation; conflicts and private benefit; reckless presidential conduct; territorial coercion; alliances, treaties, wars and international organizations; authoritarian courtship; public-project competence; and measurable gaps between promises and outcomes.
+3. Recheck open legal, regulatory, legislative, correction, appeal, dismissal, and policy-status questions attached to existing evidence files.
+4. Prefer courts, dockets, statutes, agencies, Congress, official transcripts, filed financial records, authenticated recordings, and direct institutional material. Use reputable reporting to find and contextualize the underlying record.
+5. Record retrieval date, exact status, source relationship, denial or response, contrary evidence, unresolved gaps, and the existing permanent case ID when the development belongs to a published file.
+6. Reject policy disagreement by itself. A candidate needs a specific act, identifiable public-interest standard, material significance, reliable evidence, and a headline that does not outrun the proof.
+7. Run read-only research, archive-portability, privacy-boundary, and link-health checks when the local environment permits.
 
 ## Output boundary
 
