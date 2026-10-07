@@ -32,6 +32,22 @@ A link is evidence, not immunity. Repeating a defamatory falsehood can create re
 9. **Preserve the audit trail.** Keep the source, access date, relevant quotation or page, status-check date, editorial caution, and later corrections in the research record.
 10. **Offer correction and response.** Correct material errors visibly and promptly. For original accusations or disputed claims not already tested in a public proceeding, seek a response before publication when practicable.
 
+## Case-file scope
+
+TDS case files are not limited to criminal conduct. A documented act may qualify when it materially bears on presidential fitness, public trust, constitutional restraint, democratic self-government, honest administration, foreign-policy credibility, conflicts of interest, institutional stewardship, or the conduct of people exercising public power with Trump. Inclusion means “worthy of evidence-based examination,” not “proved illegal.”
+
+The archive may examine:
+
+- crimes, civil liability, official findings, investigations, charges, settlements, pardons, and material procedural outcomes;
+- attacks on elections, voting access, courts, Congress, inspectors general, prosecutors, the civil service, the free press, speech, protest, or other checks on executive power;
+- misuse or personalization of public institutions, property, money, naming authority, military force, prosecutorial discretion, clemency, appointments, contracts, or official information;
+- conflicts involving Trump, his public-facing family, businesses, campaign, administration, and specifically evidenced allies—without transferring guilt by relationship;
+- territorial coercion, treaty and alliance conduct, institutional withdrawal, authoritarian courtship, war powers, diplomatic capacity, and consequences for U.S. credibility or material interests;
+- documented falsehoods, dehumanizing or reckless public statements, retaliation, self-glorification, incompetence, and conduct reasonably relevant to presidential character even when not unlawful; and
+- promises or slogans whose measurable delivery, durability, beneficiaries, public cost, or collateral consequences materially diverge from the branding.
+
+Scope is broad; the proof must remain narrow. Policy disagreement alone is not a case file. A record needs a specific act or statement, an identifiable public-interest standard, reliable evidence, material significance, current status, contrary context, and wording that remains accurate when separated from the page.
+
 ## Structured-record requirements
 
 The normalized archive treats a case, a claim, a source, and the relationship between a claim and source as separate records. Before a database-backed claim is published:

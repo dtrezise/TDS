@@ -102,10 +102,10 @@
           "accessed": "2026-07-13"
         },
         {
-          "label": "Transcript of Trump's 2016 birther statement",
-          "url": "https://time.com/4497626/donald-trump-birther-address-transcript/",
-          "publisher": "TIME",
-          "source_type": "transcript",
+          "label": "Video of Trump's 2016 birther statement",
+          "url": "https://www.youtube.com/watch?v=27bdV6hoZVc",
+          "publisher": "C-SPAN",
+          "source_type": "primary_video",
           "accessed": "2026-07-13"
         }
       ],
@@ -223,8 +223,8 @@
       "evidence": [
         {
           "label": "Video of Trump's pantomime",
-          "url": "https://www.washingtonpost.com/video/politics/trump-mocks-physically-handicapped-reporter/2015/11/25/9e92b950-93d6-11e5-befa-99ceebcbb272_video.html",
-          "publisher": "The Washington Post",
+          "url": "https://www.youtube.com/watch?v=hFOy8-03qdg",
+          "publisher": "ABC News",
           "source_type": "primary_video",
           "accessed": "2026-07-13"
         },

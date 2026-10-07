@@ -43,7 +43,7 @@ npm test
 - Treat automated monitoring as lead generation. It may update a private review queue, but it may not publish, commit, push, or deploy a factual claim without human review.
 - Run the deterministic archive portability audit before changing the database schema or import format.
 
-The research catalog contains 86 raw case files and 238 evidence links. The public site presents 82 canonical files after suppressing four purely duplicative legal/business records. See `research/README.md` for the lane breakdown and maintenance notes, and `EDITORIAL_STANDARDS.md` for the defamation, status-language, trademark, and prepublication rules.
+The research catalog contains 128 raw case files and 376 evidence links. The public site presents 124 canonical files after suppressing four purely duplicative legal/business records. The October 2026 scope expansion adds election-control orders, retaliation against legal and press institutions, domestic military deployment, impoundment, territorial coercion, institutional withdrawal, authoritarian-leader courtship, clemency, family-business conflicts, Epstein transparency, public-project failures, and presidential self-branding. See `research/README.md` for the lane breakdown and maintenance notes, and `EDITORIAL_STANDARDS.md` for the defamation, status-language, trademark, and prepublication rules.
 
 The archive includes Trump administration action involving Marco Rubio, J.D. Vance, and Stephen Miller where a specific role is evidenced; institutional withdrawal; NATO and allied coercion; Ukraine; Iran; Venezuela; tariffs; immigration due process; the foreign service; business failures; subsidy announcements; summit diplomacy; Afghanistan; and the Qatari aircraft gift. Unsupported or misleading shorthand is narrowed, excluded, or held in the git-ignored private editorial review queue rather than published as fact.
 
@@ -57,7 +57,7 @@ The database-ready schema and migration plan live in `docs/ARCHIVE_DATA_ARCHITEC
 
 ## iPhone app
 
-The first native SwiftUI companion lives in `ios/TDSArchive`. It includes all 82 canonical case files, search, category filters, sources, test lenses, share links, the Voices collections, and the Methods summary.
+The first native SwiftUI companion lives in `ios/TDSArchive`. It includes all 124 canonical case files, search, category filters, sources, test lenses, share links, the Voices collections, and the Methods summary.
 
 Refresh its offline evidence bundle from the canonical website data with:
 

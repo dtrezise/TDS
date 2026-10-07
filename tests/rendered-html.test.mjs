@@ -59,11 +59,11 @@ test("exports the evidence archive and permanent case links", () => {
   assert.match(html, /TRUMP DERANGEMENT SYNDROME/);
   assert.match(html, /Accountability is not derangement\. Refusing the record is\./);
   assert.match(html, /Case files, not catchphrases/);
-  assert.match(html, /82<\/strong><span>case files/);
+  assert.match(html, /124<\/strong><span>case files/);
   assert.match(html, /Latest source check/);
   assert.match(html, /Strongest evidence links/);
   assert.match(html, /Court record<\/span><strong>January 3, 2025 sentencing decision and post-trial procedural history/);
-  assert.ok((html.match(/Open the permanent case file/g) ?? []).length === 82);
+  assert.ok((html.match(/Open the permanent case file/g) ?? []).length === 124);
   assert.match(html, route("evidence/new-york-falsifying-business-records-conviction"));
   assert.doesNotMatch(html, /test-score-badge|test-score-popover|\/100/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
@@ -72,7 +72,7 @@ test("exports the evidence archive and permanent case links", () => {
 test("keeps visible Christianity analysis and four qualitative lenses", () => {
   assert.ok((html.match(/class="faith-note"/g) ?? []).length === 22);
   for (const id of ["patriotic", "america-first", "deal", "world-standing"]) {
-    assert.ok((html.match(new RegExp(`class="case-test-note case-test-note--${id}"`, "g")) ?? []).length === 82);
+    assert.ok((html.match(new RegExp(`class="case-test-note case-test-note--${id}"`, "g")) ?? []).length === 124);
   }
   assert.match(html, /Applies for review/);
   assert.match(html, /Related context/);
@@ -96,8 +96,8 @@ test("exports accessible archive and share controls", () => {
   assert.match(html, /aria-label="Evidence filters"/);
   assert.match(html, /type="search"/);
   assert.match(html, /aria-live="polite"/);
-  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 82);
-  assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 82);
+  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 124);
+  assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 124);
   assert.match(shareEBoxSource, /role="dialog"/);
   assert.match(shareEBoxSource, /trigger\?\.focus/);
   assert.match(shareEBoxSource, /document\.body\.style\.overflow = "hidden"/);
