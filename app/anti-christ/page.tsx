@@ -11,11 +11,9 @@ import {
   antiChristTitleNote,
 } from "@/data/anti-christ";
 import type { EvidenceSource } from "@/data/cases";
-import { scoreCaseAgainstRubric, scoreTextAgainstRubric } from "@/data/test-rubrics";
 import { PageMasthead, SiteFooter, SiteHeader } from "../site-chrome";
 import { ShareTools } from "../share-tools";
 import { ShareEBox } from "../share-ebox";
-import { TestScoreBadge } from "../test-score-badge";
 
 export const metadata: Metadata = {
   title: "Anti Christ | TDS",
@@ -149,10 +147,6 @@ export default function AntiChristPage() {
             <ol className="anti-top-five">
               {category.featuredCases.map((item, index) => (
                 <li id={`anti-${category.id}-${item.id}`} key={`${category.id}-${item.id}`}>
-                  <TestScoreBadge
-                    score={scoreCaseAgainstRubric(item, "christianity", "Fails")}
-                    id={`anti-${category.id}-${item.id}-christianity-score`}
-                  />
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <div>
                     <p className="anti-case-date">{item.date}</p>
@@ -186,10 +180,6 @@ export default function AntiChristPage() {
         <div className="anti-quote-grid">
           {antiChristQuotes.map((item, index) => (
             <figure id={`anti-quote-${item.case_id}-${index + 1}`} key={`${item.case_id}-${index}`}>
-              <TestScoreBadge
-                score={scoreTextAgainstRubric("christianity", `${item.quote} ${item.context}`, "Fails")}
-                id={`anti-quote-${item.case_id}-${index + 1}-christianity-score`}
-              />
               <span>{String(index + 1).padStart(2, "0")}</span>
               <blockquote>“{item.quote}”</blockquote>
               <figcaption>{item.context}</figcaption>
@@ -232,10 +222,6 @@ export default function AntiChristPage() {
             <div className="anti-collection-grid">
               {category.allCases.map((item) => (
                 <article className="anti-record-card" id={`anti-all-${category.id}-${item.id}`} key={`${category.id}-all-${item.id}`}>
-                  <TestScoreBadge
-                    score={scoreCaseAgainstRubric(item, "christianity", "Fails")}
-                    id={`anti-all-${category.id}-${item.id}-christianity-score`}
-                  />
                   <div className="anti-record-card__meta"><span>{item.date}</span><span>{item.category}</span></div>
                   <h4>{item.title}</h4>
                   <p>{item.summary}</p>
@@ -253,7 +239,7 @@ export default function AntiChristPage() {
                       <a href={source.url} target="_blank" rel="noreferrer" key={`${item.id}-${source.url}`}>
                         <span>{sourceAction(source)}</span>
                         <strong>{source.label}</strong>
-                        <small>{source.publisher} · {source.kind}</small>
+                        <small>{source.publisher} · {source.kind} · checked {source.accessed}</small>
                       </a>
                     ))}
                   </div>

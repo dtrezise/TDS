@@ -355,11 +355,11 @@
       "id": "trump-irs-settlement-improper-purpose-2026",
       "title": "A federal judge found Trump's IRS settlement case was brought for an improper purpose and sanctioned counsel",
       "date_start": "2026-01-01",
-      "date_end": "2026-07-13",
+      "date_end": null,
       "people": ["Donald Trump", "Donald Trump Jr.", "Eric Trump", "Todd Blanche", "Stanley Woodward"],
       "category": "deals-economic-power",
-      "status_label": "District-court finding; settlement terms barred from future official use; disciplinary referrals pending",
-      "summary": "After Trump, his adult sons, and the Trump Organization sued the IRS and Treasury over leaked tax records, the parties announced a May settlement that included broad tax protections and a proposed $1.776 billion Anti-Weaponization Fund. On July 13, 2026, Judge Kathleen Williams found that the plaintiffs acted in bad faith and that the case was brought for an improper purpose, barred the parties from citing the purported settlement in official proceedings, imposed non-monetary sanctions, and referred lawyers and senior Justice Department officials to bar authorities. The order did not reopen the case or adjudicate the underlying tax-leak allegations.",
+      "status_label": "District-court finding; settlement terms barred from future official use; appeal announced; disciplinary referrals pending",
+      "summary": "After Trump, his adult sons, and the Trump Organization sued the IRS and Treasury over leaked tax records, the parties announced a May settlement that included broad tax protections and a proposed $1.776 billion Anti-Weaponization Fund. On July 13, 2026, Judge Kathleen Williams found that the plaintiffs acted in bad faith and that the case was brought for an improper purpose, barred the parties from citing the purported settlement in official proceedings, imposed non-monetary sanctions, and referred lawyers and senior Justice Department officials to bar authorities. On July 31, Trump's attorneys notified the court that they would appeal the ruling, according to AP. On August 2, Acting Attorney General Todd Blanche issued a formal order rescinding the fund; AP reported that the order said no members were appointed, funds transferred, claims process established, or claims paid. The court's findings and appeal remain unresolved, and the order did not adjudicate the underlying tax-leak allegations.",
       "why_it_matters": "The record presents a narrow, adjudicated accountability question: whether presidential control over the defendant agencies and the settlement's protections made the litigation an improper vehicle for conferring legal legitimacy on benefits to the president, his family, and allies. The court's findings are not a criminal conviction and do not resolve every underlying tax or leak claim.",
       "evidence": [
         {
@@ -382,11 +382,25 @@
           "publisher": "U.S. Senate",
           "source_type": "senate-release",
           "accessed": "2026-07-17"
+        },
+        {
+          "label": "AP report on notice of appeal and the court's July 13 ruling",
+          "url": "https://apnews.com/article/0f214c3da82c5d5ee971ef83565a344b",
+          "publisher": "Associated Press",
+          "source_type": "news-reporting",
+          "accessed": "2026-08-02"
+        },
+        {
+          "label": "AP report on DOJ order rescinding the Anti-Weaponization Fund",
+          "url": "https://apnews.com/article/senate-blanche-trump-justice-fund-a38decfc7f20e4f73a181914d53111da",
+          "publisher": "Associated Press",
+          "source_type": "news-reporting",
+          "accessed": "2026-08-03"
         }
       ],
       "tags": ["IRS", "Treasury", "settlement", "tax audits", "government ethics", "Rule 11", "Anti-Weaponization Fund"],
       "confidence": "high",
-      "editorial_note": "Use the court's precise findings: improper purpose, bad faith, sanctions, and referrals for possible discipline. Do not call the conduct criminal, do not say the judge found a bribe or corruption as a legal conclusion, and preserve the administration's defense and the unresolved underlying leak allegations. Status must be rechecked for appeals and disciplinary action."
+      "editorial_note": "Use the court's precise findings: improper purpose, bad faith, sanctions, and referrals for possible discipline. Do not call the conduct criminal, do not say the judge found a bribe or corruption as a legal conclusion, and preserve the administration's defense and the unresolved underlying leak allegations. AP reports that Blanche formally rescinded the fund on August 2 and that no members, funds, claims process, or payments existed; verify the order directly if the document becomes available. The appeal is reported as announced/notified, not resolved, and the rescission does not itself resolve the court's order, audit-immunity provision, or disciplinary referrals."
     }
   ]
 }

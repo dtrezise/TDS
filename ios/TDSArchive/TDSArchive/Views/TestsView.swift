@@ -59,7 +59,7 @@ struct TestsView: View {
 
     private func applicableCount(for id: String) -> Int {
         archive.cases.filter { item in
-            item.tests.contains { $0.id == id && $0.score.score != nil }
+            item.tests.contains { $0.id == id && $0.finding != "Not directly implicated" }
         }.count
     }
 }

@@ -20,6 +20,7 @@ struct CaseFile: Decodable, Identifiable, Hashable {
     let subjects: [String]
     let tags: [String]
     let sources: [EvidenceSource]
+    let lastSourceCheck: String
     let faithAnalysis: String?
     let faithLens: [FaithLens]?
     let featured: Bool?
@@ -33,6 +34,7 @@ struct EvidenceSource: Decodable, Hashable, Identifiable {
     let publisher: String
     let url: URL
     let kind: String
+    let accessed: String
 
     var id: URL { url }
 }
@@ -49,25 +51,4 @@ struct TestLens: Decodable, Hashable, Identifiable {
     let href: String
     let finding: String
     let analysis: String
-    let score: TestScore
-}
-
-struct TestScore: Decodable, Hashable {
-    let testId: String
-    let label: String
-    let href: String
-    let score: Int?
-    let earnedPoints: Int
-    let possiblePoints: Int
-    let verdict: String
-    let finding: String
-    let breakdown: [CriterionScore]
-}
-
-struct CriterionScore: Decodable, Hashable, Identifiable {
-    let id: String
-    let label: String
-    let points: Int?
-    let maxPoints: Int
-    let rationale: String
 }

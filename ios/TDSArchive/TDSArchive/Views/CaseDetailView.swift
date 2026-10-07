@@ -125,14 +125,8 @@ private struct TestLensCard: View {
                     .font(.body)
                     .lineSpacing(3)
 
-                if test.score.score != nil {
-                    Text("\(test.score.earnedPoints) of \(test.score.possiblePoints) applicable points, normalized to \(test.score.score ?? 0)/100.")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-
                 Link(destination: TDSLinks.page(test.href)) {
-                    Label("Open the complete rubric", systemImage: "arrow.up.right")
+                    Label("Open the review framework", systemImage: "arrow.up.right")
                         .font(.caption.weight(.bold))
                         .frame(minHeight: 44)
                 }
@@ -144,11 +138,9 @@ private struct TestLensCard: View {
                     Text(test.label.uppercased())
                         .font(.caption2.weight(.heavy))
                         .tracking(0.6)
-                    Text(test.score.verdict)
+                    Text(test.finding)
                         .font(.caption)
                 }
-                Spacer()
-                ScoreChip(test: test)
             }
             .foregroundStyle(TestTone.color(for: test.id))
         }

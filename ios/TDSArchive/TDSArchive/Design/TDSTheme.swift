@@ -11,16 +11,17 @@ extension Color {
 }
 
 enum TDSLinks {
-    static let site = URL(string: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/")!
+    private static let base = "https://dtrezise.github.io/TDS"
+    static let site = URL(string: "\(base)/")!
 
     static func evidence(_ id: String) -> URL {
-        URL(string: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/#\(id)")!
+        URL(string: "\(base)/evidence/\(id)/")!
     }
 
     static func page(_ path: String) -> URL {
         let parts = path.split(separator: "#", maxSplits: 1).map(String.init)
         let trimmedPath = parts[0].trimmingCharacters(in: CharacterSet(charactersIn: "/"))
-        var components = URLComponents(string: "https://tds-evidence-archive-dan.trapezy.chatgpt.site/\(trimmedPath)/")!
+        var components = URLComponents(string: "\(base)/\(trimmedPath)/")!
         components.fragment = parts.count > 1 ? parts[1] : nil
         return components.url!
     }

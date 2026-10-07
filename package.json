@@ -18,9 +18,11 @@
     "audit:blind-eyes": "node scripts/check-blind-eyes-links.mjs",
     "audit:anti-christ": "node scripts/check-anti-christ-links.mjs",
     "audit:experts": "node scripts/audit-expert-pipeline.mjs --require",
-    "mobile:export": "tsx scripts/export-mobile-data.ts",
+    "audit:public-boundary": "node scripts/check-public-boundary.mjs",
+    "mobile:export": "node --import tsx scripts/export-mobile-data.ts",
     "archive:export": "node scripts/archive-export.mjs --output outputs/archive-export-v1.json --sql-output outputs/archive-seed-v1.sql",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "verify": "npm run audit:research && npm run audit:archive && npm run audit:public-boundary && npm run lint && npm test",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {

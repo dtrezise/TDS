@@ -3,7 +3,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildCaseTestLenses } from "../data/case-test-lenses";
 import { caseFiles, categories, lastReviewed } from "../data/cases";
-import { scoreCaseAgainstRubric } from "../data/test-rubrics";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = path.join(projectRoot, "ios", "TDSArchive", "TDSArchive", "Resources", "archive.json");
@@ -13,10 +12,9 @@ const mobileCases = caseFiles.map((item) => {
     ? [{
         id: "christianity",
         label: "Christianity Test",
-        href: "/christianity-test#christianity-scorecard",
-        finding: "Fails",
+        href: "/christianity-test/#christianity-scorecard",
+        finding: "Applies for review",
         analysis: item.faithAnalysis ?? "The cited teaching is compared with the documented public record.",
-        score: scoreCaseAgainstRubric(item, "christianity", "Fails"),
       }]
     : [];
 
@@ -27,9 +25,9 @@ const mobileCases = caseFiles.map((item) => {
 });
 
 const payload = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   lastReviewed,
-  generatedFrom: "TDS canonical research and rubric data",
+  generatedFrom: "TDS canonical research and qualitative review data",
   categories: categories.filter((category) => category !== "All evidence"),
   cases: mobileCases,
 };

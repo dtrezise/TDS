@@ -17,7 +17,7 @@ From the repository root, run `pnpm mobile:export`, then rebuild the app. The ex
 ## First-version scope
 
 - Browse, search, filter, and sort all case files.
-- Read record status, significance, applicable test scores, and source links.
+- Read record status, significance, qualitative test findings, and source links.
 - Share an exact round-trip link to an Evidence eBox.
 - Open the five rubric pages and three Voices collections.
 - Read the archive's concise evidence standard.

@@ -75,8 +75,8 @@ function authorityTier(sourceType) {
   const value = sourceType.toLowerCase();
   if (/scripture|bible/.test(value)) return "scripture";
   if (/court|government|official|congress|agency|executive|white.house|inspector|gao|crs|senate|house|federal.register/.test(value)) return "official";
-  if (/primary|transcript|video|audio|statement|speech|policy|platform|report/.test(value)) return "primary";
   if (/news|reporting|journalism|fact.check|newspaper|magazine/.test(value)) return "reporting";
+  if (/primary|transcript|video|audio|statement|speech|policy|platform|report/.test(value)) return "primary";
   return "analysis";
 }
 

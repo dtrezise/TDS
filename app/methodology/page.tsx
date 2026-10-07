@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { lastReviewed } from "@/data/cases";
+import { archiveUpdated, lastReviewed } from "@/data/cases";
 import { PageMasthead, SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
@@ -130,6 +130,17 @@ export default function MethodologyPage() {
         </ol>
       </section>
 
+      <section className="legal-safeguards" aria-labelledby="qualitative-review-title">
+        <div>
+          <p className="section-label">Qualitative test review</p>
+          <h2 id="qualitative-review-title">Explain the judgment. Do not manufacture precision.</h2>
+        </div>
+        <div>
+          <p>The Christianity, Patriotic, America First, Deal, and World Standing frameworks organize questions and criteria. They do not turn keyword counts into a supposedly objective score. Numerical ratings were removed because the evidence does not support that level of measurement precision.</p>
+          <p>A published test finding should identify the exact criterion, cite the underlying fact and status, preserve counterevidence and limitations, and state the editorial reasoning in words a reader can challenge.</p>
+        </div>
+      </section>
+
       <section className="legal-safeguards" aria-labelledby="legal-safeguards-title">
         <div>
           <p className="section-label">Defamation and legal safeguards</p>
@@ -138,19 +149,23 @@ export default function MethodologyPage() {
         <div>
           <p>A source link does not immunize a false republication. Unresolved claims are attributed. Secret intent is not invented. Fact, inference, and opinion are separated. Original disputed accusations receive a response opportunity when practicable, and unusually high-risk work should receive media-law review.</p>
           <p>Every test follows the same discipline. Sin-language and moral analogy never become unsupported criminal-law labels; constitutional criticism preserves the exact posture of a ruling; foreign-policy criticism separates threats from completed acts and mixed outcomes; deal criticism compares the public promise with written terms, concessions, cost, performance, and durability.</p>
-          <span>Full legal and editorial standards are maintained privately with the archive.</span>
+          <span>Operational security, unpublished leads, source contacts, and privileged legal work remain private. The rules governing published claims are stated on this page and the linked accountability policies.</span>
         </div>
       </section>
 
       <section className="methodology-note">
         <div><strong>Last evidence review</strong><span>{lastReviewed}</span></div>
+        <div><strong>Archive system updated</strong><span>{archiveUpdated}</span></div>
         <p>This is a curated archive, not a claim that every grievance has already been captured. TDS is an independent editorial project and is not affiliated with Trump, his organizations, or any person or institution discussed here.</p>
         <div className="methodology-note__links">
-          <span>Data architecture and revision history are maintained privately with the archive.</span>
+          <span>Each permanent case file publishes its latest source-check date. Revision history and unpublished review material are retained outside the public artifact.</span>
           <Link href="/christianity-test/">Christianity Test standards <ArrowIcon /></Link>
           <Link href="/patriotic-test/">Patriotic Test standards <ArrowIcon /></Link>
           <Link href="/america-first-test/">America First Test standards <ArrowIcon /></Link>
-          <Link href="/deal-test/">Deal Test scorecard <ArrowIcon /></Link>
+          <Link href="/deal-test/">Deal Test review framework <ArrowIcon /></Link>
+          <Link href="/world-standing-test/">World Standing Test standards <ArrowIcon /></Link>
+          <Link href="/corrections/">Corrections and updates <ArrowIcon /></Link>
+          <Link href="/ai-use/">AI use policy <ArrowIcon /></Link>
           <Link href="/#evidence">Open the evidence archive <ArrowIcon /></Link>
         </div>
       </section>

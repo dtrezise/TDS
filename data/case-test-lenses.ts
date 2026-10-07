@@ -1,16 +1,12 @@
 import type { CaseFile } from "./cases";
-import { scoreCaseAgainstRubric, type TestScore } from "./test-rubrics";
 
 export type CaseTestLens = {
   id: "patriotic" | "america-first" | "deal" | "world-standing";
   label: string;
   href: string;
-  finding: "Fails" | "Implicates" | "Not directly implicated";
+  finding: "Applies for review" | "Related context" | "Not directly implicated";
   analysis: string;
-  score: TestScore;
 };
-
-type UnscoredCaseTestLens = Omit<CaseTestLens, "score">;
 
 function firstSentence(text: string) {
   const match = text.match(/^.*?[.!?](?:\s|$)/);
@@ -23,14 +19,14 @@ function lens(
   href: string,
   finding: CaseTestLens["finding"],
   analysis: string,
-): UnscoredCaseTestLens {
+): CaseTestLens {
   return { id, label, href, finding, analysis };
 }
 
 /**
- * Applies each archive test without manufacturing a contradiction. A case can
- * fail, implicate, or simply not establish a given test. The distinction keeps
- * the editorial conclusion no broader than the cited record.
+ * Routes each case to potentially relevant qualitative review lenses. This
+ * keyword-based helper does not decide whether a case passes or fails a test;
+ * a defensible conclusion requires evidence-specific human review.
  */
 export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
   const text = [item.title, item.summary, item.significance, item.status, ...item.tags]
@@ -49,21 +45,21 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
   const foreignOrAlliance = /foreign|world|allia|nato|ukraine|russia|china|iran|qatar|venezuela|greenland|canada|panama|afghan|north korea|climate|who|usaid|united nations|diploma|tariff|trade|emolument/.test(text);
   const bargainOrOutcome = /deal|agreement|settlement|bankrupt|business|fraud|tariff|trade|purchase|subsid|jobs|summit|contract|aircraft|jet|payment|economic|cost|price|leverage|concession|retrofit/.test(text);
 
-  let patriotic: UnscoredCaseTestLens;
+  let patriotic: CaseTestLens;
   if (isLaw || isDemocracy || (officeOrConstitution && (isWorld || isMovement))) {
     patriotic = lens(
       "patriotic",
       "Patriotic Test",
       "/patriotic-test/",
-      "Fails",
-      `The record conflicts with rule-of-law government, constitutional restraint, equal citizenship, or public accountability. ${recordPoint}`,
+      "Applies for review",
+      `Review this record against rule-of-law government, constitutional restraint, equal citizenship, and public accountability. ${recordPoint}`,
     );
   } else if (isTruth || (isFamily && officeOrConstitution) || isMovement) {
     patriotic = lens(
       "patriotic",
       "Patriotic Test",
       "/patriotic-test/",
-      "Implicates",
+      "Related context",
       `Constitutional self-government depends on public truth, equal dignity, and loyalty to law above a leader. ${recordPoint}`,
     );
   } else {
@@ -76,13 +72,13 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  let americaFirst: UnscoredCaseTestLens;
+  let americaFirst: CaseTestLens;
   if (isWorld) {
     americaFirst = lens(
       "america-first",
       "America First Test",
       "/america-first-test/",
-      "Fails",
+      "Applies for review",
       `The claimed national benefit must be measured against costs to Americans, lawful institutions, security, and durable leverage. ${recordPoint}`,
     );
   } else if ((isDeal && /tariff|trade|china|carrier|foxconn|afghan|iran|qatar|north korea|economic|jobs|cost|subsid/.test(text)) || foreignOrAlliance) {
@@ -90,7 +86,7 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
       "america-first",
       "America First Test",
       "/america-first-test/",
-      "Implicates",
+      "Related context",
       `This outcome bears on whether national-interest branding delivered a measurable and durable benefit to Americans. ${recordPoint}`,
     );
   } else {
@@ -103,21 +99,21 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  let deal: UnscoredCaseTestLens;
+  let deal: CaseTestLens;
   if (isDeal) {
     deal = lens(
       "deal",
       "Deal Test",
       "/deal-test/",
-      "Fails",
-      `The promised result, concessions, delivery, durability, public cost, and beneficiary do not support the advertised deal-making claim. ${recordPoint}`,
+      "Applies for review",
+      `Review the promised result, concessions, delivery, durability, public cost, and beneficiary against the advertised deal-making claim. ${recordPoint}`,
     );
   } else if (bargainOrOutcome) {
     deal = lens(
       "deal",
       "Deal Test",
       "/deal-test/",
-      "Implicates",
+      "Related context",
       `This record bears on the gap between branding and measurable terms, delivery, cost, or beneficiary. ${recordPoint}`,
     );
   } else {
@@ -130,21 +126,21 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  let worldStanding: UnscoredCaseTestLens;
+  let worldStanding: CaseTestLens;
   if (isWorld) {
     worldStanding = lens(
       "world-standing",
       "World Standing Test",
       "/world-standing-test/",
-      "Fails",
-      `The record shows a cost to U.S. credibility, alliance leverage, lawful example, expertise, or the ability to shape international outcomes. ${recordPoint}`,
+      "Applies for review",
+      `Review whether this record imposed a cost on U.S. credibility, alliance leverage, lawful example, expertise, or the ability to shape international outcomes. ${recordPoint}`,
     );
   } else if (foreignOrAlliance || (officeOrConstitution && (isLaw || isDemocracy))) {
     worldStanding = lens(
       "world-standing",
       "World Standing Test",
       "/world-standing-test/",
-      "Implicates",
+      "Related context",
       `America's influence also rests on credible commitments and the democratic example it presents abroad. ${recordPoint}`,
     );
   } else {
@@ -157,8 +153,5 @@ export function buildCaseTestLenses(item: CaseFile): CaseTestLens[] {
     );
   }
 
-  return [patriotic, americaFirst, deal, worldStanding].map((entry) => ({
-    ...entry,
-    score: scoreCaseAgainstRubric(item, entry.id, entry.finding),
-  }));
+  return [patriotic, americaFirst, deal, worldStanding];
 }

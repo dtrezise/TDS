@@ -73,7 +73,14 @@ export function SiteFooter({ tagline }: { tagline: string }) {
     <footer>
       <div className="wordmark wordmark--footer"><span className="wordmark__mark">TDS</span><span className="wordmark__text">Trump Derangement Syndrome</span></div>
       <p>{tagline}</p>
-      <div className="footer-links"><Link href="/">Evidence</Link><Link href="/voices/">Voices</Link><Link href="/tests/">Tests</Link><Link href="/methodology/">Methods</Link></div>
+      <div className="footer-links">
+        <Link href="/about/">About</Link>
+        <Link href="/methodology/">Methods</Link>
+        <Link href="/corrections/">Corrections</Link>
+        <Link href="/editorial-independence/">Independence</Link>
+        <Link href="/ai-use/">AI use</Link>
+        <Link href="/privacy/">Privacy</Link>
+      </div>
       <a className="footer-top" href="#top" aria-label="Back to top">↑</a>
     </footer>
   );

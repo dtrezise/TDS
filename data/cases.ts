@@ -9,6 +9,7 @@ export type EvidenceSource = {
   publisher: string;
   url: string;
   kind: "Court record" | "Official record" | "Primary source" | "Reporting" | "Analysis";
+  accessed: string;
 };
 
 export type FaithLens = {
@@ -37,6 +38,7 @@ export type CaseFile = {
   subjects: string[];
   tags: string[];
   sources: EvidenceSource[];
+  lastSourceCheck: string;
   faithAnalysis?: string;
   faithLens?: FaithLens[];
   featured?: boolean;
@@ -47,6 +49,7 @@ type RawSource = {
   publisher: string;
   url: string;
   source_type: string;
+  accessed: string;
 };
 
 type RawTeaching = {
@@ -93,12 +96,14 @@ function sortableDate(value: string) {
   return [parts[0], parts[1] ?? "01", parts[2] ?? "01"].join("-");
 }
 
-function sourceKind(sourceType: string): EvidenceSource["kind"] {
-  const type = sourceType.toLowerCase();
-  if (/court|verdict|complaint|indictment|filing|judgment|consent.decree/.test(type)) return "Court record";
+function sourceKind(source: RawSource): EvidenceSource["kind"] {
+  const declaredType = source.source_type.toLowerCase();
+  if (/news|reporting|journalism|fact.check/.test(declaredType)) return "Reporting";
+  const type = `${source.source_type} ${source.publisher} ${source.label}`.toLowerCase();
+  if (/court|verdict|complaint|indictment|filing|judgment|consent.decree|appellate|sentencing|docket/.test(type)) return "Court record";
   if (/government|official|congress|agency|executive|white.house|inspector|gao|crs|senate|house|federal.register/.test(type)) return "Official record";
-  if (/primary|transcript|video|audio|statement|speech|scripture|bible|policy|platform|report/.test(type)) return "Primary source";
   if (/news|reporting|journalism|fact.check/.test(type)) return "Reporting";
+  if (/primary|transcript|video|audio|statement|speech|scripture|bible|policy|platform/.test(type)) return "Primary source";
   return "Analysis";
 }
 
@@ -143,6 +148,11 @@ const featuredIds = new Set([
 
 function mapItem(item: RawItem, lane: ResearchLane): CaseFile {
   const teachings = item.christian_teaching ?? [];
+  const lastSourceCheck = item.evidence
+    .map((source) => source.accessed)
+    .filter(Boolean)
+    .sort()
+    .at(-1) ?? item.date_start;
   return {
     id: item.id,
     title: item.title,
@@ -158,8 +168,10 @@ function mapItem(item: RawItem, lane: ResearchLane): CaseFile {
       label: source.label,
       publisher: source.publisher,
       url: source.url,
-      kind: sourceKind(source.source_type),
+      kind: sourceKind(source),
+      accessed: source.accessed,
     })),
+    lastSourceCheck,
     faithAnalysis: teachings.length ? teachings.map((teaching) => teaching.principle).join(" ") : undefined,
     faithLens: teachings.length ? teachings.map((teaching) => ({
       teaching: teaching.principle,
@@ -202,3 +214,4 @@ export const categories = [
 ] as const;
 
 export const lastReviewed = "August 21, 2026";
+export const archiveUpdated = "October 7, 2026";
