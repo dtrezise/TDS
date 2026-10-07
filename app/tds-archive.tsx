@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { caseFiles, categories, type CaseFile } from "@/data/cases";
 import { buildCaseTestLenses } from "@/data/case-test-lenses";
-import { scoreCaseAgainstRubric } from "@/data/test-rubrics";
 import { ShareEBox } from "./share-ebox";
 import { SiteFooter } from "./site-chrome";
-import { TestScoreBadge } from "./test-score-badge";
 
 const categoryShort: Record<CaseFile["category"], string> = {
   "Law & accountability": "Accountability",
@@ -26,9 +24,6 @@ function ArrowIcon() {
 
 function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
   const testLenses = buildCaseTestLenses(item);
-  const christianityScore = item.faithLens?.length
-    ? scoreCaseAgainstRubric(item, "christianity", "Fails")
-    : null;
 
   return (
     <article className={`case-card ${item.featured ? "case-card--featured" : ""}`} id={item.id}>
@@ -42,10 +37,20 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
         </div>
         <h3>{item.title}</h3>
         <p className="status-line"><span>Record status</span>{item.status}</p>
+        <p className="case-review-state"><strong>Latest source check</strong><time dateTime={item.lastSourceCheck}>{item.lastSourceCheck}</time></p>
         <p className="case-summary">{item.summary}</p>
         <p className="case-significance"><strong>Why it matters:</strong> {item.significance}</p>
+        <div className="source-preview" aria-label="Strongest evidence links">
+          {item.sources.slice(0, 2).map((source) => (
+            <a href={source.url} target="_blank" rel="noreferrer" key={`${item.id}-preview-${source.url}`}>
+              <span>{source.kind}</span><strong>{source.label}</strong><small>{source.publisher} · checked {source.accessed} <ArrowIcon /></small>
+            </a>
+          ))}
+          <Link href={`/evidence/${item.id}/`}>Open the permanent case file <ArrowIcon /></Link>
+        </div>
         <ShareEBox
           anchor={item.id}
+          permalink={`/evidence/${item.id}/`}
           title={item.title}
           summary={item.summary}
           status={item.status}
@@ -54,8 +59,7 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
 
         {item.faithLens?.length ? (
           <aside className="faith-note">
-            {christianityScore ? <TestScoreBadge score={christianityScore} id={`${item.id}-christianity-score`} /> : null}
-            <span className="faith-note__label">Christianity test</span>
+            <span className="faith-note__label">Christianity test · editorial analysis</span>
             <p>{item.faithAnalysis}</p>
             <div className="faith-note__links">
               {item.faithLens.map((lens) => (
@@ -70,7 +74,6 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
         <div className="case-test-stack" aria-label="Additional evidence tests">
           {testLenses.map((test) => (
             <aside className={`case-test-note case-test-note--${test.id}`} key={`${item.id}-${test.id}`}>
-              <TestScoreBadge score={test.score} id={`${item.id}-${test.id}-score`} />
               <div className="case-test-note__heading">
                 <Link href={test.href}>{test.label}</Link>
                 <span>{test.finding}</span>
@@ -89,7 +92,7 @@ function EvidenceCard({ item, index }: { item: CaseFile; index: number }) {
               <a href={source.url} target="_blank" rel="noreferrer" key={`${item.id}-${source.url}`}>
                 <span className="source-kind">{source.kind}</span>
                 <strong>{source.label}</strong>
-                <small>{source.publisher} <ArrowIcon /></small>
+                <small>{source.publisher} · checked {source.accessed} <ArrowIcon /></small>
               </a>
             ))}
           </div>

@@ -67,7 +67,7 @@ export default function ChristianityTestPage() {
 
       <TestScorecard
         testId="christianity"
-        intro="Each applicable criterion is scored from direct conflict to strong alignment. These lenses accompany relevant case files so the moral analysis remains attached to the factual status beneath it."
+        intro="Each applicable criterion requires an evidence-specific written finding. These lenses accompany relevant case files so the moral analysis remains attached to the factual status beneath it."
       />
 
       <section className="framework-caution">

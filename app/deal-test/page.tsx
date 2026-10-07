@@ -7,11 +7,11 @@ import { TestScorecard } from "../test-scorecard";
 
 export const metadata: Metadata = {
   title: "Deal Test | TDS",
-  description: "A documented scorecard for Donald Trump's business, subsidy, diplomatic, trade, and foreign-government deals.",
+  description: "A documented review framework for Donald Trump's business, subsidy, diplomatic, trade, and foreign-government deals.",
   alternates: { canonical: "https://dtrezise.github.io/TDS/deal-test/" },
   openGraph: {
     title: "The Deal Test — Promises. Leverage. Results.",
-    description: "Score the promise, leverage, concessions, verification, delivery, durability, public cost, and beneficiary.",
+    description: "Review the promise, leverage, concessions, verification, delivery, durability, public cost, and beneficiary.",
     url: "https://dtrezise.github.io/TDS/deal-test/",
     type: "website",
     images: [{
@@ -51,7 +51,7 @@ const groups = [
   {
     number: "04",
     title: "Second-term deals: spectacle, cost, and instability",
-    thesis: "The archive scores foreign gifts, emergency tariffs, and the path from abandoning a monitored nuclear agreement to direct war and disrupted energy transit.",
+    thesis: "The archive reviews foreign gifts, emergency tariffs, and the path from abandoning a monitored nuclear agreement to direct war and disrupted energy transit.",
     ids: ["qatar-gifted-presidential-jet-2025-2026", "tariff-volatility-economic-costs-2025-2026", "iran-deal-exit-to-hormuz-crisis-2018-2026"],
   },
 ] as const;
@@ -90,7 +90,7 @@ export default function DealTestPage() {
       <section className="patriotic-intro">
         <div>
           <p className="section-label">The performance standard</p>
-          <h1>A deal is not a press conference. Score the promise against the delivered result.</h1>
+          <h1>A deal is not a press conference. Test the promise against the delivered result.</h1>
         </div>
         <div className="patriotic-intro__copy">
           <p className="patriotic-intro__lead">“I made a deal” is the beginning of the audit—not the conclusion.</p>
@@ -102,7 +102,7 @@ export default function DealTestPage() {
 
       <TestScorecard
         testId="deal"
-        intro="The scorecard resists declaring victory at announcement, ignoring concessions, and redefining the objective after performance falls short."
+        intro="The review framework resists declaring victory at announcement, ignoring concessions, and redefining the objective after performance falls short."
       />
 
       <section className="patriotic-record-section" id="deal-record" aria-labelledby="deal-record-title">

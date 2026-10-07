@@ -7,6 +7,7 @@ type Destination = "x" | "bluesky" | "facebook" | "linkedin" | "email";
 
 type ShareEBoxProps = {
   anchor: string;
+  permalink?: string;
   title: string;
   summary: string;
   status?: string;
@@ -76,29 +77,58 @@ function composePost(
   return `${heading}\n\n${summary}\n\n${attribution}\n\nReview the evidence, source status, limiting context, and linked record:\n${url}`;
 }
 
-export function ShareEBox({ anchor, title, summary, status, context }: ShareEBoxProps) {
+export function ShareEBox({ anchor, permalink, title, summary, status, context }: ShareEBoxProps) {
   const [open, setOpen] = useState(false);
   const [destination, setDestination] = useState<Destination>("bluesky");
   const [url, setUrl] = useState("");
   const [postText, setPostText] = useState("");
   const [message, setMessage] = useState("");
   const closeRef = useRef<HTMLButtonElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLElement>(null);
 
   const postData = useMemo(() => ({ title, summary: cleanText(summary), status, context, url }), [title, summary, status, context, url]);
 
   useEffect(() => {
     if (!open) return;
+    const trigger = triggerRef.current;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     closeRef.current?.focus();
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      if (event.key !== "Tab" || !dialogRef.current) return;
+      const focusable = [...dialogRef.current.querySelectorAll<HTMLElement>(
+        'button, a[href], textarea, input, select, [tabindex]:not([tabindex="-1"])',
+      )].filter((element) => !element.hasAttribute("disabled"));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable.at(-1)!;
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+      trigger?.focus();
+    };
   }, [open]);
 
   function openComposer() {
     const currentPage = window.location.href.split("#")[0];
-    const roundTripUrl = `${currentPage}#${encodeURIComponent(anchor)}`;
+    const githubPagesBase = window.location.pathname === "/TDS" || window.location.pathname.startsWith("/TDS/") ? "/TDS" : "";
+    const roundTripUrl = permalink
+      ? new URL(`${githubPagesBase}${permalink}`, window.location.origin).toString()
+      : `${currentPage}#${encodeURIComponent(anchor)}`;
     setUrl(roundTripUrl);
     setDestination("bluesky");
     setPostText(composePost("bluesky", { title, summary, status, context, url: roundTripUrl }));
@@ -165,7 +195,7 @@ export function ShareEBox({ anchor, title, summary, status, context }: ShareEBox
 
   return (
     <>
-      <button className="ebox-share-trigger" type="button" onClick={openComposer} aria-label={`Share evidence: ${title}`}>
+      <button ref={triggerRef} className="ebox-share-trigger" type="button" onClick={openComposer} aria-label={`Share evidence: ${title}`}>
         <span aria-hidden="true">↗</span> Share evidence
       </button>
 
@@ -173,7 +203,7 @@ export function ShareEBox({ anchor, title, summary, status, context }: ShareEBox
         <div className="ebox-share-overlay" role="presentation" onMouseDown={(event) => {
           if (event.target === event.currentTarget) setOpen(false);
         }}>
-          <section className="ebox-share-dialog" role="dialog" aria-modal="true" aria-labelledby={`share-title-${anchor}`}>
+          <section ref={dialogRef} className="ebox-share-dialog" role="dialog" aria-modal="true" aria-labelledby={`share-title-${anchor}`}>
             <div className="ebox-share-dialog__topline">
               <div>
                 <p className="eyebrow">Build a shareable evidence post</p>

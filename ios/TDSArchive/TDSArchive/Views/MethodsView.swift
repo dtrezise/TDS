@@ -8,7 +8,7 @@ struct MethodsView: View {
         MethodStandard(title: "Name the legal status", body: "Conviction, civil liability, allegation, charge, settlement, dismissal, appeal, pardon, reporting, and analysis are not interchangeable."),
         MethodStandard(title: "Preserve limiting context", body: "Denials, acquittals, dismissals, reversals, appeals, changed circumstances, and later corrections stay attached to the record."),
         MethodStandard(title: "Make every claim inspectable", body: "Each public case file includes direct evidence links so readers can examine the source and test the archive's argument."),
-        MethodStandard(title: "Correct the archive", body: "Titles, summaries, share copy, scores, and source status must be revisited when the underlying record changes."),
+        MethodStandard(title: "Correct the archive", body: "Titles, summaries, share copy, qualitative findings, and source status must be revisited when the underlying record changes."),
     ]
 
     var body: some View {

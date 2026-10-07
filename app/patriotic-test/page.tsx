@@ -4,8 +4,6 @@ import { caseFiles, type CaseFile } from "@/data/cases";
 import { PageMasthead, SiteFooter, SiteHeader, TestSuiteNav } from "../site-chrome";
 import { ShareEBox } from "../share-ebox";
 import { TestScorecard } from "../test-scorecard";
-import { TestScoreBadge } from "../test-score-badge";
-import { scoreCaseAgainstRubric, scoreTextAgainstRubric } from "@/data/test-rubrics";
 
 export const metadata: Metadata = {
   title: "Patriotic Test | TDS",
@@ -117,21 +115,20 @@ function ArrowIcon() {
 
 function EvidenceRecord({ item }: { item: CaseFile }) {
   const anchor = `patriotic-${item.id}`;
-  const score = scoreCaseAgainstRubric(item, "patriotic", "Fails");
   return (
     <article className="patriotic-record" id={anchor}>
-      <TestScoreBadge score={score} id={`${anchor}-score`} />
+      <span className="record-review-label">Qualitative editorial review</span>
       <p className="patriotic-record__date">{item.date}</p>
       <h3>{item.title}</h3>
       <div className="patriotic-record__status"><strong>Record status</strong><span>{item.status}</span></div>
       <p>{item.summary}</p>
       <p className="patriotic-record__significance"><strong>Why it matters</strong>{item.significance}</p>
-      <ShareEBox anchor={anchor} title={item.title} summary={item.summary} status={item.status} context="Patriotic Test" />
+      <ShareEBox anchor={anchor} permalink={`/evidence/${item.id}/`} title={item.title} summary={item.summary} status={item.status} context="Patriotic Test" />
       <div className="patriotic-record__links">
         {item.sources.slice(0, 2).map((source) => (
           <a href={source.url} target="_blank" rel="noreferrer" key={source.url}>{source.publisher}: {source.label} <ArrowIcon /></a>
         ))}
-        <Link href={`/#${item.id}`}>Open full Evidence case file <ArrowIcon /></Link>
+        <Link href={`/evidence/${item.id}/`}>Open permanent Evidence case file <ArrowIcon /></Link>
       </div>
     </article>
   );
@@ -173,7 +170,7 @@ export default function PatrioticTestPage() {
 
       <TestScorecard
         testId="patriotic"
-        intro="The Constitution allocates power, protects rights, and requires public officers to support the constitutional order. The score makes those commitments directly applicable to each record."
+        intro="The Constitution allocates power, protects rights, and requires public officers to support the constitutional order. The framework makes those commitments directly applicable to each record without pretending that a keyword count is a measurement."
       />
 
       <section className="patriotic-record-section" id="patriotic-record" aria-labelledby="patriotic-record-title">
@@ -202,10 +199,7 @@ export default function PatrioticTestPage() {
           </div>
           <div className="patriotic-record-grid patriotic-record-grid--single">
             <article className="patriotic-record" id={pressCase.id}>
-              <TestScoreBadge
-                score={scoreTextAgainstRubric("patriotic", [pressCase.title, pressCase.status, pressCase.summary, pressCase.significance].join(" "), "Fails")}
-                id={`${pressCase.id}-score`}
-              />
+              <span className="record-review-label">Qualitative editorial review</span>
               <p className="patriotic-record__date">{pressCase.date}</p>
               <h3>{pressCase.title}</h3>
               <div className="patriotic-record__status"><strong>Record status</strong><span>{pressCase.status}</span></div>

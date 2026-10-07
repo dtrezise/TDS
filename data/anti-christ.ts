@@ -24,6 +24,7 @@ function normalizeStandaloneCase(item: RawStandaloneCase): CaseFile {
   return {
     ...item,
     category: item.category as CaseFile["category"],
+    lastSourceCheck: item.sources.map((source) => source.accessed).sort().at(-1) ?? item.sortDate,
     sources: item.sources.map((source) => ({
       ...source,
       kind: source.kind as EvidenceSource["kind"],

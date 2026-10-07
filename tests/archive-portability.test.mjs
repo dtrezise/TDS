@@ -20,20 +20,21 @@ test("normalizes the legacy research into a deterministic portable archive", asy
   assert.equal(first.counts.cases, 82);
   assert.equal(first.counts.case_aliases, 86);
   assert.equal(first.counts.claims, 172);
-  assert.equal(first.counts.sources, 217);
-  assert.equal(first.counts.claim_sources, 468);
+  assert.equal(first.counts.sources, 221);
+  assert.equal(first.counts.claim_sources, 476);
   assert.equal(first.counts.document_snapshots, 0);
   assert.equal(first.counts.editorial_reviews, 0);
   assert.equal(first.counts.corrections, 0);
   assert.equal(first.tables.claims.filter((claim) => claim.claim_type === "editorial_analysis").length, 65);
   assert.equal(first.tables.claims.filter((claim) => claim.claim_type === "faith_analysis").length, 21);
-  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "supports").length, 234);
-  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "contextualizes").length, 234);
+  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "supports").length, 238);
+  assert.equal(first.tables.claim_sources.filter((citation) => citation.relationship === "contextualizes").length, 238);
 
   const reviewClaims = first.tables.claims.filter((claim) => claim.publication_state === "review");
   assert.equal(reviewClaims.length, 8, "four suppressed duplicate records should create two review-state claims each");
   assert.ok(first.tables.claim_sources.every((citation) => citation.citation_note && citation.excerpt_word_count === 0));
   assert.ok(first.tables.sources.every((source) => source.retrieved_at && source.copyright_handling === "link_only"));
+  assert.ok(first.tables.sources.filter((source) => source.source_type === "news-reporting").every((source) => source.authority_tier === "reporting"));
 });
 
 test("generates a D1-compatible seed that loads after the Drizzle migration", async () => {
@@ -57,5 +58,5 @@ test("generates a D1-compatible seed that loads after the Drizzle migration", as
     input: `PRAGMA foreign_keys=ON;\n${migrations.join("\n")}\n${seedSql}\nSELECT count(*) FROM cases;\nSELECT count(*) FROM claims;\nSELECT count(*) FROM claim_sources;\n`,
   });
 
-  assert.equal(output.trim(), "82\n172\n468");
+  assert.equal(output.trim(), "82\n172\n476");
 });

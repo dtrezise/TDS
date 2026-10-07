@@ -4,8 +4,6 @@ import directory from "@/research/blind-eyes/directory.json";
 import { PageMasthead, SiteFooter, SiteHeader } from "../site-chrome";
 import { ShareTools } from "../share-tools";
 import { ShareEBox } from "../share-ebox";
-import { TestScoreBadge } from "../test-score-badge";
-import { scoreTextAgainstRubric } from "@/data/test-rubrics";
 
 export const metadata: Metadata = {
   title: "Blind Eyes | TDS",
@@ -120,21 +118,7 @@ export default function BlindEyesPage() {
         </div>
 
         <div className="blind-grid">
-          {directory.profiles.map((profile, index) => {
-            const score = scoreTextAgainstRubric(
-              "christianity",
-              [
-                profile.name,
-                profile.alignment,
-                profile.summary,
-                profile.response_context,
-                profile.christian_analysis,
-                ...profile.evidence.map((item) => item.finding),
-                ...profile.teachings.flatMap((teaching) => [teaching.reference, teaching.principle]),
-              ].join(" "),
-              "Fails",
-            );
-            return (
+          {directory.profiles.map((profile, index) => (
             <article className="blind-card" id={profile.id} key={profile.id}>
               <div className="blind-card__topline">
                 <span>{String(index + 1).padStart(2, "0")}</span>
@@ -172,7 +156,6 @@ export default function BlindEyesPage() {
               </aside>
 
               <aside className="blind-faith-test">
-                <TestScoreBadge score={score} id={`${profile.id}-christianity-score`} />
                 <span className="blind-faith-test__label">Christianity test · editorial analysis</span>
                 <p>{profile.christian_analysis}</p>
                 <div>
@@ -186,8 +169,7 @@ export default function BlindEyesPage() {
                 </div>
               </aside>
             </article>
-            );
-          })}
+          ))}
         </div>
       </section>
 

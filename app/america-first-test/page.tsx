@@ -108,7 +108,7 @@ export default function AmericaFirstTestPage() {
 
       <TestScorecard
         testId="america-first"
-        intro="The rubric does not dictate one foreign-policy ideology. It requires a policy advertised as “America First” to disclose authority, costs, opportunity costs, beneficiaries, and durable outcomes."
+        intro="The review framework does not dictate one foreign-policy ideology. It requires a policy advertised as “America First” to disclose authority, costs, opportunity costs, beneficiaries, and durable outcomes."
       />
 
       <section className="patriotic-record-section" id="america-record" aria-labelledby="america-record-title">

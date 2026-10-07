@@ -1,7 +1,7 @@
 # Archive data architecture and migration plan
 
 Status: **schema-ready; storage not activated**
-Decision date: July 13, 2026; baseline refreshed July 14, 2026
+Decision date: July 13, 2026; baseline refreshed October 7, 2026
 
 ## Decision
 
@@ -9,7 +9,7 @@ Keep the current JSON research files and static site operational while establish
 
 The activation sequence is:
 
-1. D1 at roughly 250–500 canonical cases, or sooner when collaborative editing or incremental publishing requires durable shared state.
+1. D1 at roughly 250–500 canonical cases, or sooner when collaborative editing, correction tracking, or incremental publishing requires durable shared state. The project should prepare activation now rather than wait for the size threshold.
 2. R2 when the project begins preserving permitted documents, screenshots, media, or database exports.
 3. Server-side filtering and full-text search at roughly 1,000 cases, or earlier if the static client bundle becomes materially slow.
 4. Automated D1 exports to R2 after both resources are active, in addition to Git history and D1 Time Travel.
@@ -20,13 +20,13 @@ The thresholds are operational gates, not hard capacity limits. Editorial workfl
 
 The source archive contains:
 
-- 84 raw research records in five lanes.
-- 80 canonical cases after four duplicate legal/business records are mapped to their canonical cases.
-- 227 source references, normalizing to 210 unique URLs.
+- 86 raw research records in five lanes.
+- 82 canonical cases after four duplicate legal/business records are mapped to their canonical cases.
+- 238 source references, normalizing to 221 unique URLs.
 - 42 Christianity teaching references.
 - Approximately 234 KB of core research JSON.
 
-The v1 conversion produces 168 claims—one factual record claim for every raw record, plus 63 editorial-analysis and 21 faith-analysis claims—and 454 claim-to-source citation relationships. Evidence directly `supports` the factual claims and `contextualizes` the analysis claims. The eight claims produced from the four suppressed duplicate records remain in `review`, not `published`, state.
+The v1 conversion produces 172 claims and 476 claim-to-source citation relationships. Evidence directly `supports` factual claims and `contextualizes` analysis claims. Claims produced from suppressed duplicate records remain in `review`, not `published`, state.
 
 ## Account and binding audit
 
@@ -111,6 +111,8 @@ Before D1 becomes authoritative, application code must enforce these rules in ad
 8. A document enters R2 only after its rights basis is recorded. Copyrighted reporting defaults to `link_only`.
 9. Headline, defamation/status, and source reviews must be approved before a newly investigated accusation is published.
 10. A stale legal-status review can remove a claim from publication until it is refreshed.
+11. Automated monitoring can create private review candidates but cannot publish, commit, push, or deploy a factual change without human editorial approval.
+12. Public artifacts must exclude unpublished leads, expert contact routes, interview notes, credentials, private identities, and operational security records.
 
 The legacy import deliberately creates no completed review or correction records. It must not manufacture an audit trail that did not previously exist.
 

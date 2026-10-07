@@ -177,7 +177,7 @@ private struct EvidenceRow: View {
                     .foregroundStyle(.secondary)
                 Spacer()
                 ForEach(item.tests.prefix(3)) { test in
-                    ScoreChip(test: test)
+                    LensChip(test: test)
                 }
                 Image(systemName: "chevron.right")
                     .font(.caption.weight(.bold))
@@ -191,15 +191,15 @@ private struct EvidenceRow: View {
     }
 }
 
-struct ScoreChip: View {
+struct LensChip: View {
     let test: TestLens
 
     var body: some View {
-        Text(test.score.score.map(String.init) ?? "N/A")
+        Text(test.id.prefix(2).uppercased())
             .font(.caption2.weight(.heavy))
             .foregroundStyle(.white)
             .frame(minWidth: 31, minHeight: 25)
             .background(TestTone.color(for: test.id))
-            .accessibilityLabel("\(test.label), \(test.score.score.map { "\($0) out of 100" } ?? "not scored")")
+            .accessibilityLabel("\(test.label), \(test.finding)")
     }
 }
