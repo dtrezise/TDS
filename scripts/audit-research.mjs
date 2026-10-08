@@ -1,7 +1,7 @@
 import { readFile, readdir } from "node:fs/promises";
 
 const root = new URL("../research/", import.meta.url);
-const files = (await readdir(root)).filter((file) => file.endsWith(".json")).sort();
+const files = (await readdir(root)).filter((file) => file.endsWith(".json") && file !== "whats-new.json").sort();
 if (files.length < 5) throw new Error(`Expected five research files; found ${files.length}`);
 
 const ids = new Set();

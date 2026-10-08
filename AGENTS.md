@@ -41,6 +41,7 @@ Rotate these roles to the foreground as the work requires:
 - Never publish the private expert registry, candidate notes, outreach history, or interview-production records. Publication of a name, quotation, recording, transcript, or video requires a documented editorial decision and appropriate consent or license.
 - Do not initiate expert outreach, send interview invitations, schedule interviews, or record conversations without Dan's explicit approval.
 - Run the research audit, link audit, static build, and rendered-HTML tests before publishing.
+- Treat the daily monitor as lead generation, not a factual publisher. Its sole automated public-write exception is `research/whats-new.json`: the deterministic reconciler may index navigation metadata only for reviewed Evidence or Voices records already committed to the public catalog. It may never convert a monitoring lead into a public entry.
 
 ## Routing governance
 
