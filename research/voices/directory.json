@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-07-13",
+  "reviewed": "2026-10-07",
   "scope": "A cross-tradition directory of Christian leaders, writers, researchers, pastors, journalists, and organizations whose first-party work explicitly challenges Christian nationalism or the political capture of Christianity.",
   "editorial_note": "Inclusion documents relevant public work; it does not imply affiliation with TDS, endorsement of this site, or agreement among the people and organizations listed.",
   "scripture": {
@@ -54,6 +54,30 @@
       "action": "Explore the network",
       "url": "https://redletterchristians.org/about-us/our-mission-our-story/",
       "source": "https://redletterchristians.org/about-us/our-mission-our-story/"
+    },
+    {
+      "name": "Interfaith Alliance",
+      "kind": "Religious freedom · litigation · public education",
+      "description": "A national, multifaith organization defending religious freedom and democratic pluralism while publishing practical explainers, interviews, and legal challenges to Christian-nationalist government power.",
+      "action": "Explore the resources",
+      "url": "https://www.interfaithalliance.org/issues/anti-authoritarianism",
+      "source": "https://www.interfaithalliance.org/post/communities-of-faith-are-sounding-the-alarm-about-christian-nationalism"
+    },
+    {
+      "name": "Christians for Social Action",
+      "kind": "Education · formation · justice practice",
+      "description": "An ecumenical Christian organization connecting biblical scholarship with racial, economic, and ecological justice, including resources for resisting nationalism, dominance, and political violence.",
+      "action": "Use the resistance guide",
+      "url": "https://christiansforsocialaction.org/resource/how-christians-can-resist-nationalism/",
+      "source": "https://christiansforsocialaction.org/about-us/"
+    },
+    {
+      "name": "Faith in Democracy",
+      "kind": "Faith-rooted democracy defense · organizing",
+      "description": "Rev. Jennifer Butler’s initiative equips faith communities to resist autocracy and religious nationalism and to build a multifaith, multiracial democracy grounded in human dignity.",
+      "action": "Meet the initiative",
+      "url": "https://www.revjenbutler.com/speaking/",
+      "source": "https://www.ucc.org/general-synod-35-keynote-speaker-is-a-minister-at-the-intersection-of-faith-and-civic-engagement/"
     }
   ],
   "voices": [
@@ -188,6 +212,50 @@
       "follow_label": "Dangerous Dogma podcast",
       "follow_url": "https://dogma.wordandway.org/",
       "source": "https://dogma.wordandway.org/188-brian-kaylor-on-the-bible-according-to-christian-nationalists-with-guest-host-beau-underwood"
+    },
+    {
+      "name": "Jennifer Butler",
+      "role": "Presbyterian minister · democracy organizer",
+      "description": "Founder of Faith in Democracy and former founding leader of Faith in Public Life, Butler uses scripture, organizing, and public theology to confront Christian nationalism and authoritarianism.",
+      "why": "Follow for a practical Christian vocabulary of resistance that joins human dignity, pluralistic democracy, and the Bible’s warnings about tyranny.",
+      "primary_label": "Read Jennifer Butler",
+      "primary_url": "https://pres-outlook.org/2026/07/church-country-and-the-crisis-of-moral-imagination/",
+      "follow_label": "Reclaiming Faith newsletter",
+      "follow_url": "https://revjenbutler.substack.com/",
+      "source": "https://www.ucc.org/general-synod-35-keynote-speaker-is-a-minister-at-the-intersection-of-faith-and-civic-engagement/"
+    },
+    {
+      "name": "Matthew D. Taylor",
+      "role": "Christian theologian · scholar of religious extremism",
+      "description": "A scholar of the New Apostolic Reformation and Christian movements surrounding January 6 whose current work explicitly challenges Christian nationalism, supremacy, and authoritarian uses of Jesus.",
+      "why": "Follow for network-level research explaining how prophecy, spiritual-warfare theology, and political organizing travel from ministries into national power.",
+      "primary_label": "Explore his research",
+      "primary_url": "https://www.drmatthewdtaylor.com/",
+      "follow_label": "American Babylon newsletter",
+      "follow_url": "https://matthewdtaylor.substack.com/",
+      "source": "https://www.drmatthewdtaylor.com/"
+    },
+    {
+      "name": "Paul Brandeis Raushenbush",
+      "role": "Baptist minister · Interfaith Alliance president",
+      "description": "An ordained Baptist minister leading Interfaith Alliance’s defense of religious pluralism, including public education and litigation opposing government favoritism toward one religious-political movement.",
+      "why": "Follow for an interfaith and constitutional response to Christian nationalism, with interviews that connect theology, civil rights, and democratic practice.",
+      "primary_label": "Read at Interfaith Alliance",
+      "primary_url": "https://www.interfaithalliance.org/post/communities-of-faith-are-sounding-the-alarm-about-christian-nationalism",
+      "follow_label": "State of Belief",
+      "follow_url": "https://www.interfaithalliance.org/state-of-belief",
+      "source": "https://www.interfaithalliance.org/post/communities-of-faith-are-sounding-the-alarm-about-christian-nationalism"
+    },
+    {
+      "name": "Robert P. Jones",
+      "role": "Religion researcher · author",
+      "description": "Founder and president of PRRI, Jones documents the relationship among white Christian identity, race, authoritarianism, and democratic backsliding using national survey data and historical analysis.",
+      "why": "Follow for evidence that distinguishes measurable Christian-nationalist beliefs from loose political insult and tracks how those beliefs change over time.",
+      "primary_label": "Explore PRRI research",
+      "primary_url": "https://www.prri.org/research/",
+      "follow_label": "Redeeming Democracy",
+      "follow_url": "https://www.redeemingdemocracy.net/",
+      "source": "https://www.interfaithalliance.org/post/what-we-know-about-christian-nationalism-with-robert-p-jones"
     }
   ]
 }

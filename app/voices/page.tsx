@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import antiChristDirectory from "@/research/anti-christ/directory.json";
+import blindEyesDirectory from "@/research/blind-eyes/directory.json";
+import voicesDirectory from "@/research/voices/directory.json";
 import { SiteFooter, SiteHeader } from "../site-chrome";
 
 export const metadata: Metadata = {
@@ -36,6 +39,7 @@ const sections = [
     image: "/rooftops-hero.jpg",
     imageAlt: "Rooftops — Christian voices against Christian nationalism",
     action: "Hear the voices",
+    record: `${voicesDirectory.movements.length} organizations · ${voicesDirectory.voices.length} voices · reviewed ${voicesDirectory.reviewed}`,
   },
   {
     eyebrow: "Documented alignment",
@@ -45,6 +49,7 @@ const sections = [
     image: "/blind-eyes-hero.jpg",
     imageAlt: "Blind Eyes — pulpits that bless political power",
     action: "Examine the record",
+    record: `${blindEyesDirectory.profiles.length} profiles · denials and context included · reviewed ${blindEyesDirectory.reviewed}`,
   },
   {
     eyebrow: "Conduct against teaching",
@@ -54,6 +59,7 @@ const sections = [
     image: "/anti-christ-hero.jpg",
     imageAlt: "Anti Christ — conduct against the teaching",
     action: "Apply the comparison",
+    record: `${antiChristDirectory.categories.length} categories · ${antiChristDirectory.categories.reduce((total, category) => total + category.all_case_ids.length, 0)} record placements · reviewed ${antiChristDirectory.reviewed}`,
   },
 ] as const;
 
@@ -85,6 +91,7 @@ export default function VoicesHubPage() {
               <p className="eyebrow">{section.eyebrow}</p>
               <h2>{section.title}</h2>
               <p>{section.description}</p>
+              <p className="hub-card__meta">{section.record}</p>
               <Link href={section.href}>{section.action} <span aria-hidden="true">↗</span></Link>
             </div>
           </article>

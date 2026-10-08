@@ -107,6 +107,9 @@ test("exports accessible archive and share controls", () => {
 test("exports the Voices and Tests hubs", () => {
   assert.match(voicesHubHtml, /Hear the resistance/);
   assert.match(voicesHubHtml, /Examine the complicity/);
+  assert.match(voicesHubHtml, /16 voices/);
+  assert.match(voicesHubHtml, /10 profiles/);
+  assert.match(voicesHubHtml, /100 record placements/);
   for (const href of ["rooftops", "blind-eyes", "anti-christ"]) assert.match(voicesHubHtml, route(href));
   assert.doesNotMatch(voicesHubHtml, /class="hub-intro"/);
 
@@ -121,13 +124,17 @@ test("exports the Christian resistance and accountability directories", () => {
   assert.match(rooftopsHtml, /Christians Against Christian Nationalism/);
   assert.match(rooftopsHtml, /Amanda Tyler/);
   assert.match(rooftopsHtml, /William J\. Barber II/);
-  assert.ok((rooftopsHtml.match(/class="voice-card"/g) ?? []).length === 12);
+  assert.match(rooftopsHtml, /Jennifer Butler/);
+  assert.match(rooftopsHtml, /Matthew D\. Taylor/);
+  assert.ok((rooftopsHtml.match(/class="voice-card"/g) ?? []).length === 16);
 
   assert.match(blindEyesHtml, /Franklin Graham/);
   assert.match(blindEyesHtml, /Eric Metaxas/);
+  assert.match(blindEyesHtml, /Paula White-Cain/);
+  assert.match(blindEyesHtml, /Jack Hibbs/);
   assert.match(blindEyesHtml, /Denial, response, or limiting context/);
   assert.match(blindEyesHtml, /No guilt by association/);
-  assert.ok((blindEyesHtml.match(/class="blind-card"/g) ?? []).length === 8);
+  assert.ok((blindEyesHtml.match(/class="blind-card"/g) ?? []).length === 10);
   assert.doesNotMatch(blindEyesHtml, /test-score-badge|\/100/);
 });
 
@@ -139,7 +146,7 @@ test("exports the Anti Christ teaching comparison without pseudo-scores", () => 
   }
   assert.ok((antiChristHtml.match(/class="anti-category"/g) ?? []).length === 8);
   assert.ok((antiChristHtml.match(/class="anti-case-date"/g) ?? []).length === 40);
-  assert.ok((antiChristHtml.match(/class="anti-record-card"/g) ?? []).length === 71);
+  assert.ok((antiChristHtml.match(/class="anti-record-card"/g) ?? []).length === 100);
   assert.doesNotMatch(antiChristHtml, /test-score-badge|\/100/);
 });
 
