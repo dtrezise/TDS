@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-07-14",
+  "reviewed": "2026-10-07",
   "scope": "A curated, growing index of Donald Trump's documented public conduct and official actions compared with teachings attributed to Jesus and closely related New Testament moral instruction.",
   "title_note": "Anti Christ is used as two words: conduct opposed to the teaching and example of Christ. It is not a claim that Donald Trump is the prophetic or apocalyptic Antichrist, and it does not purport to judge his soul.",
   "editorial_note": "The category names are theological and editorial, not substitutes for criminal-law labels. Each record preserves its actual status. An act may appear in more than one category when it conflicts with more than one teaching.",
@@ -226,6 +226,14 @@
       "source_label": "Full speech video",
       "url": "https://www.pbs.org/video/watch-presidential-candidate-donald-trump-s-full-speech-1476405218/",
       "media_type": "Video"
+    },
+    {
+      "case_id": "la-san-diego-iran-rally-language-2026",
+      "quote": "Let them take out Los Angeles. Let them take out San Diego.",
+      "context": "October 5, 2026 rally language while defending the Iran war. The surrounding passage and White House clarification indicate Trump meant the war was preventing Iran from gaining that capability; the archive does not claim he invited an attack.",
+      "source_label": "Full October 5 rally transcript",
+      "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-grand-island-nebraska-october-5-2026/",
+      "media_type": "Transcript"
     }
   ],
   "categories": [
@@ -257,7 +265,10 @@
         "election-subversion-january-6-report",
         "central-park-five-death-penalty-campaign",
         "serge-kovaleski-pantomime",
-        "obama-apes-social-post"
+        "obama-apes-social-post",
+        "epstein-transparency-promise-reversal-2025",
+        "epstein-files-deadline-omissions-2025-2026",
+        "helsinki-putin-election-interference-denial-2018"
       ]
     },
     {
@@ -276,7 +287,7 @@
         "new-york-civil-business-fraud",
         "foreign-government-payments-emoluments",
         "trump-university-settlement",
-        "ukraine-aid-impoundment-violation"
+        "trump-memecoin-presidential-access-dinner-2025"
       ],
       "all_case_ids": [
         "trump-foundation-fiduciary-breach",
@@ -287,7 +298,14 @@
         "new-york-falsifying-business-records-conviction",
         "trump-organization-tax-fraud-conviction",
         "ivanka-kushner-white-house-nepotism",
-        "faith-obbba-poor-2025"
+        "faith-obbba-poor-2025",
+        "trump-memecoin-presidential-access-dinner-2025",
+        "uae-mgx-world-liberty-stablecoin-deal-2025",
+        "trump-organization-qatar-resort-presidency-2025",
+        "great-time-to-buy-tariff-pause-2025",
+        "trevor-milton-pardon-campaign-money-2025",
+        "paul-walczak-pardon-fundraiser-access-2025",
+        "changpeng-zhao-pardon-trump-crypto-links-2025"
       ]
     },
     {
@@ -333,7 +351,7 @@
         "faith-mass-deportation-2025",
         "faith-refugee-ceiling-2017-2021",
         "faith-obbba-poor-2025",
-        "birthright-citizenship-order-unconstitutional"
+        "northeast-syria-withdrawal-kurdish-partners-2019"
       ],
       "all_case_ids": [
         "family-separation-zero-tolerance",
@@ -344,7 +362,11 @@
         "faith-death-penalty-2025",
         "central-park-five-death-penalty-campaign",
         "faith-america-first-2017-2025",
-        "trump-housing-discrimination-case"
+        "trump-housing-discrimination-case",
+        "northeast-syria-withdrawal-kurdish-partners-2019",
+        "mbs-khashoggi-intelligence-dismissal-2018-2025",
+        "la-san-diego-iran-rally-language-2026",
+        "cuba-takeover-rhetoric-oil-coercion-2026"
       ]
     },
     {
@@ -361,7 +383,7 @@
       "featured_case_ids": [
         "faith-retribution-enemy-within-2023-2024",
         "faith-kirk-memorial-forgiveness-2025",
-        "faith-death-penalty-2025",
+        "law-firm-retaliation-orders-2025-2026",
         "central-park-five-death-penalty-campaign",
         "january-6-blanket-clemency"
       ],
@@ -373,7 +395,10 @@
         "january-6-blanket-clemency",
         "second-impeachment-january-6",
         "pardons-investigation-allies-2020",
-        "john-mccain-pow-insult"
+        "john-mccain-pow-insult",
+        "law-firm-retaliation-orders-2025-2026",
+        "comey-james-prosecutions-unlawful-appointment-2025",
+        "associated-press-gulf-access-retaliation-2025"
       ]
     },
     {
@@ -391,8 +416,8 @@
         "faith-repentance-2015",
         "rnc-i-alone-can-fix-it",
         "faith-lafayette-bible-2020",
-        "faith-nationalist-campaign-fusion-2024",
-        "faith-paula-white-prosperity-2016-2025"
+        "kennedy-center-self-renaming-2025-2026",
+        "personal-branding-federal-programs-assets-2025-2026"
       ],
       "all_case_ids": [
         "faith-repentance-2015",
@@ -403,7 +428,11 @@
         "faith-america-first-2017-2025",
         "faith-anti-christian-bias-taskforce-2025",
         "faith-project2025-schedule-policy-career-2022-2025",
-        "faith-retribution-enemy-within-2023-2024"
+        "faith-retribution-enemy-within-2023-2024",
+        "kennedy-center-self-renaming-2025-2026",
+        "personal-branding-federal-programs-assets-2025-2026",
+        "monumental-arch-proposal-review-2026",
+        "white-house-east-wing-ballroom-review-2025-2026"
       ]
     },
     {
@@ -450,8 +479,8 @@
       "featured_case_ids": [
         "election-subversion-january-6-report",
         "first-impeachment-ukraine",
-        "mass-inspector-general-firings-2025",
-        "faith-project2025-schedule-policy-career-2022-2025",
+        "law-firm-retaliation-orders-2025-2026",
+        "election-registration-order-separation-of-powers-2025",
         "january-6-blanket-clemency"
       ],
       "all_case_ids": [
@@ -465,7 +494,15 @@
         "pardons-investigation-allies-2020",
         "birthright-citizenship-order-unconstitutional",
         "faith-heritage-first-term-2017-2018",
-        "faith-anti-christian-bias-taskforce-2025"
+        "faith-anti-christian-bias-taskforce-2025",
+        "law-firm-retaliation-orders-2025-2026",
+        "comey-james-prosecutions-unlawful-appointment-2025",
+        "associated-press-gulf-access-retaliation-2025",
+        "election-registration-order-separation-of-powers-2025",
+        "midterm-mail-ballot-order-injunction-2026",
+        "los-angeles-military-civilian-law-enforcement-2025",
+        "cuba-takeover-rhetoric-oil-coercion-2026",
+        "icc-judges-prosecutors-sanctions-2025-2026"
       ]
     }
   ]

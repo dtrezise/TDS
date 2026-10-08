@@ -3764,6 +3764,18 @@ footer p {
   margin: 0;
 }
 
+.hub-card__body > .hub-card__meta {
+  border-top: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  color: var(--ink-soft);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.45;
+  margin-top: 20px;
+  padding-top: 12px;
+  text-transform: uppercase;
+}
+
 .hub-card__body > a,
 .test-hub-card__body a,
 .hub-boundary > a {

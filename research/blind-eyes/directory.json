@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-07-13",
+  "reviewed": "2026-10-07",
   "scope": "A claim-specific directory of prominent Christian leaders, churches, and political ministries whose documented words or organizing work advance, normalize, or provide religious legitimacy for Christian nationalism, Christian nationhood, or Trump-centered partisan Christianity.",
   "editorial_note": "The page criticizes public conduct and public theology. It does not judge anyone's salvation, treat Christians as a monolith, or infer a person's position from association alone. Each alignment label is limited to the evidence shown, and denials or material limiting context are included.",
   "scripture": {
@@ -194,6 +194,14 @@
           "source_label": "A once-fringe Christian leader gets a welcome in Washington",
           "publisher": "Associated Press",
           "url": "https://apnews.com/article/8eb7a46747301dd939df18ba64ac5577"
+        },
+        {
+          "date": "2026-10-02",
+          "type": "Current network influence",
+          "finding": "The AP reported that Defense Secretary Pete Hegseth, a CREC member, created a Pentagon Office of Religious Affairs reporting directly to him after months of official worship services and statements describing the United States as a Christian nation. This item documents the network connection without attributing Hegseth's decisions to Wilson.",
+          "source_label": "Hegseth creates Pentagon Office of Religious Affairs",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/41405eb6dd60ca5a3f45fe3387f82952"
         }
       ],
       "response_context": "Wilson expressly rejects white nationalism and says non-Christians can be Americans. The women's-voting statements in the AP video came from multiple network pastors, so this profile attributes them to the network rather than falsely assigning every quotation to Wilson.",
@@ -380,7 +388,7 @@
           "url": "https://tpusa.com/live/tpusas-the-believers-summit-a-call-to-unity-and-biblical-truth/"
         },
         {
-          "date": "Reviewed 2026-07-13",
+          "date": "Reviewed 2026-10-07",
           "type": "Current first-party mission",
           "finding": "A TPUSA Faith prayer page says the organization exists to unite the American church around primary Christian doctrines and eliminate 'wokeism' from the pulpit, while recruiting 'godly patriots' to carry the mission forward.",
           "source_label": "TPUSA Faith prayer card and mission",
@@ -400,6 +408,102 @@
           "reference": "Mark 10:42-45",
           "principle": "Jesus rejects domination as the pattern for Christian leadership and substitutes service.",
           "url": "https://bible.usccb.org/bible/mark/10"
+        }
+      ]
+    },
+    {
+      "id": "paula-white-white-house-faith-office",
+      "name": "Paula White-Cain & the White House Faith Office",
+      "role": "Pastor · presidential faith adviser · White House Faith Office leader",
+      "alignment": "Trump sacralization joined to official government religious power",
+      "alignment_strength": "Direct statements and official institutional role; not self-identification",
+      "summary": "White-Cain has moved from Trump's spiritual adviser into a formal White House role while repeatedly presenting his survival, political return, and agenda through claims of divine purpose. In 2026 she compared Trump's political and legal suffering with Jesus' betrayal, accusation, and victory.",
+      "evidence": [
+        {
+          "date": "2025-02-07",
+          "type": "Official appointment",
+          "finding": "The White House appointed White-Cain as a senior adviser in the newly created White House Faith Office, giving a longtime Trump spiritual adviser an official role coordinating the administration's faith engagement.",
+          "source_label": "Appointments to the White House Faith Office",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/02/president-trump-announces-appointments-to-the-white-house-faith-office/"
+        },
+        {
+          "date": "2026-04-01",
+          "type": "Recorded public remarks",
+          "finding": "At a White House Easter event, White-Cain said Trump had been betrayed, arrested, and falsely accused like Jesus, said no one had paid a price like Trump, and linked Christ's victory to Trump's future success. Religion News Service preserved the remarks and the theological criticism they prompted.",
+          "source_label": "Donald Trump's Easter clash of hell and holiness",
+          "publisher": "Religion News Service",
+          "url": "https://religionnews.com/2026/04/06/donald-trumps-hellish-and-holy-easter/"
+        },
+        {
+          "date": "2026-05-17",
+          "type": "Official-event and independent record",
+          "finding": "White-Cain appeared at Rededicate 250, a government-linked National Mall event framed as rededicating the country as one nation to God. The AP reported critics' concern that the event fused a narrow Christian identity with the nation.",
+          "source_label": "Prayer gathering draws Christian-nationalism criticism",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/c677a4c43070e9da261f4ec5ebcf62a4"
+        }
+      ],
+      "response_context": "White-Cain and the Faith Office describe their work as protecting religious liberty and ensuring that faith communities can serve the public. Comparing a leader's hardship with a biblical story is not by itself proof of Christian nationalism. The concern documented here is the repeated elevation of one president's political fortunes into a divine narrative while the speaker holds government authority over faith engagement.",
+      "christian_analysis": "Christian witness can pray for rulers without making their success a proxy for Christ's victory. The page tests this fusion against the New Testament's refusal to show partiality and Jesus' warning that greatness is service rather than proximity to political power.",
+      "teachings": [
+        {
+          "reference": "James 2:1-9",
+          "principle": "Faith in Christ is not to be practiced with favoritism toward the powerful or highly placed.",
+          "url": "https://bible.usccb.org/bible/james/2"
+        },
+        {
+          "reference": "Mark 10:42-45",
+          "principle": "Jesus rejects domination and identifies greatness with service.",
+          "url": "https://bible.usccb.org/bible/mark/10"
+        }
+      ]
+    },
+    {
+      "id": "jack-hibbs-calvary-chapel-chino-hills",
+      "name": "Jack Hibbs & Calvary Chapel Chino Hills",
+      "role": "Pastor · political organizer · media host",
+      "alignment": "Partisan faith-sorting and church-based electoral mobilization",
+      "alignment_strength": "Documented conduct; Christian-nation label expressly limited",
+      "summary": "Hibbs has used his church and media platform to mobilize conservative electoral action and has said a person cannot be both a Democratic voter and a believer in Jesus. He also says he does not want a Christian nation and wants believers and atheists to have equal rights.",
+      "evidence": [
+        {
+          "date": "2024-08-02",
+          "type": "First-party program",
+          "finding": "On an official episode titled 'What Is Christian Nationalism?', Hibbs said a person who votes Democratic cannot be a believer in Jesus because that vote is against the Bible, converting party voting into a boundary of Christian identity.",
+          "source_label": "What Is Christian Nationalism?",
+          "publisher": "Real Life with Jack Hibbs",
+          "url": "https://podcast.jackhibbs.com/what-is-christian-nationalism/"
+        },
+        {
+          "date": "2024-10-17",
+          "type": "On-site reporting and limiting context",
+          "finding": "The AP documented Hibbs and his church traveling to energize Christian voters and using church-based ballot collection. It also recorded Hibbs saying he did not want a Christian nation and wanted equal rights for devout believers and atheists.",
+          "source_label": "Conservative Christians gather mail ballots in churches",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/article/1d1a48c53f8e970fb3f31a7650f200fb"
+        },
+        {
+          "date": "2026-01-15",
+          "type": "Recorded church event",
+          "finding": "At a Calvary Chapel event promoting Republican candidates for California governor and attorney general, Hibbs said he did not want to be near people who vote Democratic because that conduct was dangerous. The report embeds the recorded remarks.",
+          "source_label": "Hibbs rejects proximity to Democratic voters",
+          "publisher": "Right Wing Watch / People For the American Way",
+          "url": "https://www.peoplefor.org/rightwingwatch/jack-hibbs-doesnt-want-be-anywhere-near-anyone-who-votes-democrats"
+        }
+      ],
+      "response_context": "Hibbs expressly says he does not want a Christian nation and affirms equal civil rights for atheists. He also frames his organizing as civic participation and opposition to policies he believes violate scripture. This profile therefore documents partisan faith-sorting and church-based political infrastructure without calling him a self-identified Christian nationalist.",
+      "christian_analysis": "Telling Christians that party affiliation determines whether they can belong to Christ substitutes a ballot test for the gospel and deepens contempt toward neighbors. The page compares that posture with Paul's rebuke of faction and Jesus' command to love those treated as political enemies.",
+      "teachings": [
+        {
+          "reference": "1 Corinthians 1:10-13",
+          "principle": "Paul rebukes factions organized around human leaders and asks whether Christ has been divided.",
+          "url": "https://bible.usccb.org/bible/1corinthians/1"
+        },
+        {
+          "reference": "Matthew 5:43-48",
+          "principle": "Jesus commands love and prayer for enemies rather than partisan contempt.",
+          "url": "https://bible.usccb.org/bible/matthew/5"
         }
       ]
     }
