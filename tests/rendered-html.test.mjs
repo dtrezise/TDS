@@ -7,6 +7,7 @@ async function output(path) {
 }
 
 const html = await output("index.html");
+const whatsNewHtml = await output("whats-new/index.html");
 const voicesHubHtml = await output("voices/index.html");
 const rooftopsHtml = await output("rooftops/index.html");
 const testsHubHtml = await output("tests/index.html");
@@ -27,7 +28,7 @@ const permanentCaseHtml = await output("evidence/new-york-falsifying-business-re
 const shareEBoxSource = await readFile(new URL("../app/share-ebox.tsx", import.meta.url), "utf8");
 
 const renderedPages = [
-  html, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml,
+  html, whatsNewHtml, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml,
   christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml,
   worldStandingTestHtml, methodologyHtml, aboutHtml, correctionsHtml, privacyHtml,
   independenceHtml, aiUseHtml, permanentCaseHtml,
@@ -119,6 +120,21 @@ test("exports the Voices and Tests hubs", () => {
   assert.doesNotMatch(testsHubHtml, /class="hub-intro"|>Apply a test</);
 });
 
+test("exports a rolling What’s New index with permanent-record links", () => {
+  assert.match(whatsNewHtml, /<title>What’s New \| TDS/);
+  assert.match(whatsNewHtml, /A rolling two-week publication window/);
+  assert.match(whatsNewHtml, /Discovery is not publication/);
+  assert.match(whatsNewHtml, /New Rooftops voice: Jennifer Butler/);
+  assert.match(whatsNewHtml, /Trump used reckless and ambiguous language about Iran/);
+  assert.match(whatsNewHtml, /Open the permanent record/);
+  assert.match(whatsNewHtml, route("evidence/la-san-diego-iran-rally-language-2026"));
+  assert.ok((whatsNewHtml.match(/class="new-card new-card--/g) ?? []).length === 53);
+  assert.ok((whatsNewHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 53);
+  assert.match(whatsNewHtml, /All 53/);
+  assert.match(whatsNewHtml, /Evidence 42/);
+  assert.match(whatsNewHtml, /Voices 11/);
+});
+
 test("exports the Christian resistance and accountability directories", () => {
   assert.match(rooftopsHtml, /A directory for Christian resistance/);
   assert.match(rooftopsHtml, /Christians Against Christian Nationalism/);
@@ -188,14 +204,15 @@ test("exports methodology and public accountability policies", () => {
   assert.match(privacyHtml, /Collect less\. Expose less/);
   assert.match(independenceHtml, /Support may fund the work/);
   assert.match(aiUseHtml, /AI can assist the workflow\. It cannot become the source/);
-  assert.match(aiUseHtml, /does not autonomously edit, commit, push, or deploy/);
+  assert.match(aiUseHtml, /does not autonomously publish factual records/);
+  assert.match(aiUseHtml, /narrow deterministic process may update the What’s New navigation index/);
 });
 
 test("uses a consistent header and accountability footer", () => {
   for (const pageHtml of renderedPages) {
     const nav = primaryNavigation(pageHtml);
-    for (const label of ["Evidence", "Voices", "Tests", "Methods"]) assert.match(nav, new RegExp(`>${label}<`));
-    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 4);
+    for (const label of ["Evidence", "What’s New", "Voices", "Tests", "Methods"]) assert.match(nav, new RegExp(`>${label}<`));
+    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 5);
 
     const footerMatch = pageHtml.match(/<footer>([\s\S]*?)<\/footer>/);
     assert.ok(footerMatch, "expected the shared footer");

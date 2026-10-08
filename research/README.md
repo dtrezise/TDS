@@ -6,14 +6,16 @@ The launch research was completed on July 13, 2026 in three independent lanes, e
 - `conduct_family.json` — 20 public-conduct, falsehood, family/business, and Republican-enabling records.
 - `faith_movements.json` — 21 Christianity, Christian-nationalism, MAGA, America First, Heritage, and Project 2025 records, with 42 linked teaching references.
 - `america_first.json` — 14 national-interest, alliance, sovereignty, war-power, trade, immigration-process, development, and diplomatic-capacity records.
-- `deal_record.json` — 10 business, subsidy, diplomacy, trade, foreign-gift, and Iran-agreement performance records.
+- `deal_record.json` — 11 business, subsidy, diplomacy, trade, foreign-gift, and Iran-agreement performance records.
 - `scope_expansion.json` — 42 election-power, institutional-retaliation, public-stewardship, territorial, alliance, authoritarian-courtship, clemency, conflict, transparency, and self-branding records added in the October 2026 expansion.
 
 Together the files contain 128 researched records and 376 direct evidence links. The public site publishes 124 canonical case files because four business/legal entries duplicated across research lanes are suppressed in `data/cases.ts`. Faith entries remain separate when they apply a distinct moral analysis to an event covered elsewhere.
 
-`blind-eyes/directory.json` is a separate, profile-based accountability directory. Its first edition contains eight Christian leaders, churches, networks, or political ministries, 24 claim-specific evidence records, and 16 linked Christian-teaching references. Each profile preserves its alignment level and a visible denial, response, or limiting-context field; inclusion is never based on association alone.
+`blind-eyes/directory.json` is a separate, profile-based accountability directory. Its current edition contains ten Christian leaders, churches, networks, or political ministries. Each profile preserves its alignment level and a visible denial, response, or limiting-context field; inclusion is never based on association alone.
 
 `anti-christ/directory.json` curates the reviewed archive into eight moral categories with five headline selections per category and an expanded 47-case collection. Four page-specific direct-record cases cover recorded statements not previously represented in the original main archive. “Anti Christ” is explicitly defined as conduct opposed to Christ's teaching—not a claim about the prophetic Antichrist or a judgment of Trump's soul. Moral headings never replace the underlying procedural status.
+
+`whats-new.json` is a rolling publication ledger, not an evidence source. It stores 14-day feed dates and stable references to already-reviewed public Evidence and Voices records. `npm run whats-new:sync` compares a deterministic content-hash snapshot with the committed public catalog; it cannot ingest the private monitoring queue or invent public copy. Historical ledger rows remain available for audit even after the browser stops displaying them on day 15.
 
 Each JSON record includes a status label, summary, significance statement, evidence list, tags, confidence, and an editorial caution. Those cautions are part of the maintenance record even when they are not shown verbatim on the public card.
 
@@ -28,6 +30,7 @@ npm run audit:links
 npm run audit:voices
 npm run audit:blind-eyes
 npm run audit:anti-christ
+npm run audit:whats-new
 npm run archive:export
 ```
 

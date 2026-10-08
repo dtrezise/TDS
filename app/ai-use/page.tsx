@@ -20,7 +20,7 @@ export default function AiUsePage() {
       </PolicySection>
 
       <PolicySection title="Publication boundary">
-        <p>New allegations, legal conclusions, theological judgments, numerical ratings, quotations, and material status changes must not be published solely because a model generated them. Daily monitoring produces private review candidates; it does not autonomously edit, commit, push, or deploy the public archive.</p>
+        <p>New allegations, legal conclusions, theological judgments, numerical ratings, quotations, and material status changes must not be published solely because a model generated them. Daily monitoring produces private review candidates and does not autonomously publish factual records. A narrow deterministic process may update the What’s New navigation index using only Evidence and Voices records that a human has already reviewed and committed to the public archive.</p>
         <p>Automated keyword matching may identify a relevant test lens, but it cannot produce a defensible score or final verdict. Published analysis requires an evidence-specific explanation reviewed by a human editor.</p>
       </PolicySection>
 

@@ -5,6 +5,7 @@ const base = "https://dtrezise.github.io/TDS";
 export const dynamic = "force-static";
 const staticPaths = [
   "",
+  "/whats-new",
   "/voices",
   "/rooftops",
   "/blind-eyes",
@@ -26,8 +27,8 @@ const staticPaths = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${base}${path}/`,
-    changeFrequency: path === "" ? "daily" : "monthly",
-    priority: path === "" ? 1 : 0.7,
+    changeFrequency: path === "" || path === "/whats-new" ? "daily" : "monthly",
+    priority: path === "" ? 1 : path === "/whats-new" ? 0.9 : 0.7,
   }));
   const evidenceEntries: MetadataRoute.Sitemap = caseFiles.map((item) => ({
     url: `${base}/evidence/${item.id}/`,
