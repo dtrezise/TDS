@@ -12,8 +12,8 @@ function publicAssetPath(src: string) {
 
 export function SiteHeader({ active }: { active: PrimarySection }) {
   const items: Array<{ label: string; href: string; section: PrimarySection }> = [
-    { label: "Evidence", href: "/", section: "evidence" },
     { label: "What’s New", href: "/whats-new/", section: "whats-new" },
+    { label: "Evidence", href: "/", section: "evidence" },
     { label: "Voices", href: "/voices/", section: "voices" },
     { label: "Tests", href: "/tests/", section: "tests" },
     { label: "Methods", href: "/methodology/", section: "methodology" },
