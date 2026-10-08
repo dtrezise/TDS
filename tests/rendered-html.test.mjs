@@ -213,6 +213,8 @@ test("uses a consistent header and accountability footer", () => {
     const nav = primaryNavigation(pageHtml);
     for (const label of ["Evidence", "What’s New", "Voices", "Tests", "Methods"]) assert.match(nav, new RegExp(`>${label}<`));
     assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 5);
+    const labels = [...nav.matchAll(/<span>([^<]+)<\/span>/g)].map((match) => match[1]);
+    assert.deepEqual(labels, ["What’s New", "Evidence", "Voices", "Tests", "Methods"]);
 
     const footerMatch = pageHtml.match(/<footer>([\s\S]*?)<\/footer>/);
     assert.ok(footerMatch, "expected the shared footer");
