@@ -27,18 +27,18 @@ function buildPacket(suggestion: Suggestion) {
   return [
     "TDS INCIDENT SUGGESTION — RESEARCH LEAD ONLY",
     "",
-    `Title: ${suggestion.title}`,
-    `Incident date: ${suggestion.incidentDate} (${suggestion.datePrecision})`,
+    `Title: ${suggestion.title || "Not supplied"}`,
+    `Incident date: ${suggestion.incidentDate || "Not supplied"}${suggestion.datePrecision ? ` (${suggestion.datePrecision})` : ""}`,
     `People / institutions: ${suggestion.people || "Not supplied"}`,
     "",
     "What happened:",
-    suggestion.summary,
+    suggestion.summary || "Not supplied",
     "",
-    `Strongest public source: ${suggestion.primarySource}`,
+    `Strongest public source: ${suggestion.primarySource || "Not supplied"}`,
     `Additional public source: ${suggestion.supportingSource || "Not supplied"}`,
     "",
     "Why it may fit the archive:",
-    suggestion.relevance,
+    suggestion.relevance || "Not supplied",
     "",
     "Denial, correction, defense, or contrary context:",
     suggestion.contraryContext || "Not supplied",
@@ -110,7 +110,7 @@ export function SuggestionForm({
     }
 
     if (suggestionEmail) {
-      const subject = encodeURIComponent(`TDS incident suggestion: ${suggestion.title}`);
+      const subject = encodeURIComponent(`TDS incident suggestion: ${suggestion.title || "Untitled lead"}`);
       const body = encodeURIComponent(nextPacket);
       window.location.href = `mailto:${suggestionEmail}?subject=${subject}&body=${body}`;
       setStatus("ready");
@@ -158,7 +158,7 @@ export function SuggestionForm({
           <h2 id="suggest-form-title">Give reviewers a record they can inspect.</h2>
         </div>
         <p>
-          {deliveryMode === "endpoint" && "This build is configured to deliver suggestions to a project review endpoint."}
+          Nothing below is required. Share whatever you know—the more information you provide, the better we will be able to research the incident. {deliveryMode === "endpoint" && "This build is configured to deliver suggestions to a project review endpoint."}
           {deliveryMode === "email" && "This build opens a draft addressed to the project review inbox. You remain in control of sending it."}
           {deliveryMode === "local" && "Direct delivery is not configured on this build. The form prepares a standardized packet locally for copy or download; it does not upload your entry."}
         </p>
@@ -166,18 +166,19 @@ export function SuggestionForm({
 
       <form className="suggest-form" ref={formRef} onSubmit={handleSubmit}>
         <label className="suggest-field suggest-field--wide">
-          <span>Working title <b>Required</b></span>
-          <input name="title" required maxLength={160} placeholder="A precise, neutral description of the incident" />
+          <span>Working title</span>
+          <input name="title" maxLength={160} placeholder="A precise, neutral description of the incident" />
         </label>
 
         <label className="suggest-field">
-          <span>Incident date <b>Required</b></span>
-          <input name="incidentDate" type="date" required />
+          <span>Incident date</span>
+          <input name="incidentDate" type="date" />
         </label>
 
         <label className="suggest-field">
-          <span>Date precision <b>Required</b></span>
-          <select name="datePrecision" defaultValue="Exact date" required>
+          <span>Date precision</span>
+          <select name="datePrecision" defaultValue="">
+            <option value="">Not sure</option>
             <option>Exact date</option>
             <option>Approximate date</option>
             <option>Start of an ongoing incident</option>
@@ -190,13 +191,13 @@ export function SuggestionForm({
         </label>
 
         <label className="suggest-field suggest-field--wide">
-          <span>What happened? <b>Required</b></span>
-          <textarea name="summary" required minLength={40} maxLength={1800} rows={6} placeholder="Describe the conduct without assuming motive. Separate what the record establishes from what remains alleged or disputed." />
+          <span>What happened?</span>
+          <textarea name="summary" maxLength={1800} rows={6} placeholder="Describe the conduct without assuming motive. Separate what the record establishes from what remains alleged or disputed." />
         </label>
 
         <label className="suggest-field suggest-field--wide">
-          <span>Strongest public source URL <b>Required</b></span>
-          <input name="primarySource" type="url" inputMode="url" required placeholder="https://… court record, agency document, transcript, video, or rigorous reporting" />
+          <span>Strongest public source URL</span>
+          <input name="primarySource" type="url" inputMode="url" placeholder="https://… court record, agency document, transcript, video, or rigorous reporting" />
         </label>
 
         <label className="suggest-field suggest-field--wide">
@@ -205,8 +206,8 @@ export function SuggestionForm({
         </label>
 
         <label className="suggest-field suggest-field--wide">
-          <span>Why might this fit the archive? <b>Required</b></span>
-          <textarea name="relevance" required minLength={30} maxLength={1200} rows={4} placeholder="Explain the possible ethical, constitutional, legal, public-trust, national-interest, dealmaking, faith, or world-standing relevance." />
+          <span>Why might this fit the archive?</span>
+          <textarea name="relevance" maxLength={1200} rows={4} placeholder="Explain the possible ethical, constitutional, legal, public-trust, national-interest, dealmaking, faith, or world-standing relevance." />
         </label>
 
         <label className="suggest-field suggest-field--wide">
@@ -218,11 +219,6 @@ export function SuggestionForm({
           <span>Optional follow-up email</span>
           <input name="contact" type="email" autoComplete="email" placeholder="Use a project-safe address; leave blank to remain unidentified in the packet" />
           <small>This is included only in the prepared submission. Do not use an address that would expose you if the packet is forwarded.</small>
-        </label>
-
-        <label className="suggest-consent suggest-field--wide">
-          <input name="publicRecordAffirmation" type="checkbox" required />
-          <span>I am submitting public-source material and have not included confidential, privileged, intimate, hacked, or illegally obtained information.</span>
         </label>
 
         <div className="suggest-submit suggest-field--wide">

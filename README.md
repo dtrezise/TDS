@@ -19,7 +19,7 @@ The public information architecture keeps six primary header sections and a link
 - **World Standing Test** measures the effect of conduct on U.S. credibility, alliances, expertise, financial influence, and global leverage.
 Every public eBox links to a permanent evidence page with its own canonical URL, record status, retrieval dates, claim boundary, sources, share composer, and qualitative test lenses. Public accountability pages disclose the project's purpose, editorial independence, privacy posture, AI use, and correction rules.
 
-The public **Suggest an incident** form creates a versioned research-lead packet with an incident date, source URLs, contrary context, and explicit public-record affirmation. Suggestions never publish automatically. In the current static build, the form truthfully prepares a local copy/download packet unless a dedicated project email or secure endpoint is configured.
+The public **Suggest derangements here** form creates a versioned research-lead packet from whatever detail a reader can provide, including incident dates, source URLs, contrary context, and optional follow-up information. No field is mandatory. Suggestions never publish automatically. In the current static build, the form truthfully prepares a local copy/download packet unless a dedicated project email or secure endpoint is configured.
 
 Configure only a project-controlled, privacy-reviewed intake channel—not a personal address:
 

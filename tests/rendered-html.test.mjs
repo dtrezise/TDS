@@ -170,15 +170,18 @@ test("exports a complete incident-date archive with typed permanent-record links
 });
 
 test("exports a privacy-conscious incident suggestion workflow", () => {
-  assert.match(suggestHtml, /<title>Suggest an Incident \| TDS/);
-  assert.match(suggestHtml, /Suggest an incident\./);
+  assert.match(suggestHtml, /<title>Suggest Derangements Here \| TDS/);
+  assert.match(suggestHtml, /Suggest derangements here\./);
   assert.match(suggestHtml, /A suggestion enters the research process as a lead/);
   assert.match(suggestHtml, /Direct delivery is not configured on this build/);
-  assert.match(suggestHtml, /<input[^>]*required=""[^>]*name="title"/);
-  assert.match(suggestHtml, /<input[^>]*type="date"[^>]*required=""[^>]*name="incidentDate"/);
+  assert.match(suggestHtml, /Nothing below is required/);
+  assert.match(suggestHtml, /the more information you provide, the better we will be able to research the incident/);
+  assert.match(suggestHtml, /<input[^>]*name="title"/);
+  assert.match(suggestHtml, /<input[^>]*type="date"[^>]*name="incidentDate"/);
   assert.match(suggestHtml, /<input[^>]*type="url"[^>]*name="primarySource"/);
   assert.match(suggestHtml, /name="contraryContext"/);
-  assert.match(suggestHtml, /<input[^>]*type="checkbox"[^>]*required=""[^>]*name="publicRecordAffirmation"/);
+  assert.doesNotMatch(suggestHtml, /required=""|>Required</);
+  assert.doesNotMatch(suggestHtml, /name="publicRecordAffirmation"|minLength=/);
   assert.match(suggestHtml, /Prepare review packet/);
   assert.match(suggestionFormSource, /NEXT_PUBLIC|submissionEndpoint/);
   assert.match(suggestionFormSource, /method: "POST"/);
@@ -268,11 +271,13 @@ test("uses a consistent header and accountability footer", () => {
     assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 6);
     const labels = [...nav.matchAll(/<span>([^<]+)<\/span>/g)].map((match) => match[1]);
     assert.deepEqual(labels, ["What’s New", "Evidence", "Voices", "Tests", "Methods", "Archive"]);
+    assert.match(pageHtml, /class="suggestion-utility" href="(?:\/TDS)?\/suggest\/">Suggest derangements here/);
+    assert.ok((pageHtml.match(/class="suggestion-utility"/g) ?? []).length === 1);
 
     const footerMatch = pageHtml.match(/<footer>([\s\S]*?)<\/footer>/);
     assert.ok(footerMatch, "expected the shared footer");
     const footer = footerMatch[1];
-    for (const label of ["About", "Methods", "Suggest an incident", "Corrections", "Independence", "AI use", "Privacy"]) assert.match(footer, new RegExp(`>${label}<`));
+    for (const label of ["About", "Methods", "Suggest derangements here", "Corrections", "Independence", "AI use", "Privacy"]) assert.match(footer, new RegExp(`>${label}<`));
     assert.match(footer, /class="footer-top" href="#top" aria-label="Back to top">↑<\/a>$/);
   }
 });

@@ -36,7 +36,7 @@ The endpoint receives `Content-Type: application/json` with:
 }
 ```
 
-The HTML form separately requires the visitor to affirm that the suggestion uses public-source material and excludes confidential, privileged, intimate, hacked, or illegally obtained information. The endpoint must require and independently validate an equivalent affirmation when direct intake is activated; do not rely only on browser validation.
+The public page states that suggestions should use public-source material and exclude confidential, privileged, intimate, hacked, or illegally obtained information. No individual form field is mandatory: partial recollections and undeveloped ideas may still produce useful research leads. The endpoint must accept partial packets, validate every field that is supplied, and preserve the same boundary when direct intake is activated.
 
 ## Endpoint requirements
 
