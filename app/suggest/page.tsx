@@ -4,11 +4,11 @@ import { SiteFooter, SiteHeader } from "../site-chrome";
 import { SuggestionForm } from "./suggestion-form";
 
 export const metadata: Metadata = {
-  title: "Suggest an Incident | TDS",
+  title: "Suggest Derangements Here | TDS",
   description: "Submit a public-record lead for independent editorial review by the TDS Evidence Archive.",
   alternates: { canonical: "https://dtrezise.github.io/TDS/suggest/" },
   openGraph: {
-    title: "Suggest an Incident | TDS",
+    title: "Suggest Derangements Here | TDS",
     description: "Help identify documented conduct that may belong in the archive. Suggestions are leads, not automatic publications.",
     url: "https://dtrezise.github.io/TDS/suggest/",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Suggest an Incident | TDS",
+    title: "Suggest Derangements Here | TDS",
     description: "Send a public-record lead for independent editorial review.",
     images: ["https://dtrezise.github.io/TDS/share-banner.png"],
   },
@@ -39,11 +39,11 @@ export default function SuggestPage() {
       <header className="suggest-hero">
         <div>
           <p className="section-label">Public lead intake · editorial review required</p>
-          <h1>Suggest an incident.</h1>
+          <h1>Suggest derangements here.</h1>
         </div>
         <div>
           <p>Point the archive toward documented conduct worth examining. A suggestion enters the research process as a lead. It does not become a case file, a factual finding, or an accusation merely because it was submitted.</p>
-          <p>Give us the incident date, the strongest public source, and the fairest account of contrary context. Specific, inspectable records are more useful than viral claims.</p>
+          <p>Nothing on the form is required. Share whatever you know—the more detail, dates, names, and public links you can provide, the better we will be able to research the incident.</p>
         </div>
       </header>
 
@@ -65,7 +65,7 @@ export default function SuggestPage() {
           <h2>A queue is not a publication pipeline.</h2>
         </div>
         <div>
-          <p>Editors first check whether the proposed event is within scope and whether the source actually supports the description. Qualifying leads then receive the same source hierarchy, legal-status language, contrary-context review, and prepublication checks as every other record.</p>
+          <p>Editors first check whether the proposed event is within scope and locate the strongest available public record. Qualifying leads then receive the same source hierarchy, legal-status language, contrary-context review, and prepublication checks as every other record.</p>
           <p>Duplicate, unsupported, misleading, private, or out-of-scope leads may be declined without publication. Material corrections belong in the separate correction process.</p>
           <div className="suggest-method__links">
             <Link href="/methodology/">Read the publication methods →</Link>

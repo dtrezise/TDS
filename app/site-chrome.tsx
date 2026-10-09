@@ -26,18 +26,21 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
         <span className="wordmark__mark">TDS</span>
         <span className="wordmark__text">TRUMP DERANGEMENT SYNDROME</span>
       </Link>
-      <nav aria-label="Primary navigation">
-        {items.map((item) => (
-          <Link
-            className="primary-nav__link"
-            href={item.href}
-            aria-current={active === item.section ? "page" : undefined}
-            key={item.section}
-          >
-            <span>{item.label}</span>
-          </Link>
-        ))}
-      </nav>
+      <div className="site-header__navigation">
+        <Link className="suggestion-utility" href="/suggest/">Suggest derangements here <span aria-hidden="true">→</span></Link>
+        <nav aria-label="Primary navigation">
+          {items.map((item) => (
+            <Link
+              className="primary-nav__link"
+              href={item.href}
+              aria-current={active === item.section ? "page" : undefined}
+              key={item.section}
+            >
+              <span>{item.label}</span>
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
@@ -78,7 +81,7 @@ export function SiteFooter({ tagline }: { tagline: string }) {
       <div className="footer-links">
         <Link href="/about/">About</Link>
         <Link href="/methodology/">Methods</Link>
-        <Link href="/suggest/">Suggest an incident</Link>
+        <Link href="/suggest/">Suggest derangements here</Link>
         <Link href="/corrections/">Corrections</Link>
         <Link href="/editorial-independence/">Independence</Link>
         <Link href="/ai-use/">AI use</Link>
