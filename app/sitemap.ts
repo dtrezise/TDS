@@ -6,6 +6,8 @@ export const dynamic = "force-static";
 const staticPaths = [
   "",
   "/whats-new",
+  "/archive",
+  "/suggest",
   "/voices",
   "/rooftops",
   "/blind-eyes",

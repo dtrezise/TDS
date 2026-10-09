@@ -4,20 +4,32 @@ TDS is an explicitly critical, evidence-first archive of Donald Trump’s public
 
 The editorial argument is forceful; the evidence standard is deliberately conservative. Case files distinguish jury verdicts, court findings, official investigations, charges, allegations, settlements, dismissals, appeals, political judgments, direct statements, reporting, and editorial analysis.
 
-The public information architecture keeps five primary header sections and a linked suite of five evidence tests:
+The public information architecture keeps six primary header sections and a linked suite of five evidence tests:
 
-- **Evidence** is the main searchable case-file archive. Relevant case-level Christianity Tests remain visible beside the documented conduct.
 - **What’s New** is a rolling 14-day index of newly published or materially updated Evidence and Voices records. Items link to permanent archive locations and leave the index—not the archive—after the window closes.
+- **Evidence** is the main searchable case-file archive. Relevant case-level Christianity Tests remain visible beside the documented conduct.
 - **Voices** hosts the Rooftops, Blind Eyes, and Anti Christ projects.
 - **Tests** is the springboard for the Christianity, Patriotic, America First, Deal, and World Standing tests.
+- **Methods** publishes the source hierarchy, status language, defamation safeguards, revision rules, and prepublication workflow.
+- **Archive** is the compact, searchable chronology of all 124 Evidence case files and 43 top-level Voices entries. It sorts dated material by the underlying incident date, not the date TDS published it; ongoing Rooftops profiles without a single incident date follow the chronology.
 - **Christianity Test** explains the teaching-based comparison.
 - **Patriotic Test** compares documented conduct with constitutional loyalty, rule of law, free elections, checks and balances, free speech and press, equal citizenship, and the public-trust obligations of office.
 - **America First Test** measures foreign policy against American security, prosperity, constitutional war powers, alliances, sovereignty, diplomatic capacity, and durable credibility.
 - **Deal Test** audits business, subsidy, diplomatic, trade, and foreign-government transactions by promise, leverage, concessions, verification, delivery, durability, public cost, and beneficiary.
 - **World Standing Test** measures the effect of conduct on U.S. credibility, alliances, expertise, financial influence, and global leverage.
-- **Methods** publishes the source hierarchy, status language, defamation safeguards, revision rules, and prepublication workflow.
-
 Every public eBox links to a permanent evidence page with its own canonical URL, record status, retrieval dates, claim boundary, sources, share composer, and qualitative test lenses. Public accountability pages disclose the project's purpose, editorial independence, privacy posture, AI use, and correction rules.
+
+The public **Suggest an incident** form creates a versioned research-lead packet with an incident date, source URLs, contrary context, and explicit public-record affirmation. Suggestions never publish automatically. In the current static build, the form truthfully prepares a local copy/download packet unless a dedicated project email or secure endpoint is configured.
+
+Configure only a project-controlled, privacy-reviewed intake channel—not a personal address:
+
+```bash
+NEXT_PUBLIC_SUGGESTIONS_EMAIL=suggestions@example.org
+# or
+NEXT_PUBLIC_SUGGESTIONS_ENDPOINT=https://intake.example.org/v1/suggestions
+```
+
+When an endpoint is configured it must accept the JSON contract documented in `docs/SUGGESTION_INTAKE.md`, enforce abuse controls and request-size limits, return a non-2xx status when storage fails, and write only to a restricted lead queue. Do not connect the endpoint directly to published Evidence or Voices data.
 
 ## Local development
 

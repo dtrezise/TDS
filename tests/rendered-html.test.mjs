@@ -8,6 +8,8 @@ async function output(path) {
 
 const html = await output("index.html");
 const whatsNewHtml = await output("whats-new/index.html");
+const archiveHtml = await output("archive/index.html");
+const suggestHtml = await output("suggest/index.html");
 const voicesHubHtml = await output("voices/index.html");
 const rooftopsHtml = await output("rooftops/index.html");
 const testsHubHtml = await output("tests/index.html");
@@ -26,9 +28,10 @@ const independenceHtml = await output("editorial-independence/index.html");
 const aiUseHtml = await output("ai-use/index.html");
 const permanentCaseHtml = await output("evidence/new-york-falsifying-business-records-conviction/index.html");
 const shareEBoxSource = await readFile(new URL("../app/share-ebox.tsx", import.meta.url), "utf8");
+const suggestionFormSource = await readFile(new URL("../app/suggest/suggestion-form.tsx", import.meta.url), "utf8");
 
 const renderedPages = [
-  html, whatsNewHtml, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml,
+  html, whatsNewHtml, archiveHtml, suggestHtml, voicesHubHtml, rooftopsHtml, testsHubHtml, blindEyesHtml, antiChristHtml,
   christianityTestHtml, patrioticTestHtml, americaFirstTestHtml, dealTestHtml,
   worldStandingTestHtml, methodologyHtml, aboutHtml, correctionsHtml, privacyHtml,
   independenceHtml, aiUseHtml, permanentCaseHtml,
@@ -135,6 +138,56 @@ test("exports a rolling What’s New index with permanent-record links", () => {
   assert.match(whatsNewHtml, /Voices 11/);
 });
 
+test("exports a complete incident-date archive with typed permanent-record links", () => {
+  assert.match(archiveHtml, /<title>Archive \| TDS/);
+  assert.match(archiveHtml, /The complete record · one compact chronology/);
+  assert.match(archiveHtml, /Dated records are ordered by the incident or documented conduct/);
+  assert.match(archiveHtml, /<strong>167<\/strong> total entries/);
+  assert.match(archiveHtml, /<strong>124<\/strong> Evidence/);
+  assert.match(archiveHtml, /<strong>25<\/strong> Rooftops/);
+  assert.match(archiveHtml, /<strong>10<\/strong> Blind Eyes/);
+  assert.match(archiveHtml, /<strong>8<\/strong> Anti Christ/);
+  assert.ok((archiveHtml.match(/class="archive-row archive-row--/g) ?? []).length === 167);
+  assert.ok((archiveHtml.match(/archive-row--evidence/g) ?? []).length === 124);
+  assert.ok((archiveHtml.match(/archive-row--rooftops/g) ?? []).length === 25);
+  assert.ok((archiveHtml.match(/archive-row--blind-eyes/g) ?? []).length === 10);
+  assert.ok((archiveHtml.match(/archive-row--anti-christ/g) ?? []).length === 8);
+  assert.match(archiveHtml, route("evidence/new-york-falsifying-business-records-conviction"));
+  assert.match(archiveHtml, /href="(?:\/TDS)?\/rooftops\/#rooftops-voice-/);
+  assert.match(archiveHtml, /href="(?:\/TDS)?\/blind-eyes\/#/);
+  assert.match(archiveHtml, /href="(?:\/TDS)?\/anti-christ\/#/);
+  assert.match(archiveHtml, /Incident record/);
+  assert.match(archiveHtml, /Latest documented incident/);
+  assert.match(archiveHtml, /Latest included incident/);
+  assert.match(archiveHtml, /No single incident date/);
+  assert.match(archiveHtml, route("suggest"));
+
+  const sortDates = [...archiveHtml.matchAll(/data-sort-date="([^"]*)"/g)].map((match) => match[1]);
+  const dated = sortDates.filter(Boolean);
+  assert.ok(dated.length > 100);
+  assert.deepEqual(dated, [...dated].sort((left, right) => right.localeCompare(left)));
+  assert.ok(sortDates.slice(dated.length).every((value) => value === ""), "undated profiles should follow the dated chronology");
+});
+
+test("exports a privacy-conscious incident suggestion workflow", () => {
+  assert.match(suggestHtml, /<title>Suggest an Incident \| TDS/);
+  assert.match(suggestHtml, /Suggest an incident\./);
+  assert.match(suggestHtml, /A suggestion enters the research process as a lead/);
+  assert.match(suggestHtml, /Direct delivery is not configured on this build/);
+  assert.match(suggestHtml, /<input[^>]*required=""[^>]*name="title"/);
+  assert.match(suggestHtml, /<input[^>]*type="date"[^>]*required=""[^>]*name="incidentDate"/);
+  assert.match(suggestHtml, /<input[^>]*type="url"[^>]*name="primarySource"/);
+  assert.match(suggestHtml, /name="contraryContext"/);
+  assert.match(suggestHtml, /<input[^>]*type="checkbox"[^>]*required=""[^>]*name="publicRecordAffirmation"/);
+  assert.match(suggestHtml, /Prepare review packet/);
+  assert.match(suggestionFormSource, /NEXT_PUBLIC|submissionEndpoint/);
+  assert.match(suggestionFormSource, /method: "POST"/);
+  assert.match(suggestionFormSource, /Nothing was uploaded/);
+  assert.match(suggestionFormSource, /Copy packet/);
+  assert.match(suggestionFormSource, /Download \.txt/);
+  assert.match(privacyHtml, /incident suggestion form prepares a structured research lead in your browser/);
+});
+
 test("exports the Christian resistance and accountability directories", () => {
   assert.match(rooftopsHtml, /A directory for Christian resistance/);
   assert.match(rooftopsHtml, /Christians Against Christian Nationalism/);
@@ -211,15 +264,15 @@ test("exports methodology and public accountability policies", () => {
 test("uses a consistent header and accountability footer", () => {
   for (const pageHtml of renderedPages) {
     const nav = primaryNavigation(pageHtml);
-    for (const label of ["Evidence", "What’s New", "Voices", "Tests", "Methods"]) assert.match(nav, new RegExp(`>${label}<`));
-    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 5);
+    for (const label of ["Evidence", "What’s New", "Voices", "Tests", "Methods", "Archive"]) assert.match(nav, new RegExp(`>${label}<`));
+    assert.ok((nav.match(/primary-nav__link/g) ?? []).length === 6);
     const labels = [...nav.matchAll(/<span>([^<]+)<\/span>/g)].map((match) => match[1]);
-    assert.deepEqual(labels, ["What’s New", "Evidence", "Voices", "Tests", "Methods"]);
+    assert.deepEqual(labels, ["What’s New", "Evidence", "Voices", "Tests", "Methods", "Archive"]);
 
     const footerMatch = pageHtml.match(/<footer>([\s\S]*?)<\/footer>/);
     assert.ok(footerMatch, "expected the shared footer");
     const footer = footerMatch[1];
-    for (const label of ["About", "Methods", "Corrections", "Independence", "AI use", "Privacy"]) assert.match(footer, new RegExp(`>${label}<`));
+    for (const label of ["About", "Methods", "Suggest an incident", "Corrections", "Independence", "AI use", "Privacy"]) assert.match(footer, new RegExp(`>${label}<`));
     assert.match(footer, /class="footer-top" href="#top" aria-label="Back to top">↑<\/a>$/);
   }
 });
