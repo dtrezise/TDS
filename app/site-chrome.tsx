@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export type PrimarySection = "evidence" | "whats-new" | "voices" | "tests" | "methodology";
+export type PrimarySection = "evidence" | "whats-new" | "voices" | "tests" | "methodology" | "archive";
 export type TestSection = "christianity" | "patriotic" | "america-first" | "deals" | "world-standing";
 
 function publicAssetPath(src: string) {
@@ -17,6 +17,7 @@ export function SiteHeader({ active }: { active: PrimarySection }) {
     { label: "Voices", href: "/voices/", section: "voices" },
     { label: "Tests", href: "/tests/", section: "tests" },
     { label: "Methods", href: "/methodology/", section: "methodology" },
+    { label: "Archive", href: "/archive/", section: "archive" },
   ];
 
   return (
@@ -77,6 +78,7 @@ export function SiteFooter({ tagline }: { tagline: string }) {
       <div className="footer-links">
         <Link href="/about/">About</Link>
         <Link href="/methodology/">Methods</Link>
+        <Link href="/suggest/">Suggest an incident</Link>
         <Link href="/corrections/">Corrections</Link>
         <Link href="/editorial-independence/">Independence</Link>
         <Link href="/ai-use/">AI use</Link>

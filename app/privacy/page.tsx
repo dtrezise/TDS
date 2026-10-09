@@ -17,6 +17,7 @@ export default function PrivacyPage() {
     >
       <PolicySection title="What this site receives">
         <p>The project does not intentionally collect names, email addresses, precise locations, payment information, or behavioral profiles through this static site. The hosting provider may retain ordinary security and access logs under its own terms.</p>
+        <p>The incident suggestion form prepares a structured research lead in your browser. Unless a monitored project email address or secure submission endpoint is explicitly shown as active, nothing entered in that form is uploaded by TDS; you may copy or download the packet yourself. If direct intake is later activated, the form will state that clearly before submission and this notice must be updated to identify the operator, data retained, purpose, access controls, and deletion policy.</p>
         <p>Opening an external source or choosing a social-share destination sends you to that third party. Its privacy policy and account settings apply there. Social scripts are not embedded merely by viewing an eBox; a destination opens only after you choose it.</p>
       </PolicySection>
 
