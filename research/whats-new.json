@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "window_days": 14,
-  "last_reconciled": "2026-10-08",
+  "last_reconciled": "2026-10-12",
   "editorial_note": "This feed republishes navigation metadata only for material already approved and present in the public Evidence or Voices collections. Monitoring leads never enter this feed before human editorial review and publication.",
   "entries": [
     {
@@ -432,6 +432,46 @@
       "label": "Voices · Anti Christ",
       "status": "Eight moral categories · 100 record placements",
       "href": "/anti-christ/"
+    },
+    {
+      "id": "evidence:putin-g20-invitation-2026:2026-10-12",
+      "published_on": "2026-10-12",
+      "change": "added",
+      "section": "evidence",
+      "ref_type": "case",
+      "ref": "putin-g20-invitation-2026"
+    },
+    {
+      "id": "evidence:russian-diesel-sanctions-license-2026:2026-10-12",
+      "published_on": "2026-10-12",
+      "change": "added",
+      "section": "evidence",
+      "ref_type": "case",
+      "ref": "russian-diesel-sanctions-license-2026"
+    },
+    {
+      "id": "evidence:russian-interference-campaign-response-2016:2026-10-12",
+      "published_on": "2026-10-12",
+      "change": "added",
+      "section": "evidence",
+      "ref_type": "case",
+      "ref": "russian-interference-campaign-response-2016"
+    },
+    {
+      "id": "evidence:trump-tower-meeting-foreign-assistance-offer-2016:2026-10-12",
+      "published_on": "2026-10-12",
+      "change": "added",
+      "section": "evidence",
+      "ref_type": "case",
+      "ref": "trump-tower-meeting-foreign-assistance-offer-2016"
+    },
+    {
+      "id": "evidence:trump-tower-moscow-campaign-business-2015-2016:2026-10-12",
+      "published_on": "2026-10-12",
+      "change": "added",
+      "section": "evidence",
+      "ref_type": "case",
+      "ref": "trump-tower-moscow-campaign-business-2015-2016"
     }
   ],
   "catalog_snapshot": {
@@ -528,9 +568,12 @@
     "evidence:paris-unfccc-withdrawals-2025-2026": "da568b0f12e70bd2ae9835cee22adda60be7f4ddbc4653ef270112c55785a818",
     "evidence:paul-walczak-pardon-fundraiser-access-2025": "39384c4d3025bde1569b73cfb903588fc58073f71d532f96f33e9e00a8b19245",
     "evidence:personal-branding-federal-programs-assets-2025-2026": "02f90500de44f6e0079ba33a970941fd48146ae559ddc2ac2e7c3c948338b3eb",
+    "evidence:putin-g20-invitation-2026": "479285dac8fa24dbd385fd2722ed9a61b62333d29b4a968100938e953c6c446a",
     "evidence:qatar-gifted-presidential-jet-2025-2026": "1e36c096ad9ba51ad24521a652343d3747fec62d779a2627c1070f600ab55eff",
     "evidence:reflecting-pool-failed-vandalism-prosecution-2026": "56ad05effc7b3c75af46d9d1691701b86a5b43ff3c1e4252ddf61e11ffd684f1",
     "evidence:rubio-usaid-state-dismantling-2025": "b23b42130d7e10baa16bf4d0e1c237fbe63dfdb5d45c890b5897271f8f54a81b",
+    "evidence:russian-diesel-sanctions-license-2026": "274e785cf4e64b812281ff7eba2cccb18d678c97fc4cdc9715a5c062e3d8fcb3",
+    "evidence:russian-interference-campaign-response-2016": "4f404e538e8088932349e8551bb809d361763604c1cba8fbcff23afeb85de35f",
     "evidence:save-voter-screening-expansion-2025-2026": "ca35d43c4a771f232c2068266267ff0654c591b573531a979ac9e6cccccc4f36",
     "evidence:scott-jenkins-cash-for-badges-pardon-2025": "dfc9b585cf6d72e5d4e12e823965eb54d65f98099b8afc96ef94522b37827b39",
     "evidence:second-impeachment-january-6": "34dd50da1ca91f4855ac7550cff4746d50bf12d363eeade10031f39e2fe9bd14",
@@ -548,6 +591,8 @@
     "evidence:trump-memecoin-presidential-access-dinner-2025": "4ede1efb8682abc2bc4b68b77c0dccf2cd1f661d903dd196c477c29f2b4be794",
     "evidence:trump-organization-qatar-resort-presidency-2025": "898c28cb8176f883f6f4c0736a09d01b35c413c8b5e5807df13368936004d5b6",
     "evidence:trump-organization-tax-fraud-conviction": "1ca9d1946a1d5d0695550c275181df500738b647159d92a85762a5a42491beb2",
+    "evidence:trump-tower-meeting-foreign-assistance-offer-2016": "20de2e65b7f3da220a9cdbaa9775bda90215c89b41c8ba068c36c5a2479623e5",
+    "evidence:trump-tower-moscow-campaign-business-2015-2016": "196f17aa9c7fa340009e10bce74659fce15a608b5d8aad8f2afc3914f3060efc",
     "evidence:trump-university-settlement": "328d0075a7996775a4e2e788b2fbf60d08a273116be042b88ce47731d888584e",
     "evidence:uae-mgx-world-liberty-stablecoin-deal-2025": "fb32d10ca5857d66012aa950988e1f572fab858c56a2d8e4408cef4a6b64811a",
     "evidence:ukraine-aid-impoundment-violation": "7bb16b72f47aa862c7ba98d64d63a048c0910663b5a1a1ce8c6a6f28a174a070",

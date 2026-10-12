@@ -131,10 +131,10 @@ test("exports a rolling What’s New index with permanent-record links", () => {
   assert.match(whatsNewHtml, /Trump used reckless and ambiguous language about Iran/);
   assert.match(whatsNewHtml, /Open the permanent record/);
   assert.match(whatsNewHtml, route("evidence/la-san-diego-iran-rally-language-2026"));
-  assert.ok((whatsNewHtml.match(/class="new-card new-card--/g) ?? []).length === 53);
-  assert.ok((whatsNewHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 53);
-  assert.match(whatsNewHtml, /All 53/);
-  assert.match(whatsNewHtml, /Evidence 42/);
+  assert.ok((whatsNewHtml.match(/class="new-card new-card--/g) ?? []).length === 58);
+  assert.ok((whatsNewHtml.match(/class="ebox-share-trigger"/g) ?? []).length === 58);
+  assert.match(whatsNewHtml, /All 58/);
+  assert.match(whatsNewHtml, /Evidence 47/);
   assert.match(whatsNewHtml, /Voices 11/);
 });
 
