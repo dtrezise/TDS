@@ -20,7 +20,7 @@
     "audit:whats-new": "node scripts/sync-whats-new.mjs --check",
     "audit:experts": "node scripts/audit-expert-pipeline.mjs --require",
     "audit:public-boundary": "node scripts/check-public-boundary.mjs",
-    "mobile:export": "node --import tsx scripts/export-mobile-data.ts",
+    "mobile:export": "tsx scripts/export-mobile-data.ts",
     "whats-new:sync": "node scripts/sync-whats-new.mjs",
     "archive:export": "node scripts/archive-export.mjs --output outputs/archive-export-v1.json --sql-output outputs/archive-seed-v1.sql",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
