@@ -1,7 +1,108 @@
 {
-  "generated": "2026-10-07",
+  "generated": "2026-10-12",
   "scope_note": "A broad accountability lane covering conduct that may be lawful yet still relevant to presidential fitness, public trust, constitutional restraint, democratic administration, conflicts of interest, clemency, foreign-policy credibility, institutional stewardship, and the personalization of public power. Inclusion means that a documented act warrants examination under the archive's published tests; it does not by itself establish illegality, corruption, disloyalty, mental illness, or a hidden motive. Every entry preserves the administration's stated rationale, procedural posture, and material countercontext.",
   "items": [
+    {
+      "id": "russian-diesel-sanctions-license-2026",
+      "title": "Trump reopened a U.S. market for Russian diesel while Russia's war against Ukraine continued",
+      "date_start": "2026-10-09",
+      "date_end": "2026-10-12",
+      "people": ["Donald Trump", "Vladimir Putin", "Scott Bessent"],
+      "category": "america-world",
+      "status_label": "Russian-origin diesel authorized by OFAC license; statutory authority disputed by bipartisan senators; no court ruling cited",
+      "summary": "After a call with Vladimir Putin, Trump announced that Russia would supply diesel to the United States and global markets. Treasury then issued General License 135 authorizing transactions involving Russian-origin diesel. The administration presented the move as emergency supply and price relief during disruptions associated with the Iran war, while a bipartisan group of senators argued that the license bypassed the certification process Congress enacted in 2022.",
+      "why_it_matters": "The policy trades possible near-term fuel relief against sanctions leverage and the risk of increasing Russian export revenue while Russia continues its war against Ukraine. Treasury has previously described Russian energy revenue as helping finance that war. Public evidence does not establish how proceeds from these particular sales will be spent, and the Iran conflict is the supply-crisis context—not proof that this transaction funds Iran.",
+      "evidence": [
+        {"label": "General License 135 authorizing Russian-origin diesel transactions", "url": "https://ofac.treasury.gov/recent-actions/20261009_33", "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control", "source_type": "official-license", "accessed": "2026-10-12"},
+        {"label": "Ending Importation of Russian Oil Act", "url": "https://www.govinfo.gov/content/pkg/PLAW-117publ109/html/PLAW-117publ109.htm", "publisher": "GovInfo", "source_type": "statute", "accessed": "2026-10-12"},
+        {"label": "Bipartisan senators' statement questioning the license's legality", "url": "https://www.foreign.senate.gov/press/dem/release/ranking-member-shaheen-and-6-bipartisan-senatorsstatement-on-legality-of-imports-of-russian-diesel-fuel", "publisher": "U.S. Senate Committee on Foreign Relations", "source_type": "congressional-statement", "accessed": "2026-10-12"},
+        {"label": "Administration diesel-affordability rationale", "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-promotes-diesel-affordability/", "publisher": "The White House", "source_type": "official-statement", "accessed": "2026-10-12"},
+        {"label": "Deal terms and energy-market context", "url": "https://apnews.com/article/12baccc7aade559bf329079b0548c9da", "publisher": "Associated Press", "source_type": "news-reporting", "accessed": "2026-10-12"},
+        {"label": "Analysis of likely price effects and benefit to Russia", "url": "https://apnews.com/article/8428a31b39e20a3a3f1fa3f0e15b8f99", "publisher": "Associated Press", "source_type": "news-analysis", "accessed": "2026-10-12"},
+        {"label": "Treasury explanation of Russian energy revenue and war finance", "url": "https://home.treasury.gov/news/press-releases/sb0290", "publisher": "U.S. Department of the Treasury", "source_type": "official-statement", "accessed": "2026-10-12"}
+      ],
+      "tags": ["Russia", "diesel", "sanctions", "Ukraine", "Iran war", "energy markets", "Congress", "Vladimir Putin"],
+      "confidence": "high",
+      "editorial_note": "Do not call the license finally adjudicated illegal; the cited challenge is a bipartisan congressional position and no court ruling is cited. Do not claim that every dollar from the sales funds Russia's war or that the transaction funds Iran. Preserve the administration's price-and-supply rationale and measure actual volumes, prices, and payments as data become available."
+    },
+    {
+      "id": "putin-g20-invitation-2026",
+      "title": "The administration invited Putin to the 2026 G20 while Russia's war against Ukraine continued",
+      "date_start": "2026-09-23",
+      "people": ["Donald Trump", "Vladimir Putin", "Marco Rubio"],
+      "category": "america-world",
+      "status_label": "Invitation confirmed; summit pending; Russia remained a G20 member",
+      "summary": "Secretary of State Marco Rubio confirmed that the United States invited Vladimir Putin to the 2026 G20 summit. European Union officials criticized the invitation in light of Russia's continuing war against Ukraine while also acknowledging that Russia remained a G20 member with a right to participate.",
+      "why_it_matters": "Inviting an internationally isolated belligerent can affect allied unity, diplomatic leverage, sanctions credibility, and the status conferred by a U.S.-hosted summit. It can also be defended as diplomacy with an existing member. The accountable question is whether the invitation produced verifiable negotiating gains or normalized aggression without reciprocal concessions.",
+      "evidence": [
+        {"label": "European Commission briefing on the U.S. invitation and Russia's G20 status", "url": "https://audiovisual.ec.europa.eu/en/media/video/I-294048", "publisher": "European Commission", "source_type": "official-briefing", "accessed": "2026-10-12"},
+        {"label": "Rubio confirms Putin invitation to the U.S.-hosted summit", "url": "https://www.washingtonpost.com/national-security/2026/09/23/trump-invites-putin-this-years-g-20-summit-florida/", "publisher": "The Washington Post", "source_type": "news-reporting", "accessed": "2026-10-12"}
+      ],
+      "tags": ["G20", "Russia", "Ukraine", "Vladimir Putin", "diplomacy", "allied unity", "sanctions"],
+      "confidence": "high",
+      "editorial_note": "Do not describe the invitation as unlawful or imply that Russia had been expelled from the G20. Evaluate later summit outcomes, concessions, and allied effects when they become part of the record."
+    },
+    {
+      "id": "trump-tower-moscow-campaign-business-2015-2016",
+      "title": "Trump pursued a Moscow licensing deal during the 2016 campaign while publicly minimizing his Russia business",
+      "date_start": "2015-09",
+      "date_end": "2016-06",
+      "people": ["Donald Trump", "Michael Cohen", "Felix Sater"],
+      "category": "family-business",
+      "status_label": "Project documented and abandoned; Cohen convicted of false statements to Congress; Mueller did not establish election coordination",
+      "summary": "The Trump Organization pursued a Trump Tower Moscow licensing proposal from 2015 into June 2016, during Trump's presidential campaign. Michael Cohen sought assistance from Vladimir Putin's press secretary's office and kept Trump informed. Cohen later pleaded guilty to lying to Congress about the project's duration and contacts, while Mueller did not establish that the project amounted to campaign coordination with the Russian government.",
+      "why_it_matters": "A presidential candidate's undisclosed pursuit of a major foreign business opportunity creates a concrete conflict and disclosure problem when that government is intervening in the same election. The established grievance is the hidden commercial pursuit and false congressional account—not proof that Trump was controlled by Russia.",
+      "evidence": [
+        {"label": "Mueller report, Volume I", "url": "https://www.justice.gov/storage/report_volume1.pdf", "publisher": "U.S. Department of Justice", "source_type": "official-report", "accessed": "2026-10-12"},
+        {"label": "Special Counsel archive including Cohen's guilty plea", "url": "https://www.justice.gov/archives/sco-mueller", "publisher": "U.S. Department of Justice", "source_type": "official-case-archive", "accessed": "2026-10-12"},
+        {"label": "Mueller report section documenting the Moscow-project timeline", "url": "https://www.govinfo.gov/content/pkg/CDOC-116hdoc95/pdf/CDOC-116hdoc95-vol7.pdf", "publisher": "GovInfo", "source_type": "official-report", "accessed": "2026-10-12"},
+        {"label": "House Intelligence Committee report describing contrary and limiting context", "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_IN8_18-PURL-gpo91495/pdf/GOVPUB-Y4_IN8_18-PURL-gpo91495.pdf", "publisher": "U.S. House Permanent Select Committee on Intelligence", "source_type": "congressional-report", "accessed": "2026-10-12"}
+      ],
+      "tags": ["Trump Tower Moscow", "Russia", "business conflict", "2016 campaign", "Michael Cohen", "disclosure"],
+      "confidence": "high",
+      "editorial_note": "Do not call the project proof of espionage, blackmail, election coordination, or a completed deal. Preserve Mueller's no-established-coordination conclusion and the House report's limiting interpretation."
+    },
+    {
+      "id": "trump-tower-meeting-foreign-assistance-offer-2016",
+      "title": "Trump Jr. accepted a meeting advertised as Russian government election assistance",
+      "date_start": "2016-06-03",
+      "date_end": "2016-06-09",
+      "people": ["Donald Trump Jr.", "Jared Kushner", "Paul Manafort", "Natalia Veselnitskaya"],
+      "category": "democracy-and-power",
+      "status_label": "Emails and meeting documented; no criminal charge from the meeting; promised damaging material did not emerge",
+      "summary": "Donald Trump Jr. agreed to a Trump Tower meeting after an intermediary offered official Russian documents and information described as part of Russia's support for Donald Trump. Trump Jr. replied, 'if it's what you say I love it.' Mueller found insufficient evidence to charge campaign-finance or false-statement offenses arising from the meeting, including unresolved questions about intent and the value of the promised information.",
+      "why_it_matters": "A campaign's willingness to receive assistance advertised as coming from a foreign government is a democratic-integrity failure even when the meeting produces no useful material and prosecutors do not bring a charge. The record supports receptivity to the offer; it does not prove a completed conspiracy.",
+      "evidence": [
+        {"label": "Senate Judiciary Committee transcripts and documents", "url": "https://www.judiciary.senate.gov/press/rep/releases/judiciary-committee-releases-transcripts-documents-following-trump-tower-meeting-inquiry", "publisher": "U.S. Senate Committee on the Judiciary", "source_type": "congressional-records", "accessed": "2026-10-12"},
+        {"label": "Committee materials from the Trump Tower meeting inquiry", "url": "https://www.judiciary.senate.gov/press/releases/materials-from-inquiry-into-circumstances-surrounding-trump-tower-meeting", "publisher": "U.S. Senate Committee on the Judiciary", "source_type": "congressional-records", "accessed": "2026-10-12"},
+        {"label": "Mueller report, Volume I", "url": "https://www.justice.gov/storage/report_volume1.pdf", "publisher": "U.S. Department of Justice", "source_type": "official-report", "accessed": "2026-10-12"},
+        {"label": "Mueller charging analysis concerning the meeting", "url": "https://www.govinfo.gov/content/pkg/CDOC-116hdoc95/pdf/CDOC-116hdoc95-vol10-pt9.pdf", "publisher": "GovInfo", "source_type": "official-report", "accessed": "2026-10-12"}
+      ],
+      "tags": ["2016 election", "foreign assistance", "Trump Tower meeting", "Russia", "Donald Trump Jr.", "campaign integrity"],
+      "confidence": "high",
+      "editorial_note": "Always state that no damaging information materialized and no criminal charge arose from the meeting. Do not convert willingness to hear an offer into proof of conspiracy or coordination."
+    },
+    {
+      "id": "russian-interference-campaign-response-2016",
+      "title": "Russia interfered in the 2016 election as the Trump campaign welcomed some offers, but Mueller did not establish coordination",
+      "date_start": "2016-03",
+      "date_end": "2016-11-08",
+      "people": ["Donald Trump", "Vladimir Putin"],
+      "category": "democracy-and-power",
+      "status_label": "Interference documented; no evidence that votes were changed; Mueller did not establish conspiracy or coordination",
+      "summary": "U.S. intelligence, the Mueller investigation, and the bipartisan Senate Intelligence Committee documented a Russian influence operation and cyber activity directed at the 2016 election. The public record also documents numerous campaign contacts and some receptivity to offers of assistance. Mueller did not establish that the Trump campaign conspired or coordinated with the Russian government, and election-security reviews found no evidence that vote totals or machines were changed.",
+      "why_it_matters": "The defensible case is not that a proven secret command relationship existed. It is that a foreign adversary intervened, that campaign actors sometimes welcomed potential help, and that Trump repeatedly minimized findings whose accuracy mattered to democratic defense. Later official challenges to the intelligence assessment should be identified and tested against the underlying reports rather than ignored.",
+      "evidence": [
+        {"label": "2017 Intelligence Community Assessment", "url": "https://www.govinfo.gov/content/pkg/GOVPUB-PREX28-PURL-gpo76345/pdf/GOVPUB-PREX28-PURL-gpo76345.pdf", "publisher": "Office of the Director of National Intelligence via GovInfo", "source_type": "official-assessment", "accessed": "2026-10-12"},
+        {"label": "Mueller report, Volume I", "url": "https://www.justice.gov/storage/report_volume1.pdf", "publisher": "U.S. Department of Justice", "source_type": "official-report", "accessed": "2026-10-12"},
+        {"label": "Bipartisan Senate report on Russia's social-media influence operation", "url": "https://www.intelligence.senate.gov/2019/10/08/press-senate-intel-committee-releases-bipartisan-report-russia-e2-80-99s-use-social-media/", "publisher": "U.S. Senate Select Committee on Intelligence", "source_type": "congressional-report", "accessed": "2026-10-12"},
+        {"label": "Bipartisan Senate election-infrastructure findings", "url": "https://www.intelligence.senate.gov/2019/07/25/press-senate-intel-releases-election-security-findings-first-volume-bipartisan-russia-report/", "publisher": "U.S. Senate Select Committee on Intelligence", "source_type": "congressional-report", "accessed": "2026-10-12"},
+        {"label": "2025 ODNI statement challenging parts of the 2017 assessment", "url": "https://archive.dni.gov/index.php/newsroom/press-releases/press-releases-2025/4090-pr-18-25", "publisher": "Office of the Director of National Intelligence", "source_type": "official-statement", "accessed": "2026-10-12"}
+      ],
+      "tags": ["2016 election", "Russian interference", "Mueller report", "Senate Intelligence Committee", "campaign contacts", "election security"],
+      "confidence": "high",
+      "editorial_note": "Do not say all 17 intelligence agencies made the 2017 judgment, that Russia changed votes or proved the election outcome, or that Mueller established conspiracy or coordination. Attribute the 2025 ODNI challenge as a later administration finding rather than erasing the earlier record."
+    },
     {
       "id": "la-san-diego-iran-rally-language-2026",
       "title": "Trump used reckless and ambiguous language about Iran 'taking out' Los Angeles and San Diego",

@@ -162,6 +162,11 @@ const featuredIds = new Set([
   "helsinki-putin-election-interference-denial-2018",
   "trump-memecoin-presidential-access-dinner-2025",
   "epstein-files-deadline-omissions-2025-2026",
+  "russian-diesel-sanctions-license-2026",
+  "putin-g20-invitation-2026",
+  "trump-tower-moscow-campaign-business-2015-2016",
+  "trump-tower-meeting-foreign-assistance-offer-2016",
+  "russian-interference-campaign-response-2016",
 ]);
 
 function mapItem(item: RawItem, lane: ResearchLane): CaseFile {
@@ -232,5 +237,5 @@ export const categories = [
   "Deals & economic power",
 ] as const;
 
-export const lastReviewed = "October 7, 2026";
-export const archiveUpdated = "October 7, 2026";
+export const lastReviewed = "October 12, 2026";
+export const archiveUpdated = "October 12, 2026";

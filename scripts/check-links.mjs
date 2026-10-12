@@ -6,6 +6,7 @@ const urls = new Set();
 
 for (const file of files) {
   const bundle = JSON.parse(await readFile(new URL(file, researchRoot), "utf8"));
+  if (!Array.isArray(bundle.items)) continue;
   for (const item of bundle.items) {
     for (const source of item.evidence ?? []) urls.add(source.url);
     for (const teaching of item.christian_teaching ?? []) urls.add(teaching.url);

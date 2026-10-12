@@ -63,11 +63,11 @@ test("exports the evidence archive and permanent case links", () => {
   assert.match(html, /TRUMP DERANGEMENT SYNDROME/);
   assert.match(html, /Accountability is not derangement\. Refusing the record is\./);
   assert.match(html, /Case files, not catchphrases/);
-  assert.match(html, /124<\/strong><span>case files/);
+  assert.match(html, /129<\/strong><span>case files/);
   assert.match(html, /Latest source check/);
   assert.match(html, /Strongest evidence links/);
   assert.match(html, /Court record<\/span><strong>January 3, 2025 sentencing decision and post-trial procedural history/);
-  assert.ok((html.match(/Open the permanent case file/g) ?? []).length === 124);
+  assert.ok((html.match(/Open the permanent case file/g) ?? []).length === 129);
   assert.match(html, route("evidence/new-york-falsifying-business-records-conviction"));
   assert.doesNotMatch(html, /test-score-badge|test-score-popover|\/100/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
@@ -76,7 +76,7 @@ test("exports the evidence archive and permanent case links", () => {
 test("keeps visible Christianity analysis and four qualitative lenses", () => {
   assert.ok((html.match(/class="faith-note"/g) ?? []).length === 22);
   for (const id of ["patriotic", "america-first", "deal", "world-standing"]) {
-    assert.ok((html.match(new RegExp(`class="case-test-note case-test-note--${id}"`, "g")) ?? []).length === 124);
+    assert.ok((html.match(new RegExp(`class="case-test-note case-test-note--${id}"`, "g")) ?? []).length === 129);
   }
   assert.match(html, /Applies for review/);
   assert.match(html, /Related context/);
@@ -100,8 +100,8 @@ test("exports accessible archive and share controls", () => {
   assert.match(html, /aria-label="Evidence filters"/);
   assert.match(html, /type="search"/);
   assert.match(html, /aria-live="polite"/);
-  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 124);
-  assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 124);
+  assert.ok((html.match(/class="ebox-share-trigger"/g) ?? []).length === 129);
+  assert.ok((html.match(/Share evidence<\/button>/g) ?? []).length === 129);
   assert.match(shareEBoxSource, /role="dialog"/);
   assert.match(shareEBoxSource, /trigger\?\.focus/);
   assert.match(shareEBoxSource, /document\.body\.style\.overflow = "hidden"/);
@@ -142,13 +142,13 @@ test("exports a complete incident-date archive with typed permanent-record links
   assert.match(archiveHtml, /<title>Archive \| TDS/);
   assert.match(archiveHtml, /The complete record · one compact chronology/);
   assert.match(archiveHtml, /Dated records are ordered by the incident or documented conduct/);
-  assert.match(archiveHtml, /<strong>167<\/strong> total entries/);
-  assert.match(archiveHtml, /<strong>124<\/strong> Evidence/);
+  assert.match(archiveHtml, /<strong>172<\/strong> total entries/);
+  assert.match(archiveHtml, /<strong>129<\/strong> Evidence/);
   assert.match(archiveHtml, /<strong>25<\/strong> Rooftops/);
   assert.match(archiveHtml, /<strong>10<\/strong> Blind Eyes/);
   assert.match(archiveHtml, /<strong>8<\/strong> Anti Christ/);
-  assert.ok((archiveHtml.match(/class="archive-row archive-row--/g) ?? []).length === 167);
-  assert.ok((archiveHtml.match(/archive-row--evidence/g) ?? []).length === 124);
+  assert.ok((archiveHtml.match(/class="archive-row archive-row--/g) ?? []).length === 172);
+  assert.ok((archiveHtml.match(/archive-row--evidence/g) ?? []).length === 129);
   assert.ok((archiveHtml.match(/archive-row--rooftops/g) ?? []).length === 25);
   assert.ok((archiveHtml.match(/archive-row--blind-eyes/g) ?? []).length === 10);
   assert.ok((archiveHtml.match(/archive-row--anti-christ/g) ?? []).length === 8);
@@ -252,7 +252,7 @@ test("exports methodology and public accountability policies", () => {
   assert.match(methodologyHtml, /A citation is not immunity/);
   assert.match(methodologyHtml, /Explain the judgment\. Do not manufacture precision/);
   assert.match(methodologyHtml, /Archive system updated/);
-  assert.match(methodologyHtml, /October 7, 2026/);
+  assert.match(methodologyHtml, /October 12, 2026/);
 
   assert.match(aboutHtml, /An argument that owes the public a record/);
   assert.match(correctionsHtml, /The record changes\. The history should remain visible/);
